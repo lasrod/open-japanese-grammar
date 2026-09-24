@@ -29,6 +29,7 @@ const model = option('model');
 const level = option('level');
 const ids = option('ids')?.split(',');
 const batchSize = Number(option('batch') ?? 8);
+if (!Number.isInteger(batchSize) || batchSize < 1) throw new Error('--batch must be a positive whole number');
 const dryRun = flag('dry-run');
 if (!['openai', 'anthropic'].includes(provider)) throw new Error('--provider openai|anthropic is required');
 if (!model) throw new Error('--model is required');
@@ -42,8 +43,9 @@ const chosen = entriesOf(content).filter(({ entry, file }) => {
   if (entry.review.status !== 'draft') return false;
   if (entry.review.drafted_by?.provider === provider) return false;
   const hash = contentHash(entry);
+  // A reviewer is a provider and a model: two providers may share a model name.
   return !(entry.review.reviews ?? []).some(
-    (r) => r.model === model && r.verdict === 'agree' && r.content_sha256 === hash,
+    (r) => r.provider === provider && r.model === model && r.verdict === 'agree' && r.content_sha256 === hash,
   );
 });
 const skippedSameProvider = entriesOf(content).filter(({ entry, file }) =>
@@ -133,7 +135,7 @@ for (let i = 0; i < chosen.length; i += batchSize) {
     if (readFileSync(file.path, 'utf8') !== before.get(file.file)) throw new Error(`${file.file} changed during review`);
     const ruling = result.rulings.get(entry.id);
     entry.review.reviews = [
-      ...(entry.review.reviews ?? []).filter((r) => r.model !== model),
+      ...(entry.review.reviews ?? []).filter((r) => !(r.provider === provider && r.model === model)),
       { by: model, kind: 'ai', provider, model, date, verdict: ruling.verdict,
         content_sha256: contentHash(entry), note: ruling.note },
     ];
@@ -141,6 +143,13 @@ for (let i = 0; i < chosen.length; i += batchSize) {
     if (ruling.verdict === 'agree') agreed++;
     touched.add(file.file);
     console.log(`${ruling.verdict.padEnd(8)} ${entry.id} ${entry.pattern} → ${entry.review.status}\n         ${ruling.note}`);
+  }
+}
+// Last check before writing: an edit made while the requests ran, to any file
+// this run will write, would otherwise be overwritten.
+for (const name of touched) {
+  if (readFileSync(files.get(name).path, 'utf8') !== before.get(name)) {
+    throw new Error(`${name} changed during review; nothing written`);
   }
 }
 for (const name of touched) {

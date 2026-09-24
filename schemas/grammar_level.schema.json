@@ -274,7 +274,8 @@
                 "required": [
                   "by",
                   "date",
-                  "verdict"
+                  "verdict",
+                  "content_sha256"
                 ],
                 "properties": {
                   "by": {
