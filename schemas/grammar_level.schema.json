@@ -355,7 +355,8 @@
                 "additionalProperties": false,
                 "required": [
                   "content_sha256",
-                  "note"
+                  "note",
+                  "against"
                 ],
                 "properties": {
                   "content_sha256": {
@@ -369,6 +370,34 @@
                   "note": {
                     "type": "string",
                     "minLength": 1
+                  },
+                  "against": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "kind",
+                      "provider",
+                      "model"
+                    ],
+                    "description": "The reviewer whose objection this answers.",
+                    "properties": {
+                      "kind": {
+                        "enum": [
+                          "ai"
+                        ]
+                      },
+                      "provider": {
+                        "enum": [
+                          "anthropic",
+                          "openai",
+                          "google"
+                        ]
+                      },
+                      "model": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
                   }
                 }
               }

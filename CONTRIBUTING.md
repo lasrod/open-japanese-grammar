@@ -92,7 +92,8 @@ reviews, never typed in:
   asking again until it agrees would wash the objection out.
 - **When an objection is wrong**, do not change correct text to get past it.
   Add a rebuttal to `review.rebuttals` saying why, with the entry's current
-  `content_sha256`, and run `scripts/review.mjs --reconsider`. The reviewer
+  `content_sha256` and the reviewer it answers in `against`, and run
+  `scripts/review.mjs --reconsider`. The reviewer
   sees its objection and the rebuttal and rules again, and both stay in the
   record for anyone to check.
 - **native-reviewed** needs a named native speaker's agreement

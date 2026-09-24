@@ -703,7 +703,12 @@
           {
             "content_sha256": "c8865254171990a1d35f9f203b7a67e5388331308a0b321bafb59f257439021c",
             "by": "anthropic/claude-opus-5-5",
-            "note": "The second example already contains を: it reads 昨日、友だちに手紙を書きました。, and its reading is きのう、ともだちにてがみをかきました。. The sentence, the reading and the English match; the objection appears to have misread the text."
+            "note": "The second example already contains を: it reads 昨日、友だちに手紙を書きました。, and its reading is きのう、ともだちにてがみをかきました。. The sentence, the reading and the English match; the objection appears to have misread the text.",
+            "against": {
+              "kind": "ai",
+              "provider": "openai",
+              "model": "gpt-6-astra"
+            }
           }
         ]
       }
