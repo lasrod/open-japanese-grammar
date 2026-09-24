@@ -54,22 +54,26 @@
         {
           "japanese": "これは私のかばんです。",
           "reading": "これはわたしのかばんです。",
+          "romaji": "kore wa watashi no kaban desu.",
           "english": "This is my bag."
         },
         {
           "japanese": "田中さんは学生じゃありません。",
           "reading": "たなかさんはがくせいじゃありません。",
+          "romaji": "tanaka-san wa gakusei ja arimasen.",
           "english": "Mr Tanaka is not a student."
         },
         {
           "japanese": "昨日は雨でした。",
           "reading": "きのうはあめでした。",
+          "romaji": "kinō wa ame deshita.",
           "english": "It rained yesterday.",
           "note": "Literally \"yesterday was rain\": a noun sentence in the past."
         },
         {
           "japanese": "この部屋は静かです。",
           "reading": "このへやはしずかです。",
+          "romaji": "kono heya wa shizuka desu.",
           "english": "This room is quiet."
         }
       ],
@@ -85,7 +89,7 @@
         },
         {
           "id": "OJG-0010",
-          "note": "For people and animals, being somewhere is ～がいます (猫がいます), not です."
+          "note": "To say that a person or animal is present somewhere, use ～がいます (庭に猫がいます). です is not a verb of existence, though it can identify where a known person is (先生は職員室です)."
         },
         {
           "id": "OJG-0038",
@@ -128,6 +132,26 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "4ba16227daf027a8d58db4e05b470723ad455175d1aa236c3e9629835667a0b5"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "disagree",
+            "content_sha256": "29474141a79252f562e9f7ade782556c7688db558797b15b2049723fbad4996c",
+            "note": "The OJG-0010 distinction is too absolute: です can identify someone's location, as in 先生は職員室です. Replace the note with: \"To say that a person or animal is present somewhere, use ～がいます (庭に猫がいます). です is not an existential verb, though it can identify a known person's location (先生は職員室です).\""
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "410d2ae5ef445cc953298919eb2b33a93a5b5d667555dfd0db91a997a27bb6c1",
+            "note": "The explanation, formation, examples, and contrasts are accurate."
           }
         ]
       }
@@ -137,12 +161,12 @@
       "pattern": "も",
       "title": "Also, too, and not … either",
       "meaning": "も adds a word as one more case of what was said: \"also\", \"too\"; with a negative verb, \"not … either\".",
-      "when": "Use it on a word to say the same thing is true of it as well: 私も学生です, \"I am a student too\". With a negative it gives \"not … either\". AもBも says \"both A and B\" (or \"neither A nor B\" with a negative). A question word + も + a negative verb says \"not any\": 何も食べません, \"I don't eat anything\".",
-      "why": "も says \"this one as well\": it adds the word it follows to something already said or understood. So it goes directly on the word that is \"also\" true, and moving it changes the meaning: 私もコーヒーを飲みます is \"I too drink coffee\", and 私はコーヒーも飲みます is \"I drink coffee too (as well as other things)\". も takes the place of は, が and を; you do not stack them (not はも, がも). After other particles, も is added on: 東京にも, 友だちとも. With a question word and a negative verb, も gives \"not a single one\": 何も, だれも. With some question words and a positive, the result is a fixed word: いつも, \"always\".",
+      "when": "Use it on a word to say the same thing is true of it as well: 私も学生です, \"I am a student too\". With a negative it gives \"not … either\". AもBも says \"both A and B\" (or \"neither A nor B\" with a negative). Forms such as 何も and だれも combine with a negative predicate to mean \"nothing\" and \"nobody\": 何も食べません, \"I don't eat anything\". Another particle can come before も to mark the word’s role: どこにも行きません means “I don’t go anywhere”, with に marking the destination; どこも行きません is also used, especially in conversation.",
+      "why": "も says \"this one as well\": it adds the word it follows to something already said or understood. So it goes directly on the word that is \"also\" true, and moving it changes the meaning: 私もコーヒーを飲みます is \"I too drink coffee\", and 私はコーヒーも飲みます is \"I drink coffee too (as well as other things)\". In the ordinary additive use taught here, も replaces は, が and を (not はも, がも). をも also occurs for emphasis, especially in written Japanese. After other particles, も is added on: 東京にも, 友だちとも. With 何 and だれ and a negative predicate, も gives \"not a single one\": 何も, だれも. Another particle can come before も to mark the word’s role: どこにも行きません means “I don’t go anywhere”, with に marking the destination; どこも行きません is also used, especially in conversation. いつも is a fixed expression meaning \"always\" or \"usually\", with either a positive or a negative predicate.",
       "formation": [
         {
           "form": "Noun + も",
-          "note": "Replaces は, が or を: 私も, 本も."
+          "note": "In the ordinary additive use, replaces は, が or を: 私も, 本も. をも also occurs for emphasis, mostly in writing."
         },
         {
           "form": "Noun + particle + も",
@@ -153,30 +177,34 @@
           "note": "\"Both A and B\"; with a negative verb, \"neither A nor B\"."
         },
         {
-          "form": "Question word + も + negative verb",
-          "note": "何も～ません \"nothing\", だれも～ません \"nobody\"."
+          "form": "何も／だれも + negative predicate",
+          "note": "何も～ません \"nothing\", だれも～ません \"nobody\"; another particle can come first to mark the word’s role: どこにも行きません (どこも行きません is also used, especially in conversation). いつも \"always\" is a fixed expression."
         }
       ],
       "examples": [
         {
           "japanese": "私も学生です。",
           "reading": "わたしもがくせいです。",
+          "romaji": "watashi mo gakusei desu.",
           "english": "I am a student too."
         },
         {
           "japanese": "田中さんはコーヒーも飲みます。",
           "reading": "たなかさんはコーヒーものみます。",
+          "romaji": "tanaka-san wa kōhī mo nomimasu.",
           "english": "Mr Tanaka drinks coffee too.",
           "note": "も is on コーヒー, so coffee is the added item, not Mr Tanaka."
         },
         {
           "japanese": "犬も猫も好きです。",
           "reading": "いぬもねこもすきです。",
+          "romaji": "inu mo neko mo suki desu.",
           "english": "I like both dogs and cats."
         },
         {
           "japanese": "今朝は何も食べませんでした。",
           "reading": "けさはなにもたべませんでした。",
+          "romaji": "kesa wa nani mo tabemasen deshita.",
           "english": "I didn't eat anything this morning."
         }
       ],
@@ -232,6 +260,36 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "e3c2718929c1718561603ad2930cf6922073a3cbdc03b25859d3e9ec164c7239"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "disagree",
+            "content_sha256": "82a977d93336e2bd5c9ed182aea7f1673119c32ce8ec8325b41ac5036d539a5e",
+            "note": "Two claims need qualification. (1) The prohibition on stacking も with を is overstated: をも occurs in contemporary Japanese, particularly for emphatic 'even'. Write: \"In the ordinary additive use taught here, も replaces は, が and を. をも also occurs for emphasis, especially in written Japanese.\" (2) 'Question word + も + negative verb' is not a general rule meaning 'not any': いつも retains its 'always/usually' meaning with negative predicates too. Replace this rule in when, why and formation with: \"Forms such as 何も and だれも combine with a negative predicate to mean 'nothing' and 'nobody'. Some require another particle, as in どこにも行きません, 'I don't go anywhere'. いつも is a fixed expression meaning 'always/usually', with either a positive or a negative predicate.\""
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "disagree",
+            "content_sha256": "f10a85d444f39abfd90b788c1d4decdf1215c273031a5a9b0c8fee95dd683fdc",
+            "note": "The statements that some question words “need another particle first,” illustrated by どこにも行きません, overstate the requirement. どこも行きません is also natural, especially in conversation. In when, why, and the final formation note, replace this claim with: “Another particle can come before も to mark the word’s role: どこにも行きません means ‘I don’t go anywhere.’ Here に marks the destination; どこも行きません is also used, especially in conversation.”"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "f0c0906adfa0f3c286f053184e3d136aacf0cddcf462b4e1a5ef172ce0934a68",
+            "note": "The explanations, formation, examples, readings, romaji, mistake correction, and distinctions are accurate. The meaning and N5 placement are appropriate."
           }
         ]
       }
@@ -261,21 +319,25 @@
         {
           "japanese": "図書館で本を読みます。",
           "reading": "としょかんでほんをよみます。",
+          "romaji": "toshokan de hon o yomimasu.",
           "english": "I read books at the library."
         },
         {
           "japanese": "バスで学校へ行きます。",
           "reading": "バスでがっこうへいきます。",
+          "romaji": "basu de gakkō e ikimasu.",
           "english": "I go to school by bus."
         },
         {
           "japanese": "日本語で話してください。",
           "reading": "にほんごではなしてください。",
+          "romaji": "nihongo de hanashite kudasai.",
           "english": "Please speak in Japanese."
         },
         {
           "japanese": "全部で千円です。",
           "reading": "ぜんぶでせんえんです。",
+          "romaji": "zenbu de sen'en desu.",
           "english": "That's 1,000 yen altogether."
         }
       ],
@@ -335,6 +397,15 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "eaab157f9cf772d32c5a8add6a557fa6dc63faa99de9507d8e59653f4f8a4d16"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "123ebe9fe6ebdb521d6c600785ec8f960fa198ddcbea6c81c66d4b7701479279"
           }
         ]
       }
@@ -360,16 +431,19 @@
         {
           "japanese": "明日、京都へ行きます。",
           "reading": "あした、きょうとへいきます。",
+          "romaji": "ashita, kyōto e ikimasu.",
           "english": "I'm going to Kyoto tomorrow."
         },
         {
           "japanese": "友だちが私の部屋に来ました。",
           "reading": "ともだちがわたしのへやにきました。",
+          "romaji": "tomodachi ga watashi no heya ni kimashita.",
           "english": "A friend came to my room."
         },
         {
           "japanese": "八時に駅に着きました。",
           "reading": "はちじにえきにつきました。",
+          "romaji": "hachiji ni eki ni tsukimashita.",
           "english": "I arrived at the station at eight.",
           "note": "The first に marks the time (OJG-0005); the second marks the destination."
         }
@@ -443,6 +517,15 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "29a0cf877db09ba01915a8fc759cd05651875a8ed0faeb0d34a33cc0e5367dae"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "a2d75a30618898fe2344e17a9912521cfafc1366fab92b79bd6619dceb005d3d"
           }
         ]
       }
@@ -476,22 +559,26 @@
         {
           "japanese": "毎朝六時に起きます。",
           "reading": "まいあさろくじにおきます。",
+          "romaji": "maiasa rokuji ni okimasu.",
           "english": "I get up at six every morning.",
           "note": "毎朝 normally takes no particle; the clock time takes に."
         },
         {
           "japanese": "机の上に猫がいます。",
           "reading": "つくえのうえにねこがいます。",
+          "romaji": "tsukue no ue ni neko ga imasu.",
           "english": "There is a cat on the desk."
         },
         {
           "japanese": "母に花をあげました。",
           "reading": "ははにはなをあげました。",
+          "romaji": "haha ni hana o agemashita.",
           "english": "I gave my mother flowers."
         },
         {
           "japanese": "駅で友だちに会いました。",
           "reading": "えきでともだちにあいました。",
+          "romaji": "eki de tomodachi ni aimashita.",
           "english": "I met a friend at the station."
         }
       ],
@@ -576,6 +663,15 @@
             "verdict": "agree",
             "content_sha256": "750821e9c60f6ba4d92c524469f6561fe7319b191b0f6a6559fee357ba913c55",
             "note": "The uses of に, time-expression guidance, formation patterns, examples, and particle contrasts are accurate."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "e31f439494a52ca0004bfb454da57e8ebd04dc16e386f82ec04408fce59eded2"
           }
         ]
       }
@@ -601,22 +697,26 @@
         {
           "japanese": "毎朝コーヒーを飲みます。",
           "reading": "まいあさコーヒーをのみます。",
+          "romaji": "maiasa kōhī o nomimasu.",
           "english": "I drink coffee every morning."
         },
         {
           "japanese": "昨日、友だちに手紙を書きました。",
           "reading": "きのう、ともだちにてがみをかきました。",
+          "romaji": "kinō, tomodachi ni tegami o kakimashita.",
           "english": "Yesterday I wrote a letter to a friend."
         },
         {
           "japanese": "日曜日は公園を散歩しました。",
           "reading": "にちようびはこうえんをさんぽしました。",
+          "romaji": "nichiyōbi wa kōen o sanpo shimashita.",
           "english": "On Sunday I took a walk in the park.",
           "note": "The park is the ground walked through, so it takes を."
         },
         {
           "japanese": "八時に家を出ます。",
           "reading": "はちじにいえをでます。",
+          "romaji": "hachiji ni ie o demasu.",
           "english": "I leave home at eight."
         }
       ],
@@ -697,6 +797,15 @@
             "content_sha256": "c8865254171990a1d35f9f203b7a67e5388331308a0b321bafb59f257439021c",
             "reconsidered": true,
             "note": "I withdraw the previous objection: the second example already contains を after 手紙, and its reading and English match. The entry meets the review criteria."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "b7959186ebb8e504a02059de01bb0d11a6a0c9ea5283fe0cd448eb0bd3088a0d"
           }
         ],
         "rebuttals": [
@@ -738,16 +847,19 @@
         {
           "japanese": "一緒に昼ご飯を食べませんか。",
           "reading": "いっしょにひるごはんをたべませんか。",
+          "romaji": "issho ni hirugohan o tabemasen ka.",
           "english": "Would you like to have lunch together?"
         },
         {
           "japanese": "日曜日に映画を見に行きませんか。",
           "reading": "にちようびにえいがをみにいきませんか。",
+          "romaji": "nichiyōbi ni eiga o mi ni ikimasen ka.",
           "english": "Would you like to go and see a film on Sunday?"
         },
         {
           "japanese": "お茶を飲みませんか。",
           "reading": "おちゃをのみませんか。",
+          "romaji": "ocha o nomimasen ka.",
           "english": "Would you like some tea?",
           "note": "An offer to the listener; the speaker need not drink too."
         }
@@ -814,6 +926,15 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "1c93eccbbebebd680467d7cbc18815718b458b6415d99bc27717c12e0bb0f584"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "ce6076b15c056c8be6a2bb3a71bfea4026accc46f68113e31a1040d4079cd146"
           }
         ]
       }
@@ -839,23 +960,27 @@
         {
           "japanese": "私は学生です。",
           "reading": "わたしはがくせいです。",
+          "romaji": "watashi wa gakusei desu.",
           "english": "I'm a student."
         },
         {
           "japanese": "この本はもう読みました。",
           "reading": "このほんはもうよみました。",
+          "romaji": "kono hon wa mō yomimashita.",
           "english": "I've already read this book.",
           "note": "The topic is the book, the thing read; を is replaced by は."
         },
         {
           "japanese": "田中さんは背が高いです。",
           "reading": "たなかさんはせがたかいです。",
+          "romaji": "tanaka-san wa se ga takai desu.",
           "english": "Mr Tanaka is tall.",
           "note": "Topic: Mr Tanaka. Subject of 高い: 背, his height."
         },
         {
           "japanese": "肉は食べますが、魚は食べません。",
           "reading": "にくはたべますが、さかなはたべません。",
+          "romaji": "niku wa tabemasu ga, sakana wa tabemasen.",
           "english": "I eat meat, but I don't eat fish.",
           "note": "Two topics set against each other: the contrast use."
         }
@@ -926,6 +1051,16 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "dfcca85b9b925a59f9e560b9bce8bdd1e51144b3210c02aff245635d003dc80d"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "3c1e4f507a350d1f88ec53fa98b37025ed1ba0156696bd548065664b50b6ae3d",
+            "note": "The explanation, formation, examples, and contrasts are accurate."
           }
         ]
       }
@@ -963,23 +1098,27 @@
         {
           "japanese": "机の上にかばんがあります。",
           "reading": "つくえのうえにかばんがあります。",
+          "romaji": "tsukue no ue ni kaban ga arimasu.",
           "english": "There is a bag on the desk."
         },
         {
           "japanese": "庭に大きい木があります。",
           "reading": "にわにおおきいきがあります。",
+          "romaji": "niwa ni ōkii ki ga arimasu.",
           "english": "There is a big tree in the garden.",
           "note": "A tree is alive, but it does not move about, and plants usually take ある."
         },
         {
           "japanese": "明日、テストがあります。",
           "reading": "あした、テストがあります。",
+          "romaji": "ashita, tesuto ga arimasu.",
           "english": "There is a test tomorrow.",
           "note": "An event also \"exists\", so it takes ある."
         },
         {
           "japanese": "今日は時間がありません。",
           "reading": "きょうはじかんがありません。",
+          "romaji": "kyō wa jikan ga arimasen.",
           "english": "I don't have time today."
         }
       ],
@@ -1045,6 +1184,16 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "a1efd672bfa8b77724cc4d1d5c8ce387379360c8098475ecb528029ee31974a9"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "e00a71a04dd6757c3972269e4e06b1ecda067ab6d2b3793b60ffe098573c88ee",
+            "note": "The existential and possession uses are explained correctly; the examples and their readings, romaji, and translations are sound."
           }
         ]
       }
@@ -1078,21 +1227,25 @@
         {
           "japanese": "公園に子どもがいます。",
           "reading": "こうえんにこどもがいます。",
+          "romaji": "kōen ni kodomo ga imasu.",
           "english": "There are children in the park."
         },
         {
           "japanese": "木の上に鳥がいます。",
           "reading": "きのうえにとりがいます。",
+          "romaji": "ki no ue ni tori ga imasu.",
           "english": "There is a bird in the tree."
         },
         {
           "japanese": "私は姉が一人います。",
           "reading": "わたしはあねがひとりいます。",
+          "romaji": "watashi wa ane ga hitori imasu.",
           "english": "I have one older sister."
         },
         {
           "japanese": "田中さんは今、教室にいます。",
           "reading": "たなかさんはいま、きょうしつにいます。",
+          "romaji": "tanaka-san wa ima, kyōshitsu ni imasu.",
           "english": "Tanaka is in the classroom now."
         }
       ],
@@ -1149,6 +1302,16 @@
             "verdict": "agree",
             "content_sha256": "6e98b5ad3e7428ac41a1e964666138b7dee66b58ee4eda5d4b0d8dbe10af5ed9",
             "note": "The explanation, formations, examples, readings, translations and contrasts are sound for the uses described."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "9660f2567cfc1eac48d00e45ffac73822791129c842fb29069653b7791e31e87",
+            "note": "The explanation correctly covers animate existence, family and pets, and context-sensitive choices between いる and ある."
           }
         ]
       }
@@ -1174,16 +1337,19 @@
         {
           "japanese": "パンと牛乳を買いました。",
           "reading": "パンとぎゅうにゅうをかいました。",
+          "romaji": "pan to gyūnyū o kaimashita.",
           "english": "I bought bread and milk."
         },
         {
           "japanese": "机の上に本とペンがあります。",
           "reading": "つくえのうえにほんとペンがあります。",
+          "romaji": "tsukue no ue ni hon to pen ga arimasu.",
           "english": "There is a book and a pen on the desk."
         },
         {
           "japanese": "日曜日に友だちと映画を見ました。",
           "reading": "にちようびにともだちとえいがをみました。",
+          "romaji": "nichiyōbi ni tomodachi to eiga o mimashita.",
           "english": "I saw a film with a friend on Sunday."
         }
       ],
@@ -1253,6 +1419,16 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "e3b6912561b319463845e9c081b6291dc562837dc8242659ac8ca4b9c25935c2"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "f5e2b35d18fed7c842a472ef1d94243984ac424ccb8eabd58b010c37b11a9c7d",
+            "note": "The noun-listing and accompaniment uses are accurately explained and illustrated."
           }
         ]
       }
@@ -1278,17 +1454,20 @@
         {
           "japanese": "そろそろ帰りましょう。",
           "reading": "そろそろかえりましょう。",
+          "romaji": "sorosoro kaerimashō.",
           "english": "It's about time. Let's go home."
         },
         {
           "japanese": "ええ、行きましょう。",
           "reading": "ええ、いきましょう。",
+          "romaji": "ē, ikimashō.",
           "english": "Yes, let's go.",
           "note": "A reply to an invitation such as 行きませんか."
         },
         {
           "japanese": "食べる前に手を洗いましょう。",
           "reading": "たべるまえにてをあらいましょう。",
+          "romaji": "taberu mae ni te o araimashō.",
           "english": "Let's wash our hands before we eat.",
           "note": "From a teacher or on a sign, a gentle instruction."
         }
@@ -1346,6 +1525,16 @@
             "verdict": "agree",
             "content_sha256": "02b967cb1928ddb2c1509e9fa32b65b51910baa3ef965997a043b66c118b580f",
             "note": "The entry accurately teaches proposals, acceptance and instructional uses; the formations and examples are correct."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "7a575c137701a5ca5334750f8ae897896ccc5b3242b06c170b9cdb564999db10",
+            "note": "The proposal, acceptance, and instructional uses are accurate; the examples and formation are correct."
           }
         ]
       }
@@ -1375,22 +1564,26 @@
         {
           "japanese": "荷物を持ちましょうか。",
           "reading": "にもつをもちましょうか。",
+          "romaji": "nimotsu o mochimashō ka.",
           "english": "Shall I carry your bags?"
         },
         {
           "japanese": "窓を開けましょうか。",
           "reading": "まどをあけましょうか。",
+          "romaji": "mado o akemashō ka.",
           "english": "Shall I open the window?",
           "note": "Usually an offer, though in context it can mean \"shall we\"."
         },
         {
           "japanese": "ちょっと休みましょうか。",
           "reading": "ちょっとやすみましょうか。",
+          "romaji": "chotto yasumimashō ka.",
           "english": "Shall we take a short break?"
         },
         {
           "japanese": "何時に会いましょうか。",
           "reading": "なんじにあいましょうか。",
+          "romaji": "nanji ni aimashō ka.",
           "english": "What time shall we meet?"
         }
       ],
@@ -1446,6 +1639,16 @@
             "verdict": "agree",
             "content_sha256": "7e818157ca2ea015b9b48c7319fedc6b68163e8051c691ba37c4dfe4ac1b3806",
             "note": "The offer/suggestion distinction, question-word use, examples and correction are accurate."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "18306b7938530b998bcf532f6395a69a582f019cb1bf1aa11ddf91da1608ab00",
+            "note": "The distinction between offers and shared suggestions is accurate, as are the examples and the learner-error correction."
           }
         ]
       }
@@ -1475,16 +1678,19 @@
         {
           "japanese": "ちょっと待ってください。",
           "reading": "ちょっとまってください。",
+          "romaji": "chotto matte kudasai.",
           "english": "Please wait a moment."
         },
         {
           "japanese": "ここに名前を書いてください。",
           "reading": "ここになまえをかいてください。",
+          "romaji": "koko ni namae o kaite kudasai.",
           "english": "Please write your name here."
         },
         {
           "japanese": "どうぞ、たくさん食べてください。",
           "reading": "どうぞ、たくさんたべてください。",
+          "romaji": "dōzo, takusan tabete kudasai.",
           "english": "Please, help yourself and eat plenty.",
           "note": "Offered for the listener's own sake, as a host would."
         }
@@ -1551,6 +1757,16 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "d060bca891085dfc9343cd46a7483659eb651228b032be45559a384121827845"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "27e5dc0965c9a5eabbbdb5551cd0f169a091d3ccc59af499c512fd6c5c8e4e6e",
+            "note": "The request construction, its directive potential, and its distinction from asking permission are accurately explained."
           }
         ]
       }
@@ -1588,16 +1804,19 @@
         {
           "japanese": "写真を撮ってもいいですか。",
           "reading": "しゃしんをとってもいいですか。",
+          "romaji": "shashin o totte mo ii desu ka.",
           "english": "May I take a photo?"
         },
         {
           "japanese": "この部屋で食べてもいいです。",
           "reading": "このへやでたべてもいいです。",
+          "romaji": "kono heya de tabete mo ii desu.",
           "english": "You may eat in this room."
         },
         {
           "japanese": "鉛筆で書いてもいいです。",
           "reading": "えんぴつでかいてもいいです。",
+          "romaji": "enpitsu de kaite mo ii desu.",
           "english": "It's fine to write in pencil."
         }
       ],
@@ -1664,6 +1883,15 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "a794bb15f9b304e6898e4d1f079b486ed9b733408389147e3754a0aa91194f02"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "b082d679b47a7d461d8df1481ebdc0266e075ca4f871172d754bc0af0fabdd87"
           }
         ]
       }
@@ -1689,16 +1917,19 @@
         {
           "japanese": "ここでたばこを吸ってはいけません。",
           "reading": "ここでたばこをすってはいけません。",
+          "romaji": "koko de tabako o sutte wa ikemasen.",
           "english": "You must not smoke here."
         },
         {
           "japanese": "テストのとき、辞書を見てはいけません。",
           "reading": "テストのとき、じしょをみてはいけません。",
+          "romaji": "tesuto no toki, jisho o mite wa ikemasen.",
           "english": "You must not look at a dictionary during the test."
         },
         {
           "japanese": "この川で泳いではいけません。",
           "reading": "このかわでおよいではいけません。",
+          "romaji": "kono kawa de oyoide wa ikemasen.",
           "english": "You must not swim in this river.",
           "note": "泳ぐ has the て-form 泳いで, so it is ではいけません."
         }
@@ -1759,6 +1990,15 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "f0032ee57a267102e03506308a8abb140ad44a62d6e68f37e8425fd3ab089771"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "7e54fe8ef4ec8b13a47812df5434b9b438fd69179fbc23ba8e68fe2e10b9760e"
           }
         ]
       }
@@ -1788,21 +2028,25 @@
         {
           "japanese": "今日は雨だから、どこにも行きません。",
           "reading": "きょうはあめだから、どこにもいきません。",
+          "romaji": "kyō wa ame da kara, doko ni mo ikimasen.",
           "english": "It's raining today, so I'm not going anywhere."
         },
         {
           "japanese": "暑いですから、窓を開けてください。",
           "reading": "あついですから、まどをあけてください。",
+          "romaji": "atsui desu kara, mado o akete kudasai.",
           "english": "It's hot, so please open the window."
         },
         {
           "japanese": "明日はテストがありますから、今晩勉強します。",
           "reading": "あしたはテストがありますから、こんばんべんきょうします。",
+          "romaji": "ashita wa tesuto ga arimasu kara, konban benkyō shimasu.",
           "english": "I have a test tomorrow, so I'll study tonight."
         },
         {
           "japanese": "「どうして来なかったんですか。」「頭が痛かったからです。」",
           "reading": "「どうしてこなかったんですか。」「あたまがいたかったからです。」",
+          "romaji": "\"dōshite konakatta n desu ka.\" \"atama ga itakatta kara desu.\"",
           "english": "\"Why didn't you come?\" \"Because I had a headache.\""
         }
       ],
@@ -1879,6 +2123,15 @@
             "verdict": "agree",
             "content_sha256": "6a0430274b2214c94c7d15b4cbdff43bea913ae9eed53d251bd961548c6af736",
             "note": "The explanation and formation correctly cover causal から, including sentence-final explanations. The examples, correction, and comparison with ので are sound."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "e762a631d5dcd7964f9c2f46060ac59f808f6f7ccc7dcf28d408780642960735"
           }
         ]
       }
@@ -1904,16 +2157,19 @@
         {
           "japanese": "子どもが本を読んでいます。",
           "reading": "こどもがほんをよんでいます。",
+          "romaji": "kodomo ga hon o yonde imasu.",
           "english": "The child is reading a book."
         },
         {
           "japanese": "姉は大阪に住んでいます。",
           "reading": "あねはおおさかにすんでいます。",
+          "romaji": "ane wa ōsaka ni sunde imasu.",
           "english": "My older sister lives in Osaka."
         },
         {
           "japanese": "窓が開いています。",
           "reading": "まどがあいています。",
+          "romaji": "mado ga aite imasu.",
           "english": "The window is open.",
           "note": "開く is a change, so this is the state after it, not an action under way."
         }
@@ -1968,6 +2224,15 @@
             "verdict": "agree",
             "content_sha256": "28ba3a8d6e5c1106bb5aa3296add6f84736bc8898a8665ce10d963f10fba0ab3",
             "note": "The explanation, formation, examples, mistake correction, and comparison are accurate; N5 is plausible."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "80874769957823502e974d1bf173fc9da94da5adae0adcea0e25b2c980925876"
           }
         ]
       }
@@ -1997,22 +2262,26 @@
         {
           "japanese": "友だちと映画を見に行きます。",
           "reading": "ともだちとえいがをみにいきます。",
+          "romaji": "tomodachi to eiga o mi ni ikimasu.",
           "english": "I’m going to see a film with a friend."
         },
         {
           "japanese": "昼ご飯を食べに家へ帰ります。",
           "reading": "ひるごはんをたべにいえへかえります。",
+          "romaji": "hirugohan o tabe ni ie e kaerimasu.",
           "english": "I go home to eat lunch."
         },
         {
           "japanese": "日曜日にデパートへ買い物に行きました。",
           "reading": "にちようびにデパートへかいものにいきました。",
+          "romaji": "nichiyōbi ni depāto e kaimono ni ikimashita.",
           "english": "On Sunday I went shopping at the department store.",
           "note": "買い物 is an activity noun, so it takes に directly."
         },
         {
           "japanese": "田中さんが本を返しに来ました。",
           "reading": "たなかさんがほんをかえしにきました。",
+          "romaji": "tanaka-san ga hon o kaeshi ni kimashita.",
           "english": "Mr Tanaka came to return the book."
         }
       ],
@@ -2064,6 +2333,15 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "8445f3c3b3de264939e96f4b2efcf7dbdf4e571c3592217037f2a0295c62928a"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "19812f44df86e911df14e38a197dd52d2be3c83f96ff4b43b3270f2bd314b5f2"
           }
         ]
       }
@@ -2089,16 +2367,19 @@
         {
           "japanese": "ここで写真を撮らないでください。",
           "reading": "ここでしゃしんをとらないでください。",
+          "romaji": "koko de shashin o toranaide kudasai.",
           "english": "Please don't take photos here."
         },
         {
           "japanese": "心配しないでください。",
           "reading": "しんぱいしないでください。",
+          "romaji": "shinpai shinaide kudasai.",
           "english": "Please don't worry."
         },
         {
           "japanese": "宿題を忘れないでください。",
           "reading": "しゅくだいをわすれないでください。",
+          "romaji": "shukudai o wasurenaide kudasai.",
           "english": "Please don't forget your homework."
         }
       ],
@@ -2164,6 +2445,15 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "5974851b70ebc9483e1e186bddfe3d7af0400bc8a8a9a97e1d3614804bb6a84d"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "eaaa29dca48f8ca26a7fcd7ad4fa56c7c9892c76a048970793acd4d280928e7c"
           }
         ]
       }
@@ -2193,22 +2483,26 @@
         {
           "japanese": "私は本を読むのが好きです。",
           "reading": "わたしはほんをよむのがすきです。",
+          "romaji": "watashi wa hon o yomu no ga suki desu.",
           "english": "I like reading books."
         },
         {
           "japanese": "弟は料理を作るのが好きです。",
           "reading": "おとうとはりょうりをつくるのがすきです。",
+          "romaji": "otōto wa ryōri o tsukuru no ga suki desu.",
           "english": "My younger brother likes cooking.",
           "note": "料理を stays inside the verb phrase; が comes after の."
         },
         {
           "japanese": "朝早く起きるのが嫌いです。",
           "reading": "あさはやくおきるのがきらいです。",
+          "romaji": "asa hayaku okiru no ga kirai desu.",
           "english": "I hate getting up early."
         },
         {
           "japanese": "休みの日に散歩するのが大好きです。",
           "reading": "やすみのひにさんぽするのがだいすきです。",
+          "romaji": "yasumi no hi ni sanpo suru no ga daisuki desu.",
           "english": "I love going for walks on my days off."
         }
       ],
@@ -2274,6 +2568,15 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "c03e9a10e0880d741605519c213c36bf247f8d2fe7248dfcd078dfa454c3fbcd"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "e0dd495262dda31da10834401ec563a4210abdcffaab009cbf0908c1e8b919da"
           }
         ]
       }
@@ -2303,22 +2606,26 @@
         {
           "japanese": "田中さんは歌うのが上手です。",
           "reading": "たなかさんはうたうのがじょうずです。",
+          "romaji": "tanaka-san wa utau no ga jōzu desu.",
           "english": "Tanaka-san is good at singing."
         },
         {
           "japanese": "友だちは絵をかくのがとても上手です。",
           "reading": "ともだちはえをかくのがとてもじょうずです。",
+          "romaji": "tomodachi wa e o kaku no ga totemo jōzu desu.",
           "english": "My friend is very good at drawing."
         },
         {
           "japanese": "日本語が上手ですね。",
           "reading": "にほんごがじょうずですね。",
+          "romaji": "nihongo ga jōzu desu ne.",
           "english": "Your Japanese is good.",
           "note": "A compliment to the listener. With a noun, no の is needed."
         },
         {
           "japanese": "私は泳ぐのが得意です。",
           "reading": "わたしはおよぐのがとくいです。",
+          "romaji": "watashi wa oyogu no ga tokui desu.",
           "english": "Swimming is my strong point.",
           "note": "About yourself, 得意 is the usual word rather than 上手."
         }
@@ -2375,6 +2682,16 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "02895125ddd72647ea8a2074086051360916a56e64f195fdcf1aa8e6c3fd9219"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "59c5873a2cee82c9198e8a104807e46c4aacbc74f2b16ceb6c45bf9f6eedbf18",
+            "note": "The explanation, formation, examples, romanization, and usage distinctions are accurate."
           }
         ]
       }
@@ -2404,22 +2721,26 @@
         {
           "japanese": "私は歌うのが下手です。",
           "reading": "わたしはうたうのがへたです。",
+          "romaji": "watashi wa utau no ga heta desu.",
           "english": "I'm bad at singing."
         },
         {
           "japanese": "父は料理を作るのが下手です。",
           "reading": "ちちはりょうりをつくるのがへたです。",
+          "romaji": "chichi wa ryōri o tsukuru no ga heta desu.",
           "english": "My father is bad at cooking."
         },
         {
           "japanese": "私は字が下手です。",
           "reading": "わたしはじがへたです。",
+          "romaji": "watashi wa ji ga heta desu.",
           "english": "My handwriting is bad.",
           "note": "With a noun, no の is needed."
         },
         {
           "japanese": "朝早く起きるのが苦手です。",
           "reading": "あさはやくおきるのがにがてです。",
+          "romaji": "asa hayaku okiru no ga nigate desu.",
           "english": "I'm not good at getting up early.",
           "note": "苦手: something you find hard, not only a lack of skill."
         }
@@ -2476,6 +2797,16 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "4550ef12fc8efd03584377a77452688555f6f1a24808d70ec6a1606b8de27706"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "3dd5c297028d0f818c8a5251ee5a690fab83152551db7e9fcfdb374a7bd8b497",
+            "note": "The skill and social-use distinctions are sound, and the examples and correction are correct."
           }
         ]
       }
@@ -2509,17 +2840,20 @@
         {
           "japanese": "いいえ、まだ食べていません。",
           "reading": "いいえ、まだたべていません。",
+          "romaji": "iie, mada tabete imasen.",
           "english": "No, I haven’t eaten yet.",
           "note": "An answer to もう昼ご飯を食べましたか."
         },
         {
           "japanese": "宿題はまだ終わっていません。",
           "reading": "しゅくだいはまだおわっていません。",
+          "romaji": "shukudai wa mada owatte imasen.",
           "english": "My homework isn’t finished yet."
         },
         {
           "japanese": "田中さんはまだ来ていません。",
           "reading": "たなかさんはまだきていません。",
+          "romaji": "tanaka-san wa mada kite imasen.",
           "english": "Mr Tanaka hasn’t come yet."
         }
       ],
@@ -2587,6 +2921,16 @@
             "verdict": "agree",
             "content_sha256": "e411c59483982b5609c207335cef5c1a0fe289330b242b93e6c589f4e36faa1a",
             "note": "Accurately explains the present-reference and past-reference uses of “not yet”; the forms, examples, and contrasts are sound."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "96a85f1c6c51ba2f934fc93722c966cfb5d979cf64f9e105bbaa1c424c28e9a4",
+            "note": "The explanation correctly distinguishes an action not yet completed from a past nonoccurrence. The examples and forms are accurate."
           }
         ]
       }
@@ -2624,23 +2968,27 @@
         {
           "japanese": "電車のほうがバスより速いです。",
           "reading": "でんしゃのほうがバスよりはやいです。",
+          "romaji": "densha no hō ga basu yori hayai desu.",
           "english": "The train is faster than the bus."
         },
         {
           "japanese": "犬と猫とどちらが好きですか。猫のほうが好きです。",
           "reading": "いぬとねことどちらがすきですか。ねこのほうがすきです。",
+          "romaji": "inu to neko to dochira ga suki desu ka. neko no hō ga suki desu.",
           "english": "Which do you like better, dogs or cats? I like cats better.",
           "note": "The answer leaves out 犬より, because the question already named both."
         },
         {
           "japanese": "今日は昨日より寒いです。",
           "reading": "きょうはきのうよりさむいです。",
+          "romaji": "kyō wa kinō yori samui desu.",
           "english": "Today is colder than yesterday.",
           "note": "Here は, not のほうが: the sentence is simply about today, not picking one of a pair."
         },
         {
           "japanese": "バスで行くより歩くほうが早いです。",
           "reading": "バスでいくよりあるくほうがはやいです。",
+          "romaji": "basu de iku yori aruku hō ga hayai desu.",
           "english": "Walking is quicker than going by bus."
         }
       ],
@@ -2707,6 +3055,16 @@
             "verdict": "agree",
             "content_sha256": "dc76477e49dc64043b5950c67c8b1af1c7c61a2622a1e88ab270088ffa772b93",
             "note": "The comparison structure, role of より, action comparisons, and correction are accurate."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "1364e9b05673ddfe5732db0641882effa0b9c2085544f09e184ed0a575e6ba26",
+            "note": "The comparison structure, particle roles, examples, and correction are accurate."
           }
         ]
       }
@@ -2736,16 +3094,19 @@
         {
           "japanese": "果物の中でりんごが一番好きです。",
           "reading": "くだもののなかでりんごがいちばんすきです。",
+          "romaji": "kudamono no naka de ringo ga ichiban suki desu.",
           "english": "Of all fruit, I like apples best."
         },
         {
           "japanese": "クラスの中でだれが一番背が高いですか。",
           "reading": "クラスのなかでだれがいちばんせがたかいですか。",
+          "romaji": "kurasu no naka de dare ga ichiban se ga takai desu ka.",
           "english": "Who is the tallest in the class?"
         },
         {
           "japanese": "日本で一番高い山は富士山です。",
           "reading": "にほんでいちばんたかいやまはふじさんです。",
+          "romaji": "nihon de ichiban takai yama wa fujisan desu.",
           "english": "The highest mountain in Japan is Mount Fuji.",
           "note": "With a place, で alone. Here 一番高い describes 山, and the answer comes after は."
         }
@@ -2813,6 +3174,16 @@
             "verdict": "agree",
             "content_sha256": "293fb7399473352f45e6a16ef85b4d9578a9e8203f47bbc8c6a1ba670a728d18",
             "note": "Correctly explains superlative comparisons and the range-marking use of で. The examples and readings are accurate."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "41a6e7c1ec6f8c1acd7a78ad7e542f6bf9bd86a19586cbdb2e011b6476b40476",
+            "note": "The explanation of comparison within a group, including the qualification about two alternatives, is accurate. The examples are correct."
           }
         ]
       }
@@ -2842,16 +3213,19 @@
         {
           "japanese": "夏休みに日本へ行くつもりです。",
           "reading": "なつやすみににほんへいくつもりです。",
+          "romaji": "natsuyasumi ni nihon e iku tsumori desu.",
           "english": "I plan to go to Japan in the summer holidays."
         },
         {
           "japanese": "今日はお酒を飲まないつもりです。",
           "reading": "きょうはおさけをのまないつもりです。",
+          "romaji": "kyō wa osake o nomanai tsumori desu.",
           "english": "I'm not planning to drink today."
         },
         {
           "japanese": "週末は何をするつもりですか。",
           "reading": "しゅうまつはなにをするつもりですか。",
+          "romaji": "shūmatsu wa nani o suru tsumori desu ka.",
           "english": "What are you planning to do this weekend?",
           "note": "Asking the listener about their plans."
         }
@@ -2923,6 +3297,16 @@
             "verdict": "agree",
             "content_sha256": "175a5036800aead6d15cc012be733440980026468a86677dd05fd557cb275ee8",
             "note": "Accurately presents intentional plans, negative intentions, and the contrast with predictions and wishes."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "28b4c7058ea6b36d1ee312f4499981d79e41d2cfbd91b828fcad641ab7e2ea8d",
+            "note": "The entry accurately explains intentional plans, their negative forms, and the contrast with predictions. The examples are natural and correct."
           }
         ]
       }
@@ -2956,22 +3340,26 @@
         {
           "japanese": "だんだん寒くなりました。",
           "reading": "だんだんさむくなりました。",
+          "romaji": "dandan samuku narimashita.",
           "english": "It has gradually got colder."
         },
         {
           "japanese": "部屋がきれいになりました。",
           "reading": "へやがきれいになりました。",
+          "romaji": "heya ga kirei ni narimashita.",
           "english": "The room is clean now.",
           "note": "きれい ends in い but is a な-adjective (きれいな部屋), so it takes に."
         },
         {
           "japanese": "兄は医者になりました。",
           "reading": "あにはいしゃになりました。",
+          "romaji": "ani wa isha ni narimashita.",
           "english": "My older brother became a doctor."
         },
         {
           "japanese": "天気がよくなりました。",
           "reading": "てんきがよくなりました。",
+          "romaji": "tenki ga yoku narimashita.",
           "english": "The weather has got better.",
           "note": "いい becomes よく."
         }
@@ -3028,6 +3416,16 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "34db2fc159ec89ed89b7898bdd80dab7d22e4e81a4457b1ab6eff3e582f6cace"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "fc1e6557727e6d95ff9a52b2d5f2af119d3d2cb8e9e3518ed3f6e62e4ac9a6b0",
+            "note": "The adjective and noun formations, irregular よくなる, examples, and distinctions are accurate."
           }
         ]
       }
@@ -3065,21 +3463,25 @@
         {
           "japanese": "冷たい水が飲みたいです。",
           "reading": "つめたいみずがのみたいです。",
+          "romaji": "tsumetai mizu ga nomitai desu.",
           "english": "I want to drink some cold water."
         },
         {
           "japanese": "日本で何を食べたいですか。",
           "reading": "にほんでなにをたべたいですか。",
+          "romaji": "nihon de nani o tabetai desu ka.",
           "english": "What do you want to eat in Japan?"
         },
         {
           "japanese": "今日はどこへも行きたくないです。",
           "reading": "きょうはどこへもいきたくないです。",
+          "romaji": "kyō wa doko e mo ikitakunai desu.",
           "english": "I don't want to go anywhere today."
         },
         {
           "japanese": "妹は外で遊びたがっています。",
           "reading": "いもうとはそとであそびたがっています。",
+          "romaji": "imōto wa soto de asobitagatte imasu.",
           "english": "My little sister wants to play outside.",
           "note": "For someone else, たがっている describes the wish you can see."
         }
@@ -3140,6 +3542,16 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "717a9d189872294fa9663997d985f752d3d265799ac625cf5cc9012f189b30cf"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "e01e7e94ca95fbc1e73feaac129a68a419c7503a9dc3cd7db9a0a09238b36734",
+            "note": "The explanation, formation, examples, and distinctions are accurate."
           }
         ]
       }
@@ -3169,17 +3581,20 @@
         {
           "japanese": "日曜日は本を読んだり、テレビを見たりします。",
           "reading": "にちようびはほんをよんだり、テレビをみたりします。",
+          "romaji": "nichiyōbi wa hon o yondari, terebi o mitari shimasu.",
           "english": "On Sundays I do things like read books and watch TV."
         },
         {
           "japanese": "夏休みは海で泳いだり、友だちと遊んだりしました。",
           "reading": "なつやすみはうみでおよいだり、ともだちとあそんだりしました。",
+          "romaji": "natsuyasumi wa umi de oyoidari, tomodachi to asondari shimashita.",
           "english": "In the summer holidays I swam in the sea, played with friends and so on.",
           "note": "The past tense is on the final する only."
         },
         {
           "japanese": "今日は雨が降ったりやんだりしています。",
           "reading": "きょうはあめがふったりやんだりしています。",
+          "romaji": "kyō wa ame ga futtari yandari shite imasu.",
           "english": "Today the rain keeps starting and stopping.",
           "note": "The alternating use: two opposite actions taking turns."
         }
@@ -3247,6 +3662,16 @@
             "verdict": "agree",
             "content_sha256": "46fbdc876777da1450f7e927ff950fea637b2d281c171620d548bbf7295212f8",
             "note": "Correctly covers illustrative lists, single-example uses, and alternation. The examples, readings, and correction are sound."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "4e38384363a83694e72947704a60adeeac2f52686b455d14cff55deab093aacc",
+            "note": "The sample-listing and alternating uses are accurately explained; the examples and their transcriptions are correct."
           }
         ]
       }
@@ -3272,16 +3697,19 @@
         {
           "japanese": "日本へ行ったことがありますか。",
           "reading": "にほんへいったことがありますか。",
+          "romaji": "nihon e itta koto ga arimasu ka.",
           "english": "Have you ever been to Japan?"
         },
         {
           "japanese": "私は富士山に登ったことがあります。",
           "reading": "わたしはふじさんにのぼったことがあります。",
+          "romaji": "watashi wa fujisan ni nobotta koto ga arimasu.",
           "english": "I have climbed Mount Fuji."
         },
         {
           "japanese": "すしはまだ食べたことがありません。",
           "reading": "すしはまだたべたことがありません。",
+          "romaji": "sushi wa mada tabeta koto ga arimasen.",
           "english": "I’ve never had sushi yet."
         }
       ],
@@ -3334,6 +3762,16 @@
             "verdict": "agree",
             "content_sha256": "6504d7ee6b420c73e1a83eaba52d01b73bfa66262ac2aa60fa9b3098b590ca4e",
             "note": "The explanation, formation, examples, and contextual diagnosis of the lunch question are accurate. The level is plausible."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "199490dbf48042eda072495766b9e07ea1c69794ad6b1f56b28ee6809deae43e",
+            "note": "The experience meaning and its distinction from recent completion are accurately explained."
           }
         ]
       }
@@ -3359,16 +3797,19 @@
         {
           "japanese": "かばんの中に本やノートがあります。",
           "reading": "かばんのなかにほんやノートがあります。",
+          "romaji": "kaban no naka ni hon ya nōto ga arimasu.",
           "english": "There are books, notebooks and so on in my bag."
         },
         {
           "japanese": "机の上にペンや消しゴムなどがあります。",
           "reading": "つくえのうえにペンやけしゴムなどがあります。",
+          "romaji": "tsukue no ue ni pen ya keshigomu nado ga arimasu.",
           "english": "There are pens, erasers and other things on the desk."
         },
         {
           "japanese": "休みの日は掃除や洗濯をします。",
           "reading": "やすみのひはそうじやせんたくをします。",
+          "romaji": "yasumi no hi wa sōji ya sentaku o shimasu.",
           "english": "On my days off I do things like cleaning and laundry.",
           "note": "掃除 and 洗濯 are nouns here, so や can join them."
         }
@@ -3436,6 +3877,16 @@
             "verdict": "agree",
             "content_sha256": "80a779c6ab7ab2a684df32f7dcdf305cc8977d4b2a3b43ed148ed3d5d99c28c4",
             "note": "Accurately explains illustrative noun lists and their contrast with と and ～たり～たりする."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "ff96c0ecde8234d08e7b4febcec17b22ecd66670123ad75cc80529ce26042f41",
+            "note": "The illustrative-list meaning, noun formation, examples, and contrast with と are accurate."
           }
         ]
       }
@@ -3469,18 +3920,21 @@
         {
           "japanese": "すみません、今日は早く帰ります。頭が痛いんです。",
           "reading": "すみません、きょうははやくかえります。あたまがいたいんです。",
+          "romaji": "sumimasen, kyō wa hayaku kaerimasu. atama ga itai n desu.",
           "english": "Sorry, I’m going home early today. I have a headache.",
           "note": "んです gives the reason behind leaving early."
         },
         {
           "japanese": "どうしたんですか。",
           "reading": "どうしたんですか。",
+          "romaji": "dō shita n desu ka.",
           "english": "What’s wrong? / What happened?",
           "note": "Asked when you notice something seems wrong."
         },
         {
           "japanese": "その本、いいですね。どこで買ったんですか。",
           "reading": "そのほん、いいですね。どこでかったんですか。",
+          "romaji": "sono hon, ii desu ne. doko de katta n desu ka.",
           "english": "That book looks good. Where did you buy it?",
           "note": "Asking about something you have just noticed."
         }
@@ -3560,6 +4014,16 @@
             "verdict": "agree",
             "content_sha256": "91f6aac8d11efe32d521472a119858cecf85c4246cb29fe1b74af6a0dec875ac",
             "note": "The explanatory and background-setting uses are accurately described, with appropriate cautions about context and tone. Formation, examples, and correction are correct."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "8cb3c7dbd1c9f4e174998d6bd5e08e8b3b85bb1075a85ad0c6367f17129c1086",
+            "note": "The explanatory framing, contextual guidance, formation, and examples are accurate."
           }
         ]
       }
@@ -3593,21 +4057,25 @@
         {
           "japanese": "昨日の夜、食べすぎました。",
           "reading": "きのうのよる、たべすぎました。",
+          "romaji": "kinō no yoru, tabesugimashita.",
           "english": "I ate too much last night."
         },
         {
           "japanese": "このかばんは高すぎます。",
           "reading": "このかばんはたかすぎます。",
+          "romaji": "kono kaban wa takasugimasu.",
           "english": "This bag is too expensive."
         },
         {
           "japanese": "この町は静かすぎます。",
           "reading": "このまちはしずかすぎます。",
+          "romaji": "kono machi wa shizukasugimasu.",
           "english": "This town is too quiet."
         },
         {
           "japanese": "この問題は難しすぎて、わかりません。",
           "reading": "このもんだいはむずかしすぎて、わかりません。",
+          "romaji": "kono mondai wa muzukashisugite, wakarimasen.",
           "english": "This question is too hard; I can't understand it.",
           "note": "すぎて gives the reason for the problem."
         }
@@ -3682,6 +4150,16 @@
             "verdict": "agree",
             "content_sha256": "d8711e57d0f9e1174388cb9e4f8403cd7387d60d287adbb3ac001e61cb03e56a",
             "note": "The meaning, conjugation, adjective exceptions, and casual praise use are accurate. All examples and the learner-error correction are correct."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "1bb006588a652ab3fc856b04fa54b79b8517bb2a84565db3f5b6739f69ec509d",
+            "note": "The formation rules, including the noted adjective exceptions, and all examples are correct."
           }
         ]
       }
@@ -3719,21 +4197,25 @@
         {
           "japanese": "今日は早く寝たほうがいいですよ。",
           "reading": "きょうははやくねたほうがいいですよ。",
+          "romaji": "kyō wa hayaku neta hō ga ii desu yo.",
           "english": "You'd better go to bed early today."
         },
         {
           "japanese": "午後は雨ですから、傘を持っていったほうがいいですよ。",
           "reading": "ごごはあめですから、かさをもっていったほうがいいですよ。",
+          "romaji": "gogo wa ame desu kara, kasa o motte itta hō ga ii desu yo.",
           "english": "It's going to rain this afternoon, so you should take an umbrella."
         },
         {
           "japanese": "この水は飲まないほうがいいです。",
           "reading": "このみずはのまないほうがいいです。",
+          "romaji": "kono mizu wa nomanai hō ga ii desu.",
           "english": "You'd better not drink this water."
         },
         {
           "japanese": "薬を飲んだほうがいいと思います。",
           "reading": "くすりをのんだほうがいいとおもいます。",
+          "romaji": "kusuri o nonda hō ga ii to omoimasu.",
           "english": "I think you should take some medicine.",
           "note": "と思います makes the advice softer."
         }
@@ -3805,6 +4287,16 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "cad7b5ce51b8b338c0226f2b8a2ccbfb159758206bf3b49a10458d009594e9ee"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "e3227cc6ffb027eab5e218a7fd3645d1f767f6afbb691baf5bd857351d18415f",
+            "note": "The advice constructions, qualifications about alternative forms, and examples are accurate."
           }
         ]
       }
@@ -3834,16 +4326,19 @@
         {
           "japanese": "雨が降っているので、今日は家にいます。",
           "reading": "あめがふっているので、きょうはいえにいます。",
+          "romaji": "ame ga futte iru node, kyō wa ie ni imasu.",
           "english": "It’s raining, so I’ll stay home today."
         },
         {
           "japanese": "明日はテストなので、早く寝ます。",
           "reading": "あしたはテストなので、はやくねます。",
+          "romaji": "ashita wa tesuto na node, hayaku nemasu.",
           "english": "I have a test tomorrow, so I’ll go to bed early."
         },
         {
           "japanese": "すみません、電車が遅れたので、遅くなりました。",
           "reading": "すみません、でんしゃがおくれたので、おそくなりました。",
+          "romaji": "sumimasen, densha ga okureta node, osoku narimashita.",
           "english": "I’m sorry, I’m late because the train was delayed.",
           "note": "An apology: ので is a common choice for explaining yourself."
         }
@@ -3903,6 +4398,15 @@
             "verdict": "agree",
             "content_sha256": "3b4447f4ff62154b49320efbc94132fa690d7dfc2df78f85fcc7a8da3cbb766e",
             "note": "The explanation, examples, readings, translations, and principal contrast with から are accurate; the level is plausible."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "d5e4fbedcad2922e4ce89a96204e0f84c92443390e9bdd494001b868ccff40c6"
           }
         ]
       }
@@ -3936,16 +4440,19 @@
         {
           "japanese": "明日は早く起きなくちゃいけない。",
           "reading": "あしたははやくおきなくちゃいけない。",
+          "romaji": "ashita wa hayaku okinakucha ikenai.",
           "english": "I have to get up early tomorrow."
         },
         {
           "japanese": "もう九時だ。帰らなくちゃ。",
           "reading": "もうくじだ。かえらなくちゃ。",
+          "romaji": "mō kuji da. kaeranakucha.",
           "english": "It's already nine. I have to go home."
         },
         {
           "japanese": "毎日、薬を飲まなければなりません。",
           "reading": "まいにち、くすりをのまなければなりません。",
+          "romaji": "mainichi, kusuri o nomanakereba narimasen.",
           "english": "I have to take medicine every day.",
           "note": "The formal relative, for polite speech or writing."
         }
@@ -4013,6 +4520,15 @@
             "date": "2026-09-24",
             "verdict": "agree",
             "content_sha256": "7f3a384c55ebbfa3bd62bf5b6ccb3834235d9acc0b7a5d76c262b14215ced1dd"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "2a7aa44719daec69e9899e162a6ffc4292541cee578e751b7b5750afb887d26a"
           }
         ]
       }
@@ -4046,17 +4562,20 @@
         {
           "japanese": "明日は雨が降るでしょう。",
           "reading": "あしたはあめがふるでしょう。",
+          "romaji": "ashita wa ame ga furu deshō.",
           "english": "It will probably rain tomorrow.",
           "note": "The typical weather-forecast sentence."
         },
         {
           "japanese": "田中さんはたぶん来ないでしょう。",
           "reading": "たなかさんはたぶんこないでしょう。",
+          "romaji": "tanaka-san wa tabun konai deshō.",
           "english": "Mr Tanaka probably won’t come."
         },
         {
           "japanese": "この店のケーキ、おいしいでしょう？",
           "reading": "このみせのケーキ、おいしいでしょう？",
+          "romaji": "kono mise no kēki, oishii deshō?",
           "english": "The cakes at this shop are good, aren’t they?",
           "note": "Rising intonation: the speaker expects agreement."
         }
@@ -4136,6 +4655,15 @@
             "verdict": "agree",
             "content_sha256": "544212e16b51533c4d6063fd90f2a1f850ba8aef031794b1c1a4f42b194dc4ce",
             "note": "The entry correctly distinguishes conjecture from confirmation-seeking and gives appropriate formation and register guidance. The examples and correction are sound."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "6f619e013e9fd0c7ebb8218f73565389ae95ca5fb80e1b16b9fdba3c0e698412"
           }
         ]
       }
@@ -4165,17 +4693,20 @@
         {
           "japanese": "寝る前に歯をみがきます。",
           "reading": "ねるまえにはをみがきます。",
+          "romaji": "neru mae ni ha o migakimasu.",
           "english": "I brush my teeth before I go to bed."
         },
         {
           "japanese": "日本へ来る前に、少し日本語を勉強しました。",
           "reading": "にほんへくるまえに、すこしにほんごをべんきょうしました。",
+          "romaji": "nihon e kuru mae ni, sukoshi nihongo o benkyō shimashita.",
           "english": "Before I came to Japan, I studied a little Japanese.",
           "note": "来る stays in the dictionary form; the past is on 勉強しました."
         },
         {
           "japanese": "食事の前に手を洗いましょう。",
           "reading": "しょくじのまえにてをあらいましょう。",
+          "romaji": "shokuji no mae ni te o araimashō.",
           "english": "Let’s wash our hands before the meal."
         }
       ],
@@ -4228,6 +4759,15 @@
             "verdict": "agree",
             "content_sha256": "8a44a5cd3bd451a55f6e666ef39b24c28ea7974f180bcb43a4b7ade9179ba5c3",
             "note": "The formation, relative-time explanation, examples, readings, translations, and correction are accurate; the level is plausible."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "90a2c1611ad03d175162e0fc5fb0f4a0b9210e40c3784cd4afaa5970a9ebcabc"
           }
         ]
       }
@@ -4236,9 +4776,9 @@
       "id": "OJG-0040",
       "pattern": "～てから",
       "title": "After doing something, then…",
-      "meaning": "V-てから Y: do V first, then Y; V is completed before Y begins.",
+      "meaning": "V-てから Y: after V, Y; also, since V.",
       "when": "Use it to say one action comes first and another follows it, especially when the order matters: wash your hands, then eat; finish homework, then go out. A second common use counts time from an event: 日本に来てから一年, “a year since I came to Japan”. ～たあとで also means “after”, and the two often overlap; ～てから tends to stress that the first action is done first, while ～たあとで tends to focus on the time that follows.",
-      "why": "から marks a starting point. After the て-form of a verb, it makes the completion of that action the point from which the next one starts: 洗ってから is “starting from having washed”. That is why the pattern says the first action is finished before the second begins, and why it can also measure time since something happened. The tense and politeness go on the final verb, not on the て-form. After a plain form such as 帰った, から means “because” instead, so the form before から decides the meaning.",
+      "why": "から marks a starting point. After a verb’s て-form, it sets an earlier event or situation as the starting point for what follows: 洗ってから is “starting from having washed”. In a sequence of actions, the first is normally finished before the next begins. In the “since” use, the starting point can be the beginning of a situation that is still going on: 東京に住んでから、もう十年になります. The tense and politeness go on the final verb, not on the て-form. After a plain form such as 帰った, から means “because” instead, so the form before から decides the meaning.",
       "formation": [
         {
           "form": "V (て-form) + から、main clause",
@@ -4253,16 +4793,19 @@
         {
           "japanese": "手を洗ってから、ご飯を食べます。",
           "reading": "てをあらってから、ごはんをたべます。",
+          "romaji": "te o aratte kara, gohan o tabemasu.",
           "english": "I wash my hands, then eat."
         },
         {
           "japanese": "宿題をしてから、遊びに行きました。",
           "reading": "しゅくだいをしてから、あそびにいきました。",
+          "romaji": "shukudai o shite kara, asobi ni ikimashita.",
           "english": "I did my homework and then went out to play."
         },
         {
           "japanese": "日本に来てから、一年になります。",
           "reading": "にほんにきてから、いちねんになります。",
+          "romaji": "nihon ni kite kara, ichinen ni narimasu.",
           "english": "It has been a year since I came to Japan.",
           "note": "The second use: time counted from an event."
         }
@@ -4324,6 +4867,26 @@
             "verdict": "agree",
             "content_sha256": "a1e4ae2c584fb7b0993e79f81b5b602e211b40e8dd7ffaeacd6c347081ba447b",
             "note": "The explanation, formation, examples, readings, translations, and contrasts are accurate. The mistake correctly distinguishes causal 帰ったから from temporal 帰ってから, and N5 is a plausible level."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "disagree",
+            "content_sha256": "0051d6f34b27b0911f4d56d71a010cf02f33f331c93ddf7e6f37aed31247f532",
+            "note": "The meaning and reasoning overstate completion: ～てから does not always mean that V has finished. In its “since” use, it can establish the beginning of an ongoing situation: 東京に住んでから、もう十年になります means “It has already been ten years since I started living in Tokyo,” without implying that the residence ended. Replace the meaning with “V-てから Y: after V, Y; also, since V.” Replace the first two sentences of the reasoning with “から marks a starting point. After a verb’s て-form, it establishes an earlier event or situation as the starting point for what follows. In action sequences, the first action is normally completed before the next begins; in the ‘since’ use, the starting point can be the beginning of a situation that continues.” The examples and their translations are correct."
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "da369eacb13239225d7cb04d13a6806fc85fd64cba9b4cebdc86a76b3082d01f",
+            "note": "The explanation, formation, examples, and contrasts are accurate."
           }
         ]
       }

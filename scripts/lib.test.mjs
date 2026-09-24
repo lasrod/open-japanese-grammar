@@ -50,3 +50,15 @@ test('a native agreement outranks AI objections, not a native objection', () => 
   assert.equal(earnedStatus(entry([{ ...gpt, verdict: 'disagree' }, native('Aiko', 'agree')])), 'native-reviewed');
   assert.equal(earnedStatus(entry([native('Aiko', 'agree'), native('Ken', 'disagree')])), null);
 });
+
+test('romaji may not contain kana or kanji, halfwidth and rarer blocks included', async () => {
+  const { readFileSync } = await import('node:fs');
+  const { default: Ajv2020 } = await import('ajv/dist/2020.js');
+  const schema = JSON.parse(readFileSync(new URL('../schemas/grammar_level.schema.json', import.meta.url), 'utf8'));
+  const ajv = new Ajv2020({ allowUnionTypes: true });
+  ajv.addSchema(schema);
+  const check = ajv.getSchema(`${schema.$id}#/$defs/japanese`);
+  const example = (romaji) => ({ japanese: '猫です。', reading: 'ねこです。', english: 'It is a cat.', romaji });
+  assert.equal(check(example('neko desu.')), true);
+  for (const bad of ['ｶ', '㐀', '漢', 'ねこ', 'ー']) assert.equal(check(example(bad)), false, bad);
+});

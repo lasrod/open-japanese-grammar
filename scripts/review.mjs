@@ -82,6 +82,7 @@ Check, and agree only if all hold:
 - The explanation (when) and the reasoning (why) are true of Japanese as it is used today, and the reasoning would let a learner apply the point to sentences the entry does not show. Nothing is overstated.
 - The formation is correct and complete for the uses described.
 - Every example is natural, correct Japanese that uses the point; its reading is the whole sentence in kana and matches the Japanese exactly; its English is faithful.
+- Where an example has romaji, it is modified Hepburn that follows the reading exactly: particles は/へ/を as wa/e/o; long vowels with macrons (おう/おお → ō, うう → ū, katakana ー → a macron); えい as ei; ん as n, and n' before a vowel or y; っ doubling the next consonant; lower case, particles as separate words, て-forms separate from a following helper verb.
 - The mistake is one learners really make, the problem is diagnosed correctly, and the right version is correct.
 - Each distinguish_from note states the difference accurately.
 - The meaning line is faithful to the entry. The level is plausible (lists disagree; flag only a clear misplacement).

@@ -63,6 +63,12 @@
         },
         "note": {
           "$ref": "#/$defs/text"
+        },
+        "romaji": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[^\\p{Script=Han}\\p{Script=Hiragana}\\p{Script=Katakana}\\u30FC\\uFF70]+$",
+          "description": "Modified Hepburn for the whole sentence, following the reading: particles は/へ/を as wa/e/o, long vowels with macrons (ō, ū; katakana ー too), えい as ei, n before b/m/p, n’ before a vowel or y."
         }
       }
     },
