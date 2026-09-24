@@ -28,7 +28,7 @@ A **stub** needs `id`, `pattern`, `levels`, `references` and `review`
 | `when` | When to use it | What the point does in a sentence, and the situations it is for. |
 | `why` | Why it works this way | The reasoning a learner could rebuild the rule from. |
 | `formation` | How it is formed | One or more `form`s, each with an optional `note`. |
-| `examples` | Examples | At least two, each with `japanese`, a full kana `reading`, and `english`. |
+| `examples` | Examples | At least two, each with `japanese`, a full kana `reading`, and `english`; `romaji` (modified Hepburn, following the reading) is optional and reviewed like the rest. |
 | `mistake` | A common mistake | `wrong`, `problem`, `right`: a sentence learners really produce, what is wrong with it, and the fix. |
 
 Optional: `distinguish_from` (neighbouring points and the difference) and
