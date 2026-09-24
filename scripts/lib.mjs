@@ -45,20 +45,47 @@ export function contentHash(entry) {
 
 /**
  * The status an entry's reviews earn. ai-reviewed needs two AI providers in
- * agreement on the current text: the drafting model counts as one, and a
- * review of an earlier version counts for nothing. native-reviewed needs a
- * named native speaker's agreement on the current text.
+ * agreement on the current text, the drafting model counting as one, and no
+ * objection to that text from anyone. A review of an earlier version counts
+ * for nothing. native-reviewed needs a named native speaker's agreement on
+ * the current text, and outranks an AI objection.
  */
 export function earnedStatus(entry) {
   const hash = contentHash(entry);
-  const current = (entry.review?.reviews ?? []).filter(
-    (r) => r.verdict === 'agree' && r.content_sha256 === hash,
+  // Each reviewer's rulings on this text all count, in order, except that a
+  // reconsidered ruling replaces that reviewer's earlier ones, and only when
+  // the author wrote a rebuttal to that reviewer about this text. A second
+  // ordinary ruling cannot replace an objection.
+  const rebutted = new Set(
+    (entry.review?.rebuttals ?? [])
+      .filter((b) => b.content_sha256 === hash)
+      .map((b) => reviewerKey(b.against)),
   );
-  if (current.some((r) => r.kind === 'native')) return 'native-reviewed';
+  const byReviewer = new Map();
+  for (const r of entry.review?.reviews ?? []) {
+    if (r.content_sha256 !== hash) continue;
+    const key = reviewerKey(r);
+    const valid = r.reconsidered && r.kind === 'ai' && rebutted.has(key);
+    byReviewer.set(key, valid ? [r] : [...(byReviewer.get(key) ?? []), r]);
+  }
+  const onText = [...byReviewer.values()].flat();
+  // Any objection to this text blocks, a native speaker's included; a native
+  // agreement outranks only AI objections.
+  const objections = onText.filter((r) => r.verdict !== 'agree');
+  const current = onText.filter((r) => r.verdict === 'agree');
+  if (current.some((r) => r.kind === 'native') && !objections.some((r) => r.kind === 'native')) {
+    return 'native-reviewed';
+  }
+  if (objections.length) return null;
   const providers = new Set(current.filter((r) => r.kind === 'ai' && r.provider).map((r) => r.provider));
   const drafter = entry.review?.drafted_by?.provider;
   if (drafter && drafter !== 'human') providers.add(drafter);
   return providers.size >= 2 ? 'ai-reviewed' : null;
+}
+
+/** A reviewer is a kind and a provider and a model; a human is their name. */
+export function reviewerKey(r) {
+  return `${r?.kind ?? 'ai'}|${r?.provider ?? r?.by ?? ''}|${r?.model ?? ''}`;
 }
 
 export function writeLevelFile(file, header) {

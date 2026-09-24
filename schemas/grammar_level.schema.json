@@ -317,6 +317,10 @@
                     "type": "string",
                     "pattern": "^[a-f0-9]{64}$",
                     "description": "The entry this review judged, without its review block. A later edit makes the review stale."
+                  },
+                  "reconsidered": {
+                    "type": "boolean",
+                    "description": "A ruling given after reading the author's rebuttal to this reviewer's earlier objection."
                   }
                 }
               }
@@ -340,6 +344,61 @@
                 "model": {
                   "type": "string",
                   "minLength": 1
+                }
+              }
+            },
+            "rebuttals": {
+              "type": "array",
+              "description": "An author disputing a review of the current text, in writing. Only with one can the reviewer be asked to reconsider.",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "content_sha256",
+                  "note",
+                  "against"
+                ],
+                "properties": {
+                  "content_sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$"
+                  },
+                  "by": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "note": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "against": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "kind",
+                      "provider",
+                      "model"
+                    ],
+                    "description": "The reviewer whose objection this answers.",
+                    "properties": {
+                      "kind": {
+                        "enum": [
+                          "ai"
+                        ]
+                      },
+                      "provider": {
+                        "enum": [
+                          "anthropic",
+                          "openai",
+                          "google"
+                        ]
+                      },
+                      "model": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    }
+                  }
                 }
               }
             }

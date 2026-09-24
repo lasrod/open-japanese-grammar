@@ -6,6 +6,44 @@ level: N5
 entries:
   - id: OJG-0001
     pattern: です
+    title: Saying what something is, politely
+    meaning: 'です: ends a noun or adjective sentence politely; after a noun it links the topic to what it is ("X is Y").'
+    when: "Use it at the end of a sentence whose main word is a noun or an adjective, when you are speaking politely: これは本です, 静かです, 高いです. It changes form for the negative (じゃありません), the past (でした) and questions (ですか). With a noun or a な-adjective it says what the topic is or what it is like; with an い-adjective it only makes the sentence polite."
+    why: 'です does two jobs at once. After a noun or a な-adjective it is what links the topic to its description, and its plain counterpart is だ: 学生です, 学生だ. It also marks the sentence as polite. An い-adjective is already a complete predicate on its own (高い already means "is expensive"), so です after it adds only politeness. That is why the tense and the negative go on the い-adjective itself: 高かったです, 高くないです, not 高いでした. です describes and identifies; it does not usually say that something exists or is present somewhere. "There is a cat" uses あります／います, not です.'
+    formation:
+      - form: Noun / な-adjective + です
+        note: "Past: でした. Question: add か, as in 学生ですか."
+      - form: Noun / な-adjective + じゃありません
+        note: "Also ではありません, which sounds more formal, and じゃないです, which is very common in speech. Past negative: じゃありませんでした / じゃなかったです."
+      - form: い-adjective + です
+        note: "Tense and negation go on the adjective: 高かったです, 高くないです (or 高くありません)."
+    examples:
+      - japanese: これは私のかばんです。
+        reading: これはわたしのかばんです。
+        english: This is my bag.
+      - japanese: 田中さんは学生じゃありません。
+        reading: たなかさんはがくせいじゃありません。
+        english: Mr Tanaka is not a student.
+      - japanese: 昨日は雨でした。
+        reading: きのうはあめでした。
+        english: It rained yesterday.
+        note: 'Literally "yesterday was rain": a noun sentence in the past.'
+      - japanese: この部屋は静かです。
+        reading: このへやはしずかです。
+        english: This room is quiet.
+    mistake:
+      wrong: 昨日は楽しいでした。
+      problem: 楽しい is an い-adjective, so it carries its own past tense. でした is the past of です after a noun or a な-adjective, not after an い-adjective.
+      right: 昨日は楽しかったです。
+    distinguish_from:
+      - id: OJG-0009
+        note: です says what something is or is like (これはペンです). ～があります says that a thing exists or is somewhere (ペンがあります).
+      - id: OJG-0010
+        note: For people and animals, being somewhere is ～がいます (猫がいます), not です.
+      - id: OJG-0038
+        note: "でしょう is a guess built on the same ending: 雨です states it, 雨でしょう says it is probably so."
+    register:
+      - polite
     levels:
       commonly: N5
       listed:
@@ -17,9 +55,60 @@ entries:
       - source_id: tanos
         ref: 535
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Left out on purpose: sentences where です stands in for a verb in context (僕はコーヒーです when ordering, 田中さんは会議室です for 'is in the meeting room'). They are natural but would blur the 'describes, does not say where' line; the entry says 'does not usually' to leave room. Please confirm the relative formality given for ではありません / じゃありません / じゃないです is stated as a tendency, not a rule."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 4ba16227daf027a8d58db4e05b470723ad455175d1aa236c3e9629835667a0b5
   - id: OJG-0002
     pattern: も
+    title: Also, too, and not … either
+    meaning: 'も adds a word as one more case of what was said: "also", "too"; with a negative verb, "not … either".'
+    when: "Use it on a word to say the same thing is true of it as well: 私も学生です, \"I am a student too\". With a negative it gives \"not … either\". AもBも says \"both A and B\" (or \"neither A nor B\" with a negative). A question word + も + a negative verb says \"not any\": 何も食べません, \"I don't eat anything\"."
+    why: 'も says "this one as well": it adds the word it follows to something already said or understood. So it goes directly on the word that is "also" true, and moving it changes the meaning: 私もコーヒーを飲みます is "I too drink coffee", and 私はコーヒーも飲みます is "I drink coffee too (as well as other things)". も takes the place of は, が and を; you do not stack them (not はも, がも). After other particles, も is added on: 東京にも, 友だちとも. With a question word and a negative verb, も gives "not a single one": 何も, だれも. With some question words and a positive, the result is a fixed word: いつも, "always".'
+    formation:
+      - form: Noun + も
+        note: "Replaces は, が or を: 私も, 本も."
+      - form: Noun + particle + も
+        note: "に, で, と, から and others stay: 日曜日にも, 友だちとも."
+      - form: Noun A + も + Noun B + も
+        note: '"Both A and B"; with a negative verb, "neither A nor B".'
+      - form: Question word + も + negative verb
+        note: 何も～ません "nothing", だれも～ません "nobody".
+    examples:
+      - japanese: 私も学生です。
+        reading: わたしもがくせいです。
+        english: I am a student too.
+      - japanese: 田中さんはコーヒーも飲みます。
+        reading: たなかさんはコーヒーものみます。
+        english: Mr Tanaka drinks coffee too.
+        note: も is on コーヒー, so coffee is the added item, not Mr Tanaka.
+      - japanese: 犬も猫も好きです。
+        reading: いぬもねこもすきです。
+        english: I like both dogs and cats.
+      - japanese: 今朝は何も食べませんでした。
+        reading: けさはなにもたべませんでした。
+        english: I didn't eat anything this morning.
+    mistake:
+      wrong: 私はも学生です。
+      problem: も replaces は; the two are not used together. Put も directly on the word that is "also" true.
+      right: 私も学生です。
+    distinguish_from:
+      - id: OJG-0008
+        note: Both can go on the topic. は sets it up, often in contrast with others; も says it is one more case of what was already said.
+      - id: OJG-0011
+        note: AとB lists items together; AもBも stresses that the same is true of each, "both A and B".
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -31,9 +120,59 @@ entries:
       - source_id: tanos
         ref: 536
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Not covered: も after a number or amount for emphasis (三時間も, 'as much as three hours'), and をも in formal writing. Question: is the statement that も 'replaces を' fine at this level, given that をも exists in written style?"
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: e3c2718929c1718561603ad2930cf6922073a3cbdc03b25859d3e9ec164c7239
   - id: OJG-0003
     pattern: で
+    title: Where an action happens, and what it is done with
+    meaning: "で marks the setting or the means of an action: where it happens, or with what, by what, or in what language."
+    when: Use it for the place where an action happens (図書館で勉強します), the tool or means (はしで食べます, バスで行きます), the language (日本語で話します), and a total or a way of doing something counted in people (全部で千円, 一人で行きます).
+    why: 'で marks the setting an action happens in, or what the action is carried out with: the frame around the action, not its goal. That is why a place takes で when something is done there, and に when something simply is there: 部屋で勉強します, but 部屋に猫がいます. Verbs of existing and staying, such as ある, いる and 住む, normally take に. An event, though, is something that happens, so where it takes place takes で even with ある: パーティーは友だちの家であります. The means and tool uses follow from the same idea: バスで is "by way of the bus", and 日本語で is "by way of Japanese".'
+    formation:
+      - form: Place + で + action verb
+        note: Where the action happens.
+      - form: Tool / vehicle / language + で
+        note: はしで, 電車で, 日本語で.
+      - form: Amount / number of people + で
+        note: 全部で "altogether", 一人で "on my own", 二人で "the two of us".
+    examples:
+      - japanese: 図書館で本を読みます。
+        reading: としょかんでほんをよみます。
+        english: I read books at the library.
+      - japanese: バスで学校へ行きます。
+        reading: バスでがっこうへいきます。
+        english: I go to school by bus.
+      - japanese: 日本語で話してください。
+        reading: にほんごではなしてください。
+        english: Please speak in Japanese.
+      - japanese: 全部で千円です。
+        reading: ぜんぶでせんえんです。
+        english: That's 1,000 yen altogether.
+    mistake:
+      wrong: 図書館に勉強します。
+      problem: Studying is an action, and the library is where it happens, so the place takes で. に would mark where something is, or where someone goes.
+      right: 図書館で勉強します。
+    distinguish_from:
+      - id: OJG-0005
+        note: Place + に says where something is (公園に子どもがいます); place + で says where an action happens (公園で遊びます).
+      - id: OJG-0004
+        note: In バスで学校に行きます, で marks how you go and に／へ marks where you arrive.
+      - id: OJG-0011
+        note: 友だちと marks who you do it with; 一人で says you do it alone.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -45,9 +184,57 @@ entries:
       - source_id: tanos
         ref: 537
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Not covered: で for a cause with a noun (風邪で休みました), material (木で作る), and the て-form of だ (学生で、…), which looks the same but is not the particle. Should cause be added here at N5, or left to a later entry?"
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: eaab157f9cf772d32c5a8add6a557fa6dc63faa99de9507d8e59653f4f8a4d16
   - id: OJG-0004
-    pattern: に/へ
+    pattern: に／へ
+    title: Where you are going
+    meaning: "に／へ after a place with a verb of movement: where someone goes, comes, returns or arrives."
+    when: "Use it on the destination of a verb of movement such as 行く, 来る, 帰る, 着く or 入る: 学校に行きます, 日本へ来ました. This entry covers only destinations; に's other uses (time, where something is, the person an action is aimed at) are OJG-0005. へ is written with the kana へ but pronounced え."
+    why: 'に marks the point something ends up at, and へ marks the direction something heads in. With 行く, 来る and 帰る the two describe the same trip, so in everyday use they are largely interchangeable: 京都に行きます and 京都へ行きます mean the same. The difference shows at the edges. With verbs of arriving or entering, such as 着く and 入る, に is the usual choice, because the point is reaching the place. Only へ can be followed by の to make a phrase that modifies a noun: 母への手紙, "a letter to my mother". Some learners mark the destination with を, as in English "visit Japan"; を with a verb of movement marks the ground you move along or leave, not where you arrive (OJG-0006).'
+    formation:
+      - form: Place + に + verb of movement
+        note: Focus on arriving at the place. Usual with 着く and 入る.
+      - form: Place + へ + verb of movement
+        note: "Focus on the direction. Pronounced え. へ + の modifies a noun: 日本への旅行."
+    examples:
+      - japanese: 明日、京都へ行きます。
+        reading: あした、きょうとへいきます。
+        english: I'm going to Kyoto tomorrow.
+      - japanese: 友だちが私の部屋に来ました。
+        reading: ともだちがわたしのへやにきました。
+        english: A friend came to my room.
+      - japanese: 八時に駅に着きました。
+        reading: はちじにえきにつきました。
+        english: I arrived at the station at eight.
+        note: The first に marks the time (OJG-0005); the second marks the destination.
+    mistake:
+      wrong: 日本を行きたいです。
+      problem: The place you go to is the destination, marked with に or へ. With a verb of movement, を marks the route you pass along or the place you leave.
+      right: 日本に行きたいです。
+    distinguish_from:
+      - id: OJG-0005
+        note: "に also marks times, the place where something exists, and recipients or other targets of an action. へ does not replace the time or existence uses, but with suitable verbs it can mark a recipient or addressee, as in 母へ手紙を送る. It cannot replace every に on a person: 友だちに会う, not 友だちへ会う."
+      - id: OJG-0006
+        note: With a verb of movement, を marks the ground covered or the place left (道を歩く, 家を出る), not the destination.
+      - id: OJG-0003
+        note: で marks how you travel (バスで); に／へ marks where you arrive.
+      - id: OJG-0019
+        note: In 買い物に行く, に marks the purpose of going, not a place.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -59,9 +246,71 @@ entries:
       - source_id: tanos
         ref: 538
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "The claim that に is 'the usual choice' with 着く and 入る is stated as a tendency; 部屋へ入る occurs. Please check it is not overstated. Also left out: へ in written headings and messages (～へ as 'to' on a gift or letter), and に／へ with 送る (sending to a place). Revised after review: the OJG-0005 note no longer says へ has only the direction use; it now allows へ for a recipient with suitable verbs (母へ手紙を送る)."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 26cd8411f969a60b738f66d239be86330c7bbd91476648c7767a49b4f1ceeff6
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 29a0cf877db09ba01915a8fc759cd05651875a8ed0faeb0d34a33cc0e5367dae
   - id: OJG-0005
     pattern: に
+    title: A point in time, where something is, and who an action is aimed at
+    meaning: "に pins something to a point: a time (三時に), the place where something is (机の上に), or the person an action is aimed at."
+    when: 'Use it for a clock time, date, month or year (七時に起きます); for the place where something or someone is, with ある, いる and 住む (机の上に本があります); and for the person or thing an action is directed at: who you give to, write to, phone, ask or meet (母に花をあげます, 友だちに会います). It also appears in rates such as 一日に三回, "three times a day". Destinations of movement (学校に行きます) are OJG-0004.'
+    why: "Across these uses, に fixes something to a point: a point in time, a spot where something sits, a person an action reaches. For time, に goes on times that are points on the calendar or the clock: 三時に, 五月に, 二〇二五年に. Relative-time expressions such as 今日, 明日, 昨日 and 来週 normally appear without に, because they already locate the time relative to now. Recurring-time expressions such as 毎日 and 毎朝 also normally appear without に. Days of the week can go either way: 日曜日に and 日曜日 are both common. For place, に marks location with verbs such as ある, いる and 住む, while で normally marks the setting where an activity takes place, as in 図書館で勉強する (OJG-0003). The choice also depends on the verb and on the role of the place: 椅子に座る uses に for the position someone takes. For people, に marks the one on the receiving end: the one who gets the flowers, the letter or the call."
+    formation:
+      - form: Time + に
+        note: Clock times, dates, months, years. Usually no に with relative times (今日, 明日, 昨日, 今週, 来年) or recurring ones (毎日, 毎朝).
+      - form: Time unit + に + quantity / frequency
+        note: '一日に三回 "three times a day": に marks the unit over which the amount or frequency is counted.'
+      - form: Place + に + ある / いる / 住む
+        note: Where something exists or someone lives.
+      - form: Person + に + あげる / 書く / 電話する / 聞く / 会う …
+        note: The person the action is directed at.
+    examples:
+      - japanese: 毎朝六時に起きます。
+        reading: まいあさろくじにおきます。
+        english: I get up at six every morning.
+        note: 毎朝 normally takes no particle; the clock time takes に.
+      - japanese: 机の上に猫がいます。
+        reading: つくえのうえにねこがいます。
+        english: There is a cat on the desk.
+      - japanese: 母に花をあげました。
+        reading: ははにはなをあげました。
+        english: I gave my mother flowers.
+      - japanese: 駅で友だちに会いました。
+        reading: えきでともだちにあいました。
+        english: I met a friend at the station.
+    mistake:
+      wrong: 昨日に映画を見ました。
+      problem: 昨日 normally works as a time expression on its own, without に. に goes on clock times and dates.
+      right: 昨日映画を見ました。
+    distinguish_from:
+      - id: OJG-0004
+        note: に after a place with a verb of movement marks the destination; that use is its own entry, together with へ.
+      - id: OJG-0003
+        note: "に marks location with verbs of existence and residence; で normally marks the setting of an activity. This is not a rule that every action verb takes で: 椅子に座る."
+      - id: OJG-0009
+        note: In ～に～があります, に marks the place and が marks the thing that is there.
+      - id: OJG-0006
+        note: "Some verbs that take a direct object in English take に in Japanese: 友だちに会う, 電車に乗る."
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -73,9 +322,75 @@ entries:
       - source_id: tanos
         ref: 539
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Time words vary: 朝, 夜, 週末 and seasons are sometimes heard with に and sometimes without. I left them out rather than guess a rule; please say whether a tendency is worth stating at N5. The rate use (一日に三回) is included briefly; is it N5 enough? Revised after review: 毎日 is now described as a recurring-time expression, not one measured from today; the rate use has its own formation line."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: c3da5a2fbd10f638cdb2d4e42001afbf4ee01620448a775e461654c9f0a4d9a6
+          note: "Two corrections are needed. (1) 毎日 is not a time measured relative to today; it expresses recurrence. Replace the relevant explanation with: “Relative-time expressions such as 今日, 明日, 昨日 and 来週 normally appear without に. Recurring-time expressions such as 毎日 and 毎朝 also normally appear without に.” Update the mistake diagnosis accordingly: “昨日 normally functions as a time expression without に; say 昨日映画を見ました.” (2) The entry describes rates but omits their formation. Add: “Time unit + に + quantity/frequency: 一日に三回 ‘three times a day’; に marks the unit over which the quantity or frequency is measured.”"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: 33b455184a0ebad32f2f660e39772979851cfef17c856ed6b513332fbde96cd8
+          note: "The place-particle rule is overstated in why ('an action takes で') and in the OJG-0003 distinction. An action verb does not automatically require で for its place: 椅子に座る marks the position someone assumes, for example. Replace the relevant explanation with: 'に marks location with verbs such as ある, いる and 住む. で normally marks the setting where an activity takes place, as in 図書館で勉強する. The choice also depends on the verb and the place’s role: 椅子に座る uses に for the position someone assumes.' Revise the distinction to: 'に marks location with existence/residence verbs; で normally marks the setting of an activity. This is not a rule that every action verb takes で.'"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 750821e9c60f6ba4d92c524469f6561fe7319b191b0f6a6559fee357ba913c55
+          note: The uses of に, time-expression guidance, formation patterns, examples, and particle contrasts are accurate.
   - id: OJG-0006
     pattern: を
+    title: What an action is done to, and the ground a movement covers
+    meaning: を marks what an action acts on (パンを食べる), and with verbs of movement the route taken or the place left.
+    when: "Use it on the direct object of a verb: what is eaten, read, bought, made (コーヒーを飲みます). With verbs of movement it marks the ground you move along or through (公園を散歩します, 道を歩きます) or the place you leave (家を出ます, 電車を降ります). を is pronounced お."
+    why: 'を marks what the action passes over or works on. For most verbs that is the thing affected: the bread that gets eaten, the letter that gets written. With verbs of movement, the ground covered is treated the same way, as the thing the movement goes over: 道を歩く, "walk along the road"; and a place you leave is what you move away from: 家を出る. Whether a verb takes を is a fact about the Japanese verb, not about its English translation. 会う ("meet") normally marks the person with に or と, and 乗る ("ride") normally marks the vehicle with に. In the basic patterns taught here, わかる ("understand") marks what is understood with が, and 好き and ほしい, which are adjectives, mark what is liked or wanted with が.'
+    formation:
+      - form: Noun + を + verb
+        note: The thing acted on.
+      - form: Place + を + verb of movement
+        note: The route (歩く, 散歩する, 渡る, 走る) or the place left (出る, 降りる).
+    examples:
+      - japanese: 毎朝コーヒーを飲みます。
+        reading: まいあさコーヒーをのみます。
+        english: I drink coffee every morning.
+      - japanese: 昨日、友だちに手紙を書きました。
+        reading: きのう、ともだちにてがみをかきました。
+        english: Yesterday I wrote a letter to a friend.
+      - japanese: 日曜日は公園を散歩しました。
+        reading: にちようびはこうえんをさんぽしました。
+        english: On Sunday I took a walk in the park.
+        note: The park is the ground walked through, so it takes を.
+      - japanese: 八時に家を出ます。
+        reading: はちじにいえをでます。
+        english: I leave home at eight.
+    mistake:
+      wrong: 駅で友だちを会いました。
+      problem: '"Meet" takes a direct object in English, but 会う marks the person met with に (or と, when it is a meeting of both).'
+      right: 駅で友だちに会いました。
+    distinguish_from:
+      - id: OJG-0004
+        note: With verbs of movement, に marks a destination and へ marks the direction toward it; を marks the route covered or the place left.
+      - id: OJG-0005
+        note: に marks the person an action is aimed at (友だちに手紙を書く); を marks the thing acted on (手紙を).
+      - id: OJG-0021
+        note: "好き is an adjective, so what is liked takes が: すしが好きです, 読むのが好きです."
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -87,9 +402,80 @@ entries:
       - source_id: tanos
         ref: 540
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "In casual speech を is often dropped (コーヒー飲む？); not mentioned in the entry. Should it be? The 会う mistake names と as an alternative; please check that 友だちと会う is explained accurately as 'a meeting of both'. Revised after review: particle choices for 会う, 乗る, わかる, 好き and ほしい are now stated as the normal pattern (わかる can take を in some constructions); the OJG-0004 note no longer implies that に／へ means arrival happened."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: f550be65a44bc3f8b7228d9270a22f3e8d58c9b8a75607fbee422772dd55cff6
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: c8865254171990a1d35f9f203b7a67e5388331308a0b321bafb59f257439021c
+          note: The second example is missing を after 手紙, while its reading includes を. Write the Japanese as '昨日、友だちに手紙を書きました。' The existing reading and English then match.
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: c8865254171990a1d35f9f203b7a67e5388331308a0b321bafb59f257439021c
+          reconsidered: true
+          note: "I withdraw the previous objection: the second example already contains を after 手紙, and its reading and English match. The entry meets the review criteria."
+      rebuttals:
+        - content_sha256: c8865254171990a1d35f9f203b7a67e5388331308a0b321bafb59f257439021c
+          by: anthropic/claude-opus-5-5
+          note: "The second example already contains を: it reads 昨日、友だちに手紙を書きました。, and its reading is きのう、ともだちにてがみをかきました。. The sentence, the reading and the English match; the objection appears to have misread the text."
+          against:
+            kind: ai
+            provider: openai
+            model: gpt-6-astra
   - id: OJG-0007
     pattern: ～ませんか
+    title: "Inviting someone: won't you...?"
+    meaning: "V-ませんか: a polite invitation, \"won't you V (with me)?\", that leaves the choice to the listener."
+    when: "Use it to invite someone to do something, often together with you (一緒に映画を見ませんか), or to offer them something to do (お茶を飲みませんか). In another context the same form is a plain negative question: 肉を食べませんか can also ask \"Don't you eat meat?\" The situation and intonation tell them apart."
+    why: "ませんか is a negative question: \"won't you V?\" Asking in the negative does not assume the answer is yes, so it is easy for the listener to decline, and that is why it feels considerate as an invitation. A positive question, 映画を見ますか, tends to be heard as asking about the listener's plans or habits rather than inviting them, although context can make it an invitation too. To accept, people often say いいですね or reply with ましょう (ええ、行きましょう); to decline, they usually soften it (ちょっと…) rather than saying いいえ outright."
+    formation:
+      - form: V (ます-stem) + ませんか
+        note: 行きます → 行きませんか; 食べます → 食べませんか.
+      - form: 一緒に + V-ませんか
+        note: Makes the "with me" explicit.
+      - form: V (plain negative) + ？
+        note: "Casual: 行かない？ with rising intonation."
+    examples:
+      - japanese: 一緒に昼ご飯を食べませんか。
+        reading: いっしょにひるごはんをたべませんか。
+        english: Would you like to have lunch together?
+      - japanese: 日曜日に映画を見に行きませんか。
+        reading: にちようびにえいがをみにいきませんか。
+        english: Would you like to go and see a film on Sunday?
+      - japanese: お茶を飲みませんか。
+        reading: おちゃをのみませんか。
+        english: Would you like some tea?
+        note: An offer to the listener; the speaker need not drink too.
+    mistake:
+      wrong: 一緒に映画を見るませんか。
+      problem: ませんか attaches to the ます-stem, not to the dictionary form. 見る has the stem 見 (見ます), so it is 見ませんか.
+      right: 一緒に映画を見ませんか。
+    distinguish_from:
+      - id: OJG-0012
+        note: ましょう proposes and expects agreement ("let's"); ませんか asks, leaving the listener free to say no.
+      - id: OJG-0013
+        note: ましょうか also asks, but about doing something together or about the speaker doing it for the listener ("shall we / shall I"). ませんか asks whether the listener wants to.
+    register:
+      - polite
+      - spoken
     levels:
       commonly: N5
       listed:
@@ -101,9 +487,68 @@ entries:
       - source_id: tanos
         ref: 541
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: 'Revised after review: the mistake is now a formation error (見るませんか), as the reviewer proposed, because 一緒に映画を見ますか can itself work as an invitation in context. The why still says the positive question "tends to" be heard as asking about plans, with the context caveat; the reviewer did not object to that sentence.'
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: b3f19d9d21963e810b7e69cef2017a4feaf05e20e4c44c28488f9bf5b8b240e8
+          note: "The mistake incorrectly treats 一緒に映画を見ますか as a faulty invitation and says it usually asks about an independently planned activity. With 一緒に and suitable context, it can naturally offer the listener the choice of watching together, as the explanation itself acknowledges. Replace the mistake with a genuine formation error: wrong “一緒に映画を見るませんか。”; problem “ませんか attaches to the ます-stem, not the dictionary form. 見る has the stem 見.”; right “一緒に映画を見ませんか。”"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 1c93eccbbebebd680467d7cbc18815718b458b6415d99bc27717c12e0bb0f584
   - id: OJG-0008
     pattern: は
+    title: Setting up what you are talking about
+    meaning: "は marks the topic: what the sentence is about. What follows says something about it. It can also set up a contrast."
+    when: "Use it to name what you are going to say something about, then say it: 私は学生です, \"As for me, I'm a student\". Use it also to contrast one thing with another: 肉は食べますが、魚は食べません. は is written with the kana は but pronounced わ."
+    why: "は does not mark the subject; it marks the topic, the frame for the rest of the sentence. The topic is often the subject, which is why the two are easy to confuse, but it need not be. In この本はもう読みました, the topic is the book, the thing that was read. In 田中さんは背が高いです, the topic is Mr Tanaka, while the subject of 高い is 背, his height. Because the topic is what you comment on, は tends to go on something already known or already in the conversation, and the new information comes after it. が, by contrast, tends to put the focus on the noun itself, as the new or the answering piece. So a question word asking who or what did something, which is the unknown, is not made the topic: だれが来ましたか, not だれは. Inside a clause that describes a noun, the subject is normally marked with が, not は: 私が作ったケーキ. は normally replaces が or を. It can follow other particles, as in 東京には and 学校では. Whether the other particle stays depends on its job; a time に can be dropped before は, as in 日曜日は."
+    formation:
+      - form: Noun + は …
+        note: Normally replaces が or を when that noun is the topic.
+      - form: Noun + particle + は …
+        note: "It can follow other particles: 東京には, 学校では. Whether the particle stays depends on its job; a time に can be dropped: 日曜日は休みです."
+    examples:
+      - japanese: 私は学生です。
+        reading: わたしはがくせいです。
+        english: I'm a student.
+      - japanese: この本はもう読みました。
+        reading: このほんはもうよみました。
+        english: I've already read this book.
+        note: The topic is the book, the thing read; を is replaced by は.
+      - japanese: 田中さんは背が高いです。
+        reading: たなかさんはせがたかいです。
+        english: Mr Tanaka is tall.
+        note: "Topic: Mr Tanaka. Subject of 高い: 背, his height."
+      - japanese: 肉は食べますが、魚は食べません。
+        reading: にくはたべますが、さかなはたべません。
+        english: I eat meat, but I don't eat fish.
+        note: "Two topics set against each other: the contrast use."
+    mistake:
+      wrong: だれは来ましたか。
+      problem: "だれ is the unknown the question asks about, so it cannot be the topic. The unknown takes が, and so does the answer: 田中さんが来ました."
+      right: だれが来ましたか。
+    distinguish_from:
+      - id: OJG-0002
+        note: も also goes on the topic position, but says "this one as well" instead of setting it apart.
+      - id: OJG-0010
+        note: 机の上に猫がいます presents the presence of a cat on the desk, often introducing it into the conversation. 猫は机の上にいます takes the cat as the topic and states where it is.
+      - id: OJG-0009
+        note: "The same pattern with things: 本がありますか asks whether there is one; 本はどこにありますか asks where the known book is."
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -115,9 +560,71 @@ entries:
       - source_id: tanos
         ref: 542
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "は and が is a large subject; the entry stays with topic vs subject, known vs new, question words, contrast, and が inside noun-modifying clauses, each stated as a tendency where it is one. Questions: is the question-word point narrow enough as stated (limited to a question word in the doer position)? Is the noun-modifying-clause point too advanced for N5, or worth keeping because learners meet it early? Revised after review: particle stacking before は is now stated as depending on the particle's job (a time に can drop); the OJG-0010 note no longer says が means the cat was unknown."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: 556a596a3fa1c7dbc35de6512b7c0409636cde27071db2a328c519542eb37d2c
+          note: "Two statements are too absolute. (1) Other particles do not invariably remain before は: temporal に can be omitted, as in 日曜日は休みです. Replace “は replaces が and を, and follows other particles” and the formation note saying に stays with: “は normally replaces が or を. It can follow other particles, as in 東京には and 学校では. Whether another particle remains depends on its function; temporal に can be omitted before は, as in 日曜日は.” (2) 机の上に猫がいます does not necessarily introduce a cat nobody knew about; が does not entail that the referent is unknown. Replace the OJG-0010 note with: “机の上に猫がいます presents the presence of a cat on the desk, often introducing it into the conversation. 猫は机の上にいます takes the cat as the topic and states its location.”"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: dfcca85b9b925a59f9e560b9bce8bdd1e51144b3210c02aff245635d003dc80d
   - id: OJG-0009
     pattern: ～があります
+    title: Saying a thing is there, or that you have it
+    meaning: "N があります: there is N (a thing, plant or event, not a person or animal), or someone has N. が marks what is there."
+    when: Use it to say that a thing is somewhere (机の上にかばんがあります), that an event will take place (明日テストがあります), and to say you have something or do not (時間がありません). The negative is ありません in polite speech and ない in plain speech.
+    why: 'ある normally describes things, plants, events and abstract things such as time or plans; いる normally describes people and animals. The choice follows the thing that exists, not the place, and it can also depend on how the speaker presents that thing (see OJG-0010). が marks that thing. It often presents something the listener has not heard about yet, which is why the usual order is place first, as the setting, and the new thing last: 机の上にかばんがあります. When the thing is already the topic and the question is where it is, it takes は and the place becomes the new information: かばんは机の上にあります. "I have N" works the same way: literally "for me, N exists", so N still takes が, not を. For an event, the place where it is held usually takes で, because an event is something that happens there: 公園でお祭りがあります.'
+    formation:
+      - form: place に + N が あります
+        note: 'Introduces something new: "there is N at the place". Past: ありました. Negative: ありません.'
+      - form: N は + place に あります
+        note: Says where a known thing is.
+      - form: (person は) + N が あります
+        note: 'Having something: 時間があります, "I have time".'
+      - form: (time) + (event location で) + event が あります
+        note: "For an event taking place somewhere, use で: 公園でお祭りがあります. Relative time words such as 明日 or 今日 normally appear without に; clock times and dates take に: 三時に会議があります."
+      - form: ある / ない
+        note: Plain forms. The plain negative of ある is ない, not あらない.
+    examples:
+      - japanese: 机の上にかばんがあります。
+        reading: つくえのうえにかばんがあります。
+        english: There is a bag on the desk.
+      - japanese: 庭に大きい木があります。
+        reading: にわにおおきいきがあります。
+        english: There is a big tree in the garden.
+        note: A tree is alive, but it does not move about, and plants usually take ある.
+      - japanese: 明日、テストがあります。
+        reading: あした、テストがあります。
+        english: There is a test tomorrow.
+        note: An event also "exists", so it takes ある.
+      - japanese: 今日は時間がありません。
+        reading: きょうはじかんがありません。
+        english: I don't have time today.
+    mistake:
+      wrong: 私は車をあります。
+      problem: English "have" takes an object, so learners reach for を. ある is not an action done to something; it says the car exists, so the car is the subject and takes が.
+      right: 私は車があります。
+    distinguish_from:
+      - id: OJG-0010
+        note: います is for people and animals; あります is for things, plants and events. The choice depends on what exists, not on where it is.
+      - id: OJG-0001
+        note: です says what something is or is like (これは本です). あります says that something exists or is somewhere (本があります).
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -129,9 +636,67 @@ entries:
       - source_id: tanos
         ref: 543
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Possession example 私は車があります: natural, but some speakers prefer 車を持っています for owning a car; is the mistake/right pair fine as is? The で-for-events point (公園でお祭りがあります) is stated as \"usually\"; please confirm that level of hedging. Revised after review: the animate/inanimate sentence is now \"normally\", with the speaker's presentation as a factor (pointing to OJG-0010), and a formation line for events was added. The reviewer's note said time words \"normally appear without に\"; that holds for relative words (明日, 今日) but not for clock times or dates (三時に), so the note distinguishes the two."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: 84e1b2472c89c3d8285e5917678b1208f7906dade2c480caf43f893c219b465a
+          note: "The formation list omits the event-location construction explicitly taught in 'why'. Add '(time に / event location で) + event が あります', with the note 'For an event taking place somewhere, use で: 公園でお祭りがあります. Time expressions such as 明日 normally appear without に.' Also qualify the categorical animate/inanimate explanation: write 'ある normally describes things, plants, events and abstract things; いる normally describes people and animals. The choice can also depend on how the speaker presents the subject (see OJG-0010).' This accommodates the vehicles and personified objects discussed in the linked entry."
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: a1efd672bfa8b77724cc4d1d5c8ce387379360c8098475ecb528029ee31974a9
   - id: OJG-0010
     pattern: ～がいます
+    title: Saying a person or animal is there, or that you have family or pets
+    meaning: "N がいます: there is N (a person or animal), or someone has N, such as a brother or a pet. が marks who is there."
+    when: Use it to say that a person or animal is somewhere (公園に子どもがいます), to ask whether someone is in (田中さんはいますか), and to talk about family, friends and pets you have (姉が一人います). The negative is いません in polite speech and いない in plain speech.
+    why: "いる is the verb of existence for beings that move of their own will: people, animals, birds, fish, insects. Things, plants and events take ある (OJG-0009). What decides is how the speaker sees the subject, so the same word can go either way: a fish swimming in a tank いる, a fish on a plate ある. A few cases are usually described like this rather than fixed by rule. Plants are alive but normally take ある. A robot or a toy is usually a thing and takes ある, though people may use いる for a robot that moves around like a pet or a character. A taxi or bus waiting with its driver is often spoken of with いる, while a car simply parked usually takes ある. As with ある, が marks who is there and often introduces them as new, after the place: 公園に子どもがいます. When the person is already the topic, は marks them and the place is the new part: 田中さんは教室にいます. The place takes に, because being somewhere is not an action."
+    formation:
+      - form: place に + N が います
+        note: 'Introduces someone new: "there is N at the place". Past: いました. Negative: いません.'
+      - form: N は + place に います
+        note: Says where a known person or animal is.
+      - form: (person は) + N が + number + います
+        note: "Family and pets: 兄が二人います. The number with its counter goes before います."
+      - form: いる / いない
+        note: Plain forms.
+    examples:
+      - japanese: 公園に子どもがいます。
+        reading: こうえんにこどもがいます。
+        english: There are children in the park.
+      - japanese: 木の上に鳥がいます。
+        reading: きのうえにとりがいます。
+        english: There is a bird in the tree.
+      - japanese: 私は姉が一人います。
+        reading: わたしはあねがひとりいます。
+        english: I have one older sister.
+      - japanese: 田中さんは今、教室にいます。
+        reading: たなかさんはいま、きょうしつにいます。
+        english: Tanaka is in the classroom now.
+    mistake:
+      wrong: 公園で子どもがいます。
+      problem: English "at the park" suggests で, but で marks where an action happens. Being somewhere is not an action, so the place of existence takes に.
+      right: 公園に子どもがいます。
+    distinguish_from:
+      - id: OJG-0009
+        note: あります is for things, plants and events; います is for people and animals. The subject decides, not the place.
+      - id: OJG-0018
+        note: In ～ている, いる is a helper after a verb and stays いる even when the subject is a thing (窓が開いている). That いる is not about whether the subject is alive.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -143,9 +708,55 @@ entries:
       - source_id: tanos
         ref: 544
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Edge cases (robot, taxi with driver) are stated as tendencies; please check the taxi/bus wording in particular. 私は姉が一人います vs 私には姉が一人います: both occur; the first was chosen as simpler for N5."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 6e98b5ad3e7428ac41a1e964666138b7dee66b58ee4eda5d4b0d8dbe10af5ed9
+          note: The explanation, formations, examples, readings, translations and contrasts are sound for the uses described.
   - id: OJG-0011
     pattern: と
+    title: And (joining nouns), and together with
+    meaning: と joins nouns into a complete list, "A and B"; after a person it can also mean "with" (友だちと).
+    when: 'Use it between nouns to list them all: パンと牛乳, "bread and milk". It joins nouns only; adjectives, verbs and whole sentences are joined in other ways, such as the て-form. After a person, と marks who you do something with (友だちと映画を見ました) or the other party of a verb like 話す, 会う or 結婚する.'
+    why: 'と presents the nouns it joins as the whole list: these, and nothing else being mentioned. That is the difference from や, which lists examples. It stays between the items and normally does not follow the last one. Since と is a particle that works with nouns, it cannot link adjectives or verbs the way English "and" can: "big and clean" is 広くてきれい, not 広いときれい. The "with" use comes from the same idea of putting two together: 友だちと is "together with a friend". 一緒に is often added to make the "together" explicit.'
+    formation:
+      - form: Noun A + と + Noun B (+ と + Noun C …)
+        note: In the basic pattern, と goes between the nouns. A final と is also possible (パンと牛乳とを買いました), but is normally omitted in simple lists.
+      - form: Person + と + verb
+        note: "Who you do it with, or the other party: 友だちと話す, 友だちと一緒に行く."
+    examples:
+      - japanese: パンと牛乳を買いました。
+        reading: パンとぎゅうにゅうをかいました。
+        english: I bought bread and milk.
+      - japanese: 机の上に本とペンがあります。
+        reading: つくえのうえにほんとペンがあります。
+        english: There is a book and a pen on the desk.
+      - japanese: 日曜日に友だちと映画を見ました。
+        reading: にちようびにともだちとえいがをみました。
+        english: I saw a film with a friend on Sunday.
+    mistake:
+      wrong: この部屋は広いときれいです。
+      problem: と joins nouns, not adjectives. To say two things about something, put the first い-adjective in the て-form (広くて); a な-adjective uses で (静かで).
+      right: この部屋は広くてきれいです。
+    distinguish_from:
+      - id: OJG-0032
+        note: と gives the full list; や gives some examples and implies there are others.
+      - id: OJG-0003
+        note: 友だちと is "with a friend"; 一人で is "on my own".
+      - id: OJG-0002
+        note: AとB lists items; AもBも says the same thing is true of both.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -157,9 +768,62 @@ entries:
       - source_id: tanos
         ref: 545
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Other uses of と (quotation と言う; the conditional と) are separate points at later levels and are not mentioned. The mistake uses the て-form of adjectives, which may be taught slightly after と; is it acceptable to reference here? Revised after review: the formation note no longer says a final と is impossible."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: 2e4f6824e20eb33a21c0f22ed21e985683c37da4df76109857d690ce7144a418
+          note: "The formation note 'No と after the last item' is too absolute. A final と is possible, including before a case particle: パンと牛乳とを買いました. Replace it with 'In the basic pattern, と goes between the nouns. A final と is also possible, but is normally omitted in simple lists.' The existing 'normally does not follow the last one' in 'why' is appropriately qualified."
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: e3b6912561b319463845e9c081b6291dc562837dc8242659ac8ca4b9c25935c2
   - id: OJG-0012
     pattern: ～ましょう
+    title: Let's do it
+    meaning: "V-ましょう: \"let's V\", a polite proposal to do something together, or agreeing to one."
+    when: "Use it to propose doing something together when you expect the listener to agree (そろそろ帰りましょう), and to accept an invitation (ええ、行きましょう). Teachers, signs and announcements also use it for a gentle instruction to a group: 手を洗いましょう, \"let's wash our hands\", meaning \"please wash your hands\"."
+    why: "ましょう is the polite form of the volitional, the form that expresses the will to do something. Said to a listener, it presents that will as shared: \"let's\". Because it states a decision rather than asking a question, it fits best when agreement is already likely: replying to an invitation, or when the plan is settled. To suggest something the listener may not want, speakers often choose the softer ませんか or ましょうか, which ask instead of deciding."
+    formation:
+      - form: V (ます-stem) + ましょう
+        note: 行きます → 行きましょう; 食べます → 食べましょう; します → しましょう.
+      - form: V (plain volitional)
+        note: "Casual: 行こう, 食べよう, しよう, 来よう."
+    examples:
+      - japanese: そろそろ帰りましょう。
+        reading: そろそろかえりましょう。
+        english: It's about time. Let's go home.
+      - japanese: ええ、行きましょう。
+        reading: ええ、いきましょう。
+        english: Yes, let's go.
+        note: A reply to an invitation such as 行きませんか.
+      - japanese: 食べる前に手を洗いましょう。
+        reading: たべるまえにてをあらいましょう。
+        english: Let's wash our hands before we eat.
+        note: From a teacher or on a sign, a gentle instruction.
+    mistake:
+      wrong: 一緒に食べるましょう。
+      problem: ましょう replaces ます, so it attaches to the ます-stem (食べ), not to the dictionary form (食べる).
+      right: 一緒に食べましょう。
+    distinguish_from:
+      - id: OJG-0007
+        note: ませんか invites by asking and leaves the choice to the listener; ましょう decides, and suits cases where agreement is expected.
+      - id: OJG-0013
+        note: 'Adding か turns the proposal into a question: "shall we?" or, as an offer, "shall I?"'
+    register:
+      - polite
+      - spoken
     levels:
       commonly: N5
       listed:
@@ -171,9 +835,59 @@ entries:
       - source_id: tanos
         ref: 546
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Left out on purpose: speaker-only ましょう as a statement of intent (私がやりましょう \"I'll do it\"), which exists but is less common than ましょうか at this level. Should it be mentioned?"
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 02b967cb1928ddb2c1509e9fa32b65b51910baa3ef965997a043b66c118b580f
+          note: The entry accurately teaches proposals, acceptance and instructional uses; the formations and examples are correct.
   - id: OJG-0013
     pattern: ～ましょうか
+    title: Shall I...? / Shall we...?
+    meaning: "V-ましょうか: \"shall I V?\" offering to do something, or \"shall we V?\" suggesting it and asking the listener's view."
+    when: Use it to offer help (荷物を持ちましょうか, "Shall I carry your bags?"), to suggest doing something together while checking the listener agrees (ちょっと休みましょうか), and with a question word to ask what to do (何時に会いましょうか, "What time shall we meet?").
+    why: ましょう expresses the will to do something; か turns it into a question. Instead of deciding, the speaker puts the intention to the listener. Who would do the action is not said and comes from the situation. When the action would help the listener and only the speaker would do it, it is heard as an offer. When both would do it, it is a suggestion, softer than a plain ましょう because it asks. With a question word, it asks the listener to help choose. An offer is typically answered with お願いします or declined with 大丈夫です; a suggestion with そうしましょう.
+    formation:
+      - form: V (ます-stem) + ましょうか
+        note: 持ちます → 持ちましょうか.
+      - form: question word … V-ましょうか
+        note: 何を食べましょうか, "What shall we eat?"
+      - form: V (plain volitional) + か
+        note: "Casual: 持とうか, often just 持とうか？ with rising intonation."
+    examples:
+      - japanese: 荷物を持ちましょうか。
+        reading: にもつをもちましょうか。
+        english: Shall I carry your bags?
+      - japanese: 窓を開けましょうか。
+        reading: まどをあけましょうか。
+        english: Shall I open the window?
+        note: Usually an offer, though in context it can mean "shall we".
+      - japanese: ちょっと休みましょうか。
+        reading: ちょっとやすみましょうか。
+        english: Shall we take a short break?
+      - japanese: 何時に会いましょうか。
+        reading: なんじにあいましょうか。
+        english: What time shall we meet?
+    mistake:
+      wrong: 荷物を持ちませんか。
+      problem: "Meant as \"Shall I carry your bags?\", but ませんか asks whether the listener will do it: \"Won't you carry the bags?\" To offer your own help, use ましょうか."
+      right: 荷物を持ちましょうか。
+    distinguish_from:
+      - id: OJG-0012
+        note: ましょう decides ("let's"); ましょうか asks ("shall we?"), and can also offer ("shall I?").
+      - id: OJG-0007
+        note: ませんか asks whether the listener wants to do something; it is not used to offer the speaker's own help.
+    register:
+      - polite
+      - spoken
     levels:
       commonly: N5
       listed:
@@ -185,9 +899,55 @@ entries:
       - source_id: tanos
         ref: 547
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 7e818157ca2ea015b9b48c7319fedc6b68163e8051c691ba37c4dfe4ac1b3806
+          note: The offer/suggestion distinction, question-word use, examples and correction are accurate.
   - id: OJG-0014
     pattern: ～てください
+    title: Please do...
+    meaning: 'V-てください: "please V", a polite request, instruction or invitation for the listener to do something.'
+    when: "Use it to ask someone to do something (ちょっと待ってください), to give directions or instructions (ここに名前を書いてください), and to urge a guest to do something for their own sake (どうぞ食べてください). For a thing rather than an action, use N をください: 水をください."
+    why: 'ください is an honorific request form of くださる, a verb meaning "give (to me)". After the て-form it asks the listener to give you the doing of V: to do it for you, or as you ask. So this construction is polite in form, though it can sound directive: it still tells the listener what to do, which is why it is common for instructions and directions. When asking a favour of someone above you or a stranger, speakers often soften it further, for example with ～てくださいませんか. With an ordinary action verb, ～てください asks the listener to perform that action; it does not by itself mean "May I…?" A causative form such as 行かせてください ("please let me go") can ask the listener to let the speaker act.'
+    formation:
+      - form: V (て-form) + ください
+        note: 待つ → 待ってください; 書く → 書いてください; 見る → 見てください.
+      - form: N + を + ください
+        note: "Asking for a thing: 水をください."
+      - form: V (て-form)
+        note: "Casual: 待って, 見て."
+    examples:
+      - japanese: ちょっと待ってください。
+        reading: ちょっとまってください。
+        english: Please wait a moment.
+      - japanese: ここに名前を書いてください。
+        reading: ここになまえをかいてください。
+        english: Please write your name here.
+      - japanese: どうぞ、たくさん食べてください。
+        reading: どうぞ、たくさんたべてください。
+        english: Please, help yourself and eat plenty.
+        note: Offered for the listener's own sake, as a host would.
+    mistake:
+      wrong: トイレに行ってください。
+      problem: 'Meant as "May I go to the toilet?", but with an ordinary verb てください asks the listener to do the action: this tells the teacher to go to the toilet. To ask permission for yourself, use てもいいですか.'
+      right: トイレに行ってもいいですか。
+    distinguish_from:
+      - id: OJG-0020
+        note: "ないでください is the negative request: \"please don't V\"."
+      - id: OJG-0015
+        note: てもいいですか asks whether an action is permitted, often the speaker's own; てください requests an action from the listener.
+    register:
+      - polite
+      - spoken
     levels:
       commonly: N5
       listed:
@@ -199,9 +959,67 @@ entries:
       - source_id: tanos
         ref: 548
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: 'Revised after review: why now calls ください an honorific request form of くださる, says the construction is polite in form but can sound directive, and replaces "cannot ask permission" with the ordinary-verb statement plus the causative 行かせてください. The causative is N4 or later; it is mentioned only as the exception, not taught. distinguish_from note reworded as proposed. Unchanged question: the mistake is framed as a learner asking a teacher; the "wrong" sentence itself is grammatical, only wrong for the intended meaning. Is that acceptable for the mistake field?'
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: a294eb061da32eb7544a8c676f5eea4bdf6a5043517b16f449d4b38546296b7b
+          note: "The claim that てください cannot ask permission for something the speaker wants to do is too absolute: トイレに行かせてください means 'Please let me go to the toilet.' Replace the last sentence of why with: 'With an ordinary action verb, ～てください asks the listener to perform that action; it does not by itself mean “May I…?” A causative form such as 行かせてください can ask the listener to let the speaker act.' Also replace 'Because it is a request form, it is polite' with 'ください is an honorific request form of くださる, so this construction is polite in form, though it can sound directive.' In distinguish_from, write: 'てもいいですか asks whether an action is permitted, often the speaker’s own; てください requests an action from the listener.'"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: d060bca891085dfc9343cd46a7483659eb651228b032be45559a384121827845
   - id: OJG-0015
     pattern: ～てもいいです
+    title: It's all right to...; may I...?
+    meaning: "V-てもいいです: \"it's all right to V\", giving permission; as V-てもいいですか, asking for it."
+    when: Use it to ask permission (写真を撮ってもいいですか), to give it (ここで食べてもいいです), and to say that something is acceptable (鉛筆で書いてもいいです, "Writing in pencil is fine"). To grant permission, people often just say いいですよ or どうぞ; to refuse, they usually soften it (すみません、ちょっと…).
+    why: "The て-form with も means \"even if you do V\", and いい means \"good\". Put together: \"even if you do V, it is fine\", so nothing bad follows and the action is allowed. てはいけません (OJG-0016) is built on the same frame the other way round: \"if you do V, it is no good\". The same pattern works with adjectives and nouns: 高くてもいいです, \"it's fine even if it's expensive\"; 明日でもいいです, \"tomorrow is fine too\"."
+    formation:
+      - form: V (て-form) + も + いいです
+        note: "Question: V-てもいいですか."
+      - form: V (て-form) + いい
+        note: "Casual, often without も: 座っていい？"
+      - form: "い-adj: replace the final い with く, then add てもいいです"
+        note: 高い → 高くてもいいです. いい becomes よくてもいいです.
+      - form: な-adj stem + でもいいです
+        note: 静かでもいいです, "it is fine even if it is quiet".
+      - form: N + でもいいです
+        note: 明日でもいいです, "tomorrow is fine too".
+    examples:
+      - japanese: 写真を撮ってもいいですか。
+        reading: しゃしんをとってもいいですか。
+        english: May I take a photo?
+      - japanese: この部屋で食べてもいいです。
+        reading: このへやでたべてもいいです。
+        english: You may eat in this room.
+      - japanese: 鉛筆で書いてもいいです。
+        reading: えんぴつでかいてもいいです。
+        english: It's fine to write in pencil.
+    mistake:
+      wrong: ここに座るもいいですか。
+      problem: も attaches to the て-form, which gives "even if (I) sit". The dictionary form cannot take も here.
+      right: ここに座ってもいいですか。
+    distinguish_from:
+      - id: OJG-0016
+        note: 'The same frame reversed: てもいい allows ("even if you do it, fine"), てはいけない forbids ("if you do it, no good").'
+      - id: OJG-0014
+        note: てください asks the listener to act; てもいいですか asks whether an action is permitted, often the speaker's own.
+    register:
+      - plain
+      - polite
+      - spoken
     levels:
       commonly: N5
       listed:
@@ -213,9 +1031,63 @@ entries:
       - source_id: tanos
         ref: 549
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Revised after review: formation now lists い-adjectives (with いい → よくても), な-adjectives (静かでもいい) and nouns as separate lines, and the distinguish_from note no longer limits permission questions to the speaker's own actions. Unchanged question: is the dictionary-form error (座るもいい) a common enough real mistake, or would another be better?"
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: 7a3d9a5b9ffc53daf74c5cdb42b2c0ab26252c57bece04727e68a069104e0e99
+          note: "The explanation extends the construction to adjectives, but formation omits な-adjectives. Add 'な-adjective stem + でもいいです: 静かでもいいです (“It is fine even if it is quiet”).' Clarify the い-adjective rule as 'Replace final い with く, then add てもいいです; いい becomes よくてもいいです.' The distinguish_from note also unnecessarily restricts permission questions to the speaker’s own actions: 子供も来てもいいですか asks whether the child may come. Replace it with: 'てください asks the listener to act; てもいいですか asks whether an action is permitted, often the speaker’s own.'"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: a794bb15f9b304e6898e4d1f079b486ed9b733408389147e3754a0aa91194f02
   - id: OJG-0016
     pattern: ～てはいけません
+    title: You must not...
+    meaning: 'V-てはいけません: "you must not V", a prohibition; literally "if you V, it is no good".'
+    when: Use it to state rules and prohibitions (ここでたばこを吸ってはいけません), as teachers, parents, signs and rules do. As a question, V-てはいけませんか asks "Is it not allowed?" Said directly to an equal or someone above you, it can sound strict, so in conversation people often use ないでください or a softened refusal instead.
+    why: "The て-form with は sets up a condition: \"doing V, as a case\". いけません means \"it won't do\". So the sentence says \"if you do V, it is no good\", and that is a prohibition. It is the same frame as てもいいです (OJG-0015) turned the other way: \"even if you do V, it is fine\". Because it states a rule rather than making a request, it tends to come from someone with authority or to describe a general rule."
+    formation:
+      - form: V (て-form) + は + いけません
+        note: "Plain: V-てはいけない. The は is pronounced わ."
+      - form: V-ちゃいけない / V-じゃいけない
+        note: "Casual speech: ては becomes ちゃ, and では becomes じゃ (飲んではいけない → 飲んじゃいけない)."
+    examples:
+      - japanese: ここでたばこを吸ってはいけません。
+        reading: ここでたばこをすってはいけません。
+        english: You must not smoke here.
+      - japanese: テストのとき、辞書を見てはいけません。
+        reading: テストのとき、じしょをみてはいけません。
+        english: You must not look at a dictionary during the test.
+      - japanese: この川で泳いではいけません。
+        reading: このかわでおよいではいけません。
+        english: You must not swim in this river.
+        note: 泳ぐ has the て-form 泳いで, so it is ではいけません.
+    mistake:
+      wrong: 明日は来てはいけません。
+      problem: "Meant as \"You don't have to come tomorrow\", but てはいけません forbids: \"You must not come tomorrow.\" English \"don't have to\" means \"not required\", which Japanese says with ～なくてもいいです, \"it's fine even if you don't\"."
+      right: 明日は来なくてもいいです。
+    distinguish_from:
+      - id: OJG-0015
+        note: "The same frame reversed: てもいい allows, てはいけない forbids."
+      - id: OJG-0020
+        note: ないでください asks the listener not to do something; てはいけません states that it is not allowed, and sounds stricter.
+      - id: OJG-0037
+        note: なくちゃいけない is the same "no good" logic applied to not doing V, so it means "must V".
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -227,9 +1099,57 @@ entries:
       - source_id: tanos
         ref: 550
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: The "right" sentence uses ～なくてもいい, which is not one of the N5 ids (usually listed at N4). Is it acceptable in the mistake field, or should the mistake be a formation error instead?
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: f0032ee57a267102e03506308a8abb140ad44a62d6e68f37e8425fd3ab089771
   - id: OJG-0017
     pattern: ～から
+    title: "Giving a reason: because"
+    meaning: 'Clause + から: "because". The reason usually comes first, then the result, request or decision.'
+    when: "This entry is から after a clause, giving a reason: 雨だから、行きません, \"It's raining, so I won't go\". The reason normally comes before the main clause, but it can follow as an added explanation: 行きません。雨ですから。 It can also end a sentence, especially in answer to どうして: 頭が痛かったからです. The particle から after a noun, meaning \"from\" (九時から, 東京から), is a different use of the same word."
+    why: "から marks a starting point: 東京から is \"from Tokyo\". After a clause, the same idea marks the situation the rest of the sentence starts from, which is its reason. So in the usual order the reason clause comes first and the main point last, the reverse of English \"X because Y\"; the reason can also be added afterwards as a separate sentence ending in から. For a nonpast affirmative noun or な-adjective predicate, use だ or です before this から: 雨だから, 静かですから. Without it, 雨から reads as \"from the rain\". Past or negative predicates use the matching form: 雨だったから, 静かではないから. から is common with requests, invitations and decisions: 寒いから窓を閉めてください. Compared with ので, から tends to sound more like the speaker's own reasoning, and ので more like a plain statement of circumstances, so ので is often preferred for polite excuses and requests. This is a tendency, and both are used in all of these situations."
+    formation:
+      - form: Verb / い-adjective (plain or polite) + から
+        note: 行くから, 行きますから, 高いから, 高いですから. The polite form before から is more polite.
+      - form: Noun / な-adjective + だから (or ですから)
+        note: 'For nonpast affirmative predicates; 雨から would mean "from the rain". Past or negative: 雨だったから, 静かではないから.'
+      - form: Plain-form clause + からです。
+        note: "Gives a reason, often answering どうして or なぜ: 行くからです, 高いからです, 雨だからです, 静かだったからです. Use the plain form inside this construction; the final です supplies the politeness."
+    examples:
+      - japanese: 今日は雨だから、どこにも行きません。
+        reading: きょうはあめだから、どこにもいきません。
+        english: It's raining today, so I'm not going anywhere.
+      - japanese: 暑いですから、窓を開けてください。
+        reading: あついですから、まどをあけてください。
+        english: It's hot, so please open the window.
+      - japanese: 明日はテストがありますから、今晩勉強します。
+        reading: あしたはテストがありますから、こんばんべんきょうします。
+        english: I have a test tomorrow, so I'll study tonight.
+      - japanese: 「どうして来なかったんですか。」「頭が痛かったからです。」
+        reading: 「どうしてこなかったんですか。」「あたまがいたかったからです。」
+        english: "\"Why didn't you come?\" \"Because I had a headache.\""
+    mistake:
+      wrong: 雨から、行きません。
+      problem: 'In a nonpast affirmative sentence, a noun before the "because" から needs だ or です. Without it, 雨から reads as the particle "from": "from the rain".'
+      right: 雨だから、行きません。
+    distinguish_from:
+      - id: OJG-0036
+        note: ので also gives a reason. It tends to sound softer and more like a statement of circumstances; から tends to sound more like the speaker's own reasoning.
+      - id: OJG-0040
+        note: '～てから means "after doing": 食べてから is "after eating", not "because I eat".'
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -241,7 +1161,36 @@ entries:
       - source_id: tanos
         ref: 551
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "The から / ので contrast is kept deliberately soft; please check it does not overstate. Sentence-final から without です in casual speech (だって、痛かったから) is not covered. Revised after review: the だ／です rule is limited to nonpast affirmative predicates, with past and negative forms shown; reason-first order is now 'usually', with the afterthought order (行きません。雨ですから。) mentioned."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: ba6c47d026bc3ef82e57b72bc08fe7b37bfb26793a5f2250c4eb7221ab968f7e
+          note: "The noun/な-adjective rule is stated too categorically: だ／です applies to nonpast affirmative clauses, not forms such as 雨だったから or 静かではないから. Replace the rule in why and formation with: 'For nonpast affirmative noun and な-adjective predicates, use だ／です before から: 雨だから、静かですから. For past or negative predicates, use the appropriately conjugated copula: 雨だったから、静かではないから.' Apply the same nonpast-affirmative qualification to the mistake diagnosis. Also qualify the reason-first wording in meaning, when and why: 'The reason normally precedes the main clause, but it can follow as an added explanation: 行きません。雨ですから。' Japanese does not invariably require the reverse of English 'X because Y' order."
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: e835559af15b6671001e7cbae36b16d6b7cf220dbdf7c68c06a3d8ee3fc944dd
+          note: "The formation for sentence-final からです needs a restriction. The earlier permission to use plain or polite clauses before から does not carry over unchanged to this explanatory construction; combining the rules would produce forms such as 行きますからです. Replace the third formation with: “Plain-form clause + からです. Used to give a reason, often answering どうして or なぜ: 行くからです, 高いからです, 雨だからです, 静かだったからです. Use the plain form inside this construction; the final です supplies politeness.”"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 6a0430274b2214c94c7d15b4cbdff43bea913ae9eed53d251bd961548c6af736
+          note: The explanation and formation correctly cover causal から, including sentence-final explanations. The examples, correction, and comparison with ので are sound.
   - id: OJG-0018
     pattern: ～ている
     title: Doing something now, or being in the state a change left
@@ -301,7 +1250,42 @@ entries:
           content_sha256: 28ba3a8d6e5c1106bb5aa3296add6f84736bc8898a8665ce10d963f10fba0ab3
           note: The explanation, formation, examples, mistake correction, and comparison are accurate; N5 is plausible.
   - id: OJG-0019
-    pattern: ～にいく
+    pattern: ～に行く
+    title: Going (or coming) somewhere to do something
+    meaning: "V (ます-stem) + に行く／来る／帰る: go, come or go home in order to do V."
+    when: "Use it when you move somewhere for a purpose: to see a film, to buy bread, to eat lunch at home. The purpose goes before に, and a verb of movement follows, most often 行く, 来る or 帰る. A noun that names an activity, such as 買い物 or 散歩, can also take this に directly: 買い物に行く, “go shopping”. The destination, if you say it, is usually marked with へ or に earlier in the sentence."
+    why: "The ます-stem of a verb (食べ from 食べます, 見 from 見ます) works a little like a noun that names the activity. に marks where the movement is aimed, and here it is aimed at an activity rather than a place: 見に行く is “go towards seeing”. That is why the verb before に is in the stem form, not the dictionary form, and why the verb after it is one of moving somewhere. Because a sentence can name both a place and a purpose, it can contain two に; many speakers prefer へ for the place in that case (図書館へ本を借りに行く), though に for the place is also heard."
+    formation:
+      - form: V (ます-stem) + に + 行く／来る／帰る
+        note: "Polite: 行きます, 来ます, 帰ります. Tense and politeness go on the verb of movement: 見に行きました."
+      - form: activity noun + に + 行く／来る
+        note: "With nouns that name an activity, often ones that also take する: 買い物に行く, 散歩に行く. 買い物をしに行く is also possible."
+      - form: place へ／に … purpose に + 行く
+        note: "The place and the purpose can both appear: デパートへ買い物に行く."
+    examples:
+      - japanese: 友だちと映画を見に行きます。
+        reading: ともだちとえいがをみにいきます。
+        english: I’m going to see a film with a friend.
+      - japanese: 昼ご飯を食べに家へ帰ります。
+        reading: ひるごはんをたべにいえへかえります。
+        english: I go home to eat lunch.
+      - japanese: 日曜日にデパートへ買い物に行きました。
+        reading: にちようびにデパートへかいものにいきました。
+        english: On Sunday I went shopping at the department store.
+        note: 買い物 is an activity noun, so it takes に directly.
+      - japanese: 田中さんが本を返しに来ました。
+        reading: たなかさんがほんをかえしにきました。
+        english: Mr Tanaka came to return the book.
+    mistake:
+      wrong: 昼ご飯を食べるに行きます。
+      problem: The purpose before に is the ます-stem of the verb, not the dictionary form. English “go to eat” makes the dictionary form feel right, but 食べるに does not work here.
+      right: 昼ご飯を食べに行きます。
+    distinguish_from:
+      - id: OJG-0004
+        note: に／へ after a place marks where you go (駅に行く). The に of this pattern follows a verb stem or activity noun and marks what you go to do (本を買いに行く). Both can appear in one sentence.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -313,9 +1297,52 @@ entries:
       - source_id: tanos
         ref: 553
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Two points to confirm: (1) the claim that many speakers prefer へ for the place when a purpose に follows is a tendency I believe is right but have stated softly; (2) the list of movement verbs is limited to 行く／来る／帰る as the scope asked, though 出かける and 戻る also occur. Not covered: ～ために as a general purpose form, which is not N5."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 8445f3c3b3de264939e96f4b2efcf7dbdf4e571c3592217037f2a0295c62928a
   - id: OJG-0020
-    pattern: ないでください
+    pattern: ～ないでください
+    title: Please don't...
+    meaning: "V-ないでください: \"please don't V\", a polite request not to do something."
+    when: "Use it to ask someone not to do something (ここで写真を撮らないでください), on signs and notices, and for reassurance or reminders: 心配しないでください, \"please don't worry\"; 忘れないでください, \"please don't forget\"."
+    why: The ない-form is the plain negative of a verb. ないで joins it to what follows in the sense of "not doing V", and ください asks the listener to give you that. So the sentence asks for the listener's not doing V. Because it is a request rather than a statement of a rule, it is usually softer than てはいけません. To build it, make the ない-form and add でください. For godan (う-) verbs, change the final kana to its あ-row counterpart and add ない; a final う becomes わない (書く → 書かない, 買う → 買わない). For ichidan (る-) verbs, replace る with ない (食べる → 食べない). する becomes しない, 来る becomes 来ない (こない), and ある has the exceptional negative ない.
+    formation:
+      - form: V (ない-form) + でください
+        note: 撮る → 撮らない → 撮らないでください; する → しないでください; 来る → 来ないでください.
+      - form: V (ない-form) + で
+        note: "Casual: 見ないで, 行かないで."
+    examples:
+      - japanese: ここで写真を撮らないでください。
+        reading: ここでしゃしんをとらないでください。
+        english: Please don't take photos here.
+      - japanese: 心配しないでください。
+        reading: しんぱいしないでください。
+        english: Please don't worry.
+      - japanese: 宿題を忘れないでください。
+        reading: しゅくだいをわすれないでください。
+        english: Please don't forget your homework.
+    mistake:
+      wrong: 心配しなくてください。
+      problem: ない has two connecting forms, なくて and ないで, and a request takes ないで. なくて cannot be followed by ください.
+      right: 心配しないでください。
+    distinguish_from:
+      - id: OJG-0014
+        note: てください asks the listener to do V; ないでください asks them not to.
+      - id: OJG-0016
+        note: てはいけません states a prohibition, like a rule; ないでください is a request, and usually softer.
+    register:
+      - polite
+      - spoken
     levels:
       commonly: N5
       listed:
@@ -327,9 +1354,66 @@ entries:
       - source_id: tanos
         ref: 554
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Revised after review: the conjugation sentence now follows the reviewer's wording, including final う → わない and the exception ある → ない. ある rarely if ever appears in ないでください itself; the exception is kept because the sentence teaches the ない-form in general. Pattern normalised to ～ないでください (source lists ないでください without the tilde). The why describes the ないで/なくて split only as \"a request takes ないで\"; the fuller contrast (なくて as reason) is left out for N5. Confirm that is not misleading."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: 419f1131e56238c916b445934f1b84affafb5442b2d49dbacfe79af4a4ce58c0
+          note: "The explanation of how to form the negative omits the exception ある → ない and should explicitly explain verbs ending in う. Replace the conjugation instructions with: “For godan (う-) verbs, change the final kana to its あ-row counterpart and add ない; final う becomes わない (書く → 書かない, 買う → 買わない). For ichidan (る-) verbs, replace る with ない (食べる → 食べない). する becomes しない, 来る becomes 来ない (こない), and ある has the exceptional negative ない.”"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 5974851b70ebc9483e1e186bddfe3d7af0400bc8a8a9a97e1d3614804bb6a84d
   - id: OJG-0021
-    pattern: ～のがすきです
+    pattern: ～のが好きです
+    title: Saying you like doing something
+    meaning: "V (dictionary form) + のが好きです: someone likes doing V. の turns the verb phrase into a noun that 好き can take."
+    when: "Use it to say that you, or someone else, like an activity: reading, cooking, going for walks. The opposite is 嫌い (dislike), and 大好き makes it stronger. With a plain noun you do not need の: 犬が好きです."
+    why: '好き is a な-adjective, and the thing that is liked is marked with が: 犬が好きです. Only a noun can stand in front of that が, so an activity has to be turned into a noun first. Adding の after the dictionary form of a verb does that: 本を読む becomes 本を読むの, "reading books". The verb phrase keeps its own particles inside it (本を読む), and the が that belongs to 好き comes after の. The person who does the liking usually takes は: 私は…のが好きです. こと can also make a verb into a noun here (読むことが好きです), and both are common in this pattern. The two are not interchangeable in every pattern, so learn this pairing as it is rather than treating の and こと as the same word.'
+    formation:
+      - form: V (dictionary form) + のが好きです
+        note: "Plain: のが好きだ. Negative: のが好きではありません, or in speech のが好きじゃないです."
+      - form: V (dictionary form) + のが嫌いです
+        note: "The opposite: dislike doing V. In conversation 好きじゃない often sounds softer than 嫌い."
+      - form: person は … V + のが好きです
+        note: The person who likes it takes は; the activity takes が.
+    examples:
+      - japanese: 私は本を読むのが好きです。
+        reading: わたしはほんをよむのがすきです。
+        english: I like reading books.
+      - japanese: 弟は料理を作るのが好きです。
+        reading: おとうとはりょうりをつくるのがすきです。
+        english: My younger brother likes cooking.
+        note: 料理を stays inside the verb phrase; が comes after の.
+      - japanese: 朝早く起きるのが嫌いです。
+        reading: あさはやくおきるのがきらいです。
+        english: I hate getting up early.
+      - japanese: 休みの日に散歩するのが大好きです。
+        reading: やすみのひにさんぽするのがだいすきです。
+        english: I love going for walks on my days off.
+    mistake:
+      wrong: 私は泳ぐが好きです。
+      problem: "The activity marked by が before 好き must be a noun. 泳ぐ on its own is a verb, so add の to make it one: 泳ぐのが好きです."
+      right: 私は泳ぐのが好きです。
+    distinguish_from:
+      - id: OJG-0022
+        note: The same frame, V + のが + adjective. 好き is about liking an activity; 上手 is about being good at it.
+      - id: OJG-0029
+        note: "～たい is a wish to do something, often now or on a particular occasion. のが好き is a general liking: 泳ぐのが好き is true even when you do not want to swim today."
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -341,9 +1425,67 @@ entries:
       - source_id: tanos
         ref: 555
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Revised after review: the mistake explanation now says が comes before 好き (the first draft wrongly said 'after'). Still open: the entry says only that の and こと are both common here and not interchangeable everywhere, with no claim about which sounds more formal."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: 86d0688bbe6a6687a701ef33ca2aab714419b2ed3095db9ff18e292bd9062997
+          note: "The mistake diagnosis says “が after 好き,” but が precedes 好き. Replace that sentence with: “The activity marked by が before 好き must be expressed nominally; 泳ぐ alone is a verb, so add の: 泳ぐのが好きです.”"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: c03e9a10e0880d741605519c213c36bf247f8d2fe7248dfcd078dfa454c3fbcd
   - id: OJG-0022
-    pattern: ～のがじょうずです
+    pattern: ～のが上手です
+    title: Saying someone is good at doing something
+    meaning: "V (dictionary form) + のが上手です: someone is good at V. Mostly said of others; for yourself, 得意 is the usual word."
+    when: "Use it to say that someone does an activity well: singing, drawing, speaking a language. It is often a compliment, said to or about another person. With a noun for the skill, no の is needed: 料理が上手です."
+    why: "上手 is a な-adjective about skill, and the skill is marked with が, the same frame as 好き. A verb needs の to become a noun before it can take that が: 歌う becomes 歌うの, \"singing\". The person whose skill it is usually takes は. 上手 is a judgement of someone's skill, which is why it works as praise. For the same reason, using it about your own skill tends to sound like boasting, so speakers usually describe their own strengths with 得意 (\"my strong point\") instead. It is not forbidden about yourself: saying you are not good, 上手じゃありません, is a normal modest thing to say. When someone says 上手ですね to you, a modest reply is the usual response."
+    formation:
+      - form: V (dictionary form) + のが上手です
+        note: "Plain: のが上手だ. Negative: のが上手ではありません, or in speech 上手じゃないです."
+      - form: noun + が上手です
+        note: "With a noun for the skill, no の: 日本語が上手です."
+      - form: V (dictionary form) + のが得意です
+        note: The usual way to name your own strong point.
+    examples:
+      - japanese: 田中さんは歌うのが上手です。
+        reading: たなかさんはうたうのがじょうずです。
+        english: Tanaka-san is good at singing.
+      - japanese: 友だちは絵をかくのがとても上手です。
+        reading: ともだちはえをかくのがとてもじょうずです。
+        english: My friend is very good at drawing.
+      - japanese: 日本語が上手ですね。
+        reading: にほんごがじょうずですね。
+        english: Your Japanese is good.
+        note: A compliment to the listener. With a noun, no の is needed.
+      - japanese: 私は泳ぐのが得意です。
+        reading: わたしはおよぐのがとくいです。
+        english: Swimming is my strong point.
+        note: About yourself, 得意 is the usual word rather than 上手.
+    mistake:
+      wrong: 私はテニスをするのが上手です。
+      problem: The grammar is fine, but calling your own skill 上手 tends to sound like bragging. English "I'm good at" is more neutral. For your own strengths, 得意 is the usual choice.
+      right: 私はテニスをするのが得意です。
+    distinguish_from:
+      - id: OJG-0023
+        note: "下手 is the opposite and uses the same frame. The tendencies also reverse: 下手 is a normal, modest thing to say about yourself, and can sound blunt about someone else."
+      - id: OJG-0021
+        note: Same frame, V + のが + adjective. 好き is about liking an activity; 上手 is about doing it well.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -355,9 +1497,59 @@ entries:
       - source_id: tanos
         ref: 556
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: 得意 is not usually N5 vocabulary, but the self-praise tendency cannot be explained without it. Please check that the mistake (上手 about yourself) is framed as a tendency and not as an error of grammar.
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 02895125ddd72647ea8a2074086051360916a56e64f195fdcf1aa8e6c3fd9219
   - id: OJG-0023
-    pattern: ～のがへたです
+    pattern: ～のが下手です
+    title: Saying someone is bad at doing something
+    meaning: "V (dictionary form) + のが下手です: someone is bad at V. A modest thing to say of yourself; blunt about others."
+    when: "Use it to say that someone does an activity badly. It is most often said about yourself, as a modest admission: 私は歌うのが下手です. Said directly about the listener or another person, it can sound blunt, so people tend to soften it or avoid it. With a noun for the skill, no の is needed: 字が下手です."
+    why: "下手 is the opposite of 上手 and uses the same frame: the activity, made into a noun with の, is marked with が, and the person usually takes は. Because 下手 is a judgement of someone's skill, the social effect is the reverse of 上手: about yourself it sounds modest, about someone else it can sound like criticism. A close neighbour is 苦手, which says you are not good with something or find it hard. It is about how you feel towards the activity as much as about skill, so it can also cover things you simply do not like doing."
+    formation:
+      - form: V (dictionary form) + のが下手です
+        note: "Plain: のが下手だ."
+      - form: noun + が下手です
+        note: "With a noun for the skill, no の: 字が下手です."
+      - form: V (dictionary form) + のが苦手です
+        note: "A softer neighbour: not good with it, or finds it hard."
+    examples:
+      - japanese: 私は歌うのが下手です。
+        reading: わたしはうたうのがへたです。
+        english: I'm bad at singing.
+      - japanese: 父は料理を作るのが下手です。
+        reading: ちちはりょうりをつくるのがへたです。
+        english: My father is bad at cooking.
+      - japanese: 私は字が下手です。
+        reading: わたしはじがへたです。
+        english: My handwriting is bad.
+        note: With a noun, no の is needed.
+      - japanese: 朝早く起きるのが苦手です。
+        reading: あさはやくおきるのがにがてです。
+        english: I'm not good at getting up early.
+        note: "苦手: something you find hard, not only a lack of skill."
+    mistake:
+      wrong: 私は泳ぐのを下手です。
+      problem: 下手 is an adjective, not a verb, so the activity is not its object. The thing you are bad at is marked with が.
+      right: 私は泳ぐのが下手です。
+    distinguish_from:
+      - id: OJG-0022
+        note: 上手 is the opposite. 上手 tends to be said about others, 下手 about yourself.
+      - id: OJG-0021
+        note: Same frame, V + のが + adjective. 嫌い is about not liking an activity; 下手 is about not doing it well.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -369,9 +1561,58 @@ entries:
       - source_id: tanos
         ref: 557
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: 苦手 is usually listed above N5; it is included only as a neighbour. The description of 苦手 (difficulty and dislike as well as skill) is kept short on purpose; please check it is not overstated.
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 4550ef12fc8efd03584377a77452688555f6f1a24808d70ec6a1606b8de27706
   - id: OJG-0024
     pattern: まだ～ていません
+    title: Not yet
+    meaning: "まだ V-ていません: V has not happened yet, and the situation is still open."
+    when: "Use it to say something expected has not happened so far: the homework is not finished yet, a friend has not arrived yet. It is the usual negative answer to a question with もう, “already”: もう食べましたか, “Have you eaten?”, いいえ、まだ食べていません. The short answer is まだです, or まだ in casual speech."
+    why: "“Not yet” describes how things stand now, and it leaves room for the action to happen later. In this use, V-ていない describes an action as not having occurred or been completed up to the reference time. With まだ and a present reference time, it means “not yet”. The polite past negative V-ませんでした (plain: V-なかった) normally reports that an action did not occur in a past situation, rather than that it remains undone now, so it is not the usual form for answering “Have you eaten yet?” negatively. This is why the question and its answers do not match in form: yes is もう食べました (the action is done), but no is まだ食べていません (it has not happened up to now). To say something had not yet happened at a past point, the reference time moves to the past: その時はまだ来ていませんでした."
+    formation:
+      - form: まだ + V (て-form) + いません
+        note: Polite.
+      - form: まだ + V (て-form) + いない
+        note: "Plain. Casual speech often drops the い: まだ食べてない."
+      - form: まだです／まだ
+        note: Short answer to a もう question.
+      - form: (past point) まだ + V (て-form) + いませんでした
+        note: Not yet, as of a point in the past.
+    examples:
+      - japanese: いいえ、まだ食べていません。
+        reading: いいえ、まだたべていません。
+        english: No, I haven’t eaten yet.
+        note: An answer to もう昼ご飯を食べましたか.
+      - japanese: 宿題はまだ終わっていません。
+        reading: しゅくだいはまだおわっていません。
+        english: My homework isn’t finished yet.
+      - japanese: 田中さんはまだ来ていません。
+        reading: たなかさんはまだきていません。
+        english: Mr Tanaka hasn’t come yet.
+    mistake:
+      wrong: いいえ、まだ食べませんでした。
+      problem: English speakers reach for the past because of “I didn’t eat yet”. But “not yet” is about whether the action has happened up to now, so Japanese uses the negative of the ている form. ませんでした normally reports that something did not happen in a past situation, so it is not the usual answer here.
+      right: いいえ、まだ食べていません。
+    distinguish_from:
+      - id: OJG-0018
+        note: "まだ～ていません is the negative of the ている state: not having done something so far. With an affirmative ている, まだ means “still”: まだ寝ています, “He is still asleep”."
+      - id: OJG-0031
+        note: ～たことがない says you have never had the experience at all. まだ～ていません says something expected has not happened yet. まだ can join ことがない to mean “have never yet”.
+    register:
+      - plain
+      - polite
+      - casual
     levels:
       commonly: N5
       listed:
@@ -383,9 +1624,72 @@ entries:
       - source_id: tanos
         ref: 558
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Revised after review: the why now uses the reviewer’s wording (ませんでした is the polite past negative, plain なかった; ていない described as not having occurred up to the reference time, since ていない can also negate an ongoing action or state). The mistake’s problem was aligned with it. The past-point form まだ～ていませんでした is only in formation and why, not in an example, to keep the entry at N5."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: 1116524694a39a6e0e85f19347dd330f2f01f7f3c30bc80cfa2febde44f1becc
+          note: "ませんでした is the polite past negative, not the plain past negative; the plain form is なかった. Also, the reasoning treats ていない too generally as meaning ‘not having done V’, although it can instead negate an ongoing action or state. Replace the relevant explanation with: “In this use, Vていない describes an action as not having occurred or been completed up to the reference time. With まだ and a present reference time, it means ‘not yet’. The polite past negative Vませんでした (plain: Vなかった) normally reports that an action did not occur in a past situation, rather than that it remains undone now, so it is not the usual form for answering ‘Have you eaten yet?’ negatively.”"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: e411c59483982b5609c207335cef5c1a0fe289330b242b93e6c589f4e36faa1a
+          note: Accurately explains the present-reference and past-reference uses of “not yet”; the forms, examples, and contrasts are sound.
   - id: OJG-0025
-    pattern: ～のほうが～より
+    pattern: ～のほうが～より～
+    title: Saying which of two things is more ...
+    meaning: "A のほうが B より X: A is more X than B. より marks what A is compared against."
+    when: "Use it to compare two things and say which has more of a quality: the train is faster than the bus. It is the usual answer to a question like AとBとどちらが…ですか. Either half can stand alone: AのほうがX when B is already clear, or AはBよりX when you are simply saying something about A."
+    why: "Japanese adjectives have no comparative form: 速い can mean fast or faster depending on the sentence. The comparison is carried by other words. より means \"than\" and marks the standard you measure against. ほう means \"side\", so AのほうがX says \"A's side is X\": of the pair, A is the one. が marks A as the one picked out, which is why this shape fits an answer to \"which one?\". The halves can swap places (BよりAのほうがX) without changing the meaning. The adjective stays in its ordinary form. To compare two actions, ほう follows the verb directly, with no の."
+    formation:
+      - form: A のほうが B より + adjective
+        note: "Polite: add です after an い-adjective; a な-adjective takes です directly."
+      - form: B より A のほうが + adjective
+        note: The same meaning with the halves swapped.
+      - form: A のほうが + adjective
+        note: B is left out when it is clear, as in an answer to a question.
+      - form: A は B より + adjective
+        note: "A statement about A, measured against B, without picking one of a pair: 今日は昨日より寒いです."
+      - form: V1 (dictionary form) より V2 (dictionary form) ほうが + adjective
+        note: "Comparing two actions: ほう follows the verb directly, with no の."
+    examples:
+      - japanese: 電車のほうがバスより速いです。
+        reading: でんしゃのほうがバスよりはやいです。
+        english: The train is faster than the bus.
+      - japanese: 犬と猫とどちらが好きですか。猫のほうが好きです。
+        reading: いぬとねことどちらがすきですか。ねこのほうがすきです。
+        english: Which do you like better, dogs or cats? I like cats better.
+        note: The answer leaves out 犬より, because the question already named both.
+      - japanese: 今日は昨日より寒いです。
+        reading: きょうはきのうよりさむいです。
+        english: Today is colder than yesterday.
+        note: "Here は, not のほうが: the sentence is simply about today, not picking one of a pair."
+      - japanese: バスで行くより歩くほうが早いです。
+        reading: バスでいくよりあるくほうがはやいです。
+        english: Walking is quicker than going by bus.
+    mistake:
+      wrong: 電車よりバスのほうが速いです。
+      problem: Intended as "the train is faster than the bus". より marks the thing being compared against, the "than" side, not the winner, so this sentence says the bus is faster.
+      right: バスより電車のほうが速いです。
+    distinguish_from:
+      - id: OJG-0026
+        note: のほうが contrasts two alternatives. の中で…いちばん identifies the highest-ranked member of a group, usually three or more; for two alternatives, のほうが is generally preferred.
+      - id: OJG-0035
+        note: 'The same ほう, "side", used for advice: 行ったほうがいい is "the side of going is good".'
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -397,9 +1701,64 @@ entries:
       - source_id: tanos
         ref: 559
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Revised after review: fixed the particle order in the example note (犬より), added the AはBより formation, and softened the OJG-0026 comparison ('usually three or more'). Still open: the verb comparison (歩くほうが早い) may be N4 in some lists, and 早い (quick in time) is used there rather than 速い; please confirm."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: b63f34b6dcbb783a0b207a14df6f216fc6a8f0cd66d3a677b4f3389956dd0074
+          note: "In the second example’s note, より犬 has the particle in the wrong position. Write: “The answer leaves out 犬より, because the question already named both.” Add the formation “A は B より + adjective,” which the explanation and third example use. In distinguish_from OJG-0026, “three or more” is not a grammatical requirement for いちばん. Write: “のほうが contrasts two alternatives. の中で…いちばん identifies the highest-ranked member of a group, usually three or more; for two alternatives, のほうが is generally preferred.”"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: dc76477e49dc64043b5950c67c8b1af1c7c61a2622a1e88ab270088ffa772b93
+          note: The comparison structure, role of より, action comparisons, and correction are accurate.
   - id: OJG-0026
-    pattern: ～のなかで～がいちばん～
+    pattern: ～の中で～がいちばん～
+    title: Saying which one is the most ... in a group
+    meaning: "Group の中で A がいちばん X: of everything in the group, A is the most X."
+    when: "Use it to identify the highest-ranked member of a group, usually three or more: the fruit you like best, the tallest person in the class. It is also how you ask the question: …の中で何／どれ／だれがいちばん…ですか. For exactly two things, のほうが is generally preferred, though 一番 is also possible."
+    why: '中 means "inside", and で marks the range the choice is made within, so の中で sets out the group: "among these". いちばん, literally "number one", goes before the adjective and makes it "the most". The adjective itself does not change. が marks the one singled out, for the same reason as in のほうが: it answers "which one?". In the question, the question word fits what is being chosen: だれ for people, 何 or どれ for things, どこ for places. With a place or a period of time, で alone is common instead of の中で: 日本で一番高い山.'
+    formation:
+      - form: group の中で A が一番 + adjective
+        note: "Polite: add です. 一番 is often written in kana, いちばん."
+      - form: group の中で 何／どれ／だれ／どこ が一番 + adjective + ですか
+        note: The question. The question word matches what is being chosen.
+      - form: place / time で A が一番 + adjective
+        note: With a place or a period, で alone is common.
+    examples:
+      - japanese: 果物の中でりんごが一番好きです。
+        reading: くだもののなかでりんごがいちばんすきです。
+        english: Of all fruit, I like apples best.
+      - japanese: クラスの中でだれが一番背が高いですか。
+        reading: クラスのなかでだれがいちばんせがたかいですか。
+        english: Who is the tallest in the class?
+      - japanese: 日本で一番高い山は富士山です。
+        reading: にほんでいちばんたかいやまはふじさんです。
+        english: The highest mountain in Japan is Mount Fuji.
+        note: With a place, で alone. Here 一番高い describes 山, and the answer comes after は.
+    mistake:
+      wrong: 果物の中にりんごが一番好きです。
+      problem: "の中に says where something is, as with ある or いる: 箱の中にりんごがあります. The range a choice is made within is marked with で."
+      right: 果物の中でりんごが一番好きです。
+    distinguish_from:
+      - id: OJG-0025
+        note: のほうが…より contrasts two alternatives. の中で…一番 identifies the highest-ranked member of a group. For exactly two alternatives, のほうが is generally preferred, but 一番 is also possible.
+      - id: OJG-0003
+        note: で usually marks where an action happens. Here it marks the range a choice is made within.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -411,9 +1770,66 @@ entries:
       - source_id: tanos
         ref: 560
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Revised after review: three or more is now a tendency, not a requirement, in both when and the OJG-0025 note; 一番 with two alternatives is stated as possible."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: 577d16bf16af88d07ef22e1446cb0bc608c7f5ec327a81a4b9dea495e743197a
+          note: "The distinction treats three or more members as a requirement, but いちばん can also be used with a set of two. Change the opening of when to “Use it to identify the highest-ranked member of a group, usually three or more.” Replace the distinguish_from OJG-0025 note with: “のほうが…より contrasts two alternatives. の中で…一番 identifies the highest-ranked member of a group. For exactly two alternatives, のほうが is generally preferred, but 一番 is also possible.”"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 293fb7399473352f45e6a16ef85b4d9578a9e8203f47bbc8c6a1ba670a728d18
+          note: Correctly explains superlative comparisons and the range-marking use of で. The examples and readings are accurate.
   - id: OJG-0027
-    pattern: つもりです
+    pattern: ～つもりです
+    title: Saying what you intend to do
+    meaning: "V (dictionary form) + つもりです: someone intends or plans to do V. V-ないつもりです: intends not to."
+    when: "Use it to state a plan the speaker has already made: 来年日本へ行くつもりです. It is also used to ask about the listener's plans. The negative, V-ないつもり, says you intend not to do something."
+    why: "つもり is a noun meaning an intention held in mind. A verb describes a noun by standing in front of it in its plain form, so the verb comes first and です follows: 行くつもりです, \"it is my intention to go\". Because つもり names what is in someone's mind, it is most natural about the speaker, or in a question to the listener. About someone else it is usually reported, since you are telling what they told you. つもり suggests a plan already decided, not a passing thought. Asking someone senior directly about their つもり can sound pointed, so people tend to phrase that question another way."
+    formation:
+      - form: V (dictionary form) + つもりです
+        note: "Plain: つもりだ."
+      - form: V (ない-form) + つもりです
+        note: Intending not to do it.
+      - form: V (dictionary form) + つもりはありません
+        note: I have no intention of doing it. This can serve as a firm refusal in context, but it does not in itself express refusal. Compare V-ないつもりです, which states an intention not to do it.
+    examples:
+      - japanese: 夏休みに日本へ行くつもりです。
+        reading: なつやすみににほんへいくつもりです。
+        english: I plan to go to Japan in the summer holidays.
+      - japanese: 今日はお酒を飲まないつもりです。
+        reading: きょうはおさけをのまないつもりです。
+        english: I'm not planning to drink today.
+      - japanese: 週末は何をするつもりですか。
+        reading: しゅうまつはなにをするつもりですか。
+        english: What are you planning to do this weekend?
+        note: Asking the listener about their plans.
+    mistake:
+      wrong: 明日は雨が降るつもりです。
+      problem: English "going to" covers both plans and predictions, but つもり is only someone's intention, and rain has none. For a prediction, use でしょう.
+      right: 明日は雨が降るでしょう。
+    distinguish_from:
+      - id: OJG-0029
+        note: ～たい says what you want to do. つもり says what you have decided to do; you can want something you do not intend.
+      - id: OJG-0038
+        note: でしょう is a guess about what will happen. つもり is a person's plan.
+      - id: OJG-0012
+        note: ～ましょう proposes doing something together. つもり states a plan already made.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -425,9 +1841,70 @@ entries:
       - source_id: tanos
         ref: 561
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: 'Revised after review: つもりはありません is no longer called a refusal. Still open: left out た + つもり ("I thought I had…", e.g. 閉めたつもり), usually taught at N4. Please check the two tendency claims: third-person つもり is usually reported, and asking a senior about their つもり can sound pointed.'
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: 0c23b2971913de681f18786cdf622cd1a9b40fa33f87738ef3659f0d582dc2d6
+          note: "The formation note labels Vつもりはありません a “firmer refusal,” but it states an absence of intention and need not be a refusal or a stronger decision not to act. Replace that note with: “I have no intention of doing it. This can serve as a firm refusal in context, but it does not inherently express refusal. Compare Vないつもりです, which explicitly states an intention not to do it.”"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 175a5036800aead6d15cc012be733440980026468a86677dd05fd557cb275ee8
+          note: Accurately presents intentional plans, negative intentions, and the contrast with predictions and wishes.
   - id: OJG-0028
-    pattern: ～く/ ～になる
+    pattern: ～くなる／～になる
+    title: Saying something becomes or gets ...
+    meaning: "い-adj (い→く) + なる; な-adj or noun + になる: something changes and becomes that way."
+    when: 'Use it for a change of state: it is getting cold, the room became clean, someone became a doctor. The past, なりました, is very common for a change that has happened, often where English would say "has got" or "is now".'
+    why: 'なる means "become". To join a describing word to it, that word takes the form that describes a verb. An い-adjective swaps its final い for く, the same く you see in 寒くない: 寒い becomes 寒くなる, "become cold". な-adjectives and nouns take に, which marks the result of the change, much as に marks where you arrive: 静かになる, 医者になる. So the choice between く and に is decided by the kind of word, not by meaning. いい is irregular and uses its other stem, よ: よくなる. Some な-adjectives end in い, such as きれい, and still take に.'
+    formation:
+      - form: い-adjective (drop い) + くなる
+        note: 寒い → 寒くなる. いい becomes よくなる.
+      - form: な-adjective + になる
+        note: 静か → 静かになる. No な before に.
+      - form: noun + になる
+        note: 医者 → 医者になる.
+      - form: "Polite: なります; past: なりました"
+        note: なる is an ordinary う-verb.
+    examples:
+      - japanese: だんだん寒くなりました。
+        reading: だんだんさむくなりました。
+        english: It has gradually got colder.
+      - japanese: 部屋がきれいになりました。
+        reading: へやがきれいになりました。
+        english: The room is clean now.
+        note: きれい ends in い but is a な-adjective (きれいな部屋), so it takes に.
+      - japanese: 兄は医者になりました。
+        reading: あにはいしゃになりました。
+        english: My older brother became a doctor.
+      - japanese: 天気がよくなりました。
+        reading: てんきがよくなりました。
+        english: The weather has got better.
+        note: いい becomes よく.
+    mistake:
+      wrong: 寒いになりました。
+      problem: 寒い is an い-adjective, so it does not take に. Change the final い to く, then add なる.
+      right: 寒くなりました。
+    distinguish_from:
+      - id: OJG-0084
+        note: "する instead of なる: ～くする／～にする means someone makes something that way. なる says it becomes that way."
+      - id: OJG-0001
+        note: です states what something is now. なる states a change into it.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -439,9 +1916,64 @@ entries:
       - source_id: tanos
         ref: 562
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: OJG-0084 (～く/～にする) is an N4 stub, used as a neighbour. The negative (～なくなる, e.g. 行かなくなる) is left out as more N4 than N5.
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 34db2fc159ec89ed89b7898bdd80dab7d22e4e81a4457b1ab6eff3e582f6cace
   - id: OJG-0029
-    pattern: stem +たいです
+    pattern: ～たい
+    title: Saying what you want to do
+    meaning: "V (ます-stem) + たい: I want to do V. It changes like an い-adjective: たくない, たかった."
+    when: Use it to say what the speaker wants to do, and to ask what the listener wants to do. For someone else's wish, Japanese usually uses たがっている or reports it. To want a thing rather than an action, use ほしい instead.
+    why: "たい joins the verb stem, the part left when you take ます away: 食べます → 食べ, 飲みます → 飲み, します → し. The result is an い-adjective, so it changes like one: 食べたい, 食べたくない, 食べたかった, and 食べたいです for polite speech. As a word of feeling, it reports a wish from the inside. Japanese tends not to state another person's inner feelings as plain fact, because you cannot see inside them, so for someone else speakers usually say what they can observe (行きたがっています, \"is showing that he wants to go\") or report it (行きたいと言っていました). Asking the listener is fine, but asking someone senior what they want can sound too direct; offers are often made with ～ませんか or ～ましょうか instead. With a verb that takes を, the object can be marked with を or with が: 水を飲みたい, 水が飲みたい."
+    formation:
+      - form: V (ます-stem) + たい
+        note: 食べます → 食べたい; 行きます → 行きたい; します → したい; 来ます → 来たい (きたい).
+      - form: V (ます-stem) + たいです
+        note: "Polite: add です; たい itself does not change."
+      - form: V (ます-stem) + たくない／たかった／たくなかった
+        note: Negative, past, and negative past, as for any い-adjective.
+      - form: object を／が + V-たい
+        note: With a verb that takes を, both を and が are used for the object.
+      - form: V (ます-stem) + たがっている
+        note: "For someone else's wish: they show that they want to."
+    examples:
+      - japanese: 冷たい水が飲みたいです。
+        reading: つめたいみずがのみたいです。
+        english: I want to drink some cold water.
+      - japanese: 日本で何を食べたいですか。
+        reading: にほんでなにをたべたいですか。
+        english: What do you want to eat in Japan?
+      - japanese: 今日はどこへも行きたくないです。
+        reading: きょうはどこへもいきたくないです。
+        english: I don't want to go anywhere today.
+      - japanese: 妹は外で遊びたがっています。
+        reading: いもうとはそとであそびたがっています。
+        english: My little sister wants to play outside.
+        note: For someone else, たがっている describes the wish you can see.
+    mistake:
+      wrong: 私はすしを食べるたいです。
+      problem: たい joins the ます-stem, not the dictionary form. Take ます off 食べます and add たい.
+      right: 私はすしを食べたいです。
+    distinguish_from:
+      - id: OJG-0027
+        note: つもり states a plan already decided. たい states a wish, which may never become a plan.
+      - id: OJG-0021
+        note: のが好き is a general liking. たい is wanting to do something, often now or on a given occasion.
+      - id: OJG-0007
+        note: To invite someone, ～ませんか is usual. ～たいですか asks about their wish, and can sound too direct to someone senior.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -453,9 +1985,56 @@ entries:
       - source_id: tanos
         ref: 563
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: ほしい is mentioned by name with no id, because it is not in the N5 id list given. The を/が choice for the object is stated only as 'both are used'; the reviewer may want a note on when が is preferred. The third-person rule is framed as a tendency; in narration and in questions it does not apply.
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 717a9d189872294fa9663997d985f752d3d265799ac625cf5cc9012f189b30cf
   - id: OJG-0030
-    pattern: ～たり …～たりする
+    pattern: ～たり～たりする
+    title: Doing things like A and B
+    meaning: "V1-たり V2-たりする: do things such as V1 and V2, as examples rather than a full list or a fixed order."
+    when: "Use it to give a few sample activities: what you do on weekends, what you did on holiday. The listener understands there may be other things too, and that the order is not the point. With only one たり, it gives a single example and sounds less definite: 週末は映画を見たりします, “At weekends I watch films and so on”. A second common use pairs two opposite or alternating actions or states: 行ったり来たりする, “go back and forth”."
+    why: "Each listed action is in the た-form with り added, and none of them carries its own tense. In the full paired pattern, each listed predicate takes たり, and the final する carries tense and politeness: 読んだり見たりしました. The final する gathers the actions into one activity, “doing things like these”. Because the actions are samples of one activity, the pattern does not say they happened in this order or that there were no others. For a sequence in order, Japanese uses the て-form or ～てから instead."
+    formation:
+      - form: V1 (た-form) + り、V2 (た-form) + り + する
+        note: "Polite: ～たりします. Past: ～たりしました. The た-form's sound changes carry over: 読んだり, 遊んだり."
+      - form: V (た-form) + り + する
+        note: Gives one example, or softens the statement; it does not necessarily imply additional activities.
+      - form: い-adj (かった) + り／noun, な-adj + だったり
+        note: "Also used with states, often alternating ones: 暑かったり寒かったり."
+    examples:
+      - japanese: 日曜日は本を読んだり、テレビを見たりします。
+        reading: にちようびはほんをよんだり、テレビをみたりします。
+        english: On Sundays I do things like read books and watch TV.
+      - japanese: 夏休みは海で泳いだり、友だちと遊んだりしました。
+        reading: なつやすみはうみでおよいだり、ともだちとあそんだりしました。
+        english: In the summer holidays I swam in the sea, played with friends and so on.
+        note: The past tense is on the final する only.
+      - japanese: 今日は雨が降ったりやんだりしています。
+        reading: きょうはあめがふったりやんだりしています。
+        english: Today the rain keeps starting and stopping.
+        note: "The alternating use: two opposite actions taking turns."
+    mistake:
+      wrong: 日曜日は本を読むたり、テレビを見るたりします。
+      problem: "たり attaches to the verb’s た-form, not its dictionary form: 読んだり, 見たり."
+      right: 日曜日は本を読んだり、テレビを見たりします。
+    distinguish_from:
+      - id: OJG-0032
+        note: や lists nouns as examples (本やノート). たり does the same for actions and states.
+      - id: OJG-0040
+        note: "～てから puts actions in order: first one, then the other. ～たり～たりする lists examples and says nothing about order."
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -467,9 +2046,59 @@ entries:
       - source_id: tanos
         ref: 564
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Revised after review: the mistake now shows たり on the dictionary form, since a たり example followed by an ordinary finite verb (読んだり、テレビを見ます) does occur in contemporary Japanese and should not be presented as ungrammatical. The why now says each predicate takes たり “in the full paired pattern”, and the single-たり note no longer claims it implies other activities. The when field still says the single たり “sounds less definite”, which I believe is consistent with the new note. Still open: whether the alternating use (降ったりやんだり) and the adjective forms belong at N5."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: 89092b20b11fafed8294c887794593c9ee490758644442f609821ae1c378ccd6
+          note: "The mistake diagnosis is too categorical: contemporary Japanese allows a たり-marked example followed by an ordinary finite predicate, so the supplied sentence is not inherently ungrammatical. Replace the mistake with wrong: 「日曜日は本を読むたり、テレビを見るたりします。」; problem: “たり attaches to the verb’s た-form, not its dictionary form”; right: 「日曜日は本を読んだり、テレビを見たりします。」 In the explanation, say “In the full paired pattern, each listed predicate takes たり, and the final する carries tense and politeness.” Also replace the single-たり formation note with “Gives one example, or softens the statement; it does not necessarily imply additional activities.”"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 46fbdc876777da1450f7e927ff950fea637b2d281c171620d548bbf7295212f8
+          note: Correctly covers illustrative lists, single-example uses, and alternation. The examples, readings, and correction are sound.
   - id: OJG-0031
     pattern: ～たことがある
+    title: Have done something before (experience)
+    meaning: "V-たことがある: have the experience of doing V at some point; ～たことがない: have never done V."
+    when: "Use it to talk about experiences in your life so far: places you have been, food you have eaten, things you have tried. It is how you ask “Have you ever…?” (～たことがありますか) and say “I have never…” (～たことがありません)."
+    why: "こと turns the clause before it into a thing: 行ったこと is “the fact of having gone”. がある then says that thing exists, in your life so far. So the sentence is about whether the experience exists, not about when it happened. That is why it usually sits badly with a specific recent time such as 昨日, where the plain past is used, and why it tends to sound odd with everyday actions nobody would count as an experience, unless the context makes them notable. The verb before こと is in the た-form; with the dictionary form, ～ることがある means something different, that something happens sometimes."
+    formation:
+      - form: V (た-form) + ことがある
+        note: "Polite: ～たことがあります. Question: ～たことがありますか."
+      - form: V (た-form) + ことがない
+        note: "Never. Polite: ～たことがありません. In negatives, は often replaces が: 行ったことはありません."
+    examples:
+      - japanese: 日本へ行ったことがありますか。
+        reading: にほんへいったことがありますか。
+        english: Have you ever been to Japan?
+      - japanese: 私は富士山に登ったことがあります。
+        reading: わたしはふじさんにのぼったことがあります。
+        english: I have climbed Mount Fuji.
+      - japanese: すしはまだ食べたことがありません。
+        reading: すしはまだたべたことがありません。
+        english: I’ve never had sushi yet.
+    mistake:
+      wrong: 昼ご飯を食べたことがありますか。
+      problem: Meant as “Have you had lunch?”. English uses “have you…?” both for experience and for something done recently, but ～たことがある only asks about experience in your life, so this sounds like “Have you ever eaten lunch?”. For “yet”, ask with もう and the past.
+      right: もう昼ご飯を食べましたか。
+    distinguish_from:
+      - id: OJG-0024
+        note: "まだ～ていません: something expected has not happened yet. ～たことがない: you have never had the experience at all."
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -481,9 +2110,54 @@ entries:
       - source_id: tanos
         ref: 565
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: The line about everyday actions (it “tends to sound odd … unless the context makes them notable”) is deliberately hedged; please confirm. ～ることがある (sometimes) is mentioned only as a contrast, not taught.
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 6504d7ee6b420c73e1a83eaba52d01b73bfa66262ac2aa60fa9b3098b590ca4e
+          note: The explanation, formation, examples, and contextual diagnosis of the lunch question are accurate. The level is plausible.
   - id: OJG-0032
     pattern: や
+    title: And (giving some examples)
+    meaning: 'や joins nouns as examples from a longer list: "A and B, among others". Often followed by など.'
+    when: 'Use it between nouns when the ones you name are examples, not the whole list: かばんの中に本やノートがあります, "there are books, notebooks and so on in the bag". It often ends with など, "and so on". Like と, it joins nouns only.'
+    why: 'や tells the listener that the nouns named are a sample. Choosing between や and と is about how you present the list, not about how long the real list is: と says "these are the ones", や says "things like these". A speaker may use や without having anything particular in mind that was left out; the effect is to present the list as illustrative rather than exhaustive. など after the last item makes the "and so on" explicit. To list examples of actions rather than things, Japanese uses ～たり～たりする, not や.'
+    formation:
+      - form: Noun A + や + Noun B
+        note: A non-exhaustive list.
+      - form: Noun A + や + Noun B + など
+        note: など makes the "and so on" explicit.
+    examples:
+      - japanese: かばんの中に本やノートがあります。
+        reading: かばんのなかにほんやノートがあります。
+        english: There are books, notebooks and so on in my bag.
+      - japanese: 机の上にペンや消しゴムなどがあります。
+        reading: つくえのうえにペンやけしゴムなどがあります。
+        english: There are pens, erasers and other things on the desk.
+      - japanese: 休みの日は掃除や洗濯をします。
+        reading: やすみのひはそうじやせんたくをします。
+        english: On my days off I do things like cleaning and laundry.
+        note: 掃除 and 洗濯 are nouns here, so や can join them.
+    mistake:
+      wrong: 週末は本を読むや映画を見ます。
+      problem: や joins nouns, not verbs. To give examples of things you do, use the たり form on each verb and finish with する.
+      right: 週末は本を読んだり映画を見たりします。
+    distinguish_from:
+      - id: OJG-0011
+        note: と presents the list as complete; や presents it as examples.
+      - id: OJG-0030
+        note: "～たり～たりする does for actions what や does for nouns: gives some examples of what you do."
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -495,9 +2169,70 @@ entries:
       - source_id: tanos
         ref: 566
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "消しゴム is written with kanji plus katakana; its reading is given as けしゴム, keeping the katakana. Please confirm that the note on や 'not always implying something specific was left out' is accurate and not overstated. Revised after review: removed the claim that や makes a list informal; や is register-neutral."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: 3f0b931594a3685b0aa6c3cc5bb293c39d784fdeb1ebe728257919fc68c18cfa
+          note: The reasoning incorrectly characterizes や as making a list informal. や is register-neutral and occurs in formal writing as well as conversation. Replace “the effect is to keep the list open and informal” with “the effect is to present the list as illustrative rather than exhaustive.”
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 80a779c6ab7ab2a684df32f7dcdf305cc8977d4b2a3b43ed148ed3d5d99c28c4
+          note: Accurately explains illustrative noun lists and their contrast with と and ～たり～たりする.
   - id: OJG-0033
     pattern: ～んです
+    title: Explaining, or asking for the story behind something
+    meaning: "～んです (のです): frames a statement as an explanation or background, or a question as asking for one."
+    when: "It adds the sense that something is being explained, or that the speaker wants an explanation. Typical situations: giving the reason behind something the listener can see or has asked about (頭が痛いんです, “I have a headache”, when leaving early); asking about something you have noticed (どうしたんですか, “What's wrong?”); and setting up a request or a question with background (駅へ行きたいんですが…, “I want to go to the station, but…”). Without んです, the same sentence usually just reports a fact."
+    why: "の turns a sentence into a thing, roughly “it is that…”. Wrapping a statement this way tends to link it to something both people are aware of: what just happened, what the listener can see, or what was asked. That is why it often sounds like an explanation, and why a question with んですか often sounds like asking about the story behind something you noticed, which can show interest. The same framing is why overuse can cause trouble: with nothing to explain, it can sound as if the speaker is insisting on a point or pressing for a reason, and some questions can come across as pushy or accusatory. Learners are usually safer using it when there is a clear situation to explain or ask about."
+    formation:
+      - form: V／い-adj (plain form) + んです
+        note: 行くんです, 行ったんです, 高いんです. Written and formal speech use のです.
+      - form: noun／な-adj (plain form) + んです
+        note: "Affirmative nonpast だ becomes な: 学生なんです, 静かなんです. Other forms attach directly: 学生だったんです, 学生ではないんです, 静かではなかったんです."
+      - form: ～んですか
+        note: Asking for an explanation or background.
+      - form: ～んだ／～の
+        note: "Casual. In casual questions, ～の？ with rising intonation: どうしたの？"
+    examples:
+      - japanese: すみません、今日は早く帰ります。頭が痛いんです。
+        reading: すみません、きょうははやくかえります。あたまがいたいんです。
+        english: Sorry, I’m going home early today. I have a headache.
+        note: んです gives the reason behind leaving early.
+      - japanese: どうしたんですか。
+        reading: どうしたんですか。
+        english: What’s wrong? / What happened?
+        note: Asked when you notice something seems wrong.
+      - japanese: その本、いいですね。どこで買ったんですか。
+        reading: そのほん、いいですね。どこでかったんですか。
+        english: That book looks good. Where did you buy it?
+        note: Asking about something you have just noticed.
+    mistake:
+      wrong: 私は学生んです。
+      problem: With an affirmative nonpast noun or な-adjective predicate, insert な before んです, in the place where だ would be.
+      right: 私は学生なんです。
+    distinguish_from:
+      - id: OJG-0017
+        note: "から states a reason outright: 頭が痛いから帰ります. んです presents a statement as background to the situation, without a word meaning “because”."
+      - id: OJG-0036
+        note: ので marks a clause as the reason for what follows. のです／んです frames a statement as explanation or background. It often ends a sentence, but it can also come before a connective, as in 駅へ行きたいんですが….
+    register:
+      - plain
+      - polite
+      - spoken
+      - casual
     levels:
       commonly: N5
       listed:
@@ -509,9 +2244,76 @@ entries:
       - source_id: tanos
         ref: 567
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Revised after review: the noun／な-adjective formation now covers past and negative forms, and な is limited to the affirmative nonpast; the mistake’s problem is qualified the same way. Still open for a human: (1) whether “insisting on a point … pushy or accusatory” fairly summarises the overuse problem, and (2) whether 学生んです is a frequent enough learner error, or whether the mistake should instead show unneeded んです. のです is given as written/formal but the register does not list written, since the headword is ～んです."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: b7d035a8aaff177268cae5af78679a0b3d022a8d81240537284e8a7775b76394
+          note: "The noun/な-adjective formation is incomplete, and “な replaces だ” needs to be restricted to affirmative nonpast forms. Replace that formation with “Noun/な-adjective predicate in plain form + んです; affirmative nonpast だ becomes な: 学生なんです, 静かなんです. Other forms attach directly: 学生だったんです, 学生ではないんです, 静かではなかったんです.” Likewise, qualify the mistake diagnosis: “With an affirmative nonpast noun or な-adjective predicate, insert な before んです.”"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: 41d6f73489af16f3447905138f491d20ee5db1a5e3e1081deb63bbe94475f26e
+          note: "The OJG-0036 distinction overstates that んです ends the sentence; the entry itself gives んですが as background leading into a request. Replace that note with: “ので marks a clause as the reason for what follows. のです／んです gives a statement explanatory or background framing. It often ends a sentence, but can also precede a connective, as in 駅へ行きたいんですが….”"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 91f6aac8d11efe32d521472a119858cecf85c4246cb29fe1b74af6a0dec875ac
+          note: The explanatory and background-setting uses are accurately described, with appropriate cautions about context and tone. Formation, examples, and correction are correct.
   - id: OJG-0034
     pattern: ～すぎる
+    title: Saying something is too much, or you did too much
+    meaning: "V (ます-stem) / adjective stem + すぎる: too much. Doing V to excess, or being more X than is good."
+    when: "Use it for going past the right amount: I ate too much, this bag is too expensive, the town is too quiet. It usually carries a complaint or explains a problem: 高すぎて買えません. In casual speech it is also used as strong praise, as in かわいすぎる, where nothing is really wrong."
+    why: 'すぎる on its own means "go past". Joined to a verb or an adjective, it says the action or the quality went past a proper point: 食べすぎる is "eat past the limit". Going past the right point is usually a problem, which is why the pattern normally sounds negative. The result is itself a る-verb, so it changes like one: すぎます, すぎました, すぎて, すぎない. Verbs join with the ます-stem; adjectives join with their stem: an い-adjective drops its final い, and a な-adjective drops な. いい is irregular: よすぎる. The adjective ない ("there is none") normally becomes なさすぎる, as in お金がなさすぎる, "I have far too little money". Adjectives ending in ない do not all behave alike: 少ない becomes 少なすぎる, while a compound such as 申し訳ない becomes 申し訳なさすぎる.'
+    formation:
+      - form: V (ます-stem) + すぎる
+        note: 食べます → 食べすぎる; 飲みます → 飲みすぎる.
+      - form: い-adjective (drop い) + すぎる
+        note: "高い → 高すぎる. いい becomes よすぎる. The adjective ない normally becomes なさすぎる (お金がなさすぎる); adjectives ending in ない do not all behave alike: 少ない normally becomes 少なすぎる, whereas a compound such as 申し訳ない normally becomes 申し訳なさすぎる."
+      - form: な-adjective (no な) + すぎる
+        note: 静か → 静かすぎる.
+      - form: …すぎます／すぎました／すぎて
+        note: すぎる is a る-verb. すぎて often gives the reason for a problem.
+    examples:
+      - japanese: 昨日の夜、食べすぎました。
+        reading: きのうのよる、たべすぎました。
+        english: I ate too much last night.
+      - japanese: このかばんは高すぎます。
+        reading: このかばんはたかすぎます。
+        english: This bag is too expensive.
+      - japanese: この町は静かすぎます。
+        reading: このまちはしずかすぎます。
+        english: This town is too quiet.
+      - japanese: この問題は難しすぎて、わかりません。
+        reading: このもんだいはむずかしすぎて、わかりません。
+        english: This question is too hard; I can't understand it.
+        note: すぎて gives the reason for the problem.
+    mistake:
+      wrong: このかばんは高いすぎます。
+      problem: With an い-adjective, the final い comes off before すぎる.
+      right: このかばんは高すぎます。
+    distinguish_from:
+      - id: OJG-0029
+        note: Both join the ます-stem, but 食べたい is an い-adjective (食べたくない) while 食べすぎる is a verb (食べすぎない).
+    register:
+      - plain
+      - polite
+      - casual
     levels:
       commonly: N5
       listed:
@@ -523,9 +2325,82 @@ entries:
       - source_id: tanos
         ref: 568
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Revised after review: added the ない → なさすぎる exception, with 少ない → 少なすぎる as a counter-example. Still open: the noun form 食べすぎ／飲みすぎ is left out; the casual praise use (かわいすぎる) is mentioned in one line, please confirm it belongs at N5."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: d7eb0017d5066154e5958124354c4f01d836245b69cef0e1ec4f30b9a0a58e89
+          note: "The general い-adjective formation rule needs the exception for adjectival ない: simply dropping い does not give the standard form. Add to the reasoning and formation note: “Adjectival ない normally becomes なさすぎる, as in お金がなさすぎる (‘have far too little money’). Do not apply this mechanically to every adjective ending in ない: 少ない becomes 少なすぎる.” The existing examples and mistake correction are correct."
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: e3eb0b3a68024d67fa439671fabe4dbc14d77702f6224250a2733f88d006ad62
+          note: "The formation note's claim that all other adjectives ending in ない follow the ordinary drop-い rule is too broad. Compound adjectives such as 申し訳ない normally give 申し訳なさすぎる. Replace that generalization with: “Adjectives ending in ない do not all behave alike: 少ない normally becomes 少なすぎる, whereas compounds such as 申し訳ない normally become 申し訳なさすぎる.”"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: d8711e57d0f9e1174388cb9e4f8403cd7387d60d287adbb3ac001e61cb03e56a
+          note: The meaning, conjugation, adjective exceptions, and casual praise use are accurate. All examples and the learner-error correction are correct.
   - id: OJG-0035
     pattern: ～ほうがいい
+    title: "Giving advice: you'd better, or you'd better not"
+    meaning: "V-たほうがいい: you'd better do V. V-ないほうがいい: you'd better not. Used to give advice."
+    when: "Use it to advise someone to do something or not to do it: 早く寝たほうがいいですよ. You can also ask for advice about yourself: 私も行ったほうがいいですか. After a noun, のほうがいい says which one you prefer: コーヒーのほうがいいです, \"I'd rather have coffee\"."
+    why: 'ほう means "side", as in comparisons with のほうが, and いい means "good". So 行ったほうがいい is literally "the side of going is good": out of doing it and not doing it, doing it is better. That is why it sounds like a recommendation, and it can be fairly firm. For advice to do something, the past た-form is the usual choice (行ったほうがいい). The dictionary form (行くほうがいい) is also used, often when weighing options in general. For ordinary advice not to do something, normally use V-ないほうがいい (行かないほうがいい). Because it presses an opinion on the listener, it is often softened with と思います, or said with よ as friendly advice; to someone senior it can sound presumptuous.'
+    formation:
+      - form: V (た-form) + ほうがいい
+        note: "The usual form of advice to do something: 休んだほうがいい."
+      - form: V (dictionary form) + ほうがいい
+        note: Also used, often when comparing options in general.
+      - form: V (ない-form) + ほうがいい
+        note: For ordinary advice not to do something, normally use V-ないほうがいい.
+      - form: …ほうがいいです／ほうがいいと思います
+        note: Polite forms. と思います softens the advice.
+      - form: noun + のほうがいい
+        note: Saying which one is better or which you prefer.
+    examples:
+      - japanese: 今日は早く寝たほうがいいですよ。
+        reading: きょうははやくねたほうがいいですよ。
+        english: You'd better go to bed early today.
+      - japanese: 午後は雨ですから、傘を持っていったほうがいいですよ。
+        reading: ごごはあめですから、かさをもっていったほうがいいですよ。
+        english: It's going to rain this afternoon, so you should take an umbrella.
+      - japanese: この水は飲まないほうがいいです。
+        reading: このみずはのまないほうがいいです。
+        english: You'd better not drink this water.
+      - japanese: 薬を飲んだほうがいいと思います。
+        reading: くすりをのんだほうがいいとおもいます。
+        english: I think you should take some medicine.
+        note: と思います makes the advice softer.
+    mistake:
+      wrong: この水は飲まなかったほうがいいです。
+      problem: This copies the past form used in positive advice (飲んだほうがいい) onto the negative. Negative-past forms do occur, but for ordinary advice not to do something, the normal choice is V-ないほうがいい.
+      right: この水は飲まないほうがいいです。
+    distinguish_from:
+      - id: OJG-0025
+        note: The same ほう, "side". のほうが…より compares two things; ほうがいい recommends one course of action.
+      - id: OJG-0014
+        note: ～てください makes a request or gives an instruction. ～ほうがいい recommends an option as better.
+      - id: OJG-0016
+        note: ～てはいけません forbids. ～ないほうがいい only advises against, and leaves the choice to the listener.
+    register:
+      - plain
+      - polite
+      - spoken
     levels:
       commonly: N5
       listed:
@@ -537,9 +2412,65 @@ entries:
       - source_id: tanos
         ref: 569
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Revised after review: the ban on なかったほうがいい is gone; V-ないほうがいい is now 'the normal choice', and the mistake is framed as copying the positive past form. The てください comparison no longer says advice is for the listener's own good. Still open: た-form vs dictionary-form ほうがいい is stated only as a tendency (た for specific advice, dictionary form for general comparison); a reviewer may prefer to say less."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: 82d6060d256228417eb91987e466271a69dcf0f8ffe54c6ccb73a5f1883e368c
+          note: "The categorical ban on negative-past forms is too strong: ～なかったほうがいい does occur, although ～ないほうがいい is the normal choice for prospective negative advice. Replace 'Always the ない-form, not a past form' and the corresponding explanation with 'For ordinary advice not to do something, normally use V-ないほうがいい.' Keep the corrected water sentence, but diagnose the mistake as mechanically copying the past form used in positive advice, rather than claiming that negative-past forms are universally impossible. Also replace the てください comparison with '～てください makes a request or gives an instruction; ～ほうがいい recommends an option as better.' Advice need not be for the listener's own good."
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: cad7b5ce51b8b338c0226f2b8a2ccbfb159758206bf3b49a10458d009594e9ee
   - id: OJG-0036
     pattern: ので
+    title: Because (often softer than から)
+    meaning: "X ので Y: Y because of X; often sounds softer or more matter-of-fact than から."
+    when: "Use it to give a reason or cause, then the result: it is raining, so I will stay home. It is common when explaining yourself politely, in apologies and requests, and in speaking to someone you want to be polite to. In many sentences から would also be correct."
+    why: "ので contains の, which presents what comes before it as a fact or circumstance. The reason then sounds like part of the situation, rather than the speaker's own argument, and that is why ので is often felt to be softer or more objective than から. This is a tendency, not a rule: both are used for ordinary reasons, and the choice often comes down to tone. Because of the の inside it, a noun or な-adjective before ので takes な, as it does before の elsewhere: 雨なので."
+    formation:
+      - form: V／い-adj (plain form) + ので
+        note: 降るので, 降ったので, 高いので.
+      - form: noun／な-adj + なので
+        note: "な replaces だ: 休みなので, 静かなので."
+      - form: V-ますので／～ですので
+        note: Very polite, heard in formal or service speech.
+    examples:
+      - japanese: 雨が降っているので、今日は家にいます。
+        reading: あめがふっているので、きょうはいえにいます。
+        english: It’s raining, so I’ll stay home today.
+      - japanese: 明日はテストなので、早く寝ます。
+        reading: あしたはテストなので、はやくねます。
+        english: I have a test tomorrow, so I’ll go to bed early.
+      - japanese: すみません、電車が遅れたので、遅くなりました。
+        reading: すみません、でんしゃがおくれたので、おそくなりました。
+        english: I’m sorry, I’m late because the train was delayed.
+        note: "An apology: ので is a common choice for explaining yourself."
+    mistake:
+      wrong: 明日は休みだので、映画を見に行きます。
+      problem: Before ので, a noun or な-adjective takes な, not だ. Learners who know だから often carry the だ across.
+      right: 明日は休みなので、映画を見に行きます。
+    distinguish_from:
+      - id: OJG-0017
+        note: Both give a reason and are often interchangeable. から tends to put the speaker's own reasoning to the front; ので tends to present the reason as a circumstance, so it often sounds softer. Before a command or a strong statement of will, から is more common.
+      - id: OJG-0033
+        note: ～んです also presents something as background, but ends the sentence; ので joins the reason to a result.
+    register:
+      - plain
+      - polite
+      - spoken
+      - written
     levels:
       commonly: N5
       listed:
@@ -551,9 +2482,59 @@ entries:
       - source_id: tanos
         ref: 570
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: The distinguish_from note says から is “more common” before commands or strong will; I believe this holds as a tendency but have avoided saying ので cannot be used there. Casual contraction んで is left out.
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 3b4447f4ff62154b49320efbc94132fa690d7dfc2df78f85fcc7a8da3cbb766e
+          note: The explanation, examples, readings, translations, and principal contrast with から are accurate; the level is plausible.
   - id: OJG-0037
     pattern: ～なくちゃいけない
+    title: I have to... (casual)
+    meaning: "V-なくちゃいけない: casual \"have to V\"; literally \"if I don't V, it is no good\"."
+    when: 'Use it in casual speech to say that something has to be done, often by the speaker (もう帰らなくちゃいけない). It is often cut short to なくちゃ alone: 行かなくちゃ, "I have to go". In formal speech and formal writing, prefer fuller forms such as ～なくてはいけません and ～なければなりません.'
+    why: "Start from the ない-form, \"not doing V\". Its て-form is なくて, and なくては sets up the condition \"if (you) don't do V\". いけない means \"it won't do\". So the sentence says \"not doing V is no good\", and two negatives make an obligation: you must do V. なくちゃ contracts なくては: ては → ちゃ. The corresponding voiced contraction is では → じゃ, as in 飲んではいけない → 飲んじゃいけない. The logic matches てはいけません (OJG-0016), which says doing V is no good; here it is not doing V that is no good. なければなりません is built the same way with a different conditional (なければ, \"if not\") and a different ending (ならない, \"it won't do\"), and is the usual choice in formal speech and writing."
+    formation:
+      - form: V (ない-form, drop い) + くちゃいけない
+        note: 行かない → 行かなくちゃいけない; 食べない → 食べなくちゃいけない.
+      - form: V-なくちゃ
+        note: "Casual, with いけない left unsaid: 帰らなくちゃ."
+      - form: V-なくてはいけません / V-なければなりません
+        note: Polite and formal relatives with the same meaning.
+      - form: V-なきゃ(いけない)
+        note: Another casual contraction, from なければ.
+    examples:
+      - japanese: 明日は早く起きなくちゃいけない。
+        reading: あしたははやくおきなくちゃいけない。
+        english: I have to get up early tomorrow.
+      - japanese: もう九時だ。帰らなくちゃ。
+        reading: もうくじだ。かえらなくちゃ。
+        english: It's already nine. I have to go home.
+      - japanese: 毎日、薬を飲まなければなりません。
+        reading: まいにち、くすりをのまなければなりません。
+        english: I have to take medicine every day.
+        note: The formal relative, for polite speech or writing.
+    mistake:
+      wrong: 明日、会社に行かないちゃいけない。
+      problem: ない becomes なく before て or ちゃ, just as an い-adjective does (高い → 高くて). The contraction comes from 行かなくては, so it is 行かなくちゃ.
+      right: 明日、会社に行かなくちゃいけない。
+    distinguish_from:
+      - id: OJG-0016
+        note: てはいけない says doing V is no good (must not); なくちゃいけない says not doing V is no good (must).
+      - id: OJG-0035
+        note: ほうがいい gives advice ("you had better"); なくちゃいけない states an obligation.
+    register:
+      - plain
+      - casual
+      - spoken
     levels:
       commonly: N5
       listed:
@@ -565,9 +2546,68 @@ entries:
       - source_id: tanos
         ref: 571
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: 'Revised after review: the contraction sentence now separates ては → ちゃ from では → じゃ, and the register claim in when is limited to formal speech and formal writing (なくちゃいけません does occur in conversational polite speech). The differences between なければならない and なくてはいけない (ならない often felt more general or formal, いけない more personal) are deliberately not stated as a rule; only "usual choice in formal speech and writing" is claimed for なければなりません. Please check that claim.'
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: 40bf6fda833412accc106b82795663250aae30453963bdafb0f1e024188ce76d
+          note: "The contraction illustrated by 飲んじゃいけない is では → じゃ, not literally ては → ちゃ. Write: 'なくちゃ contracts なくては: ては → ちゃ. The corresponding voiced contraction is では → じゃ, as in 飲んではいけない → 飲んじゃいけない.' Also, fuller forms are not obligatory in all polite speech or writing: なくちゃいけません occurs in conversational polite speech, and contractions occur in informal writing. Replace that register claim with 'In formal speech and formal writing, prefer fuller forms such as ～なくてはいけません and ～なければなりません.'"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 7f3a384c55ebbfa3bd62bf5b6ccb3834235d9acc0b7a5d76c262b14215ced1dd
   - id: OJG-0038
     pattern: でしょう
+    title: Probably; or “…, right?”
+    meaning: "～でしょう: says something is probably so; with rising intonation, asks the listener to agree."
+    when: "Use it for a guess or a prediction you are fairly but not fully sure of: weather forecasts use it constantly (明日は雨が降るでしょう). It is often paired with たぶん, “probably”. With rising intonation, でしょう？ asks the listener to confirm something you expect they will agree with: “…, right?”. でしょうか is a softer, polite question, “I wonder…?” or “Would it be…?”. The plain form is だろう."
+    why: "In its conjectural use, でしょう presents something as probable rather than asserting it outright: です says “it is”, でしょう says “it would be”, which is why it fits guesses and forecasts. In its confirmation-seeking use, said with rising intonation, it presents something as expected to be shared or accepted by the listener; the speaker may be fully confident, and it can sometimes sound insistent. Normally attach でしょう directly to the plain form, omitting present affirmative だ after nouns and な-adjectives. ～ますでしょう(か) also occurs in especially polite speech, but plain form + でしょう is the standard learner pattern. In conversation, plain だろう can sound blunt, and casual speech often uses でしょ？ for “right?”."
+    formation:
+      - form: V／い-adj (plain form) + でしょう
+        note: 降るでしょう, 降ったでしょう, 高いでしょう.
+      - form: noun／な-adj + でしょう
+        note: "No だ: 雨でしょう, 静かでしょう."
+      - form: ～でしょう？ (rising)
+        note: "Asking for agreement. Casual: ～でしょ？"
+      - form: ～だろう
+        note: The plain form, common in writing and in thinking to oneself.
+    examples:
+      - japanese: 明日は雨が降るでしょう。
+        reading: あしたはあめがふるでしょう。
+        english: It will probably rain tomorrow.
+        note: The typical weather-forecast sentence.
+      - japanese: 田中さんはたぶん来ないでしょう。
+        reading: たなかさんはたぶんこないでしょう。
+        english: Mr Tanaka probably won’t come.
+      - japanese: この店のケーキ、おいしいでしょう？
+        reading: このみせのケーキ、おいしいでしょう？
+        english: The cakes at this shop are good, aren’t they?
+        note: "Rising intonation: the speaker expects agreement."
+    mistake:
+      wrong: 明日は暑いですでしょう。
+      problem: In the standard learner construction, でしょう attaches directly to 暑い, without です. 暑いですでしょう layers polite endings and is not the standard form.
+      right: 明日は暑いでしょう。
+    distinguish_from:
+      - id: OJG-0001
+        note: です states something as so. でしょう presents it as probable, or, rising, as something the listener should confirm.
+      - id: OJG-0012
+        note: ～ましょう proposes an action, including invitations and offers; ～でしょう expresses conjecture or seeks confirmation. The two only look alike.
+    register:
+      - plain
+      - polite
+      - spoken
+      - written
     levels:
       commonly: N5
       listed:
@@ -579,9 +2619,70 @@ entries:
       - source_id: tanos
         ref: 572
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: "Revised after review: the why no longer says ます can never come before でしょう; it now gives plain form + でしょう as the standard pattern and notes ～ますでしょう(か) in especially polite speech. The mistake calls 暑いですでしょう redundant and non-standard rather than impossible, and the ましょう comparison no longer limits ましょう to doing something together. Still open: whether “it would be” is a fair gloss, and whether “だろう can sound blunt” is safe. The link between だろう and male speakers is left out on purpose."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: cf0ac0059b54f7af7fb85603dbd2b5014a6d4b3730c9fc9a53403e66868113eb
+          note: "The claim that でしょう never has ます before it is false in contemporary usage: forms such as 分かりますでしょうか occur in especially polite speech, though they can be criticized as redundant. Write: 'Normally attach でしょう directly to the plain form, omitting present affirmative だ after nouns and な-adjectives. ～ますでしょう(か) also occurs in especially polite speech, but plain form + でしょう is the standard learner pattern.' Keep 暑いでしょう as the correction, but explain that 暑いですでしょう is redundant and not the standard construction, rather than deriving a universal ban from politeness. In the ましょう comparison, write '～ましょう proposes an action, including invitations and offers; ～でしょう expresses conjecture or seeks confirmation,' since ましょう is not limited to doing something together."
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: disagree
+          content_sha256: d44bc432322def7dae127b061ba2ea166f2a3ca40d02b070b6ff2bbf3837a585
+          note: "The reasoning incorrectly extends lack of full commitment to confirmation-seeking でしょう. Speakers can use that construction for something they know confidently, including insistently reminding the listener. Replace the opening reasoning with: “In conjectural use, でしょう presents something as probable rather than asserting it outright. In confirmation-seeking use, it presents something as expected to be shared or accepted by the listener; the speaker may be fully confident, and the expression can sometimes sound insistent.” Also replace the mistake diagnosis's semantic ‘says the same thing twice’ explanation with: “In the standard learner construction, でしょう attaches directly to 暑い, without です. 暑いですでしょう layers polite endings and is not the standard form.”"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 544212e16b51533c4d6063fd90f2a1f850ba8aef031794b1c1a4f42b194dc4ce
+          note: The entry correctly distinguishes conjecture from confirmation-seeking and gives appropriate formation and register guidance. The examples and correction are sound.
   - id: OJG-0039
     pattern: ～まえに
+    title: Before doing something
+    meaning: "V (dictionary form) + まえに / N + の + まえに: do the main action before V or N."
+    when: "Use it to say that one thing is done before another: brush your teeth before bed, study a little before coming to Japan, wash your hands before a meal. With a length of time, 前 has a related meaning, “ago”: 三年前に, “three years ago”."
+    why: "前 means “front”, and in time it means “earlier”. The clause before まえに names a point in time, and the main action happens before it. At the time of the main action, that later event has not happened yet, so the verb before まえに is in the dictionary (non-past) form, even when the whole sentence is about the past: 来る前に勉強しました, “I studied before I came”. The tense of the sentence goes on the main verb at the end. A noun is joined with の, as nouns usually are before 前."
+    formation:
+      - form: V (dictionary form) + まえに
+        note: The verb stays in the dictionary form even in a past sentence.
+      - form: noun + の + まえに
+        note: 食事の前に, 授業の前に.
+      - form: time span + まえに
+        note: "“Ago”: 三日前に, 二年前に. No の."
+    examples:
+      - japanese: 寝る前に歯をみがきます。
+        reading: ねるまえにはをみがきます。
+        english: I brush my teeth before I go to bed.
+      - japanese: 日本へ来る前に、少し日本語を勉強しました。
+        reading: にほんへくるまえに、すこしにほんごをべんきょうしました。
+        english: Before I came to Japan, I studied a little Japanese.
+        note: 来る stays in the dictionary form; the past is on 勉強しました.
+      - japanese: 食事の前に手を洗いましょう。
+        reading: しょくじのまえにてをあらいましょう。
+        english: Let’s wash our hands before the meal.
+    mistake:
+      wrong: 日本へ来た前に、日本語を勉強しました。
+      problem: English “before I came” is in the past, so learners put the verb in the た-form. Before まえに the verb stays in the dictionary form; the past goes on the main verb.
+      right: 日本へ来る前に、日本語を勉強しました。
+    distinguish_from:
+      - id: OJG-0040
+        note: "～まえに: the main action comes first, before V. ～てから: V comes first, then the main action."
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -593,9 +2694,56 @@ entries:
       - source_id: tanos
         ref: 573
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: The spatial meaning of 前 (駅の前に, “in front of the station”) is not mentioned; it could confuse, but it is vocabulary rather than this grammar point. The scope asked for the pattern as ～まえに; the Japanese examples write 前 in kanji.
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 8a44a5cd3bd451a55f6e666ef39b24c28ea7974f180bcb43a4b7ade9179ba5c3
+          note: The formation, relative-time explanation, examples, readings, translations, and correction are accurate; the level is plausible.
   - id: OJG-0040
     pattern: ～てから
+    title: After doing something, then…
+    meaning: "V-てから Y: do V first, then Y; V is completed before Y begins."
+    when: "Use it to say one action comes first and another follows it, especially when the order matters: wash your hands, then eat; finish homework, then go out. A second common use counts time from an event: 日本に来てから一年, “a year since I came to Japan”. ～たあとで also means “after”, and the two often overlap; ～てから tends to stress that the first action is done first, while ～たあとで tends to focus on the time that follows."
+    why: "から marks a starting point. After the て-form of a verb, it makes the completion of that action the point from which the next one starts: 洗ってから is “starting from having washed”. That is why the pattern says the first action is finished before the second begins, and why it can also measure time since something happened. The tense and politeness go on the final verb, not on the て-form. After a plain form such as 帰った, から means “because” instead, so the form before から decides the meaning."
+    formation:
+      - form: V (て-form) + から、main clause
+        note: "Tense and politeness go on the main clause: 食べてから出かけました."
+      - form: V (て-form) + から + length of time
+        note: "Time since: 来てから三年."
+    examples:
+      - japanese: 手を洗ってから、ご飯を食べます。
+        reading: てをあらってから、ごはんをたべます。
+        english: I wash my hands, then eat.
+      - japanese: 宿題をしてから、遊びに行きました。
+        reading: しゅくだいをしてから、あそびにいきました。
+        english: I did my homework and then went out to play.
+      - japanese: 日本に来てから、一年になります。
+        reading: にほんにきてから、いちねんになります。
+        english: It has been a year since I came to Japan.
+        note: "The second use: time counted from an event."
+    mistake:
+      wrong: 家に帰ったから、テレビを見ました。
+      problem: Meant as “after I got home”. But から after a plain past verb means “because”, so this says “Because I got home, I watched TV”. For “after”, から follows the て-form.
+      right: 家に帰ってから、テレビを見ました。
+    distinguish_from:
+      - id: OJG-0017
+        note: から after a plain form (帰ったから) gives a reason. から after the て-form (帰ってから) gives an order in time.
+      - id: OJG-0039
+        note: "～てから: V first, then the main action. ～まえに: the main action first, before V."
+      - id: OJG-0030
+        note: ～たり～たりする lists sample actions in no particular order; ～てから fixes the order.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N5
       listed:
@@ -607,4 +2755,17 @@ entries:
       - source_id: tanos
         ref: 574
     review:
-      status: stub
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: The contrast with ～たあとで is kept short and stated as a tendency; あとで has no OJG id in the N5 list, so it is only in `when`. Please confirm the time-since use belongs at N5; ～になる in the third example is OJG-0028 (N5).
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: a1e4ae2c584fb7b0993e79f81b5b602e211b40e8dd7ffaeacd6c347081ba447b
+          note: The explanation, formation, examples, readings, translations, and contrasts are accurate. The mistake correctly distinguishes causal 帰ったから from temporal 帰ってから, and N5 is a plausible level.

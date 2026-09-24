@@ -87,7 +87,15 @@ reviews, never typed in:
 
   It sends only written `draft` entries, never to the provider that drafted
   them, and records each ruling. When the reviewer disagrees, its note says
-  what to change: revise the entry, then review again.
+  what to change: revise the entry, then review again. A reviewer rules once
+  on a given text, and any objection to the current text blocks the status:
+  asking again until it agrees would wash the objection out.
+- **When an objection is wrong**, do not change correct text to get past it.
+  Add a rebuttal to `review.rebuttals` saying why, with the entry's current
+  `content_sha256` and the reviewer it answers in `against`, and run
+  `scripts/review.mjs --reconsider`. The reviewer
+  sees its objection and the rebuttal and rules again, and both stay in the
+  record for anyone to check.
 - **native-reviewed** needs a named native speaker's agreement
   (`kind: native`) on the current text, given in their own pull request.
   Nobody marks an entry `native-reviewed` on someone else's behalf.
