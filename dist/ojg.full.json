@@ -443,7 +443,7 @@
       "title": "Doing something now, or being in the state a change left",
       "meaning": "V-ている: an action under way, something done regularly, or the state that follows a change.",
       "when": "Use it for an action going on now (本を読んでいる), for something done repeatedly or an ongoing situation (毎朝走っている, 大阪に住んでいる), and for the state a subject is in after a change (結婚している, 窓が開いている).",
-      "why": "いる says that a living thing is there. After the て-form of a verb it says the subject is there within that action, or after it. Which of the two you get depends on the verb. A verb for an activity that lasts (読む, 食べる) has a middle to be in, so the subject is in the middle of it. A verb for an instant change (結婚する, 開く, 知る) has no middle, so the subject is in the state after the change. That is why 知っている means \"know\" and 結婚している means \"is married\", not \"is getting married\". The いる here is a helper and stays いる even when the subject is a thing: 窓が開いている.",
+      "why": "いる says that a living thing is there. After the て-form of a verb it says the subject is there in the middle of the action, or in the state that follows it. Which reading you get depends on the verb and on the context. With a verb for an activity that lasts (読む, 食べる), ている often describes an action in progress. With a verb for a change (結婚する, 開く, 知る), it often describes the state after the change: 結婚している normally means \"is married\", and 知っている means \"know\". Words of frequency and other context can instead give a habitual reading (毎朝走っている), and 大阪に住んでいる describes an ongoing situation. The いる here is a helper and stays いる even when the subject is a thing: 窓が開いている.",
       "formation": [
         {
           "form": "V (て-form) + いる",
@@ -506,8 +506,24 @@
         }
       ],
       "review": {
-        "status": "draft",
-        "note": "First complete entry, adapted from the Mieru Nihongo note on 〜ています and rewritten to stand on its own."
+        "status": "ai-reviewed",
+        "drafted_by": {
+          "provider": "anthropic",
+          "model": "claude-opus-5-5"
+        },
+        "note": "First complete entry, adapted from the Mieru Nihongo note on 〜ています and rewritten to stand on its own.",
+        "reviews": [
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "28ba3a8d6e5c1106bb5aa3296add6f84736bc8898a8665ce10d963f10fba0ab3",
+            "note": "The explanation, formation, examples, mistake correction, and comparison are accurate; N5 is plausible."
+          }
+        ]
       }
     },
     {
@@ -2026,17 +2042,17 @@
       "id": "OJG-0082",
       "pattern": "～てある",
       "title": "Something has been done on purpose, and the result remains",
-      "meaning": "V-てある: someone deliberately did V to it, and it is still that way. The doer is not mentioned.",
-      "when": "Use it to describe the state a thing is in because someone did something to it on purpose and left it that way, often in preparation for later: the plates are set out, the window has been opened, a name has been written. The sentence is about the thing and the result, not about who did it.",
-      "why": "ある says that a thing is there. After the て-form of a verb, it says the result of that action is there: 置いてある is \"placed, and there\". Because ある presents things rather than people, the doer drops out, and the thing the action was done to becomes the subject, usually marked with が, or with は when it is already the topic. Something must have been done to the thing, so only verbs that take を work. A verb like 開く (to open, by itself) has no one acting on anything, and its state is said with ている instead: 窓が開いている.",
+      "meaning": "V-てある: someone did V on purpose, and its result or its preparation remains.",
+      "when": "Use it to describe the state a thing is in because someone did something to it on purpose and left it that way, often in preparation for later: the plates are set out, the window has been opened, a name has been written. The focus is on the result, not on who did it. A related use says that something has been done in advance: もう切符を買ってあります, \"I have already bought the tickets\".",
+      "why": "ある says that a thing is there. After the て-form of a verb, it says the result of that action is there: 置いてある is \"placed, and there\". In this result-state use, the thing acted on is usually marked with が, or with は when it is already the topic; the verb is normally transitive and describes a deliberate action; and the doer is usually left unsaid, because the sentence is about the result. In the preparation use, the verb keeps its ordinary particles, including を, and the doer can be named: 私は切符を買ってある. A few deliberate intransitive verbs also appear in this use, as in 十分休んである, \"I have rested enough in advance\".",
       "formation": [
         {
-          "form": "V (transitive, て-form) + ある",
-          "note": "Polite: V (て-form) + あります. The helper is always ある, never いる."
+          "form": "thing が／は … V (transitive, て-form) + ある",
+          "note": "The result-state use. Polite: V-てあります. The helper is always ある, never いる."
         },
         {
-          "form": "thing が／は … V-てある",
-          "note": "The thing acted on is the subject, marked with が, or は as the topic."
+          "form": "(doer は) … V (て-form) + ある",
+          "note": "The preparation use: an action has been completed in advance. The verb keeps its ordinary particles, including を for the object of a transitive verb. Some deliberate intransitive verbs also occur here, as in 十分休んである."
         }
       ],
       "examples": [
@@ -2054,17 +2070,23 @@
           "japanese": "ここに名前が書いてあります。",
           "reading": "ここになまえがかいてあります。",
           "english": "A name has been written here."
+        },
+        {
+          "japanese": "もう切符を買ってあります。",
+          "reading": "もうきっぷをかってあります。",
+          "english": "I have already bought the tickets.",
+          "note": "The preparation use: を stays, and the doer is the speaker."
         }
       ],
       "mistake": {
         "wrong": "窓が開いてあります。",
-        "problem": "開く means the window opens by itself, and nobody acted on it, so ある has no result of an action to present. Use the transitive 開ける to say someone opened it, or 開いている for the plain state.",
+        "problem": "In the result-state use, てある needs a transitive verb that expresses someone acting on the thing. Intransitive 開く presents the window’s change without expressing anyone acting on it. Use transitive 開ける to say someone opened it on purpose, or 開いている for the plain state.",
         "right": "窓が開けてあります。"
       },
       "distinguish_from": [
         {
           "id": "OJG-0018",
-          "note": "ている says a thing is in a state (窓が開いている). てある says someone put it in that state on purpose (窓が開けてある). ている also describes people doing things; てある never does."
+          "note": "With a verb of change, ている describes the state (窓が開いている). てある presents a deliberate action as done, with its result or preparation remaining (窓が開けてある). ている can also describe an action in progress; てある does not."
         }
       ],
       "register": [
@@ -2089,8 +2111,24 @@
         }
       ],
       "review": {
-        "status": "draft",
-        "note": "Adapted from the Mieru Nihongo note on 〜てあります, which two models agreed on (2026-09-21), and rewritten to stand on its own. The rewrite is new text, so it starts again at draft. The を〜てある variant (窓を開けてある) is left out on purpose; it wants its own careful note."
+        "status": "ai-reviewed",
+        "drafted_by": {
+          "provider": "anthropic",
+          "model": "claude-opus-5-5"
+        },
+        "note": "Adapted from the Mieru Nihongo note on 〜てあります, which two models agreed on (2026-09-21), and rewritten to stand on its own. The rewrite is new text, so it starts again at draft. The を〜てある variant (窓を開けてある) is left out on purpose; it wants its own careful note.",
+        "reviews": [
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-24",
+            "verdict": "agree",
+            "content_sha256": "629d60733b6ef51a07d32bd3150ee5d20214ea20443cb4840a61ae5b85654054",
+            "note": "The entry accurately distinguishes the result-state and preparation uses of ～てある. The formations, examples, readings, translations, mistake correction, and comparison with ～ている are correct, and N4 is plausible."
+          }
+        ]
       }
     },
     {
