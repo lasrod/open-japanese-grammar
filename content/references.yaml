@@ -1,0 +1,14 @@
+schema_version: 0.1.0
+reference_sources:
+- id: tanos
+  display_name: Jonathan Waller, JLPT Resources (tanos.co.uk)
+  type: grammar-list
+  url: http://www.tanos.co.uk/jlpt/
+  license: CC BY
+  license_statement: >-
+    "Everything on this site (that I'm not selling), is licenced under
+    Creative Commons "BY". Basically this means... use anything here however
+    you like (commercial or non-commercial), but credit my site."
+  license_url: http://www.tanos.co.uk/jlpt/sharing/
+  used_for: The list of points N5–N1 and their levels. Pages dated November 21, 2010.
+  archived: sources/tanos/

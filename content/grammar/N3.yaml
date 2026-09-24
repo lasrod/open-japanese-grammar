@@ -1,0 +1,888 @@
+# Open Japanese Grammar: points commonly listed at N3.
+# See CONTRIBUTING.md before editing.
+
+schema_version: 0.1.0
+level: N3
+entries:
+  - id: OJG-0091
+    pattern: ～たばかり
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～たばかり
+          ref: 359
+    references:
+      - source_id: tanos
+        ref: 359
+    review:
+      status: stub
+  - id: OJG-0092
+    pattern: ～ようになる
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～ようになる
+          ref: 360
+    references:
+      - source_id: tanos
+        ref: 360
+    review:
+      status: stub
+  - id: OJG-0093
+    pattern: ～ことになる
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～ことになる
+          ref: 361
+    references:
+      - source_id: tanos
+        ref: 361
+    review:
+      status: stub
+  - id: OJG-0094
+    pattern: ～とても～ない
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～とても～ない
+          ref: 363
+    references:
+      - source_id: tanos
+        ref: 363
+    review:
+      status: stub
+  - id: OJG-0095
+    pattern: ～らしい
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～らしい
+          ref: 364
+    references:
+      - source_id: tanos
+        ref: 364
+    review:
+      status: stub
+  - id: OJG-0096
+    pattern: ～て初めて
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～て初めて
+          ref: 365
+    references:
+      - source_id: tanos
+        ref: 365
+    review:
+      status: stub
+  - id: OJG-0097
+    pattern: ～ないで
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～ないで
+          ref: 366
+    references:
+      - source_id: tanos
+        ref: 366
+    review:
+      status: stub
+  - id: OJG-0098
+    pattern: ～によって
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～によって
+          ref: 371
+    references:
+      - source_id: tanos
+        ref: 371
+    review:
+      status: stub
+  - id: OJG-0099
+    pattern: ～のような
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～のような
+          ref: 373
+    references:
+      - source_id: tanos
+        ref: 373
+    review:
+      status: stub
+  - id: OJG-0100
+    pattern: ～ば～ほど
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～ば～ほど
+          ref: 374
+    references:
+      - source_id: tanos
+        ref: 374
+    review:
+      status: stub
+  - id: OJG-0101
+    pattern: N+ばかり
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: N+ばかり
+          ref: 377
+    references:
+      - source_id: tanos
+        ref: 377
+    review:
+      status: stub
+  - id: OJG-0102
+    pattern: ～は～で有名
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～は～で有名
+          ref: 381
+    references:
+      - source_id: tanos
+        ref: 381
+    review:
+      status: stub
+  - id: OJG-0103
+    pattern: N+を始め
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: N+を始め
+          ref: 382
+    references:
+      - source_id: tanos
+        ref: 382
+    review:
+      status: stub
+  - id: OJG-0104
+    pattern: 的
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: 的
+          ref: 383
+    references:
+      - source_id: tanos
+        ref: 383
+    review:
+      status: stub
+  - id: OJG-0105
+    pattern: ～は～くらいです
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～は～くらいです
+          ref: 385
+    references:
+      - source_id: tanos
+        ref: 385
+    review:
+      status: stub
+  - id: OJG-0106
+    pattern: ～さえ～ば
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～さえ～ば
+          ref: 387
+    references:
+      - source_id: tanos
+        ref: 387
+    review:
+      status: stub
+  - id: OJG-0107
+    pattern: ほど
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ほど
+          ref: 389
+    references:
+      - source_id: tanos
+        ref: 389
+    review:
+      status: stub
+  - id: OJG-0108
+    pattern: まま
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: まま
+          ref: 391
+    references:
+      - source_id: tanos
+        ref: 391
+    review:
+      status: stub
+  - id: OJG-0109
+    pattern: わざわざ
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: わざわざ
+          ref: 393
+    references:
+      - source_id: tanos
+        ref: 393
+    review:
+      status: stub
+  - id: OJG-0110
+    pattern: ～としたら
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～としたら
+          ref: 394
+    references:
+      - source_id: tanos
+        ref: 394
+    review:
+      status: stub
+  - id: OJG-0111
+    pattern: ～たものだ
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～たものだ
+          ref: 395
+    references:
+      - source_id: tanos
+        ref: 395
+    review:
+      status: stub
+  - id: OJG-0112
+    pattern: ～たて
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～たて
+          ref: 396
+    references:
+      - source_id: tanos
+        ref: 396
+    review:
+      status: stub
+  - id: OJG-0113
+    pattern: ～ぐらい
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～ぐらい
+          ref: 399
+    references:
+      - source_id: tanos
+        ref: 399
+    review:
+      status: stub
+  - id: OJG-0114
+    pattern: ～かえって
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～かえって
+          ref: 401
+    references:
+      - source_id: tanos
+        ref: 401
+    review:
+      status: stub
+  - id: OJG-0115
+    pattern: ～には～の～がある
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～には～の～がある
+          ref: 402
+    references:
+      - source_id: tanos
+        ref: 402
+    review:
+      status: stub
+  - id: OJG-0116
+    pattern: ～っぽい
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～っぽい
+          ref: 404
+    references:
+      - source_id: tanos
+        ref: 404
+    review:
+      status: stub
+  - id: OJG-0117
+    pattern: ～に関する
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～に関する
+          ref: 405
+    references:
+      - source_id: tanos
+        ref: 405
+    review:
+      status: stub
+  - id: OJG-0118
+    pattern: まさか
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: まさか
+          ref: 408
+    references:
+      - source_id: tanos
+        ref: 408
+    review:
+      status: stub
+  - id: OJG-0119
+    pattern: まい
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: まい
+          ref: 410
+    references:
+      - source_id: tanos
+        ref: 410
+    review:
+      status: stub
+  - id: OJG-0120
+    pattern: きり
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: きり
+          ref: 411
+    references:
+      - source_id: tanos
+        ref: 411
+    review:
+      status: stub
+  - id: OJG-0121
+    pattern: いったい（一体）
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: いったい（一体）
+          ref: 413
+    references:
+      - source_id: tanos
+        ref: 413
+    review:
+      status: stub
+  - id: OJG-0122
+    pattern: ふり
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ふり
+          ref: 416
+    references:
+      - source_id: tanos
+        ref: 416
+    review:
+      status: stub
+  - id: OJG-0123
+    pattern: どうやら
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: どうやら
+          ref: 417
+    references:
+      - source_id: tanos
+        ref: 417
+    review:
+      status: stub
+  - id: OJG-0124
+    pattern: おかげで
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: おかげで
+          ref: 420
+    references:
+      - source_id: tanos
+        ref: 420
+    review:
+      status: stub
+  - id: OJG-0125
+    pattern: さらに（更に）
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: さらに（更に）
+          ref: 421
+    references:
+      - source_id: tanos
+        ref: 421
+    review:
+      status: stub
+  - id: OJG-0126
+    pattern: すでに（既に）
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: すでに（既に）
+          ref: 423
+    references:
+      - source_id: tanos
+        ref: 423
+    review:
+      status: stub
+  - id: OJG-0127
+    pattern: つい
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: つい
+          ref: 424
+    references:
+      - source_id: tanos
+        ref: 424
+    review:
+      status: stub
+  - id: OJG-0128
+    pattern: むしろ
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: むしろ
+          ref: 425
+    references:
+      - source_id: tanos
+        ref: 425
+    review:
+      status: stub
+  - id: OJG-0129
+    pattern: さえ
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: さえ
+          ref: 426
+    references:
+      - source_id: tanos
+        ref: 426
+    review:
+      status: stub
+  - id: OJG-0130
+    pattern: ～になれる
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～になれる
+          ref: 428
+    references:
+      - source_id: tanos
+        ref: 428
+    review:
+      status: stub
+  - id: OJG-0131
+    pattern: ～に違いない
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～に違いない
+          ref: 429
+    references:
+      - source_id: tanos
+        ref: 429
+    review:
+      status: stub
+  - id: OJG-0132
+    pattern: なかなか
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: なかなか
+          ref: 431
+    references:
+      - source_id: tanos
+        ref: 431
+    review:
+      status: stub
+  - id: OJG-0133
+    pattern: ～ために
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～ために
+          ref: 436
+    references:
+      - source_id: tanos
+        ref: 436
+    review:
+      status: stub
+  - id: OJG-0134
+    pattern: ～ず
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～ず
+          ref: 438
+    references:
+      - source_id: tanos
+        ref: 438
+    review:
+      status: stub
+  - id: OJG-0135
+    pattern: ～によると
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～によると
+          ref: 439
+    references:
+      - source_id: tanos
+        ref: 439
+    review:
+      status: stub
+  - id: OJG-0136
+    pattern: ～代わり
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～代わり
+          ref: 440
+    references:
+      - source_id: tanos
+        ref: 440
+    review:
+      status: stub
+  - id: OJG-0137
+    pattern: ようにする
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ようにする
+          ref: 445
+    references:
+      - source_id: tanos
+        ref: 445
+    review:
+      status: stub
+  - id: OJG-0138
+    pattern: ～始める
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～始める
+          ref: 446
+    references:
+      - source_id: tanos
+        ref: 446
+    review:
+      status: stub
+  - id: OJG-0139
+    pattern: ～ても
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～ても
+          ref: 447
+    references:
+      - source_id: tanos
+        ref: 447
+    review:
+      status: stub
+  - id: OJG-0140
+    pattern: ～として
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～として
+          ref: 449
+    references:
+      - source_id: tanos
+        ref: 449
+    review:
+      status: stub
+  - id: OJG-0141
+    pattern: ように
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ように
+          ref: 452
+    references:
+      - source_id: tanos
+        ref: 452
+    review:
+      status: stub
+  - id: OJG-0142
+    pattern: こそ
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: こそ
+          ref: 453
+    references:
+      - source_id: tanos
+        ref: 453
+    review:
+      status: stub
+  - id: OJG-0143
+    pattern: ～ないうちに
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～ないうちに
+          ref: 455
+    references:
+      - source_id: tanos
+        ref: 455
+    review:
+      status: stub
+  - id: OJG-0144
+    pattern: どうしても
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: どうしても
+          ref: 457
+    references:
+      - source_id: tanos
+        ref: 457
+    review:
+      status: stub
+  - id: OJG-0145
+    pattern: ～がち
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～がち
+          ref: 459
+    references:
+      - source_id: tanos
+        ref: 459
+    review:
+      status: stub
+  - id: OJG-0146
+    pattern: せいぜい
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: せいぜい
+          ref: 464
+    references:
+      - source_id: tanos
+        ref: 464
+    review:
+      status: stub
+  - id: OJG-0147
+    pattern: 限る
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: 限る
+          ref: 466
+    references:
+      - source_id: tanos
+        ref: 466
+    review:
+      status: stub
+  - id: OJG-0148
+    pattern: ～とともに～
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～とともに～
+          ref: 467
+    references:
+      - source_id: tanos
+        ref: 467
+    review:
+      status: stub
+  - id: OJG-0149
+    pattern: ～たび～
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～たび～
+          ref: 469
+    references:
+      - source_id: tanos
+        ref: 469
+    review:
+      status: stub
+  - id: OJG-0150
+    pattern: すぎない（過ぎない）
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: すぎない（過ぎない）
+          ref: 473
+    references:
+      - source_id: tanos
+        ref: 473
+    review:
+      status: stub
+  - id: OJG-0151
+    pattern: おいて（於いて）
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: おいて（於いて）
+          ref: 477
+    references:
+      - source_id: tanos
+        ref: 477
+    review:
+      status: stub
+  - id: OJG-0152
+    pattern: ～げ
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: ～げ
+          ref: 479
+    references:
+      - source_id: tanos
+        ref: 479
+    review:
+      status: stub
+  - id: OJG-0153
+    pattern: つもりで
+    levels:
+      commonly: N3
+      listed:
+        - source_id: tanos
+          level: N3
+          item: つもりで
+          ref: 482
+    references:
+      - source_id: tanos
+        ref: 482
+    review:
+      status: stub

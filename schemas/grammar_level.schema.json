@@ -1,0 +1,335 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://open-japanese-grammar/schemas/grammar_level.schema.json",
+  "title": "Open Japanese Grammar: one level file",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "level",
+    "entries"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "level": {
+      "$ref": "#/$defs/level"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entry"
+      }
+    }
+  },
+  "$defs": {
+    "level": {
+      "enum": [
+        "N5",
+        "N4",
+        "N3",
+        "N2",
+        "N1",
+        "none"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^OJG-[0-9]{4}$"
+    },
+    "text": {
+      "type": "string",
+      "minLength": 1
+    },
+    "japanese": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "japanese",
+        "reading",
+        "english"
+      ],
+      "properties": {
+        "japanese": {
+          "$ref": "#/$defs/text"
+        },
+        "reading": {
+          "description": "The whole sentence in kana, so a reader never has to guess a kanji.",
+          "$ref": "#/$defs/text"
+        },
+        "english": {
+          "$ref": "#/$defs/text"
+        },
+        "note": {
+          "$ref": "#/$defs/text"
+        }
+      }
+    },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "pattern",
+        "levels",
+        "references",
+        "review"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "pattern": {
+          "description": "The point as it is commonly written in lists, e.g. 〜てある.",
+          "$ref": "#/$defs/text"
+        },
+        "title": {
+          "description": "An English name for the point, as a learner would say what it does.",
+          "$ref": "#/$defs/text"
+        },
+        "meaning": {
+          "description": "The point in one line, for tools that quote it verbatim.",
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 140
+        },
+        "when": {
+          "description": "When to use it: what the point does in a sentence.",
+          "$ref": "#/$defs/text"
+        },
+        "why": {
+          "description": "Why it works this way: the reasoning a learner can rebuild the rule from.",
+          "$ref": "#/$defs/text"
+        },
+        "formation": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "form"
+            ],
+            "properties": {
+              "form": {
+                "$ref": "#/$defs/text"
+              },
+              "note": {
+                "$ref": "#/$defs/text"
+              }
+            }
+          }
+        },
+        "examples": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/japanese"
+          }
+        },
+        "mistake": {
+          "description": "A mistake learners make with this point: the wrong sentence, what is wrong, the right one.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "wrong",
+            "problem",
+            "right"
+          ],
+          "properties": {
+            "wrong": {
+              "$ref": "#/$defs/text"
+            },
+            "problem": {
+              "$ref": "#/$defs/text"
+            },
+            "right": {
+              "$ref": "#/$defs/text"
+            }
+          }
+        },
+        "distinguish_from": {
+          "description": "Neighbouring points a learner confuses with this one, and the difference.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "note"
+            ],
+            "properties": {
+              "id": {
+                "$ref": "#/$defs/id"
+              },
+              "note": {
+                "$ref": "#/$defs/text"
+              }
+            }
+          }
+        },
+        "register": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "plain",
+              "polite",
+              "humble",
+              "honorific",
+              "written",
+              "spoken",
+              "casual"
+            ]
+          }
+        },
+        "levels": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "commonly",
+            "listed"
+          ],
+          "properties": {
+            "commonly": {
+              "$ref": "#/$defs/level"
+            },
+            "listed": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "source_id",
+                  "level",
+                  "item"
+                ],
+                "properties": {
+                  "source_id": {
+                    "$ref": "#/$defs/text"
+                  },
+                  "level": {
+                    "$ref": "#/$defs/level"
+                  },
+                  "item": {
+                    "description": "The point exactly as the source lists it.",
+                    "$ref": "#/$defs/text"
+                  },
+                  "ref": {
+                    "type": [
+                      "string",
+                      "integer"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "references": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "source_id"
+            ],
+            "properties": {
+              "source_id": {
+                "$ref": "#/$defs/text"
+              },
+              "ref": {
+                "type": [
+                  "string",
+                  "integer"
+                ]
+              }
+            }
+          }
+        },
+        "review": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "stub",
+                "draft",
+                "ai-reviewed",
+                "native-reviewed"
+              ]
+            },
+            "note": {
+              "$ref": "#/$defs/text"
+            },
+            "reviews": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "by",
+                  "date",
+                  "verdict"
+                ],
+                "properties": {
+                  "by": {
+                    "$ref": "#/$defs/text"
+                  },
+                  "kind": {
+                    "enum": [
+                      "ai",
+                      "human",
+                      "native"
+                    ]
+                  },
+                  "date": {
+                    "type": "string",
+                    "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+                  },
+                  "verdict": {
+                    "enum": [
+                      "agree",
+                      "disagree",
+                      "changes"
+                    ]
+                  },
+                  "note": {
+                    "$ref": "#/$defs/text"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "if": {
+        "properties": {
+          "review": {
+            "properties": {
+              "status": {
+                "const": "stub"
+              }
+            },
+            "type": "object"
+          }
+        }
+      },
+      "else": {
+        "required": [
+          "title",
+          "meaning",
+          "when",
+          "why",
+          "formation",
+          "examples",
+          "mistake"
+        ]
+      }
+    }
+  }
+}

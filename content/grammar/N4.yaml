@@ -1,0 +1,736 @@
+# Open Japanese Grammar: points commonly listed at N4.
+# See CONTRIBUTING.md before editing.
+
+schema_version: 0.1.0
+level: N4
+entries:
+  - id: OJG-0041
+    pattern: ～し
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～し
+          ref: 485
+    references:
+      - source_id: tanos
+        ref: 485
+    review:
+      status: stub
+  - id: OJG-0042
+    pattern: そうです
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: そうです
+          ref: 486
+    references:
+      - source_id: tanos
+        ref: 486
+    review:
+      status: stub
+  - id: OJG-0043
+    pattern: てみる
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: てみる
+          ref: 487
+    references:
+      - source_id: tanos
+        ref: 487
+    review:
+      status: stub
+  - id: OJG-0044
+    pattern: なら
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: なら
+          ref: 488
+    references:
+      - source_id: tanos
+        ref: 488
+    review:
+      status: stub
+  - id: OJG-0045
+    pattern: (period)に(frequency)
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: (period)に(frequency)
+          ref: 489
+    references:
+      - source_id: tanos
+        ref: 489
+    review:
+      status: stub
+  - id: OJG-0046
+    pattern: ～がほしい
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～がほしい
+          ref: 490
+    references:
+      - source_id: tanos
+        ref: 490
+    review:
+      status: stub
+  - id: OJG-0047
+    pattern: ～たがる
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～たがる
+          ref: 491
+    references:
+      - source_id: tanos
+        ref: 491
+    review:
+      status: stub
+  - id: OJG-0048
+    pattern: ～かもしれない
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～かもしれない
+          ref: 492
+    references:
+      - source_id: tanos
+        ref: 492
+    review:
+      status: stub
+  - id: OJG-0049
+    pattern: ～たらどうですか
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～たらどうですか
+          ref: 493
+    references:
+      - source_id: tanos
+        ref: 493
+    review:
+      status: stub
+  - id: OJG-0050
+    pattern: Number+も
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: Number+も
+          ref: 494
+    references:
+      - source_id: tanos
+        ref: 494
+    review:
+      status: stub
+  - id: OJG-0051
+    pattern: しか～ない
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: しか～ない
+          ref: 495
+    references:
+      - source_id: tanos
+        ref: 495
+    review:
+      status: stub
+  - id: OJG-0052
+    pattern: ～ておく
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～ておく
+          ref: 496
+    references:
+      - source_id: tanos
+        ref: 496
+    review:
+      status: stub
+  - id: OJG-0053
+    pattern: ～よう
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～よう
+          ref: 497
+    references:
+      - source_id: tanos
+        ref: 497
+    review:
+      status: stub
+  - id: OJG-0054
+    pattern: ～おう
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～おう
+          ref: 498
+    references:
+      - source_id: tanos
+        ref: 498
+    review:
+      status: stub
+  - id: OJG-0055
+    pattern: ～てあげる
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～てあげる
+          ref: 499
+    references:
+      - source_id: tanos
+        ref: 499
+    review:
+      status: stub
+  - id: OJG-0056
+    pattern: ～てくれる
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～てくれる
+          ref: 500
+    references:
+      - source_id: tanos
+        ref: 500
+    review:
+      status: stub
+  - id: OJG-0057
+    pattern: ～てもらう
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～てもらう
+          ref: 501
+    references:
+      - source_id: tanos
+        ref: 501
+    review:
+      status: stub
+  - id: OJG-0058
+    pattern: ～ていただけませんか
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～ていただけませんか
+          ref: 502
+    references:
+      - source_id: tanos
+        ref: 502
+    review:
+      status: stub
+  - id: OJG-0059
+    pattern: ～といいです
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～といいです
+          ref: 503
+    references:
+      - source_id: tanos
+        ref: 503
+    review:
+      status: stub
+  - id: OJG-0060
+    pattern: ～てすみません
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～てすみません
+          ref: 504
+    references:
+      - source_id: tanos
+        ref: 504
+    review:
+      status: stub
+  - id: OJG-0061
+    pattern: ～そうです
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～そうです
+          ref: 505
+    references:
+      - source_id: tanos
+        ref: 505
+    review:
+      status: stub
+  - id: OJG-0062
+    pattern: ～させる
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～させる
+          ref: 506
+    references:
+      - source_id: tanos
+        ref: 506
+    review:
+      status: stub
+  - id: OJG-0063
+    pattern: ～なさい
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～なさい
+          ref: 507
+    references:
+      - source_id: tanos
+        ref: 507
+    review:
+      status: stub
+  - id: OJG-0064
+    pattern: ～ば/～れば
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～ば/～れば
+          ref: 508
+    references:
+      - source_id: tanos
+        ref: 508
+    review:
+      status: stub
+  - id: OJG-0065
+    pattern: ～ても
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～ても
+          ref: 509
+    references:
+      - source_id: tanos
+        ref: 509
+    review:
+      status: stub
+  - id: OJG-0066
+    pattern: ～たら
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～たら
+          ref: 510
+    references:
+      - source_id: tanos
+        ref: 510
+    review:
+      status: stub
+  - id: OJG-0067
+    pattern: ～なくてもいい
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～なくてもいい
+          ref: 511
+    references:
+      - source_id: tanos
+        ref: 511
+    review:
+      status: stub
+  - id: OJG-0068
+    pattern: ～みたい
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～みたい
+          ref: 512
+    references:
+      - source_id: tanos
+        ref: 512
+    review:
+      status: stub
+  - id: OJG-0069
+    pattern: ～てしまう
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～てしまう
+          ref: 513
+    references:
+      - source_id: tanos
+        ref: 513
+    review:
+      status: stub
+  - id: OJG-0070
+    pattern: Dictionary form+と
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: Dictionary form+と
+          ref: 514
+    references:
+      - source_id: tanos
+        ref: 514
+    review:
+      status: stub
+  - id: OJG-0071
+    pattern: ～ながら
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～ながら
+          ref: 515
+    references:
+      - source_id: tanos
+        ref: 515
+    review:
+      status: stub
+  - id: OJG-0072
+    pattern: ～ばよかった
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～ばよかった
+          ref: 516
+    references:
+      - source_id: tanos
+        ref: 516
+    review:
+      status: stub
+  - id: OJG-0073
+    pattern: ～てくれてありがとう
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～てくれてありがとう
+          ref: 517
+    references:
+      - source_id: tanos
+        ref: 517
+    review:
+      status: stub
+  - id: OJG-0074
+    pattern: ～てよかった
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～てよかった
+          ref: 518
+    references:
+      - source_id: tanos
+        ref: 518
+    review:
+      status: stub
+  - id: OJG-0075
+    pattern: ～はずです
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～はずです
+          ref: 519
+    references:
+      - source_id: tanos
+        ref: 519
+    review:
+      status: stub
+  - id: OJG-0076
+    pattern: ～ないで
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～ないで
+          ref: 520
+    references:
+      - source_id: tanos
+        ref: 520
+    review:
+      status: stub
+  - id: OJG-0077
+    pattern: ～かどうか
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～かどうか
+          ref: 521
+    references:
+      - source_id: tanos
+        ref: 521
+    review:
+      status: stub
+  - id: OJG-0078
+    pattern: ～という～
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～という～
+          ref: 522
+    references:
+      - source_id: tanos
+        ref: 522
+    review:
+      status: stub
+  - id: OJG-0079
+    pattern: ～やすい
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～やすい
+          ref: 523
+    references:
+      - source_id: tanos
+        ref: 523
+    review:
+      status: stub
+  - id: OJG-0080
+    pattern: ～にくい
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～にくい
+          ref: 524
+    references:
+      - source_id: tanos
+        ref: 524
+    review:
+      status: stub
+  - id: OJG-0081
+    pattern: ～られる
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～られる
+          ref: 525
+    references:
+      - source_id: tanos
+        ref: 525
+    review:
+      status: stub
+  - id: OJG-0082
+    pattern: ～てある
+    title: Something has been done on purpose, and the result remains
+    meaning: "V-てある: someone deliberately did V to it, and it is still that way. The doer is not mentioned."
+    when: "Use it to describe the state a thing is in because someone did something to it on purpose and left it that way, often in preparation for later: the plates are set out, the window has been opened, a name has been written. The sentence is about the thing and the result, not about who did it."
+    why: 'ある says that a thing is there. After the て-form of a verb, it says the result of that action is there: 置いてある is "placed, and there". Because ある presents things rather than people, the doer drops out, and the thing the action was done to becomes the subject, usually marked with が, or with は when it is already the topic. Something must have been done to the thing, so only verbs that take を work. A verb like 開く (to open, by itself) has no one acting on anything, and its state is said with ている instead: 窓が開いている.'
+    formation:
+      - form: V (transitive, て-form) + ある
+        note: "Polite: V (て-form) + あります. The helper is always ある, never いる."
+      - form: thing が／は … V-てある
+        note: The thing acted on is the subject, marked with が, or は as the topic.
+    examples:
+      - japanese: 本は机の上に置いてあります。
+        reading: ほんはつくえのうえにおいてあります。
+        english: The book has been put on the desk.
+      - japanese: テーブルの上にお皿が置いてあります。
+        reading: テーブルのうえにおさらがおいてあります。
+        english: Plates have been set out on the table.
+      - japanese: ここに名前が書いてあります。
+        reading: ここになまえがかいてあります。
+        english: A name has been written here.
+    mistake:
+      wrong: 窓が開いてあります。
+      problem: 開く means the window opens by itself, and nobody acted on it, so ある has no result of an action to present. Use the transitive 開ける to say someone opened it, or 開いている for the plain state.
+      right: 窓が開けてあります。
+    distinguish_from:
+      - id: OJG-0018
+        note: ている says a thing is in a state (窓が開いている). てある says someone put it in that state on purpose (窓が開けてある). ている also describes people doing things; てある never does.
+    register:
+      - plain
+      - polite
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～てある
+          ref: 526
+    references:
+      - source_id: tanos
+        ref: 526
+    review:
+      status: draft
+      note: Adapted from the Mieru Nihongo note on 〜てあります, which two models agreed on (2026-09-21), and rewritten to stand on its own. The rewrite is new text, so it starts again at draft. The を〜てある variant (窓を開けてある) is left out on purpose; it wants its own careful note.
+  - id: OJG-0083
+    pattern: ～ているあいだに,～
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～ているあいだに,～
+          ref: 527
+    references:
+      - source_id: tanos
+        ref: 527
+    review:
+      status: stub
+  - id: OJG-0084
+    pattern: ～く/ ～にする
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～く/ ～にする
+          ref: 528
+    references:
+      - source_id: tanos
+        ref: 528
+    review:
+      status: stub
+  - id: OJG-0085
+    pattern: ～のようてほしい
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～のようてほしい
+          ref: 529
+    references:
+      - source_id: tanos
+        ref: 529
+    review:
+      status: stub
+  - id: OJG-0086
+    pattern: のに
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: のに
+          ref: 530
+    references:
+      - source_id: tanos
+        ref: 530
+    review:
+      status: stub
+  - id: OJG-0087
+    pattern: ～のような
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～のような
+          ref: 531
+    references:
+      - source_id: tanos
+        ref: 531
+    review:
+      status: stub
+  - id: OJG-0088
+    pattern: ～のように
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～のように
+          ref: 532
+    references:
+      - source_id: tanos
+        ref: 532
+    review:
+      status: stub
+  - id: OJG-0089
+    pattern: ～させられる
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～させられる
+          ref: 533
+    references:
+      - source_id: tanos
+        ref: 533
+    review:
+      status: stub
+  - id: OJG-0090
+    pattern: ～ことにする
+    levels:
+      commonly: N4
+      listed:
+        - source_id: tanos
+          level: N4
+          item: ～ことにする
+          ref: 534
+    references:
+      - source_id: tanos
+        ref: 534
+    review:
+      status: stub

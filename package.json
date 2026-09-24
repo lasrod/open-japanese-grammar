@@ -1,0 +1,19 @@
+{
+  "name": "open-japanese-grammar",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open Japanese Grammar: every grammar point described and reasoned, N5 to N1 and beyond.",
+  "license": "CC-BY-4.0",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "import:tanos": "node scripts/import-tanos.mjs",
+    "validate": "node scripts/validate.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/validate.mjs && node scripts/build.mjs --check"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "yaml": "^2.8.1"
+  }
+}

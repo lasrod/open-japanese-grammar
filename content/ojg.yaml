@@ -1,0 +1,56 @@
+schema_version: 0.1.0
+ojg_version: 0.1.0
+document:
+  title: Open Japanese Grammar
+  copyright: © 2026 Jesper Brännström and contributors
+  license:
+    id: CC-BY-4.0
+    name: Creative Commons Attribution 4.0 International License
+    url: https://creativecommons.org/licenses/by/4.0/
+  purpose: |-
+    Every Japanese grammar point a learner meets, from the first です to N1
+    and beyond the JLPT: what it means, how it is formed, and why it works the
+    way it does, with the mistakes learners make and the neighbours it is
+    confused with. Written to be cited, checked and improved in the open.
+source_policy:
+  summary: |-
+    The list of grammar points and their commonly listed levels come from
+    openly licensed sources, credited in references.yaml. Every explanation,
+    reason and example is written for this work. Nothing is copied or closely
+    paraphrased from a textbook, a grammar dictionary or a site whose terms
+    forbid reuse, even where the point itself is the same.
+  levels: |-
+    There has been no official JLPT grammar list since 2010. A level here is
+    where a point is commonly listed, never an official placement. Every level
+    a source gives is kept in levels.listed; levels.commonly is the one this
+    work files the point under.
+id_scheme:
+  format: OJG-NNNN
+  rule: |-
+    An id is a number, assigned once and never reused or renumbered. It says
+    nothing about the level, because levels are disputed and change. A point
+    that is merged or split is retired with a note saying what replaced it.
+level_files:
+- {file: N5.yaml, level: N5}
+- {file: N4.yaml, level: N4}
+- {file: N3.yaml, level: N3}
+- {file: N2.yaml, level: N2}
+- {file: N1.yaml, level: N1}
+- {file: beyond.yaml, level: none}
+review_statuses:
+- id: stub
+  meaning: Listed by a source; only the pattern and its levels are known.
+- id: draft
+  meaning: Written, not yet reviewed.
+- id: ai-reviewed
+  meaning: Two AI models from different providers agree on it. Awaiting a native speaker.
+- id: native-reviewed
+  meaning: A named native speaker has checked the Japanese and the explanation.
+required_sections:
+- Meaning
+- When to use it
+- Why it works this way
+- How it is formed
+- Examples
+- A common mistake
+retired: []
