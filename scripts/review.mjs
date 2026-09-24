@@ -6,10 +6,12 @@
 //   … --ids OJG-0018,OJG-0082   exactly these entries
 //   … --batch 8                 entries per request (default 8)
 //   … --dry-run                 print the first request, send nothing
+//   … --reconsider              only entries whose author has written a rebuttal
+//                               (review.rebuttals) to this reviewer's objection
+//                               to the current text; the reviewer sees both
 //
 // Keys: OPENAI_API_KEY or ANTHROPIC_API_KEY. Only draft entries are sent,
-// never stubs, and never an entry this model has already agreed on in its
-// current form.
+// never stubs, and never a text this reviewer has already ruled on.
 //
 // A ruling is recorded against a hash of the entry's text. The entry becomes
 // ai-reviewed when agreeing reviews of the current text come from two
@@ -31,6 +33,7 @@ const ids = option('ids')?.split(',');
 const batchSize = Number(option('batch') ?? 8);
 if (!Number.isInteger(batchSize) || batchSize < 1) throw new Error('--batch must be a positive whole number');
 const dryRun = flag('dry-run');
+const reconsider = flag('reconsider');
 if (!['openai', 'anthropic'].includes(provider)) throw new Error('--provider openai|anthropic is required');
 if (!model) throw new Error('--model is required');
 if (!level && !ids) throw new Error('--level or --ids is required');
@@ -43,10 +46,17 @@ const chosen = entriesOf(content).filter(({ entry, file }) => {
   if (entry.review.status !== 'draft') return false;
   if (entry.review.drafted_by?.provider === provider) return false;
   const hash = contentHash(entry);
-  // A reviewer is a provider and a model: two providers may share a model name.
-  return !(entry.review.reviews ?? []).some(
-    (r) => r.provider === provider && r.model === model && r.verdict === 'agree' && r.content_sha256 === hash,
+  // A reviewer is a provider and a model: two providers may share a model
+  // name. A reviewer rules once on a given text: asking again until it agrees
+  // would wash out an objection. Revise the entry, and it is new text; or,
+  // when the objection is wrong, write a rebuttal and ask it to reconsider.
+  const mine = (entry.review.reviews ?? []).filter(
+    (r) => r.provider === provider && r.model === model && r.content_sha256 === hash,
   );
+  if (!reconsider) return mine.length === 0;
+  const last = mine.at(-1);
+  return last?.verdict === 'disagree' && !last.reconsidered &&
+    (entry.review.rebuttals ?? []).some((b) => b.content_sha256 === hash);
 });
 const skippedSameProvider = entriesOf(content).filter(({ entry, file }) =>
   (ids ? ids.includes(entry.id) : file.level === level) &&
@@ -69,7 +79,9 @@ Check, and agree only if all hold:
 - Each distinguish_from note states the difference accurately.
 - The meaning line is faithful to the entry. The level is plausible (lists disagree; flag only a clear misplacement).
 
-When you disagree, say exactly what is wrong and what to write instead. Return exactly one ruling per id.`;
+When you disagree, say exactly what is wrong and what to write instead. Return exactly one ruling per id.
+
+An item may carry your previous objection to this exact text and the author's rebuttal. Reconsider honestly: check the text itself again. Keep the objection if it stands, and withdraw it if it does not.`;
 
 const SCHEMA = {
   type: 'object', additionalProperties: false, required: ['items'],
@@ -80,7 +92,13 @@ const SCHEMA = {
 };
 
 async function ask(entries) {
-  const payload = JSON.stringify({ items: entries.map(({ review, ...rest }) => rest) });
+  const payload = JSON.stringify({ items: entries.map(({ review, ...rest }) => {
+    if (!reconsider) return rest;
+    const hash = contentHash({ review, ...rest });
+    const objection = review.reviews.filter((r) => r.provider === provider && r.model === model && r.content_sha256 === hash).at(-1);
+    const rebuttal = review.rebuttals.filter((b) => b.content_sha256 === hash).at(-1);
+    return { ...rest, previous_objection: objection.note, rebuttal: rebuttal.note };
+  }) });
   const body = provider === 'openai'
     ? { model, messages: [{ role: 'system', content: SYSTEM }, { role: 'user', content: payload }],
         response_format: { type: 'json_schema', json_schema: { name: 'rulings', strict: true, schema: SCHEMA } } }
@@ -134,15 +152,18 @@ for (let i = 0; i < chosen.length; i += batchSize) {
   for (const { entry, file } of batch) {
     if (readFileSync(file.path, 'utf8') !== before.get(file.file)) throw new Error(`${file.file} changed during review`);
     const ruling = result.rulings.get(entry.id);
+    // Every ruling is kept: earlier ones are the entry's history, and stale
+    // once the text changes.
     entry.review.reviews = [
-      ...(entry.review.reviews ?? []).filter((r) => !(r.provider === provider && r.model === model)),
+      ...(entry.review.reviews ?? []),
       { by: model, kind: 'ai', provider, model, date, verdict: ruling.verdict,
-        content_sha256: contentHash(entry), note: ruling.note },
+        content_sha256: contentHash(entry), ...(reconsider ? { reconsidered: true } : {}),
+        ...(ruling.note.trim() ? { note: ruling.note.trim() } : {}) },
     ];
     entry.review.status = earnedStatus(entry) ?? 'draft';
     if (ruling.verdict === 'agree') agreed++;
     touched.add(file.file);
-    console.log(`${ruling.verdict.padEnd(8)} ${entry.id} ${entry.pattern} → ${entry.review.status}\n         ${ruling.note}`);
+    console.log(`${ruling.verdict.padEnd(8)} ${entry.id} ${entry.pattern} → ${entry.review.status}${ruling.note.trim() ? `\n         ${ruling.note.trim()}` : ''}`);
   }
 }
 // Last check before writing: an edit made while the requests ran, to any file

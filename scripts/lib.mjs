@@ -45,16 +45,23 @@ export function contentHash(entry) {
 
 /**
  * The status an entry's reviews earn. ai-reviewed needs two AI providers in
- * agreement on the current text: the drafting model counts as one, and a
- * review of an earlier version counts for nothing. native-reviewed needs a
- * named native speaker's agreement on the current text.
+ * agreement on the current text, the drafting model counting as one, and no
+ * objection to that text from anyone. A review of an earlier version counts
+ * for nothing. native-reviewed needs a named native speaker's agreement on
+ * the current text, and outranks an AI objection.
  */
 export function earnedStatus(entry) {
   const hash = contentHash(entry);
-  const current = (entry.review?.reviews ?? []).filter(
-    (r) => r.verdict === 'agree' && r.content_sha256 === hash,
-  );
+  // One reviewer, one current ruling on this text: the latest, which differs
+  // from the first only when the reviewer reconsidered after a rebuttal.
+  const latest = new Map();
+  for (const r of entry.review?.reviews ?? []) {
+    if (r.content_sha256 === hash) latest.set(`${r.kind}|${r.provider ?? r.by}|${r.model ?? ''}`, r);
+  }
+  const onText = [...latest.values()];
+  const current = onText.filter((r) => r.verdict === 'agree');
   if (current.some((r) => r.kind === 'native')) return 'native-reviewed';
+  if (onText.some((r) => r.verdict !== 'agree')) return null;
   const providers = new Set(current.filter((r) => r.kind === 'ai' && r.provider).map((r) => r.provider));
   const drafter = entry.review?.drafted_by?.provider;
   if (drafter && drafter !== 'human') providers.add(drafter);
