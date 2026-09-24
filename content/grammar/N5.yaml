@@ -247,7 +247,7 @@ entries:
     title: Doing something now, or being in the state a change left
     meaning: "V-ている: an action under way, something done regularly, or the state that follows a change."
     when: Use it for an action going on now (本を読んでいる), for something done repeatedly or an ongoing situation (毎朝走っている, 大阪に住んでいる), and for the state a subject is in after a change (結婚している, 窓が開いている).
-    why: 'いる says that a living thing is there. After the て-form of a verb it says the subject is there within that action, or after it. Which of the two you get depends on the verb. A verb for an activity that lasts (読む, 食べる) has a middle to be in, so the subject is in the middle of it. A verb for an instant change (結婚する, 開く, 知る) has no middle, so the subject is in the state after the change. That is why 知っている means "know" and 結婚している means "is married", not "is getting married". The いる here is a helper and stays いる even when the subject is a thing: 窓が開いている.'
+    why: 'いる says that a living thing is there. After the て-form of a verb it says the subject is there in the middle of the action, or in the state that follows it. Which reading you get depends on the verb and on the context. With a verb for an activity that lasts (読む, 食べる), ている often describes an action in progress. With a verb for a change (結婚する, 開く, 知る), it often describes the state after the change: 結婚している normally means "is married", and 知っている means "know". Words of frequency and other context can instead give a habitual reading (毎朝走っている), and 大阪に住んでいる describes an ongoing situation. The いる here is a helper and stays いる even when the subject is a thing: 窓が開いている.'
     formation:
       - form: V (て-form) + いる
         note: "Polite: V (て-form) + います."
@@ -286,8 +286,20 @@ entries:
       - source_id: tanos
         ref: 552
     review:
-      status: draft
+      status: ai-reviewed
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
       note: First complete entry, adapted from the Mieru Nihongo note on 〜ています and rewritten to stand on its own.
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-24
+          verdict: agree
+          content_sha256: 28ba3a8d6e5c1106bb5aa3296add6f84736bc8898a8665ce10d963f10fba0ab3
+          note: The explanation, formation, examples, mistake correction, and comparison are accurate; N5 is plausible.
   - id: OJG-0019
     pattern: ～にいく
     levels:

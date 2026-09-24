@@ -300,7 +300,45 @@
                   },
                   "note": {
                     "$ref": "#/$defs/text"
+                  },
+                  "provider": {
+                    "enum": [
+                      "anthropic",
+                      "openai",
+                      "google"
+                    ]
+                  },
+                  "model": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "content_sha256": {
+                    "type": "string",
+                    "pattern": "^[a-f0-9]{64}$",
+                    "description": "The entry this review judged, without its review block. A later edit makes the review stale."
                   }
+                }
+              }
+            },
+            "drafted_by": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "provider"
+              ],
+              "description": "Who wrote the entry. A model counts as one of the two providers ai-reviewed needs.",
+              "properties": {
+                "provider": {
+                  "enum": [
+                    "anthropic",
+                    "openai",
+                    "google",
+                    "human"
+                  ]
+                },
+                "model": {
+                  "type": "string",
+                  "minLength": 1
                 }
               }
             }

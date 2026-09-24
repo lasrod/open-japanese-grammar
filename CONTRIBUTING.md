@@ -67,8 +67,27 @@ replaced it. `npm run import:tanos` assigns the next free number to new stubs.
 
 ## Review status
 
-`stub` → `draft` → `ai-reviewed` → `native-reviewed`. Raise a status only when
-the review it names has happened, and record that review under
-`review.reviews` (who, when, verdict). A native speaker who has checked an
-entry says so in their own pull request. Nobody marks an entry
-`native-reviewed` on someone else's behalf.
+`stub` → `draft` → `ai-reviewed` → `native-reviewed`. A status is earned by
+reviews, never typed in:
+
+- Record who wrote an entry in `review.drafted_by` (`provider`: `human`,
+  `anthropic`, `openai`, `google`; and `model` for a model).
+- Every review carries the `content_sha256` of the entry it judged. Editing an
+  entry makes its earlier reviews stale, and `npm run validate` rejects a
+  status the current text has not earned. Set it back to `draft`, and review
+  again.
+- **ai-reviewed** needs agreement on the current text from two AI providers.
+  A drafting model counts as one, so a model-drafted entry needs one reviewer
+  from another provider, and a human-drafted entry needs two.
+  `scripts/review.mjs` does this:
+
+  ```bash
+  node --env-file=.env scripts/review.mjs --provider openai --model <model> --level N5
+  ```
+
+  It sends only written `draft` entries, never to the provider that drafted
+  them, and records each ruling. When the reviewer disagrees, its note says
+  what to change: revise the entry, then review again.
+- **native-reviewed** needs a named native speaker's agreement
+  (`kind: native`) on the current text, given in their own pull request.
+  Nobody marks an entry `native-reviewed` on someone else's behalf.

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { readFileSync } from 'node:fs';
 import Ajv2020 from 'ajv/dist/2020.js';
-import { at, loadContent, entriesOf } from './lib.mjs';
+import { at, loadContent, entriesOf, earnedStatus } from './lib.mjs';
 
 const content = loadContent();
 const ajv = new Ajv2020({ allErrors: true, allowUnionTypes: true });
@@ -35,6 +35,18 @@ for (const { entry, file } of entries) {
     if (!sources.has(r.source_id)) fail(where, `unknown source_id ${r.source_id}`);
   }
 }
+// A status is earned by reviews of the text as it stands, never claimed.
+const RANK = { stub: 0, draft: 1, 'ai-reviewed': 2, 'native-reviewed': 3 };
+for (const { entry, file } of entries) {
+  const claimed = entry.review?.status;
+  if (RANK[claimed] >= 2) {
+    const earned = earnedStatus(entry);
+    if (!earned || RANK[earned] < RANK[claimed]) {
+      fail(`${file.file} ${entry.id}`, `status ${claimed} is not earned by reviews of the current text; set it back to draft and review again`);
+    }
+  }
+}
+
 for (const { entry, file } of entries) {
   for (const d of entry.distinguish_from ?? []) {
     const where = `${file.file} ${entry.id}`;
