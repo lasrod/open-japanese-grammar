@@ -13,7 +13,7 @@ reference_sources:
   used_for: The list of points N5–N1 and their levels. Pages dated November 21, 2010.
   archived: sources/tanos/
 - id: hanabira
-  display_name: Hanabira (hanabira.org), Japanese grammar content
+  display_name: Hanabira (https://hanabira.org)
   type: grammar-list
   url: https://github.com/tristcoil/hanabira.org-japanese-content
   license: CC BY 4.0

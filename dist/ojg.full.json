@@ -28,7 +28,7 @@
     },
     {
       "id": "hanabira",
-      "display_name": "Hanabira (hanabira.org), Japanese grammar content",
+      "display_name": "Hanabira (https://hanabira.org)",
       "type": "grammar-list",
       "url": "https://github.com/tristcoil/hanabira.org-japanese-content",
       "license": "CC BY 4.0",
