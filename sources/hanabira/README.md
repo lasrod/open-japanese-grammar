@@ -10,11 +10,12 @@ licensed CC BY 4.0 ([LICENSE](LICENSE), copied from that commit) and credited in
 
 - **Used:** the list of points and the level each is listed at. It is a second
   list beside tanos, and it is much finer at N5 and N4 (136 and 124 titles,
-  against 40 and 50).
+  against 40 and 50). 30 titles are skipped as words or phrases.
 - **Not used:** Hanabira's explanations and example sentences. The licence
-  was clarified on 2026-09-24 (its issue #3, PR #4), but where the content
-  came from has not been confirmed: [issue #6](https://github.com/tristcoil/hanabira.org-japanese-content/issues/6),
-  which asks whether it is adapted from textbooks, has no answer yet. They are
+  was settled on 2026-09-24 (its issue #3, PR #4), which also answers the
+  licence question in [issue #6](https://github.com/tristcoil/hanabira.org-japanese-content/issues/6).
+  The other question in issue #6, whether the content is adapted from
+  textbooks, has no answer yet, so where it came from is unconfirmed. They are
   not archived here. Every entry is written for this work, as the source
   policy requires.
 

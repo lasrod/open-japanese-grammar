@@ -5,10 +5,15 @@
 // First it checks the mapping: every archived Hanabira title appears exactly
 // once, and every `ojg` id exists. A title Hanabira adds later fails here
 // until someone decides where it belongs.
+//
+//   node scripts/import-hanabira.mjs           # check, then add missing stubs
+//   node scripts/import-hanabira.mjs --check   # check only, and fail if a new
+//                                              # point has no stub (npm run check)
 import { readFileSync } from 'node:fs';
 import { at, loadContent, entriesOf, readYaml, writeLevelFile } from './lib.mjs';
 
 const LEVELS = ['N5', 'N4', 'N3', 'N2', 'N1'];
+const checkOnly = process.argv.includes('--check');
 
 function checkMapping(groups, titles, ids) {
   const problems = [];
@@ -55,6 +60,16 @@ const cited = new Set(
     (entry.references ?? []).filter((r) => r.source_id === 'hanabira').map((r) => r.ref),
   ),
 );
+if (checkOnly) {
+  const missing = groups.filter((g) => g.new && !cited.has(g.new)).map((g) => g.new);
+  if (missing.length) {
+    for (const m of missing) console.error(`import-hanabira: no stub for new point ${m}; run npm run import:hanabira`);
+    process.exit(1);
+  }
+  console.log(`import-hanabira: mapping ok (${groups.length} groups)`);
+  process.exit(0);
+}
+
 let next = Math.max(0, ...[...ids].map((id) => Number(id.slice(4)))) + 1;
 let added = 0;
 for (const group of groups) {
