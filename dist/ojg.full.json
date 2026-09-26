@@ -13394,7 +13394,7 @@
         "drafted_by": {
           "provider": "anthropic"
         },
-        "note": "Is 'いかが is a more formal word' the right framing, or should it be called honorific-leaning? Is the claim that は is often dropped in casual どう？ questions accurate? The mistake line contains a Japanese stage direction （旅行のあとで）; confirm that format is acceptable."
+        "note": "Is 'いかが is a more formal word' the right framing, or should it be called honorific-leaning? Is the claim that は is often dropped in casual どう？ questions accurate?"
       }
     },
     {
@@ -13494,7 +13494,7 @@
         "drafted_by": {
           "provider": "anthropic"
         },
-        "note": "Is 'が and を are usually left off' accurate enough (だれかが来ました is also fine)? Should casual なんか (for 何か) be mentioned? The mistake line uses a Japanese stage direction in brackets; confirm the format."
+        "note": "Is 'が and を are usually left off' accurate enough (だれかが来ました is also fine)? Should casual なんか (for 何か) be mentioned?"
       }
     },
     {
