@@ -11,7 +11,9 @@ build on it. It is written to be checked and improved in the open.
 ## Status
 
 The list of points comes from Jonathan Waller's JLPT lists (tanos.co.uk,
-CC BY): 287 points from N5 to N1. Most are **stubs**, which hold only the
+CC BY): 287 points from N5 to N1. Hanabira's finer N5 and N4 lists (CC BY 4.0)
+added 62 more: its list and levels only, never its text
+([sources/hanabira/](sources/hanabira/)). Most are **stubs**, which hold only the
 pattern and the level it is commonly listed at. The work is to turn stubs into
 full entries. [generated/coverage.md](generated/coverage.md) shows how far that
 has got.
@@ -58,4 +60,5 @@ so a stored id can always be followed.
 
 © 2026 Jesper Brännström and contributors, under
 [CC BY 4.0](LICENSE.md). The list of points and their levels is derived from
-Jonathan Waller's JLPT Resources (http://www.tanos.co.uk/jlpt/, CC BY).
+Jonathan Waller's JLPT Resources (http://www.tanos.co.uk/jlpt/, CC BY) and,
+for N5 and N4, from Hanabira (https://hanabira.org, CC BY 4.0).

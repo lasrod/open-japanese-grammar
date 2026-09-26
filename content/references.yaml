@@ -12,3 +12,20 @@ reference_sources:
   license_url: http://www.tanos.co.uk/jlpt/sharing/
   used_for: The list of points N5–N1 and their levels. Pages dated November 21, 2010.
   archived: sources/tanos/
+- id: hanabira
+  display_name: Hanabira (https://hanabira.org)
+  type: grammar-list
+  url: https://github.com/tristcoil/hanabira.org-japanese-content
+  license: CC BY 4.0
+  license_statement: >-
+    "This content is licensed under the Creative Commons Attribution 4.0
+    International (CC BY 4.0). When using this content, you must provide
+    attribution and include a link to https://hanabira.org."
+  license_url: https://github.com/tristcoil/hanabira.org-japanese-content/blob/1462bb37f0eb229fea58a18eb4855428bdbffa25/LICENSE
+  used_for: >-
+    The list of N5 and N4 points and their levels, at commit 1462bb3
+    (2026-09-24), as a second list beside tanos. Its explanations and examples
+    are not used: whether they are adapted from textbooks is unanswered
+    (the origin question in issue #6 on that repository), so every entry is
+    written for this work as usual.
+  archived: sources/hanabira/

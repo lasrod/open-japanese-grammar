@@ -3244,3 +3244,580 @@ entries:
           verdict: agree
           content_sha256: da369eacb13239225d7cb04d13a6806fc85fd64cba9b4cebdc86a76b3082d01f
           note: The explanation, formation, examples, and contrasts are accurate.
+  - id: OJG-0288
+    pattern: が
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: ～が (〜ga)
+    references:
+      - source_id: hanabira
+        ref: が
+    review:
+      status: stub
+  - id: OJG-0289
+    pattern: N1のN2
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: ～の (〜no)
+    references:
+      - source_id: hanabira
+        ref: N1のN2
+    review:
+      status: stub
+  - id: OJG-0290
+    pattern: ～が、～／～けど、～
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: ～が、～ (〜ga, 〜)
+        - source_id: hanabira
+          level: N5
+          item: ～けど、～ (〜kedo、～)
+        - source_id: hanabira
+          level: N5
+          item: ～けれど、～ (〜keredo、～)
+        - source_id: hanabira
+          level: N4
+          item: ～けれど (〜keredo)
+    references:
+      - source_id: hanabira
+        ref: ～が、～／～けど、～
+    review:
+      status: stub
+  - id: OJG-0291
+    pattern: でも／しかし／けれども
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: A。けれども、～B。(A. Keredomo,~ B.)
+        - source_id: hanabira
+          level: N5
+          item: A。しかし、～B。 (A. Shikashi, ~B.)
+        - source_id: hanabira
+          level: N5
+          item: A。でも、～B。(A. Demo, ~B)
+    references:
+      - source_id: hanabira
+        ref: でも／しかし／けれども
+    review:
+      status: stub
+  - id: OJG-0292
+    pattern: では／じゃ／それでは
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: A。じゃ、～B。(A. Ja, ~B.)
+        - source_id: hanabira
+          level: N5
+          item: A。それじゃ、～B。(A. Soreja,~B.)
+        - source_id: hanabira
+          level: N5
+          item: A。それでは、～B。(A. Soredewa,~B.)
+        - source_id: hanabira
+          level: N5
+          item: A。 では、～B。 (A. Dewa, ~B)
+    references:
+      - source_id: hanabira
+        ref: では／じゃ／それでは
+    review:
+      status: stub
+  - id: OJG-0293
+    pattern: そして／それから
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: そして、～ (soshite、～)
+        - source_id: hanabira
+          level: N5
+          item: それから、～ (sorekara、～)
+    references:
+      - source_id: hanabira
+        ref: そして／それから
+    review:
+      status: stub
+  - id: OJG-0294
+    pattern: だから
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: だから、～ (dakara、～)
+        - source_id: hanabira
+          level: N4
+          item: 文A。だから 文B (Bun A. Dakara Bun B)
+    references:
+      - source_id: hanabira
+        ref: だから
+    review:
+      status: stub
+  - id: OJG-0297
+    pattern: AとBとどちらが～
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: Aと Bと どちら～ (A to B to dochira~)
+        - source_id: hanabira
+          level: N5
+          item: AとBと どっち〜 (A to B to docchi〜)
+    references:
+      - source_id: hanabira
+        ref: AとBとどちらが～
+    review:
+      status: stub
+  - id: OJG-0298
+    pattern: AはBが～
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: A は B が〜 (A wa B ga〜)
+    references:
+      - source_id: hanabira
+        ref: AはBが～
+    review:
+      status: stub
+  - id: OJG-0300
+    pattern: ～く／～に + verb
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: い-Adjective く + Verb (i-Adjective + ku + Verb)
+        - source_id: hanabira
+          level: N5
+          item: な-Adjective に + Verb
+    references:
+      - source_id: hanabira
+        ref: ～く／～に + verb
+    review:
+      status: stub
+  - id: OJG-0301
+    pattern: ～くないです
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: "い-Adjective: Negative Polite Form"
+    references:
+      - source_id: hanabira
+        ref: ～くないです
+    review:
+      status: stub
+  - id: OJG-0302
+    pattern: ～くて／～で
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: い-Adjective て (i-Adjective + te~)
+        - source_id: hanabira
+          level: N5
+          item: な-Adjective で～ (na-Adjective de~)
+    references:
+      - source_id: hanabira
+        ref: ～くて／～で
+    review:
+      status: stub
+  - id: OJG-0303
+    pattern: NかN
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: Noun か Noun か～ (Noun ka Noun ka～)
+    references:
+      - source_id: hanabira
+        ref: NかN
+    review:
+      status: stub
+  - id: OJG-0304
+    pattern: ～ができる／～ことができる
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: Noun が できます (Noun ga dekimasu)
+        - source_id: hanabira
+          level: N5
+          item: Verb る こと が できます (ru koto ga dekimasu)
+        - source_id: hanabira
+          level: N5
+          item: Verb る こと ができる (ru koto ga dekiru)
+        - source_id: hanabira
+          level: N4
+          item: Verb ることができる (〜ru koto ga dekiru)
+    references:
+      - source_id: hanabira
+        ref: ～ができる／～ことができる
+    review:
+      status: stub
+  - id: OJG-0305
+    pattern: ～から～まで／～まで
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: Noun から Noun まで (Noun kara Noun made)
+        - source_id: hanabira
+          level: N4
+          item: ～まで (〜made)
+    references:
+      - source_id: hanabira
+        ref: ～から～まで／～まで
+    review:
+      status: stub
+  - id: OJG-0307
+    pattern: 数量 + くらい／ぐらい
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: Noun くらい～ (Noun kurai～)
+        - source_id: hanabira
+          level: N5
+          item: Noun ぐらい～ (Noun gurai～)
+    references:
+      - source_id: hanabira
+        ref: 数量 + くらい／ぐらい
+    review:
+      status: stub
+  - id: OJG-0308
+    pattern: 時間 + ごろ
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: Noun ごろ～ (Noun + goro～)
+    references:
+      - source_id: hanabira
+        ref: 時間 + ごろ
+    review:
+      status: stub
+  - id: OJG-0309
+    pattern: ～だけ
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: Noun だけ〜 (〜dake)
+    references:
+      - source_id: hanabira
+        ref: ～だけ
+    review:
+      status: stub
+  - id: OJG-0310
+    pattern: Nにする
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: Noun に します (Noun ni shimasu)
+        - source_id: hanabira
+          level: N4
+          item: Noun に する (Noun ni suru)
+    references:
+      - source_id: hanabira
+        ref: Nにする
+    review:
+      status: stub
+  - id: OJG-0311
+    pattern: ～あとで
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: Noun の あとで (Noun no atode)
+        - source_id: hanabira
+          level: N5
+          item: Verb た あとで (ta ato de)
+    references:
+      - source_id: hanabira
+        ref: ～あとで
+    review:
+      status: stub
+  - id: OJG-0312
+    pattern: ～て、～
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: Verb て～ (Verb + te～)
+    references:
+      - source_id: hanabira
+        ref: ～て、～
+    review:
+      status: stub
+  - id: OJG-0313
+    pattern: ～こと
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: Verb ること～ (〜ru koto)
+    references:
+      - source_id: hanabira
+        ref: ～こと
+    review:
+      status: stub
+  - id: OJG-0314
+    pattern: ～の
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: Verb る の～ (Verb + ru + no~)
+    references:
+      - source_id: hanabira
+        ref: ～の
+    review:
+      status: stub
+  - id: OJG-0315
+    pattern: あまり～ない
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: あまり～ありません (amari ~ arimasen)
+        - source_id: hanabira
+          level: N5
+          item: あまり～ないです (amari ~ nai desu)
+    references:
+      - source_id: hanabira
+        ref: あまり～ない
+    review:
+      status: stub
+  - id: OJG-0316
+    pattern: ぜんぜん～ない
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: ぜんぜん～ (zenzen～)
+    references:
+      - source_id: hanabira
+        ref: ぜんぜん～ない
+    review:
+      status: stub
+  - id: OJG-0318
+    pattern: ～はどうですか／～はいかがですか
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: ～いかがですか。 (〜ikaga desu ka.)
+        - source_id: hanabira
+          level: N5
+          item: ～どうですか。 (〜dou desu ka.)
+    references:
+      - source_id: hanabira
+        ref: ～はどうですか／～はいかがですか
+    review:
+      status: stub
+  - id: OJG-0319
+    pattern: 疑問詞 + か
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: いつか～ (itsuka～)
+        - source_id: hanabira
+          level: N5
+          item: だれか〜 (dareka〜)
+        - source_id: hanabira
+          level: N5
+          item: どこか～ (dokoka～)
+        - source_id: hanabira
+          level: N5
+          item: なにか～ (nanika～)
+    references:
+      - source_id: hanabira
+        ref: 疑問詞 + か
+    review:
+      status: stub
+  - id: OJG-0320
+    pattern: 疑問詞 + でも
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: いつでも～ (itsudemo～)
+        - source_id: hanabira
+          level: N5
+          item: だれでも～ (dare demo～)
+        - source_id: hanabira
+          level: N5
+          item: どこでも～ (dokodemo～)
+        - source_id: hanabira
+          level: N5
+          item: どれでも～ (dore demo～)
+        - source_id: hanabira
+          level: N5
+          item: なんでも～ (nandemo～)
+    references:
+      - source_id: hanabira
+        ref: 疑問詞 + でも
+    review:
+      status: stub
+  - id: OJG-0321
+    pattern: 疑問詞 + も + negative
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: だれも～ないです (dare mo ~ nai desu)
+        - source_id: hanabira
+          level: N5
+          item: だれも～ません (daremo ~masen)
+        - source_id: hanabira
+          level: N5
+          item: どこにも + Verb + ないです (doko ni mo + Verb + nai desu)
+        - source_id: hanabira
+          level: N5
+          item: どこにも + Verb + ません (doko ni mo + Verb + masen)
+        - source_id: hanabira
+          level: N5
+          item: どこへも Verb ないです (doko e mo + Verb + nai desu)
+        - source_id: hanabira
+          level: N5
+          item: どこへも Verb ません (doko e mo + Verb + masen)
+        - source_id: hanabira
+          level: N5
+          item: どこも Verb ないです (dokomo + Verb + naidesu)
+        - source_id: hanabira
+          level: N5
+          item: どこも Verb ません (dokomo + Verb + masen)
+        - source_id: hanabira
+          level: N5
+          item: なにも～ないです (nani mo~nai desu)
+        - source_id: hanabira
+          level: N5
+          item: なにも～ません (nanimo~masen)
+    references:
+      - source_id: hanabira
+        ref: 疑問詞 + も + negative
+    review:
+      status: stub
+  - id: OJG-0322
+    pattern: あげる
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: ～に あげます (〜 ni agemasu)
+        - source_id: hanabira
+          level: N4
+          item: Noun を あげる (Noun wo ageru)
+    references:
+      - source_id: hanabira
+        ref: あげる
+    review:
+      status: stub
+  - id: OJG-0323
+    pattern: くれる
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: ～が 私に くれます (〜ga watashi ni kuremasu)
+        - source_id: hanabira
+          level: N4
+          item: Noun を くれる (Noun wo kureru)
+    references:
+      - source_id: hanabira
+        ref: くれる
+    review:
+      status: stub
+  - id: OJG-0324
+    pattern: もらう
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: ～から もらいます (〜kara moraimasu)
+        - source_id: hanabira
+          level: N5
+          item: ～に もらいます (〜ni moraimasu)
+        - source_id: hanabira
+          level: N4
+          item: Noun もらう (Noun wo morau)
+    references:
+      - source_id: hanabira
+        ref: もらう
+    review:
+      status: stub
+  - id: OJG-0330
+    pattern: ～とき
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: ～とき (〜toki)
+        - source_id: hanabira
+          level: N4
+          item: Verb た ときに (Verb た ときに)
+        - source_id: hanabira
+          level: N4
+          item: Verb るときに (〜ru toki ni)
+    references:
+      - source_id: hanabira
+        ref: ～とき
+    review:
+      status: stub
+  - id: OJG-0333
+    pattern: なんと言いますか
+    levels:
+      commonly: N5
+      listed:
+        - source_id: hanabira
+          level: N5
+          item: ～どう 言いますか。 (〜dou iimasu ka.)
+        - source_id: hanabira
+          level: N5
+          item: ～なんと 言いますか。 (〜nan to iimasu ka.)
+    references:
+      - source_id: hanabira
+        ref: なんと言いますか
+    review:
+      status: stub
