@@ -750,3 +750,418 @@ entries:
         ref: 534
     review:
       status: stub
+  - id: OJG-0295
+    pattern: それで
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: 文A。それで 文B (Bun A. Sorede Bun B)
+    references:
+      - source_id: hanabira
+        ref: それで
+    review:
+      status: stub
+  - id: OJG-0296
+    pattern: それに／そのうえ
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: 文A。そのうえ 文B。
+        - source_id: hanabira
+          level: N4
+          item: 文A。それに 文B (Bun A. Soreni Bun B)
+    references:
+      - source_id: hanabira
+        ref: それに／そのうえ
+    review:
+      status: stub
+  - id: OJG-0299
+    pattern: AはBほど～ない
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: A は B ほど～ありません (A wa B hodo ～ arimasen)
+        - source_id: hanabira
+          level: N4
+          item: A は B ほど～ない (A wa B hodo ~ nai)
+    references:
+      - source_id: hanabira
+        ref: AはBほど～ない
+    review:
+      status: stub
+  - id: OJG-0306
+    pattern: ～までに
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: ～までに (〜made ni)
+    references:
+      - source_id: hanabira
+        ref: ～までに
+    review:
+      status: stub
+  - id: OJG-0317
+    pattern: そんなに～ない
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: そんなに～ (sonna ni〜)
+    references:
+      - source_id: hanabira
+        ref: そんなに～ない
+    review:
+      status: stub
+  - id: OJG-0325
+    pattern: さしあげる／いただく／くださる
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: Nounをいただく (Noun wo itadaku)
+        - source_id: hanabira
+          level: N4
+          item: Nounをくださる
+        - source_id: hanabira
+          level: N4
+          item: Noun を さしあげる (Noun wo sashiageru)
+    references:
+      - source_id: hanabira
+        ref: さしあげる／いただく／くださる
+    review:
+      status: stub
+  - id: OJG-0326
+    pattern: ～てさしあげる／～ていただく／～てくださる
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: Verb ていただく (〜te itadaku)
+        - source_id: hanabira
+          level: N4
+          item: Verb て くださる (Verb-te kudasaru)
+        - source_id: hanabira
+          level: N4
+          item: Verb て + さしあげる (Verb TE sashiageru)
+    references:
+      - source_id: hanabira
+        ref: ～てさしあげる／～ていただく／～てくださる
+    review:
+      status: stub
+  - id: OJG-0327
+    pattern: ～てくれませんか／～てもらえませんか／～てくださいませんか
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: Verb て くださいませんか (Verb-te kudasaimasen ka)
+        - source_id: hanabira
+          level: N4
+          item: Verb てくれませんか (〜te kuremasen ka)
+        - source_id: hanabira
+          level: N4
+          item: Verb てもらえませんか (～te moraemasen ka)
+    references:
+      - source_id: hanabira
+        ref: ～てくれませんか／～てもらえませんか／～てくださいませんか
+    review:
+      status: stub
+  - id: OJG-0328
+    pattern: ～てほしい
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: Verb て ほしい (Verb-te hoshii)
+    references:
+      - source_id: hanabira
+        ref: ～てほしい
+    review:
+      status: stub
+  - id: OJG-0329
+    pattern: ～てもらいたい／～ていただきたい
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: Verb ていただきたい (te itadakitai)
+        - source_id: hanabira
+          level: N4
+          item: Verb てもらいたい (～te moraitai)
+    references:
+      - source_id: hanabira
+        ref: ～てもらいたい／～ていただきたい
+    review:
+      status: stub
+  - id: OJG-0331
+    pattern: ～と思う
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: ～と思う (〜to omou)
+    references:
+      - source_id: hanabira
+        ref: ～と思う
+    review:
+      status: stub
+  - id: OJG-0332
+    pattern: ～なければならない／～なくてはいけない／～ないといけない
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: ～ないといけない (〜nai to ikenai)
+        - source_id: hanabira
+          level: N4
+          item: ～なくてはいけない (〜nakute wa ikenai)
+        - source_id: hanabira
+          level: N4
+          item: ～なければ ならない (〜nakereba naranai)
+    references:
+      - source_id: hanabira
+        ref: ～なければならない／～なくてはいけない／～ないといけない
+    review:
+      status: stub
+  - id: OJG-0334
+    pattern: ～とか～とか
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: A とか B とか
+    references:
+      - source_id: hanabira
+        ref: ～とか～とか
+    review:
+      status: stub
+  - id: OJG-0335
+    pattern: N + 中
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: Noun + 中 (Noun + ちゅう)
+    references:
+      - source_id: hanabira
+        ref: N + 中
+    review:
+      status: stub
+  - id: OJG-0336
+    pattern: ～ところ
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: Verb た ところ (Verb ta tokoro)
+        - source_id: hanabira
+          level: N4
+          item: Verb て いる ところ (Verb te iru tokoro)
+        - source_id: hanabira
+          level: N4
+          item: Verb る ところ (Verb-ru tokoro)
+    references:
+      - source_id: hanabira
+        ref: ～ところ
+    review:
+      status: stub
+  - id: OJG-0337
+    pattern: ～ていく／～てくる
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: Verb て いく (Verb-te iku)
+        - source_id: hanabira
+          level: N4
+          item: Verb て くる (Verb te kuru)
+    references:
+      - source_id: hanabira
+        ref: ～ていく／～てくる
+    review:
+      status: stub
+  - id: OJG-0338
+    pattern: ～ことがある
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: Verb ない ことがある (Verb-nai koto ga aru)
+        - source_id: hanabira
+          level: N4
+          item: Verb る ことがある (〜ru koto ga aru)
+    references:
+      - source_id: hanabira
+        ref: ～ことがある
+    review:
+      status: stub
+  - id: OJG-0339
+    pattern: ～ようと思う
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: Verb ようと思う (Verb-you to omou)
+    references:
+      - source_id: hanabira
+        ref: ～ようと思う
+    review:
+      status: stub
+  - id: OJG-0340
+    pattern: ～ように言う
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: Verb ように言う (Verb-you ni iu)
+    references:
+      - source_id: hanabira
+        ref: ～ように言う
+    review:
+      status: stub
+  - id: OJG-0341
+    pattern: ～出す
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: Verb 出す (~dasu)
+    references:
+      - source_id: hanabira
+        ref: ～出す
+    review:
+      status: stub
+  - id: OJG-0342
+    pattern: ～終わる
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: Verb 終わる (〜owaru)
+    references:
+      - source_id: hanabira
+        ref: ～終わる
+    review:
+      status: stub
+  - id: OJG-0343
+    pattern: ～続ける
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: Verb + 続ける (つづける, tsuzukeru)
+    references:
+      - source_id: hanabira
+        ref: ～続ける
+    review:
+      status: stub
+  - id: OJG-0344
+    pattern: ～方
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: Verb 方 (〜hou)
+    references:
+      - source_id: hanabira
+        ref: ～方
+    review:
+      status: stub
+  - id: OJG-0345
+    pattern: ～かな／～かしら
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: ～かしら (〜kashira)
+        - source_id: hanabira
+          level: N4
+          item: ～かなあ (〜kanaa)
+    references:
+      - source_id: hanabira
+        ref: ～かな／～かしら
+    review:
+      status: stub
+  - id: OJG-0346
+    pattern: ～させてください
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: ～させてください (〜sasete kudasai)
+    references:
+      - source_id: hanabira
+        ref: ～させてください
+    review:
+      status: stub
+  - id: OJG-0347
+    pattern: ～ずつ
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: ～ずつ (〜zutsu)
+    references:
+      - source_id: hanabira
+        ref: ～ずつ
+    review:
+      status: stub
+  - id: OJG-0348
+    pattern: ～たらいい／～ばいい
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: ～たらいい (〜tara ii)
+        - source_id: hanabira
+          level: N4
+          item: ～ばいい (〜ba ii)
+    references:
+      - source_id: hanabira
+        ref: ～たらいい／～ばいい
+    review:
+      status: stub
+  - id: OJG-0349
+    pattern: ～ようだ
+    levels:
+      commonly: N4
+      listed:
+        - source_id: hanabira
+          level: N4
+          item: ～ようだ (〜you da)
+    references:
+      - source_id: hanabira
+        ref: ～ようだ
+    review:
+      status: stub

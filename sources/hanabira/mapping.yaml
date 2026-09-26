@@ -1,0 +1,879 @@
+# How each point on Hanabira's N5 and N4 lists maps to Open Japanese Grammar.
+#
+# Every title in grammar-n5.titles.json and grammar-n4.titles.json appears
+# exactly once. A group is one of:
+#   ojg:  the point already has an entry; nothing is added, and the entry is
+#         not changed (a changed entry loses its reviews).
+#   new:  a point OJG did not have; scripts/import-hanabira.mjs adds a stub.
+#         The pattern is ours; the gloss is for people reading this file.
+#   skip: not a grammar point here (a word taught from the vocabulary lists).
+#
+# Only the list and its levels are used. Hanabira's explanations and
+# examples are not (see README.md).
+- ojg: OJG-0002
+  items:
+  - level: N5
+    item: Noun も〜 (Noun mo~)
+  - level: N4
+    item: ～も (〜mo)
+- ojg: OJG-0003
+  items:
+  - level: N5
+    item: Nounで～ (Noun de ~)
+  - level: N4
+    item: ～で (〜de)
+- ojg: OJG-0004
+  items:
+  - level: N5
+    item: Noun に 帰ります (Noun ni kaerimasu)
+  - level: N5
+    item: Noun に 来ます (Noun ni kimasu)
+  - level: N5
+    item: Noun に 行きます (Noun ni ikimasu)
+  - level: N5
+    item: Noun に 戻ります (Noun ni modorimasu)
+- ojg: OJG-0005
+  items:
+  - level: N5
+    item: Noun に～ (Noun ni～)
+  - level: N4
+    item: ～に (〜ni)
+- ojg: OJG-0006
+  items:
+  - level: N5
+    item: Noun を〜 (Noun wo〜)
+- ojg: OJG-0007
+  items:
+  - level: N5
+    item: Verb ませんか。 (Verb-masenka)
+- ojg: OJG-0008
+  items:
+  - level: N5
+    item: Noun は～ (Noun wa〜)
+- ojg: OJG-0009
+  items:
+  - level: N5
+    item: ～あります (〜arimasu)
+  - level: N5
+    item: ～（場所）に～があります (〜basho ni 〜 ga arimasu)
+- ojg: OJG-0011
+  items:
+  - level: N5
+    item: Noun と～ (Noun to～)
+- ojg: OJG-0012
+  items:
+  - level: N5
+    item: Verb ましょう (mashou)
+- ojg: OJG-0013
+  items:
+  - level: N5
+    item: Verb ましょうか。 (〜mashou ka.)
+- ojg: OJG-0014
+  items:
+  - level: N5
+    item: Verb て ください (Verb-te kudasai)
+- ojg: OJG-0015
+  items:
+  - level: N4
+    item: ～てもいい (〜temo ii)
+- ojg: OJG-0016
+  items:
+  - level: N4
+    item: ～てはいけない (〜te wa ikenai)
+- ojg: OJG-0017
+  items:
+  - level: N5
+    item: ～から、～ (〜kara、～)
+  - level: N5
+    item: ～からです (〜kara desu)
+  - level: N4
+    item: ～から (〜kara)
+- ojg: OJG-0018
+  items:
+  - level: N5
+    item: Verb て います (Verb te imasu)
+  - level: N5
+    item: ～て います (～te imasu)
+  - level: N4
+    item: Verb て いる (Verb-te iru)
+- ojg: OJG-0019
+  items:
+  - level: N5
+    item: Verb に 来ます (Verb ni kimasu)
+  - level: N5
+    item: Verb に 行きます (Verb ni ikimasu)
+- ojg: OJG-0020
+  items:
+  - level: N5
+    item: Verb ないで ください (〜naide kudasai)
+- ojg: OJG-0024
+  items:
+  - level: N5
+    item: まだ〜ないです (mada 〜 nai desu)
+  - level: N5
+    item: まだ～ません (mada ~masen)
+- ojg: OJG-0025
+  items:
+  - level: N5
+    item: A は B より～ (A wa B yori～)
+  - level: N5
+    item: A より B のほうが～ (A yori B no hou ga ～)
+  - level: N4
+    item: A より B のほうが〜 (A yori B no hou ga 〜)
+- ojg: OJG-0026
+  items:
+  - level: N5
+    item: A が いちばん～ (A ga ichiban～)
+- ojg: OJG-0027
+  items:
+  - level: N4
+    item: Verb つもり (〜tsumori)
+- ojg: OJG-0028
+  items:
+  - level: N5
+    item: な-Adjective に なります (na-Adjective ni narimasu)
+  - level: N5
+    item: Noun に なります (Noun ni narimasu)
+  - level: N4
+    item: Noun に なる (Noun ni naru)
+- ojg: OJG-0029
+  items:
+  - level: N5
+    item: Verb たいです (taidesu)
+- ojg: OJG-0030
+  items:
+  - level: N5
+    item: ～たり、～たり します (〜tari, 〜tari shimasu)
+  - level: N4
+    item: ～たり～たり (〜tari 〜tari)
+- ojg: OJG-0031
+  items:
+  - level: N4
+    item: Verb た ことがある (Verb ta koto ga aru)
+- ojg: OJG-0032
+  items:
+  - level: N5
+    item: Noun や Noun など～ (Noun ya Noun nado)
+- ojg: OJG-0033
+  items:
+  - level: N4
+    item: ～のです (〜no desu)
+  - level: N4
+    item: ～んです (〜n desu)
+- ojg: OJG-0034
+  items:
+  - level: N4
+    item: ～すぎる (〜sugiru)
+- ojg: OJG-0035
+  items:
+  - level: N4
+    item: Verb たほうがいい (〜ta hou ga ii)
+  - level: N4
+    item: Verb ないほうがいい (Verb nai hou ga ii)
+- ojg: OJG-0036
+  items:
+  - level: N4
+    item: ～ので (〜node)
+- ojg: OJG-0037
+  note: The casual forms. The formal forms of "must" are a new point.
+  items:
+  - level: N4
+    item: ～なきゃいけない (〜nakya ikenai)
+  - level: N4
+    item: ～なくちゃいけない (〜naku cha ikenai)
+- ojg: OJG-0038
+  note: だろう is the plain form of でしょう.
+  items:
+  - level: N4
+    item: ～だろう (〜darou)
+  - level: N4
+    item: ～でしょう (〜deshou)
+- ojg: OJG-0039
+  items:
+  - level: N5
+    item: Noun の 前に (Noun no mae ni)
+  - level: N5
+    item: Verb る 前に (ru mae ni)
+- ojg: OJG-0040
+  items:
+  - level: N5
+    item: Verb てから～ (〜te kara)
+- ojg: OJG-0041
+  items:
+  - level: N4
+    item: ～し、～し、～ (〜shi, 〜shi, 〜)
+- ojg: OJG-0043
+  items:
+  - level: N4
+    item: Verb てみる (〜te miru)
+- ojg: OJG-0046
+  items:
+  - level: N5
+    item: Noun がほしいです (〜ga hoshii desu)
+- ojg: OJG-0048
+  items:
+  - level: N4
+    item: ～かもしれない (〜kamoshirenai)
+- ojg: OJG-0049
+  items:
+  - level: N4
+    item: ～たら いかがですか (〜tara ikaga desu ka)
+  - level: N4
+    item: ～たら どうですか (〜tara doudesuka)
+- ojg: OJG-0051
+  items:
+  - level: N4
+    item: Noun しか～ない (Noun shika~nai)
+- ojg: OJG-0052
+  items:
+  - level: N4
+    item: Verb ておく (〜te oku)
+- ojg: OJG-0055
+  items:
+  - level: N4
+    item: Verb てあげる (Verb te ageru)
+- ojg: OJG-0056
+  items:
+  - level: N4
+    item: Verb て くれる (Verb-te kureru)
+- ojg: OJG-0057
+  items:
+  - level: N4
+    item: Verb て もらう (Verb-te morau)
+- ojg: OJG-0058
+  items:
+  - level: N4
+    item: Verb て いただけませんか (Verb te itadakemasen ka)
+- ojg: OJG-0059
+  items:
+  - level: N4
+    item: ～といい (〜to ii)
+- ojg: OJG-0061
+  note: Hanabira describes the "looks like" use.
+  items:
+  - level: N4
+    item: ～そうだ (〜sou da)
+- ojg: OJG-0062
+  items:
+  - level: N4
+    item: Verb させる (Verb-saseru)
+- ojg: OJG-0063
+  items:
+  - level: N4
+    item: Verb なさい (〜nasai)
+- ojg: OJG-0065
+  note: OJG-0139 (N3, ～ても) is listed separately by tanos; a candidate to merge.
+  items:
+  - level: N4
+    item: ～ても/でも (〜te mo/demo)
+- ojg: OJG-0067
+  items:
+  - level: N4
+    item: ～なくてもいい (〜nakutemo ii)
+- ojg: OJG-0068
+  items:
+  - level: N4
+    item: ～みたいだ (〜mitai da)
+- ojg: OJG-0069
+  items:
+  - level: N4
+    item: Verb てしまう (〜te shimau)
+- ojg: OJG-0071
+  items:
+  - level: N4
+    item: Verb ながら (〜nagara)
+- ojg: OJG-0077
+  items:
+  - level: N4
+    item: ～かどうか (〜ka dou ka)
+- ojg: OJG-0078
+  items:
+  - level: N4
+    item: ～っていう (〜tte iu)
+  - level: N4
+    item: ～という (〜to iu) Noun
+  - level: N4
+    item: ～という (〜to iu)
+- ojg: OJG-0079
+  items:
+  - level: N4
+    item: Verb やすい (〜yasui)
+- ojg: OJG-0080
+  items:
+  - level: N4
+    item: Verb にくい (〜nikui)
+- ojg: OJG-0081
+  items:
+  - level: N4
+    item: Verb られる (〜rareru)
+- ojg: OJG-0082
+  items:
+  - level: N4
+    item: Verb て ある (Verb-te aru)
+- ojg: OJG-0083
+  items:
+  - level: N4
+    item: Noun の 間に (〜no aida ni)
+  - level: N4
+    item: Verb ている間に (te iru aida ni)
+- ojg: OJG-0084
+  note: Hanabira N4 lists する and なる together; the なる half is OJG-0028.
+  items:
+  - level: N5
+    item: い-Adjective く します (i-Adjective ku shimasu)
+  - level: N5
+    item: な-Adjective に します (na-Adjective ni shimasu)
+  - level: N4
+    item: い-Adjective く する/なる (i-Adjective kusuru/naru)
+  - level: N4
+    item: な-adjective に する/なる
+- ojg: OJG-0086
+  items:
+  - level: N4
+    item: ～のに (〜no ni)
+- ojg: OJG-0089
+  items:
+  - level: N4
+    item: Verb させられる (Verb-saserareru)
+- ojg: OJG-0090
+  items:
+  - level: N4
+    item: Verb ない + ことにする (Verb nai koto ni suru)
+  - level: N4
+    item: Verb ることにする (〜ru koto ni suru)
+- ojg: OJG-0092
+  items:
+  - level: N4
+    item: Verb ようになる (〜you ni naru)
+- ojg: OJG-0093
+  items:
+  - level: N4
+    item: Verb ない ことになる (Verb nai koto ni naru)
+  - level: N4
+    item: Verb る ことになる (〜ru koto ni naru)
+- ojg: OJG-0101
+  items:
+  - level: N4
+    item: Noun ばかり (〜bakari)
+- ojg: OJG-0108
+  items:
+  - level: N4
+    item: ～まま (〜mama)
+- ojg: OJG-0133
+  items:
+  - level: N4
+    item: のために (no tame ni)
+  - level: N4
+    item: Verb ために (tame ni)
+- ojg: OJG-0137
+  items:
+  - level: N4
+    item: Verb ようにする (Verb ~you ni suru)
+- ojg: OJG-0141
+  items:
+  - level: N4
+    item: Verb ように (〜you ni)
+- new: が
+  gloss: subject marker
+  note: Hanabira also gives the "but" use here; that use is the clause-joining が／けど point.
+  items:
+  - level: N5
+    item: ～が (〜ga)
+- new: N1のN2
+  gloss: linking nouns
+  items:
+  - level: N5
+    item: ～の (〜no)
+- new: ～が、～／～けど、～
+  gloss: but
+  items:
+  - level: N5
+    item: ～が、～ (〜ga, 〜)
+  - level: N5
+    item: ～けど、～ (〜kedo、～)
+  - level: N5
+    item: ～けれど、～ (〜keredo、～)
+  - level: N4
+    item: ～けれど (〜keredo)
+- new: でも／しかし／けれども
+  gloss: sentence-initial but
+  items:
+  - level: N5
+    item: A。けれども、～B。(A. Keredomo,~ B.)
+  - level: N5
+    item: A。しかし、～B。 (A. Shikashi, ~B.)
+  - level: N5
+    item: A。でも、～B。(A. Demo, ~B)
+- new: では／じゃ／それでは
+  gloss: well then
+  items:
+  - level: N5
+    item: A。じゃ、～B。(A. Ja, ~B.)
+  - level: N5
+    item: A。それじゃ、～B。(A. Soreja,~B.)
+  - level: N5
+    item: A。それでは、～B。(A. Soredewa,~B.)
+  - level: N5
+    item: A。 では、～B。 (A. Dewa, ~B)
+- new: そして／それから
+  gloss: and, and then
+  items:
+  - level: N5
+    item: そして、～ (soshite、～)
+  - level: N5
+    item: それから、～ (sorekara、～)
+- new: だから
+  gloss: so, that is why
+  items:
+  - level: N5
+    item: だから、～ (dakara、～)
+  - level: N4
+    item: 文A。だから 文B (Bun A. Dakara Bun B)
+- new: それで
+  gloss: and so
+  items:
+  - level: N4
+    item: 文A。それで 文B (Bun A. Sorede Bun B)
+- new: それに／そのうえ
+  gloss: besides
+  items:
+  - level: N4
+    item: 文A。そのうえ 文B。
+  - level: N4
+    item: 文A。それに 文B (Bun A. Soreni Bun B)
+- new: AとBとどちらが～
+  gloss: which of the two
+  items:
+  - level: N5
+    item: Aと Bと どちら～ (A to B to dochira~)
+  - level: N5
+    item: AとBと どっち〜 (A to B to docchi〜)
+- new: AはBが～
+  gloss: topic, then subject
+  items:
+  - level: N5
+    item: A は B が〜 (A wa B ga〜)
+- new: AはBほど～ない
+  gloss: not as ... as
+  items:
+  - level: N4
+    item: A は B ほど～ありません (A wa B hodo ～ arimasen)
+  - level: N4
+    item: A は B ほど～ない (A wa B hodo ~ nai)
+- new: ～く／～に + verb
+  gloss: adjective as adverb
+  items:
+  - level: N5
+    item: い-Adjective く + Verb (i-Adjective + ku + Verb)
+  - level: N5
+    item: な-Adjective に + Verb
+- new: ～くないです
+  gloss: i-adjective negative
+  items:
+  - level: N5
+    item: 'い-Adjective: Negative Polite Form'
+- new: ～くて／～で
+  gloss: joining adjectives
+  items:
+  - level: N5
+    item: い-Adjective て (i-Adjective + te~)
+  - level: N5
+    item: な-Adjective で～ (na-Adjective de~)
+- new: NかN
+  gloss: or
+  items:
+  - level: N5
+    item: Noun か Noun か～ (Noun ka Noun ka～)
+- new: ～ができる／～ことができる
+  gloss: can
+  items:
+  - level: N5
+    item: Noun が できます (Noun ga dekimasu)
+  - level: N5
+    item: Verb る こと が できます (ru koto ga dekimasu)
+  - level: N5
+    item: Verb る こと ができる (ru koto ga dekiru)
+  - level: N4
+    item: Verb ることができる (〜ru koto ga dekiru)
+- new: ～から～まで／～まで
+  gloss: from, until
+  items:
+  - level: N5
+    item: Noun から Noun まで (Noun kara Noun made)
+  - level: N4
+    item: ～まで (〜made)
+- new: ～までに
+  gloss: by
+  items:
+  - level: N4
+    item: ～までに (〜made ni)
+- new: 数量 + くらい／ぐらい
+  gloss: about
+  note: OJG-0113 ～ぐらい and OJG-0105 ～は～くらいです (N3) are the "to the extent" uses.
+  items:
+  - level: N5
+    item: Noun くらい～ (Noun kurai～)
+  - level: N5
+    item: Noun ぐらい～ (Noun gurai～)
+- new: 時間 + ごろ
+  gloss: around a time
+  items:
+  - level: N5
+    item: Noun ごろ～ (Noun + goro～)
+- new: ～だけ
+  gloss: only, just
+  items:
+  - level: N5
+    item: Noun だけ〜 (〜dake)
+- new: Nにする
+  gloss: decide on
+  items:
+  - level: N5
+    item: Noun に します (Noun ni shimasu)
+  - level: N4
+    item: Noun に する (Noun ni suru)
+- new: ～あとで
+  gloss: after
+  items:
+  - level: N5
+    item: Noun の あとで (Noun no atode)
+  - level: N5
+    item: Verb た あとで (ta ato de)
+- new: ～て、～
+  gloss: joining actions
+  items:
+  - level: N5
+    item: Verb て～ (Verb + te～)
+- new: ～こと
+  gloss: a verb as a noun
+  items:
+  - level: N5
+    item: Verb ること～ (〜ru koto)
+- new: ～の
+  gloss: a verb as a noun
+  items:
+  - level: N5
+    item: Verb る の～ (Verb + ru + no~)
+- new: あまり～ない
+  gloss: not very
+  items:
+  - level: N5
+    item: あまり～ありません (amari ~ arimasen)
+  - level: N5
+    item: あまり～ないです (amari ~ nai desu)
+- new: ぜんぜん～ない
+  gloss: not at all
+  items:
+  - level: N5
+    item: ぜんぜん～ (zenzen～)
+- new: そんなに～ない
+  gloss: not that much
+  items:
+  - level: N4
+    item: そんなに～ (sonna ni〜)
+- new: ～はどうですか／～はいかがですか
+  gloss: how about
+  items:
+  - level: N5
+    item: ～いかがですか。 (〜ikaga desu ka.)
+  - level: N5
+    item: ～どうですか。 (〜dou desu ka.)
+- new: 疑問詞 + か
+  gloss: someone, somewhere
+  items:
+  - level: N5
+    item: いつか～ (itsuka～)
+  - level: N5
+    item: だれか〜 (dareka〜)
+  - level: N5
+    item: どこか～ (dokoka～)
+  - level: N5
+    item: なにか～ (nanika～)
+- new: 疑問詞 + でも
+  gloss: anyone, anywhere
+  items:
+  - level: N5
+    item: いつでも～ (itsudemo～)
+  - level: N5
+    item: だれでも～ (dare demo～)
+  - level: N5
+    item: どこでも～ (dokodemo～)
+  - level: N5
+    item: どれでも～ (dore demo～)
+  - level: N5
+    item: なんでも～ (nandemo～)
+- new: 疑問詞 + も + negative
+  gloss: no one, nowhere
+  items:
+  - level: N5
+    item: だれも～ないです (dare mo ~ nai desu)
+  - level: N5
+    item: だれも～ません (daremo ~masen)
+  - level: N5
+    item: どこにも + Verb + ないです (doko ni mo + Verb + nai desu)
+  - level: N5
+    item: どこにも + Verb + ません (doko ni mo + Verb + masen)
+  - level: N5
+    item: どこへも Verb ないです (doko e mo + Verb + nai desu)
+  - level: N5
+    item: どこへも Verb ません (doko e mo + Verb + masen)
+  - level: N5
+    item: どこも Verb ないです (dokomo + Verb + naidesu)
+  - level: N5
+    item: どこも Verb ません (dokomo + Verb + masen)
+  - level: N5
+    item: なにも～ないです (nani mo~nai desu)
+  - level: N5
+    item: なにも～ません (nanimo~masen)
+- new: あげる
+  gloss: give
+  items:
+  - level: N5
+    item: ～に あげます (〜 ni agemasu)
+  - level: N4
+    item: Noun を あげる (Noun wo ageru)
+- new: くれる
+  gloss: give to me
+  items:
+  - level: N5
+    item: ～が 私に くれます (〜ga watashi ni kuremasu)
+  - level: N4
+    item: Noun を くれる (Noun wo kureru)
+- new: もらう
+  gloss: receive
+  items:
+  - level: N5
+    item: ～から もらいます (〜kara moraimasu)
+  - level: N5
+    item: ～に もらいます (〜ni moraimasu)
+  - level: N4
+    item: Noun もらう (Noun wo morau)
+- new: さしあげる／いただく／くださる
+  gloss: polite giving and receiving
+  items:
+  - level: N4
+    item: Nounをいただく (Noun wo itadaku)
+  - level: N4
+    item: Nounをくださる
+  - level: N4
+    item: Noun を さしあげる (Noun wo sashiageru)
+- new: ～てさしあげる／～ていただく／～てくださる
+  gloss: polite favours
+  items:
+  - level: N4
+    item: Verb ていただく (〜te itadaku)
+  - level: N4
+    item: Verb て くださる (Verb-te kudasaru)
+  - level: N4
+    item: Verb て + さしあげる (Verb TE sashiageru)
+- new: ～てくれませんか／～てもらえませんか／～てくださいませんか
+  gloss: asking a favour
+  note: ～ていただけませんか is OJG-0058.
+  items:
+  - level: N4
+    item: Verb て くださいませんか (Verb-te kudasaimasen ka)
+  - level: N4
+    item: Verb てくれませんか (〜te kuremasen ka)
+  - level: N4
+    item: Verb てもらえませんか (～te moraemasen ka)
+- new: ～てほしい
+  gloss: I want you to
+  note: Possibly what OJG-0085 (～のようてほしい, garbled in the archived tanos page) meant; check before writing either.
+  items:
+  - level: N4
+    item: Verb て ほしい (Verb-te hoshii)
+- new: ～てもらいたい／～ていただきたい
+  gloss: I would like you to
+  items:
+  - level: N4
+    item: Verb ていただきたい (te itadakitai)
+  - level: N4
+    item: Verb てもらいたい (～te moraitai)
+- new: ～とき
+  gloss: when
+  items:
+  - level: N5
+    item: ～とき (〜toki)
+  - level: N4
+    item: Verb た ときに (Verb た ときに)
+  - level: N4
+    item: Verb るときに (〜ru toki ni)
+- new: ～と思う
+  gloss: I think
+  items:
+  - level: N4
+    item: ～と思う (〜to omou)
+- new: ～なければならない／～なくてはいけない／～ないといけない
+  gloss: must
+  items:
+  - level: N4
+    item: ～ないといけない (〜nai to ikenai)
+  - level: N4
+    item: ～なくてはいけない (〜nakute wa ikenai)
+  - level: N4
+    item: ～なければ ならない (〜nakereba naranai)
+- new: なんと言いますか
+  gloss: how do you say
+  items:
+  - level: N5
+    item: ～どう 言いますか。 (〜dou iimasu ka.)
+  - level: N5
+    item: ～なんと 言いますか。 (〜nan to iimasu ka.)
+- new: ～とか～とか
+  gloss: things like
+  items:
+  - level: N4
+    item: A とか B とか
+- new: N + 中
+  gloss: during, in the middle of
+  items:
+  - level: N4
+    item: Noun + 中 (Noun + ちゅう)
+- new: ～ところ
+  gloss: about to, in the middle of, just did
+  items:
+  - level: N4
+    item: Verb た ところ (Verb ta tokoro)
+  - level: N4
+    item: Verb て いる ところ (Verb te iru tokoro)
+  - level: N4
+    item: Verb る ところ (Verb-ru tokoro)
+- new: ～ていく／～てくる
+  gloss: going on, coming to
+  items:
+  - level: N4
+    item: Verb て いく (Verb-te iku)
+  - level: N4
+    item: Verb て くる (Verb te kuru)
+- new: ～ことがある
+  gloss: sometimes happens
+  items:
+  - level: N4
+    item: Verb ない ことがある (Verb-nai koto ga aru)
+  - level: N4
+    item: Verb る ことがある (〜ru koto ga aru)
+- new: ～ようと思う
+  gloss: thinking of doing
+  items:
+  - level: N4
+    item: Verb ようと思う (Verb-you to omou)
+- new: ～ように言う
+  gloss: tell someone to
+  items:
+  - level: N4
+    item: Verb ように言う (Verb-you ni iu)
+- new: ～出す
+  gloss: start to
+  items:
+  - level: N4
+    item: Verb 出す (~dasu)
+- new: ～終わる
+  gloss: finish doing
+  items:
+  - level: N4
+    item: Verb 終わる (〜owaru)
+- new: ～続ける
+  gloss: keep doing
+  items:
+  - level: N4
+    item: Verb + 続ける (つづける, tsuzukeru)
+- new: ～方
+  gloss: way of doing
+  items:
+  - level: N4
+    item: Verb 方 (〜hou)
+- new: ～かな／～かしら
+  gloss: I wonder
+  items:
+  - level: N4
+    item: ～かしら (〜kashira)
+  - level: N4
+    item: ～かなあ (〜kanaa)
+- new: ～させてください
+  gloss: let me
+  items:
+  - level: N4
+    item: ～させてください (〜sasete kudasai)
+- new: ～ずつ
+  gloss: each
+  items:
+  - level: N4
+    item: ～ずつ (〜zutsu)
+- new: ～たらいい／～ばいい
+  gloss: it would be good to
+  items:
+  - level: N4
+    item: ～たらいい (〜tara ii)
+  - level: N4
+    item: ～ばいい (〜ba ii)
+- new: ～ようだ
+  gloss: it seems
+  items:
+  - level: N4
+    item: ～ようだ (〜you da)
+- skip: word
+  note: A word on the JLPT vocabulary lists, used without a pattern of its own. It is taught as a word, from JMdict.
+  items:
+  - level: N5
+    item: いくつ～ (ikutsu~)
+  - level: N5
+    item: いつも～ (itsumo～)
+  - level: N5
+    item: こちら～ (kochira～)
+  - level: N5
+    item: さっき～ (sakki～)
+  - level: N5
+    item: すぐに～ (sugu ni～)
+  - level: N5
+    item: そちら～ (sochira～)
+  - level: N5
+    item: だいたい〜 (daitai〜)
+  - level: N5
+    item: たいてい～ (taitei～)
+  - level: N5
+    item: だれ～ (dare～)
+  - level: N5
+    item: どうやって～ (douyatte～)
+  - level: N5
+    item: ときどき～ (tokidoki～)
+  - level: N5
+    item: どこ～ (doko～)
+  - level: N5
+    item: どちら～ (dochira～)
+  - level: N5
+    item: どなた～ (donata～)
+  - level: N5
+    item: どの Noun (dono Noun)
+  - level: N5
+    item: どんな Noun (donna)
+  - level: N5
+    item: なに～ (nani~)
+  - level: N5
+    item: なん～ (nan~)
+  - level: N5
+    item: なんで～ (nande～)
+  - level: N5
+    item: ～はたいへんです (〜wa taihen desu)
+  - level: N5
+    item: ほとんど〜 (hotondo〜)
+  - level: N5
+    item: まあまあ～ (maa maa～)
+  - level: N5
+    item: まだ〜 (mada〜)
+  - level: N5
+    item: もう～ (mou～)
+  - level: N5
+    item: もうすぐ〜 (mou sugu~)
+  - level: N5
+    item: もっと〜 (motto〜)
+  - level: N5
+    item: よく～ (yoku ~)
+  - level: N4
+    item: そんな (sonna) + Noun
+  - level: N4
+    item: どういう Noun (dou iu Noun)
+- skip: phrase
+  note: A question word with an ordinary verb; no pattern of its own.
+  items:
+  - level: N5
+    item: ～どう しますか。 (～dou shimasu ka.)
