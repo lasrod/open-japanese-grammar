@@ -592,6 +592,48 @@ entries:
         model: claude-opus-5-5
   - id: OJG-0053
     pattern: ～よう
+    title: Let's…, I'll… (the volitional form)
+    meaning: "The volitional form (食べよう, 行こう): \"let's V\" in casual speech, or the speaker's own will, \"I'll V\"."
+    when: "Use it in casual speech to suggest doing something together (映画を見よう, \"let's watch a film\") or to state, to yourself or others, what you have decided to do (もう寝よう, \"I'll go to bed now\"). With か it offers or consults: 持とうか, \"shall I carry it?\". It is the plain counterpart of ましょう, and the base of ～ようと思う."
+    why: "The volitional form expresses the speaker's will. Whether it comes out as \"let's\" or \"I'll\" depends on who is included: about something you and the listener can do together, it invites; about yourself, it declares an intention. Ichidan verbs add よう to the stem (食べよう, 見よう). Godan verbs move their last sound to the お-row and add う (行く → 行こう, 飲む → 飲もう, 待つ → 待とう, 買う → 買おう), which is why lists name the form by both endings, ～よう and ～おう. Because it states a will, everyday speech does not use it for things nobody controls, such as the weather."
+    formation:
+      - form: Ichidan verb (stem) + よう
+        note: 食べる → 食べよう, 起きる → 起きよう, 見る → 見よう.
+      - form: Godan verb (last sound to the お-row) + う
+        note: 行く → 行こう, 飲む → 飲もう, 話す → 話そう, 待つ → 待とう, 帰る → 帰ろう, 買う → 買おう.
+      - form: する → しよう; 来る → 来よう (こよう)
+      - form: Volitional + か
+        note: 'Offers or consults: 持とうか, "shall I carry it?"; どうしようか, "what shall we do?". Polite: ましょうか.'
+    examples:
+      - japanese: 疲れたね。ちょっと休もう。
+        reading: つかれたね。ちょっとやすもう。
+        romaji: tsukareta ne. chotto yasumō.
+        english: We're tired, aren't we. Let's take a short break.
+      - japanese: 明日から毎日走ろう。
+        reading: あしたからまいにちはしろう。
+        romaji: ashita kara mainichi hashirō.
+        english: From tomorrow, I'll run every day.
+        note: Said to yourself, it states an intention.
+      - japanese: 重そうだね。持とうか。
+        reading: おもそうだね。もとうか。
+        romaji: omosō da ne. motō ka.
+        english: That looks heavy. Shall I carry it?
+      - japanese: 週末、いっしょに映画を見よう。
+        reading: しゅうまつ、いっしょにえいがをみよう。
+        romaji: shūmatsu, issho ni eiga o miyō.
+        english: Let's watch a film together this weekend.
+    mistake:
+      wrong: 早く行きよう。
+      problem: 行く is a godan verb, so よう is not added to its stem. Its last sound moves to the お-row and takes う.
+      right: 早く行こう。
+    distinguish_from:
+      - id: OJG-0012
+        note: ましょう is the polite form of the same will and invitation. The volitional form is the plain one, for friends and family and for talking to yourself.
+      - id: OJG-0339
+        note: ようと思う reports an intention you hold ("I'm thinking of…"). The volitional form on its own states the decision, or invites.
+    register:
+      - plain
+      - casual
     levels:
       commonly: N4
       listed:
@@ -603,7 +645,11 @@ entries:
       - source_id: tanos
         ref: 497
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: Tanos lists ～よう (497) and ～おう (498) separately. They are one form, the volitional, split by verb class, so this entry covers both; OJG-0054 is left as a stub for the owner to retire as a duplicate.
   - id: OJG-0054
     pattern: ～おう
     levels:
@@ -620,6 +666,38 @@ entries:
       status: stub
   - id: OJG-0055
     pattern: ～てあげる
+    title: Doing something for someone
+    meaning: "V-てあげる: do V for someone else's benefit; the favour goes out from you or your side."
+    when: 'Use it when you, or someone on your side, do something for another person: 妹に本を読んであげました, "I read a book to my little sister". The person who benefits keeps whatever particle the verb needs (友だちを駅まで送ってあげた, 友だちの宿題を見てあげた), or takes に where the verb has no place for them.'
+    why: "あげる is \"give\", outward from the speaker's side. After the て-form it gives the action itself as a favour, so the direction is the same: from me, or my side, to others. Because it presents what you do as a kindness, saying it to the person you are helping can sound condescending, like \"I'll do you the favour\". Offers are made with ましょうか instead (持ちましょうか). For a favour that comes to you, use てくれる or てもらう."
+    formation:
+      - form: V (て-form) + あげる
+        note: "Polite: てあげます. Humble, towards someone above the receiver: てさしあげる (OJG-0326), which has the same problem when said to their face."
+    examples:
+      - japanese: 妹に本を読んであげました。
+        reading: いもうとにほんをよんであげました。
+        romaji: imōto ni hon o yonde agemashita.
+        english: I read a book to my little sister.
+      - japanese: 友だちを車で駅まで送ってあげました。
+        reading: ともだちをくるまでえきまでおくってあげました。
+        romaji: tomodachi o kuruma de eki made okutte agemashita.
+        english: I gave my friend a lift to the station.
+      - japanese: 兄は友だちに料理を作ってあげました。
+        reading: あにはともだちにりょうりをつくってあげました。
+        romaji: ani wa tomodachi ni ryōri o tsukutte agemashita.
+        english: My older brother cooked for his friend.
+    mistake:
+      wrong: 先生、荷物を持ってあげます。
+      problem: てあげる frames your help as a favour you are granting. Said to the person you are helping, and especially to a superior, it sounds condescending. Offer with ましょうか.
+      right: 先生、荷物を持ちましょうか。
+    distinguish_from:
+      - id: OJG-0056
+        note: てくれる is a favour that comes in, to you or your side. てあげる is a favour going out from your side.
+      - id: OJG-0322
+        note: あげる gives a thing. てあげる gives an action.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -631,9 +709,44 @@ entries:
       - source_id: tanos
         ref: 499
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0056
     pattern: ～てくれる
+    title: Someone does something for me
+    meaning: "V-てくれる: someone does V for the speaker or the speaker's side; the doer is the subject, and the favour comes in."
+    when: "Use it when someone does something that benefits you or someone on your side, and you want to show it was a kindness: 友だちが駅まで迎えに来てくれました. The doer is the subject (が or は); since the favour comes to you, 私に is usually left out. It also makes casual requests: 手伝ってくれる？"
+    why: "くれる is \"give (to me)\": it points only inward, towards the speaker's side. After the て-form it hands an action to you as a gift. 母が弁当を作りました only states a fact; 母が弁当を作ってくれました shows it was done for you and that you appreciate it, and leaving it out where someone did you a favour can sound cold. Because the direction is fixed, the one who benefits is always you or your side, never an outsider."
+    formation:
+      - form: V (て-form) + くれる
+        note: "Polite: てくれます. Honorific: てくださる (OJG-0326). Requests: てくれる？, てくれませんか (OJG-0327)."
+    examples:
+      - japanese: 友だちが駅まで迎えに来てくれました。
+        reading: ともだちがえきまでむかえにきてくれました。
+        romaji: tomodachi ga eki made mukae ni kite kuremashita.
+        english: My friend came to meet me at the station.
+      - japanese: 母がお弁当を作ってくれました。
+        reading: ははがおべんとうをつくってくれました。
+        romaji: haha ga obentō o tsukutte kuremashita.
+        english: My mother made me a packed lunch.
+      - japanese: 田中さんが道を教えてくれました。
+        reading: たなかさんがみちをおしえてくれました。
+        romaji: tanaka-san ga michi o oshiete kuremashita.
+        english: Tanaka-san showed me the way.
+    mistake:
+      wrong: 私は友だちに宿題を手伝ってくれました。
+      problem: With てくれる the doer is the subject and the favour comes to you. 私は makes you the doer. Make the friend the subject, or keep 私は and use てもらう.
+      right: 友だちが宿題を手伝ってくれました。
+    distinguish_from:
+      - id: OJG-0057
+        note: Same event, other viewpoint. てくれる makes the doer the subject; てもらう makes the receiver the subject and marks the doer with に.
+      - id: OJG-0055
+        note: てあげる is a favour going out from your side. てくれる is one coming in.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -645,9 +758,44 @@ entries:
       - source_id: tanos
         ref: 500
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0057
     pattern: ～てもらう
+    title: Having someone do something for you
+    meaning: "V-てもらう: have someone do V for you; the receiver is the subject, and the doer is marked with に."
+    when: "Use it to tell a favour from the receiver's side: 友だちに宿題を手伝ってもらいました, \"I had my friend help me with my homework\". It also covers getting something done by someone (時計を直してもらう, \"get a watch repaired\") and forms polite requests (てもらえませんか)."
+    why: "もらう is \"receive\". After the て-form it receives an action: you receive someone's doing V. So the subject is the one who benefits, and the one who acts is the source, marked with に just as in 友だちにもらった. Compared with てくれる, the event is the same but told from the receiver's side, and it can suggest you asked for it or arranged it. For a kindness nobody asked for, てくれる is often more natural."
+    formation:
+      - form: (receiver は) doer に … V (て-form) + もらう
+        note: "Polite: てもらいます. Humble: ていただく (OJG-0326). Request: てもらえませんか (OJG-0327)."
+    examples:
+      - japanese: 友だちに宿題を手伝ってもらいました。
+        reading: ともだちにしゅくだいをてつだってもらいました。
+        romaji: tomodachi ni shukudai o tetsudatte moraimashita.
+        english: I had my friend help me with my homework.
+      - japanese: 店の人に写真を撮ってもらいました。
+        reading: みせのひとにしゃしんをとってもらいました。
+        romaji: mise no hito ni shashin o totte moraimashita.
+        english: I had someone from the shop take a photo for me.
+      - japanese: 壊れた時計を直してもらいました。
+        reading: こわれたとけいをなおしてもらいました。
+        romaji: kowareta tokei o naoshite moraimashita.
+        english: I had my broken watch repaired.
+    mistake:
+      wrong: 友だちが私に本を貸してもらいました。
+      problem: With てもらう the subject is the receiver. Here the friend did the lending, so either make yourself the subject and mark the friend with に, or keep the friend as subject with てくれる.
+      right: 私は友だちに本を貸してもらいました。
+    distinguish_from:
+      - id: OJG-0056
+        note: てくれる tells the same favour with the doer as subject. てもらう tells it with the receiver as subject.
+      - id: OJG-0324
+        note: もらう receives a thing. てもらう receives an action.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -659,9 +807,42 @@ entries:
       - source_id: tanos
         ref: 501
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0058
     pattern: ～ていただけませんか
+    title: Could you possibly…? (a very polite request)
+    meaning: 'V-ていただけませんか: "could you please V?"; a very polite request, asked as whether you may receive the favour.'
+    when: "Use it for polite requests to strangers, customers, teachers, or anyone above you, especially for a real favour: もう少しゆっくり話していただけませんか. Less formal members of the same family are てもらえませんか, てくださいませんか and てくれませんか."
+    why: "いただく is the humble verb for \"receive\", and いただける is its potential form, \"can receive\". ませんか asks in the negative. Put together: \"can't I receive your doing V?\". The request is softened twice: it asks about your receiving instead of telling the listener to act, and the negative question leaves room for no. Since the speaker is the one receiving, the listener, who does the action, is usually not named."
+    formation:
+      - form: V (て-form) + いただけませんか
+        note: いただけますか is a little less soft. いただけないでしょうか is softer still.
+    examples:
+      - japanese: もう少しゆっくり話していただけませんか。
+        reading: もうすこしゆっくりはなしていただけませんか。
+        romaji: mō sukoshi yukkuri hanashite itadakemasen ka.
+        english: Could you speak a little more slowly, please?
+      - japanese: すみません、この字の読み方を教えていただけませんか。
+        reading: すみません、このじのよみかたをおしえていただけませんか。
+        romaji: sumimasen, kono ji no yomikata o oshiete itadakemasen ka.
+        english: Excuse me, could you tell me how to read this character?
+      - japanese: 明日までに書類を送っていただけませんか。
+        reading: あしたまでにしょるいをおくっていただけませんか。
+        romaji: ashita made ni shorui o okutte itadakemasen ka.
+        english: Could you send the documents by tomorrow?
+    mistake:
+      wrong: 先生、この本を貸していただきませんか。
+      problem: The request needs the potential form いただける, "can I receive". いただきませんか asks "won't (we) receive?", which is not a request to the listener.
+      right: 先生、この本を貸していただけませんか。
+    distinguish_from:
+      - id: OJG-0327
+        note: てくれませんか, てもらえませんか and てくださいませんか make the same request less formally. ていただけませんか is the most polite of the everyday forms.
+    register:
+      - polite
+      - humble
     levels:
       commonly: N4
       listed:
@@ -673,9 +854,47 @@ entries:
       - source_id: tanos
         ref: 502
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: Overlaps OJG-0327 (the other request forms) and OJG-0326 (ていただく); a candidate to merge into one entry for the request family.
   - id: OJG-0059
     pattern: ～といいです
+    title: I hope…, it would be good if…
+    meaning: 'Plain form + といいです(ね): "I hope…", "it would be nice if…"; a wish for something you cannot bring about yourself.'
+    when: "Use it to hope for an outcome that is not in your hands: 明日晴れるといいですね, \"I hope it's sunny tomorrow\". With ね, it shares the hope with the listener, often as a kind wish for them: 早くよくなるといいですね. For your own hopes, といいんですが or, casually, といいなあ is common."
+    why: This と is the conditional "if A, then B", so といい says "if A happens, it's good". Saying an outcome would be good is how Japanese states a hope without claiming control over it. When the hope is about the future, the part before と is in the non-past (晴れる), because the outcome still lies ahead. A trailing が or けど (といいんですが) adds "but I can't be sure", which suits your own hopes.
+    formation:
+      - form: Verb / い-adjective (plain form) + といいです(ね)
+        note: 晴れるといい, 安いといい; negative 雨が降らないといい.
+      - form: Noun / な-adjective + だ + といい
+        note: 晴れだといい, 元気だといい.
+      - form: … といいんですが／といいなあ
+        note: For your own hopes, or to add that you are unsure.
+    examples:
+      - japanese: 明日、晴れるといいですね。
+        reading: あした、はれるといいですね。
+        romaji: ashita, hareru to ii desu ne.
+        english: I hope it's sunny tomorrow.
+      - japanese: お母さんの病気が早くよくなるといいですね。
+        reading: おかあさんのびょうきがはやくよくなるといいですね。
+        romaji: okāsan no byōki ga hayaku yoku naru to ii desu ne.
+        english: I hope your mother gets better soon.
+      - japanese: 試験に合格できるといいんですが。
+        reading: しけんにごうかくできるといいんですが。
+        romaji: shiken ni gōkaku dekiru to ii n desu ga.
+        english: I hope I can pass the exam.
+    mistake:
+      wrong: 明日、晴れたといいですね。
+      problem: The hope is about tomorrow, so the part before と stays non-past. The た-form belongs with たら (晴れたらいいですね), a different pattern with a similar meaning.
+      right: 明日、晴れるといいですね。
+    distinguish_from:
+      - id: OJG-0348
+        note: たらいい and ばいい can also express a hope (晴れたらいい), but they are mainly for asking and giving advice (どうしたらいいですか). といい is mainly a wish.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -687,9 +906,43 @@ entries:
       - source_id: tanos
         ref: 503
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: A た-form before といい can hope about something already decided (間に合ったといいんですが, "I hope he made it"); the entry leaves this out for N4. Is that the right call?
   - id: OJG-0060
     pattern: ～てすみません
+    title: Sorry for doing…
+    meaning: 'V-てすみません: "sorry for V-ing"; apologises for a specific thing you did or failed to do.'
+    when: "Use it to name what you are apologising for: 遅れてすみません, \"sorry I'm late\". For something you did not do, use the negative て-form なくて: 返事をしなくてすみません. For something over and done, すみませんでした; more formally, て申し訳ありません."
+    why: "The て-form here gives a cause: \"I did V, and so, I'm sorry\". The part before すみません names what the apology is for. When the cause is something you failed to do, the negative て-form that gives a reason is なくて. ないで means \"without doing\" or asks someone not to do something; it does not give a cause, so it does not fit here."
+    formation:
+      - form: V (て-form) + すみません
+        note: "Past, for something finished: てすみませんでした."
+      - form: V (negative) → なくて + すみません
+        note: 来なくて, 連絡しなくて.
+      - form: V (て-form) + 申し訳ありません
+        note: More formal, for customers and superiors.
+    examples:
+      - japanese: 遅れてすみません。
+        reading: おくれてすみません。
+        romaji: okurete sumimasen.
+        english: Sorry I'm late.
+      - japanese: 昨日は電話に出なくてすみませんでした。
+        reading: きのうはでんわにでなくてすみませんでした。
+        romaji: kinō wa denwa ni denakute sumimasen deshita.
+        english: Sorry I didn't answer the phone yesterday.
+      - japanese: 夜遅くに電話してすみません。
+        reading: よるおそくにでんわしてすみません。
+        romaji: yoru osoku ni denwa shite sumimasen.
+        english: Sorry for calling so late at night.
+    mistake:
+      wrong: 返事をしないですみません。
+      problem: The part before すみません gives the reason for the apology, and a negative reason takes なくて. ないで means "without doing" and does not give a reason.
+      right: 返事をしなくてすみません。
+    register:
+      - polite
     levels:
       commonly: N4
       listed:
@@ -701,9 +954,53 @@ entries:
       - source_id: tanos
         ref: 504
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0061
     pattern: ～そうです
+    title: Looks like, looks about to
+    meaning: "Stem + そうです: \"looks (adjective)\", judged from appearance; after a verb stem, \"looks as if it's about to V\"."
+    when: "Use it for your impression of something in front of you: このケーキはおいしそうです, \"this cake looks delicious\". After a verb stem, it says something looks about to happen: 雨が降りそうです, \"it looks like it's going to rain\". Before a noun it becomes そうな (おいしそうなケーキ), and before a verb, そうに (楽しそうに遊ぶ)."
+    why: "This そう gives your own judgement from what you can see or sense, before you know for sure: the cake looks good, but you have not tasted it yet. That is why adjectives that simply name what you see, such as 赤い or きれい, are usually said directly instead. It joins to a stem, not to a full form: い-adjectives drop い (高い → 高そう), な-adjectives use the stem (元気そう), and verbs use the ます-stem (降りそう). The full form before そう (高いそう) is a different point, the hearsay そう. Two irregulars: いい → よさそう, ない → なさそう."
+    formation:
+      - form: い-adjective (drop い) + そう
+        note: 高そう, おいしそう. いい → よさそう; ない → なさそう (おいしくなさそう).
+      - form: な-adjective (stem) + そう
+        note: 元気そう, ひまそう.
+      - form: V (ます-stem) + そう
+        note: 降りそう, 落ちそう.
+      - form: そうだ／そうです; そうな + noun; そうに + verb
+    examples:
+      - japanese: このケーキはおいしそうですね。
+        reading: このケーキはおいしそうですね。
+        romaji: kono kēki wa oishisō desu ne.
+        english: This cake looks delicious.
+      - japanese: 空が暗いです。雨が降りそうです。
+        reading: そらがくらいです。あめがふりそうです。
+        romaji: sora ga kurai desu. ame ga furisō desu.
+        english: The sky is dark. It looks like it's going to rain.
+      - japanese: 子どもたちが楽しそうに遊んでいます。
+        reading: こどもたちがたのしそうにあそんでいます。
+        romaji: kodomotachi ga tanoshisō ni asonde imasu.
+        english: The children are playing, looking like they're having fun.
+      - japanese: 棚の上のコップが落ちそうです。
+        reading: たなのうえのコップがおちそうです。
+        romaji: tana no ue no koppu ga ochisō desu.
+        english: The glass on the shelf looks like it's about to fall.
+    mistake:
+      wrong: このかばんは高いそうです。
+      problem: Meant as "looks expensive", but with the full 高い this is the hearsay そう, "I hear it's expensive". For how it looks, drop the い.
+      right: このかばんは高そうです。
+    distinguish_from:
+      - id: OJG-0042
+        note: The hearsay そう follows a full plain form (高いそう, 降るそう) and reports what you heard. This そう follows a stem (高そう, 降りそう) and gives your impression.
+      - id: OJG-0349
+        note: ようだ is a judgement from evidence of any kind, often after the fact. そう after a stem is an impression from appearance, and with verbs, a sense that something is about to happen.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -715,9 +1012,48 @@ entries:
       - source_id: tanos
         ref: 505
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: Is the restriction on visual adjectives (赤そう, きれいそう usually avoided for what is plainly in view) stated at the right strength?
   - id: OJG-0062
     pattern: ～させる
+    title: Making or letting someone do something (the causative)
+    meaning: "Causative V-させる／V-せる: make someone do V, or let them; the one who causes it is the subject."
+    when: 'Use it when one person makes or allows another to act: 母は弟に野菜を食べさせました, "my mother made my brother eat vegetables"; 子どもを公園で遊ばせました, "I let the children play in the park". Whether it means "make" or "let" comes from the context. Asking permission with させてください is its own point (OJG-0346).'
+    why: "The causative adds a causer on top of an action: the causer becomes the subject, and the one who actually acts is moved to another particle. With a verb that already has a を-object, the one who acts takes に (弟に野菜を食べさせる), since a clause does not normally carry two を. With a verb that has no object, it can take を or に; を tends to mean the person had no choice, and に that they were allowed to do what they wanted. The causative verb is itself an ichidan verb (食べさせます, 食べさせた)."
+    formation:
+      - form: Godan verb (ない-stem) + せる
+        note: 行く → 行かせる, 読む → 読ませる, 遊ぶ → 遊ばせる, 買う → 買わせる.
+      - form: Ichidan verb (stem) + させる
+        note: 食べる → 食べさせる, 見る → 見させる.
+      - form: する → させる; 来る → 来させる (こさせる)
+    examples:
+      - japanese: 母は弟に野菜を食べさせました。
+        reading: はははおとうとにやさいをたべさせました。
+        romaji: haha wa otōto ni yasai o tabesasemashita.
+        english: My mother made my little brother eat vegetables.
+      - japanese: 先生は学生に作文を書かせました。
+        reading: せんせいはがくせいにさくぶんをかかせました。
+        romaji: sensei wa gakusei ni sakubun o kakasemashita.
+        english: The teacher had the students write an essay.
+      - japanese: 子どもを公園で遊ばせました。
+        reading: こどもをこうえんであそばせました。
+        romaji: kodomo o kōen de asobasemashita.
+        english: I let the children play in the park.
+    mistake:
+      wrong: 母は弟を野菜を食べさせました。
+      problem: 食べる already has a を-object (野菜), and a clause normally carries only one を, so the one made to eat takes に.
+      right: 母は弟に野菜を食べさせました。
+    distinguish_from:
+      - id: OJG-0089
+        note: させられる is the causative made passive, told from the side of the one made to act. させる is told from the causer's side.
+      - id: OJG-0346
+        note: させてください uses the causative to ask to be allowed to do something yourself.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -729,9 +1065,40 @@ entries:
       - source_id: tanos
         ref: 506
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0063
     pattern: ～なさい
+    title: Do it! (a firm instruction from above)
+    meaning: "V (ます-stem) + なさい: a firm but not rough instruction, used by parents, teachers and in test questions."
+    when: "Use it when someone with authority tells someone else to do something: a parent to a child (早く寝なさい), a teacher to pupils, and in written instructions on tests and exercises (正しいものを選びなさい). Adults do not use it to other adults as equals, or to anyone above them."
+    why: なさい comes from なさる, the honorific verb for "do", so it sounds gentler than the plain command form (寝ろ, 食べろ). It is still a command, and using it puts the speaker in the position of someone entitled to give orders, which is why it belongs to parents, teachers and written instructions. Like ます, it joins to the ます-stem. It has no negative form; to tell someone not to do something, other forms are used (～てはいけません, ～ないで).
+    formation:
+      - form: V (ます-stem) + なさい
+        note: 寝る → 寝なさい, 食べる → 食べなさい, 勉強する → 勉強しなさい, 来る → 来なさい.
+    examples:
+      - japanese: 早く寝なさい。
+        reading: はやくねなさい。
+        romaji: hayaku nenasai.
+        english: Go to bed now.
+      - japanese: 野菜も食べなさい。
+        reading: やさいもたべなさい。
+        romaji: yasai mo tabenasai.
+        english: Eat your vegetables too.
+      - japanese: 正しいものを一つ選びなさい。
+        reading: ただしいものをひとつえらびなさい。
+        romaji: tadashii mono o hitotsu erabinasai.
+        english: Choose the one correct answer.
+        note: A typical test instruction.
+    mistake:
+      wrong: 田中さん、この書類を見なさい。
+      problem: Said to a colleague. なさい is an instruction from above, and between adults at work it is rude. Ask with てください, or more politely with ていただけませんか.
+      right: 田中さん、この書類を見てください。
+    register:
+      - spoken
+      - written
     levels:
       commonly: N4
       listed:
@@ -743,9 +1110,59 @@ entries:
       - source_id: tanos
         ref: 507
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0064
     pattern: ～ば/～れば
+    title: If (the condition for a result)
+    meaning: 'The ば-form: "if A, (then) B"; A is the condition that brings about or allows B.'
+    when: "Use it for a condition and what follows from it: 安ければ買います, \"if it's cheap, I'll buy it\"; このボタンを押せば開きます, \"if you press this button, it opens\". It suits general truths, hypotheses, and questions about how to get a result: どうすれば, \"what do I have to do to…\". For advice, see ばいい (OJG-0348)."
+    why: "The ば-form puts the weight on the condition: B holds as long as A is met. That makes it sound a little more logical and neutral than たら. It also explains a restriction: when A is an action and B is a request, an order, an invitation or the speaker's own intention, ば usually sounds unnatural, because B is meant to follow A in time, which is what たら says. When A is a state (ある, いる, adjectives, できる), ば is fine even before a request: 時間があれば、手伝ってください."
+    formation:
+      - form: Godan verb (last sound to the え-row) + ば
+        note: 行く → 行けば, 飲む → 飲めば, 買う → 買えば, ある → あれば.
+      - form: Ichidan verb (stem) + れば
+        note: 食べる → 食べれば, 見る → 見れば.
+      - form: する → すれば; 来る → 来れば (くれば)
+      - form: い-adjective (drop い) + ければ
+        note: 高い → 高ければ; いい → よければ; ない → なければ.
+      - form: Noun / な-adjective + なら (or であれば)
+        note: The ば-form of だ is なら; であれば is more formal.
+    examples:
+      - japanese: 安ければ、買います。
+        reading: やすければ、かいます。
+        romaji: yasukereba, kaimasu.
+        english: If it's cheap, I'll buy it.
+      - japanese: このボタンを押せば、ドアが開きます。
+        reading: このボタンをおせば、ドアがあきます。
+        romaji: kono botan o oseba, doa ga akimasu.
+        english: If you press this button, the door opens.
+      - japanese: 時間があれば、手伝ってください。
+        reading: じかんがあれば、てつだってください。
+        romaji: jikan ga areba, tetsudatte kudasai.
+        english: If you have time, please help me.
+        note: A is a state (ある), so a request after ば is fine.
+      - japanese: 急げば、間に合いますよ。
+        reading: いそげば、まにあいますよ。
+        romaji: isogeba, maniaimasu yo.
+        english: If you hurry, you'll make it.
+    mistake:
+      wrong: 家に帰れば、電話してください。
+      problem: The first part is an action and the second is a request meant to follow it. ば usually sounds unnatural here; たら says "once A has happened, B".
+      right: 家に帰ったら、電話してください。
+    distinguish_from:
+      - id: OJG-0066
+        note: たら says B follows once A has happened, and works with requests and intentions. ば focuses on A as the condition, and avoids requests after an action.
+      - id: OJG-0070
+        note: と is for results that always or automatically follow. ば covers those and also one-off hypotheses.
+      - id: OJG-0044
+        note: なら takes up something given and comments on it, in any order in time.
+    register:
+      - plain
+      - polite
+      - written
     levels:
       commonly: N4
       listed:
@@ -757,9 +1174,51 @@ entries:
       - source_id: tanos
         ref: 508
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: The restriction on ば before requests and intentions is stated as "usually sounds unnatural"; is that the right strength for N4?
   - id: OJG-0065
     pattern: ～ても
+    title: Even if, even though
+    meaning: 'て-form + も: "even if", "even though"; B holds whatever happens with A.'
+    when: "Use it to say B happens or holds regardless of A: 雨が降っても行きます, \"even if it rains, I'll go\". It works for hypotheses and for facts: 何回聞いても、わかりません, \"however many times I hear it, I don't understand\". With a question word it means \"no matter what, who, how\": 何を食べても."
+    why: The て-form joins A to B, and も, "even", marks A as something that might have been expected to change B but does not. So the sentence says B survives even A. With a question word, "even whatever" becomes "no matter what". い-adjectives use their て-form (高くても); nouns and な-adjectives use でも (雨でも, 静かでも). This でも is the same pattern, not the word でも that starts a sentence to mean "but".
+    formation:
+      - form: V (て-form) + も
+        note: "降っても, 食べても, しても. Negative: なくても (OJG-0067)."
+      - form: い-adjective (drop い) + くても
+        note: 高くても; いい → よくても.
+      - form: Noun / な-adjective + でも
+        note: 雨でも, 静かでも.
+    examples:
+      - japanese: 雨が降っても、サッカーの練習はあります。
+        reading: あめがふっても、サッカーのれんしゅうはあります。
+        romaji: ame ga futte mo, sakkā no renshū wa arimasu.
+        english: Even if it rains, there's football practice.
+      - japanese: 何回聞いても、わかりません。
+        reading: なんかいきいても、わかりません。
+        romaji: nankai kiite mo, wakarimasen.
+        english: No matter how many times I hear it, I don't understand.
+      - japanese: 高くても、このかばんを買いたいです。
+        reading: たかくても、このかばんをかいたいです。
+        romaji: takakute mo, kono kaban o kaitai desu.
+        english: Even if it's expensive, I want to buy this bag.
+      - japanese: 日曜日でも、店は開いています。
+        reading: にちようびでも、みせはあいています。
+        romaji: nichiyōbi demo, mise wa aite imasu.
+        english: The shop is open even on Sundays.
+    mistake:
+      wrong: 寒いても、毎朝走ります。
+      problem: An い-adjective forms ても from its て-form, 寒くて, so it is 寒くても.
+      right: 寒くても、毎朝走ります。
+    distinguish_from:
+      - id: OJG-0086
+        note: のに is for a fact that turned out against expectation, often with frustration. ても covers hypotheses too, and is neutral.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -771,7 +1230,10 @@ entries:
       - source_id: tanos
         ref: 509
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0066
     pattern: ～たら
     levels:
