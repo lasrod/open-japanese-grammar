@@ -6,6 +6,40 @@ level: N4
 entries:
   - id: OJG-0041
     pattern: ～し
+    title: Giving reasons, and there may be more
+    meaning: "Plain form + し: lines up one or more reasons or points, hinting there are others; often leads to a conclusion."
+    when: "Use it to list reasons or features that add up to a conclusion: この店は安いし、おいしいし、よく来ます, \"this shop is cheap, and it's good, so I come often\". A single し gives one reason and suggests it is not the only one. When the conclusion is obvious, it can be left unsaid: 今日は忙しいし… is a gentle way of saying no."
+    why: 'し adds a point to a pile. Each clause before it is a complete statement, so it keeps its own tense and negation (高いし, 高くないし, 雨だったし), and a noun or な-adjective needs だ to be a statement at all (静かだし). Because the points are piled up to support one conclusion, they normally all point the same way: all reasons for, or all reasons against. And because a pile can always hold more, even one し sounds like "for one thing", which makes it softer than から. から presents the cause; し offers supporting evidence.'
+    formation:
+      - form: Verb / い-adjective (plain form) + し
+        note: "行くし, 行かないし, 行ったし; 高いし, 高くないし. In polite speech, polite forms also occur before し: 行きますし."
+      - form: Noun / な-adjective + だ + し
+        note: 学生だし, 静かだし; past 雨だったし. The だ cannot be left out.
+    examples:
+      - japanese: この部屋は広いし、駅から近いし、とてもいいです。
+        reading: このへやはひろいし、えきからちかいし、とてもいいです。
+        romaji: kono heya wa hiroi shi, eki kara chikai shi, totemo ii desu.
+        english: This room is spacious, and it's close to the station; it's really good.
+      - japanese: 今日は雨だし、寒いし、うちにいます。
+        reading: きょうはあめだし、さむいし、うちにいます。
+        romaji: kyō wa ame da shi, samui shi, uchi ni imasu.
+        english: It's raining today, and it's cold, so I'm staying home.
+      - japanese: もう遅いし、そろそろ帰ります。
+        reading: もうおそいし、そろそろかえります。
+        romaji: mō osoi shi, sorosoro kaerimasu.
+        english: It's late, for one thing, so I'll be heading home.
+        note: One し, and the speaker implies there are other reasons too.
+    mistake:
+      wrong: この町は静かし、きれいだし、大好きです。
+      problem: A な-adjective needs だ before し, because each item has to be a complete statement. 静か on its own is not one.
+      right: この町は静かだし、きれいだし、大好きです。
+    distinguish_from:
+      - id: OJG-0017
+        note: から states the reason as the cause of what follows. し offers one or more reasons as supporting points and leaves room for more, so it sounds less absolute.
+    register:
+      - plain
+      - polite
+      - spoken
     levels:
       commonly: N4
       listed:
@@ -17,9 +51,44 @@ entries:
       - source_id: tanos
         ref: 485
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0042
     pattern: そうです
+    title: I hear that… (passing on what you heard)
+    meaning: 'Plain form + そうです: reports something the speaker heard or read, "I hear that…", "apparently".'
+    when: "Use it to pass on information that came from someone else, the news, a notice: 明日は雨が降るそうです, \"I hear it's going to rain tomorrow\". The source can be named first with によると: 天気予報によると."
+    why: 'そう means "so, like that", and here it points back at a statement: "it is said so". Because it attaches to a complete statement, everything before it keeps its own tense and negation (降った, 降らない), and a noun or な-adjective keeps its だ (雨だそうです). The そうです itself does not change: the point is always "that is what I heard", so it has no past form of its own in this use, and it is not made negative to deny the report. Saying where the information came from matters in Japanese: this form marks the content as not your own knowledge.'
+    formation:
+      - form: Verb / い-adjective (plain form, any tense) + そうです
+        note: "降るそうです, 降ったそうです, 降らないそうです; 高いそうです. Casual: そうだ."
+      - form: Noun / な-adjective + だ + そうです
+        note: 雨だそうです, 静かだそうです; past 雨だったそうです.
+    examples:
+      - japanese: 天気予報によると、明日は雨が降るそうです。
+        reading: てんきよほうによると、あしたはあめがふるそうです。
+        romaji: tenki yohō ni yoru to, ashita wa ame ga furu sō desu.
+        english: According to the weather forecast, it's going to rain tomorrow.
+      - japanese: 田中さんは来月結婚するそうです。
+        reading: たなかさんはらいげつけっこんするそうです。
+        romaji: tanaka-san wa raigetsu kekkon suru sō desu.
+        english: I hear Tanaka-san is getting married next month.
+      - japanese: あの店のラーメンはとてもおいしいそうです。
+        reading: あのみせのラーメンはとてもおいしいそうです。
+        romaji: ano mise no rāmen wa totemo oishii sō desu.
+        english: I hear the ramen at that shop is really good.
+    mistake:
+      wrong: ニュースによると、明日はとても寒そうです。
+      problem: 寒そう, the adjective stem + そう, gives the speaker's own impression from what they see. A report from the news needs the full plain form before そうです.
+      right: ニュースによると、明日はとても寒いそうです。
+    distinguish_from:
+      - id: OJG-0061
+        note: The "looks like" そうです attaches to a stem (降りそう, 寒そう) and gives your own impression. The hearsay そうです attaches to a full plain form (降るそう, 寒いそう) and passes on what you heard.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -31,9 +100,40 @@ entries:
       - source_id: tanos
         ref: 486
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: Tanos lists そうです (486) and ～そうです (505) separately; this entry takes 486 as the hearsay use, since Hanabira's ～そうだ was mapped to 0061 as "looks like". Is that the right split?
   - id: OJG-0043
     pattern: てみる
+    title: Try doing something to see how it goes
+    meaning: 'V-てみる: do V to see what it is like or what happens; "try V-ing".'
+    when: 'Use it when you do something as an experiment, or for the first time, to find out the result: 着てみる, "try it on"; 食べてみる, "try eating it". It is common in requests (聞いてみてください) and wishes (行ってみたい).'
+    why: 'みる is "see, look". After the て-form it says "do V, and see": you carry out the action, then look at how it turns out. So the action really is done; てみる is not an attempt that can fail. For "tried to, but could not", Japanese uses a different form (V-ようとした). Because the point is to find something out, てみる suits new and unfamiliar things. As a helper verb, みる is normally written in kana.'
+    formation:
+      - form: V (て-form) + みる
+        note: "Polite: てみます. Wish: てみたい. Request: てみてください."
+    examples:
+      - japanese: この靴をはいてみてもいいですか。
+        reading: このくつをはいてみてもいいですか。
+        romaji: kono kutsu o haite mite mo ii desu ka.
+        english: May I try these shoes on?
+      - japanese: 初めて納豆を食べてみました。
+        reading: はじめてなっとうをたべてみました。
+        romaji: hajimete nattō o tabete mimashita.
+        english: I tried natto for the first time.
+      - japanese: わからないときは、先生に聞いてみてください。
+        reading: わからないときは、せんせいにきいてみてください。
+        romaji: wakaranai toki wa, sensei ni kiite mite kudasai.
+        english: When you don't understand, try asking the teacher.
+    mistake:
+      wrong: 早く起きてみましたが、起きられませんでした。
+      problem: てみる means the action was actually done to see the result, so "tried getting up, but couldn't get up" contradicts itself. An attempt that failed is V-ようとした.
+      right: 早く起きようとしましたが、起きられませんでした。
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -45,9 +145,44 @@ entries:
       - source_id: tanos
         ref: 487
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0044
     pattern: なら
+    title: If it's that…, if that's the case
+    meaning: "X なら: \"if it's X\", \"if (as you say) X\"; takes up something given and says what applies to it."
+    when: "Use it to respond to something just said or to the situation, with advice, a suggestion or an opinion about it: 京都に行くなら、秋がいいですよ, \"if you're going to Kyoto, autumn is good\". After a noun, it picks that thing out as the topic of what you are about to say: 駅なら、あそこです, \"the station? it's over there\"."
+    why: "なら takes something as given, usually from the listener or the context, and then says what follows if that is so. It only sets up the premise; it says nothing about which happens first. That is why the second part can come before the first in time: in 京都に行くなら、ガイドブックを買ったほうがいい, you buy the guidebook before you go. たら and と need the first event to happen first, and なら does not, which makes it the natural choice for advice about someone's plan."
+    formation:
+      - form: Noun / な-adjective + なら
+        note: 駅なら, 静かなら.
+      - form: Verb / い-adjective (plain form) + なら
+        note: 行くなら, 行かないなら, 行ったなら; 寒いなら. のなら and, in speech, んなら also occur.
+    examples:
+      - japanese: 京都に行くなら、秋がいいですよ。
+        reading: きょうとにいくなら、あきがいいですよ。
+        romaji: kyōto ni iku nara, aki ga ii desu yo.
+        english: If you're going to Kyoto, autumn is a good time.
+      - japanese: 「駅はどこですか。」「駅なら、あそこです。」
+        reading: 「えきはどこですか。」「えきなら、あそこです。」
+        romaji: '"eki wa doko desu ka." "eki nara, asoko desu."'
+        english: "\"Where is the station?\" \"The station? It's over there.\""
+      - japanese: 寒いなら、窓を閉めましょうか。
+        reading: さむいなら、まどをしめましょうか。
+        romaji: samui nara, mado o shimemashō ka.
+        english: If you're cold, shall I close the window?
+    mistake:
+      wrong: 駅に着くなら、電話してください。
+      problem: The call should come after arriving. なら does not set an order, so this reads as "if you are going to arrive, call me", possibly beforehand. For "when you have arrived, then call", use たら.
+      right: 駅に着いたら、電話してください。
+    distinguish_from:
+      - id: OJG-0066
+        note: たら says B happens once A has happened. なら takes A as given and says what applies, whatever the order in time.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -59,9 +194,39 @@ entries:
       - source_id: tanos
         ref: 488
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0045
     pattern: (period)に(frequency)
+    title: How many times in a period
+    meaning: 'Period + に + count: "so many times per period", as in 一週間に三回, "three times a week".'
+    when: 'Use it to say how often something happens within a length of time: 一日に三回, "three times a day"; 一か月に一度, "once a month". The period comes first, then に, then the number of times.'
+    why: "に marks the frame an action is placed in. Here the frame is a length of time, and the count says how many times the action fits into it. The count is a quantity, and like other quantities it sits just before the verb with no particle of its own: 一週間に三回、プールに行きます. With 週, 月 and 年, the 一 is often dropped: 週に二回, 月に一回, 年に一度."
+    formation:
+      - form: Period (一日, 一週間, 一か月, 一年; or 週, 月, 年) + に + number + 回／度
+        note: 回 is the everyday counter for times; 度 is a little more formal.
+    examples:
+      - japanese: 一週間に三回、プールで泳ぎます。
+        reading: いっしゅうかんにさんかい、プールでおよぎます。
+        romaji: isshūkan ni sankai, pūru de oyogimasu.
+        english: I swim at the pool three times a week.
+      - japanese: この薬は一日に二回飲んでください。
+        reading: このくすりはいちにちににかいのんでください。
+        romaji: kono kusuri wa ichinichi ni nikai nonde kudasai.
+        english: Please take this medicine twice a day.
+      - japanese: 母には月に一度電話します。
+        reading: ははにはつきにいちどでんわします。
+        romaji: haha ni wa tsuki ni ichido denwa shimasu.
+        english: I call my mother once a month.
+    mistake:
+      wrong: 三回一週間にジムに行きます。
+      problem: This follows the English order, "three times a week". In Japanese the period comes first and frames the count.
+      right: 一週間に三回ジムに行きます。
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -73,9 +238,47 @@ entries:
       - source_id: tanos
         ref: 489
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: Is 一週間で三回 worth mentioning as a neighbour (a total within one week, rather than a regular rate)? Left out as uncertain.
   - id: OJG-0046
     pattern: ～がほしい
+    title: Wanting a thing
+    meaning: 'N がほしい: "I want N". ほしい is an い-adjective for wanting a thing, said of yourself, or asked of the listener.'
+    when: "Use it to say what you want to have: 新しいかばんがほしいです. In a question, ask what the listener wants: 何がほしいですか. For what someone else wants, see ～たがる."
+    why: 'ほしい is an い-adjective describing a feeling: the thing is "wanted" by you. Like other feeling words such as 好き or 痛い, it reports an inner state that only the person feeling it can know, so in a plain statement the one who wants is the speaker, and in a question, the listener. The wanted thing is marked with が, not を, because ほしい is an adjective, not a verb: the thing is what the feeling is about, just as in 犬が好き. ほしい is for things; to want to do something, use the verb with たい.'
+    formation:
+      - form: Noun + が + ほしい
+        note: "Polite: ほしいです. Negative: ほしくない; past: ほしかった. は replaces が for contrast: お金はほしくないです."
+    examples:
+      - japanese: 新しいパソコンがほしいです。
+        reading: あたらしいパソコンがほしいです。
+        romaji: atarashii pasokon ga hoshii desu.
+        english: I want a new computer.
+      - japanese: 誕生日に何がほしいですか。
+        reading: たんじょうびになにがほしいですか。
+        romaji: tanjōbi ni nani ga hoshii desu ka.
+        english: What do you want for your birthday?
+      - japanese: 子どものころ、犬がとてもほしかったです。
+        reading: こどものころ、いぬがとてもほしかったです。
+        romaji: kodomo no koro, inu ga totemo hoshikatta desu.
+        english: When I was a child, I really wanted a dog.
+    mistake:
+      wrong: 水をほしいです。
+      problem: ほしい is an adjective, not a verb, so the thing wanted is not its object. It takes が.
+      right: 水がほしいです。
+    distinguish_from:
+      - id: OJG-0029
+        note: たい is for wanting to do something (水を飲みたい). ほしい is for wanting a thing (水がほしい).
+      - id: OJG-0328
+        note: てほしい is for wanting someone else to do something (手伝ってほしい). ほしい on its own wants a thing.
+      - id: OJG-0047
+        note: ほしい states your own want. For another person, ほしがる reports the want as it shows.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -87,9 +290,44 @@ entries:
       - source_id: tanos
         ref: 490
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0047
     pattern: ～たがる
+    title: Someone else wants to (as it shows)
+    meaning: 'V-たがる: a third person shows signs of wanting to do V; "X wants to V", judged from how they act.'
+    when: "Use it to say what someone other than you wants to do, going by what they say or do: 弟は外で遊びたがっています. It is usually in the ている form for a current want, or the plain form for a habit. ほしがる does the same for wanting a thing."
+    why: "たい and ほしい are feelings only the person feeling them can know, so Japanese avoids stating another person's want as plain fact. がる turns an inner feeling into outward behaviour: \"show signs of wanting\". So 行きたがる reports what can be seen from outside. It makes an ordinary godan verb, and since it now describes an action, the object takes を: 水を飲みたがる, ゲームをほしがる. For the same reason it is not used of yourself in an ordinary statement."
+    formation:
+      - form: V (ます-stem) + たがる
+        note: "行きたがる, 行きたがっている, 行きたがらない. Polite: 行きたがっています."
+      - form: Noun + を + ほしがる
+        note: The same change made from ほしい.
+    examples:
+      - japanese: 弟は毎日外で遊びたがります。
+        reading: おとうとはまいにちそとであそびたがります。
+        romaji: otōto wa mainichi soto de asobitagarimasu.
+        english: My little brother wants to play outside every day.
+      - japanese: 息子が新しいゲームをほしがっています。
+        reading: むすこがあたらしいゲームをほしがっています。
+        romaji: musuko ga atarashii gēmu o hoshigatte imasu.
+        english: My son wants a new video game.
+      - japanese: 子どもは野菜を食べたがりません。
+        reading: こどもはやさいをたべたがりません。
+        romaji: kodomo wa yasai o tabetagarimasen.
+        english: The children don't want to eat vegetables.
+    mistake:
+      wrong: 友だちは日本へ行きたいです。
+      problem: A plain statement with たい reports the want as if from inside. About someone else, say what shows (行きたがっています) or report what they said (行きたいと言っています).
+      right: 友だちは日本へ行きたがっています。
+    distinguish_from:
+      - id: OJG-0029
+        note: たい states your own want, or asks the listener's. たがる reports someone else's want as it shows.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -101,9 +339,46 @@ entries:
       - source_id: tanos
         ref: 491
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: Should the entry warn that たがる can sound presumptuous or childish when said of someone of higher status? Left out as unsure how strong that is.
   - id: OJG-0048
     pattern: ～かもしれない
+    title: Maybe, might
+    meaning: 'Plain form + かもしれない: "may", "might"; the speaker thinks it possible but is far from sure.'
+    when: 'Use it for a possibility you cannot rule out: 午後から雨が降るかもしれません, "it might rain this afternoon". It works for the past and present too: かぎを忘れたかもしれない. Polite: かもしれません. Casual speech often shortens it to かも.'
+    why: 'The pieces say it: か is "whether", も is "even", しれない is "cannot be known". "Whether it is so cannot even be known": the speaker admits a possibility without committing to it. Because it only says the thing is possible, the chance can be quite low, lower than with でしょう, which leans towards yes. A noun or な-adjective goes straight before か with no だ, just as it does in a plain question (学生か).'
+    formation:
+      - form: Verb / い-adjective (plain form) + かもしれない
+        note: 降るかもしれない, 降ったかもしれない, 降らないかもしれない; 高いかもしれない.
+      - form: Noun / な-adjective + かもしれない
+        note: "No だ: 雨かもしれない, 静かかもしれない."
+    examples:
+      - japanese: 午後から雨が降るかもしれません。
+        reading: ごごからあめがふるかもしれません。
+        romaji: gogo kara ame ga furu kamo shiremasen.
+        english: It might rain from the afternoon.
+      - japanese: かぎを家に忘れたかもしれない。
+        reading: かぎをいえにわすれたかもしれない。
+        romaji: kagi o ie ni wasureta kamo shirenai.
+        english: I might have left my keys at home.
+      - japanese: あの人は先生かもしれません。
+        reading: あのひとはせんせいかもしれません。
+        romaji: ano hito wa sensei kamo shiremasen.
+        english: That person might be a teacher.
+    mistake:
+      wrong: あの人は学生だかもしれません。
+      problem: かもしれない follows a noun or な-adjective directly. The だ is dropped.
+      right: あの人は学生かもしれません。
+    distinguish_from:
+      - id: OJG-0038
+        note: 'でしょう says "probably": the speaker leans towards yes. かもしれない says "maybe": only that it is possible.'
+    register:
+      - plain
+      - polite
+      - casual
     levels:
       commonly: N4
       listed:
@@ -115,9 +390,44 @@ entries:
       - source_id: tanos
         ref: 492
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0049
     pattern: ～たらどうですか
+    title: Suggesting, "why don't you…?"
+    meaning: 'V-たらどうですか: "how about V-ing?"; a suggestion about what the listener could do.'
+    when: "Use it to suggest a course of action to someone, often about a problem they have: 疲れているなら、少し休んだらどうですか. More politely, たらいかがですか; casually, たらどう？"
+    why: 'たら sets up a condition, "if you did V", and どうですか asks "how would that be?". So the sentence asks the listener to picture doing V and judge it, and leaves the decision with them. It is a suggestion for the listener alone: it is not an invitation to do something together, which is ませんか or ましょう. Because it tells the listener what they could do, it is advice, and some care is needed in using it to people above you.'
+    formation:
+      - form: V (た-form) + ら + どうですか
+        note: "休んだらどうですか. Politer: たらいかがですか. Casual: たらどう？"
+    examples:
+      - japanese: 疲れているなら、少し休んだらどうですか。
+        reading: つかれているなら、すこしやすんだらどうですか。
+        romaji: tsukarete iru nara, sukoshi yasundara dō desu ka.
+        english: If you're tired, why don't you rest a little?
+      - japanese: わからないなら、先生に聞いたらどうですか。
+        reading: わからないなら、せんせいにきいたらどうですか。
+        romaji: wakaranai nara, sensei ni kiitara dō desu ka.
+        english: If you don't understand, why not ask the teacher?
+      - japanese: そんなに好きなら、買ったらどう？
+        reading: そんなにすきなら、かったらどう？
+        romaji: sonna ni suki nara, kattara dō?
+        english: If you like it that much, why not buy it?
+    mistake:
+      wrong: いっしょに映画を見たらどうですか。
+      problem: たらどうですか suggests something for the listener to do. With いっしょに you are inviting them to do it with you, which is ませんか.
+      right: いっしょに映画を見ませんか。
+    distinguish_from:
+      - id: OJG-0035
+        note: ほうがいい says one choice is better and sounds firmer. たらどうですか offers an idea and leaves the choice to the listener.
+      - id: OJG-0007
+        note: ませんか invites the listener to do something with you. たらどうですか suggests something for the listener alone.
+    register:
+      - polite
+      - casual
     levels:
       commonly: N4
       listed:
@@ -129,9 +439,45 @@ entries:
       - source_id: tanos
         ref: 493
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: How presumptuous is たらどうですか (and たらいかがですか) towards a superior? The entry only says some care is needed.
   - id: OJG-0050
     pattern: Number+も
+    title: As many as (more than expected)
+    meaning: 'Number + も: stresses that an amount is large, "as many as", "a whole…"; 一 + counter + も + negative is "not even one".'
+    when: 'Use it after a number and counter when the amount strikes you as a lot: 一時間も待ちました, "I waited a whole hour". With 一 and a negative verb it means "not a single one": 一人もいません.'
+    why: 'も means "too, even". After a quantity it says "even this much": the speaker measures the amount against what was expected and finds it more. So it carries surprise or complaint; 一時間待ちました only states the time. With a negative, "not even one" becomes "none at all": 一つもない. A number with its counter normally sits just before the verb without a particle, and も simply follows it there.'
+    formation:
+      - form: Number + counter + も + verb
+        note: 三時間も, 五つも, 二杯も.
+      - form: 一 + counter + も + negative verb
+        note: 一人もいない, 一回も行ったことがない.
+    examples:
+      - japanese: 駅で一時間も待ちました。
+        reading: えきでいちじかんもまちました。
+        romaji: eki de ichijikan mo machimashita.
+        english: I waited a whole hour at the station.
+      - japanese: 兄はケーキを五つも食べました。
+        reading: あにはケーキをいつつもたべました。
+        romaji: ani wa kēki o itsutsu mo tabemashita.
+        english: My older brother ate as many as five pieces of cake.
+      - japanese: 教室には学生が一人もいません。
+        reading: きょうしつにはがくせいがひとりもいません。
+        romaji: kyōshitsu ni wa gakusei ga hitori mo imasen.
+        english: There isn't a single student in the classroom.
+    mistake:
+      wrong: 今朝、りんごを一つも食べました。
+      problem: 一 + counter + も means "not even one" and needs a negative verb. To say you ate one, leave out も.
+      right: 今朝、りんごを一つ食べました。
+    distinguish_from:
+      - id: OJG-0002
+        note: After a noun, も means "too, also" (私も). After a number and counter, it means "as many as".
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -143,9 +489,44 @@ entries:
       - source_id: tanos
         ref: 494
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0051
     pattern: しか～ない
+    title: Only (and not enough)
+    meaning: 'X しか + negative: "only X", "nothing but X"; stresses that X is little, or less than wanted.'
+    when: 'Use it to say something is limited to X, usually with a feeling that it is not enough: 五百円しかありません, "I only have 500 yen". It follows nouns and numbers, and can follow other particles: 日曜日にしか, 田中さんとしか.'
+    why: 'しか marks X as the one exception to a negative: "apart from X, there is none". So the verb must be negative, even though English says it positively ("I only have…"). Built as "nothing except X", it stresses shortage: 五百円しかない sounds like "just 500 yen, not enough", where 五百円だけある is neutral. しか replaces が and を; other particles stay in front of it (にしか, からしか).'
+    formation:
+      - form: Noun / number + しか + negative
+        note: しかない, しかありません, しか食べない. が and を are dropped.
+      - form: Noun + particle + しか + negative
+        note: にしか, でしか, としか, からしか.
+    examples:
+      - japanese: 財布に五百円しかありません。
+        reading: さいふにごひゃくえんしかありません。
+        romaji: saifu ni gohyakuen shika arimasen.
+        english: I only have 500 yen in my wallet.
+      - japanese: 朝はコーヒーしか飲みません。
+        reading: あさはコーヒーしかのみません。
+        romaji: asa wa kōhī shika nomimasen.
+        english: In the morning, I drink nothing but coffee.
+      - japanese: この店は日曜日にしか開いていません。
+        reading: このみせはにちようびにしかあいていません。
+        romaji: kono mise wa nichiyōbi ni shika aite imasen.
+        english: This shop is only open on Sundays.
+    mistake:
+      wrong: 五百円しかあります。
+      problem: しか needs a negative verb, even though English says "only have".
+      right: 五百円しかありません。
+    distinguish_from:
+      - id: OJG-0309
+        note: だけ is neutral and goes with a positive verb (五百円だけある). しか needs a negative and stresses that it is not much.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -157,9 +538,43 @@ entries:
       - source_id: tanos
         ref: 495
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0052
     pattern: ～ておく
+    title: Do something in advance, or leave it as it is
+    meaning: "V-ておく: do V now, ready for later; or do V and leave the result as it is."
+    when: 'Use it for preparation (旅行の前にホテルを予約しておく), for getting something done ahead of time, and for leaving a state as it is on purpose (窓を開けておいてください, "please leave the window open"). Casual speech shortens ておく to とく, and でおく to どく: 買っとく, 読んどく.'
+    why: 'おく means "put, place". After the て-form it says "do V and put it in place": the action is done now with a later need in mind. That is why it covers both preparing and leaving something as it is for a reason. The sentence is about what the person does, so the object keeps を, unlike てある, which describes the state a thing is left in and usually marks the thing with が.'
+    formation:
+      - form: V (て-form) + おく
+        note: "Polite: ておきます. Request: ておいてください. Casual: とく／どく (買っとく, 読んどく)."
+    examples:
+      - japanese: 旅行の前に、ホテルを予約しておきました。
+        reading: りょこうのまえに、ホテルをよやくしておきました。
+        romaji: ryokō no mae ni, hoteru o yoyaku shite okimashita.
+        english: I booked a hotel before the trip.
+      - japanese: 友だちが来るから、ビールを買っておきます。
+        reading: ともだちがくるから、ビールをかっておきます。
+        romaji: tomodachi ga kuru kara, bīru o katte okimasu.
+        english: Friends are coming over, so I'll buy some beer.
+      - japanese: 暑いので、窓を開けておいてください。
+        reading: あついので、まどをあけておいてください。
+        romaji: atsui node, mado o akete oite kudasai.
+        english: It's hot, so please leave the window open.
+    mistake:
+      wrong: 窓が開けておきます。
+      problem: ておく says what someone does, so the thing acted on is the object and takes を. が with a transitive verb here is borrowed from てある, which describes the resulting state.
+      right: 窓を開けておきます。
+    distinguish_from:
+      - id: OJG-0082
+        note: ておく says what someone does now for later (窓を開けておく). てある describes the state that has been prepared (窓が開けてある).
+    register:
+      - plain
+      - polite
+      - casual
     levels:
       commonly: N4
       listed:
@@ -171,7 +586,10 @@ entries:
       - source_id: tanos
         ref: 496
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0053
     pattern: ～よう
     levels:
