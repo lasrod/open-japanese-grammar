@@ -3250,6 +3250,42 @@ entries:
         model: claude-opus-5-5
   - id: OJG-0336
     pattern: ～ところ
+    title: About to, in the middle of, just done
+    meaning: "V + ところ: a stage of an action; about to (V-るところ), in the middle of (V-ているところ), or just done (V-たところ)."
+    when: "Use it to say exactly where you are in an action: 今から出かけるところです, \"I'm just about to go out\"; 今、晩ご飯を作っているところです, \"I'm in the middle of making dinner\"; 今、駅に着いたところです, \"I've just got to the station\". It is common when explaining why you cannot do something right now."
+    why: 'ところ means "place", here a place in time: a point in the course of an action. The verb form before it chooses the point: the dictionary form looks ahead (about to), ている is inside the action (in the middle of it), and た is just after it (just done). ところ is a noun, so it is followed by です or だ. たところ is about the moment right after an action, so it goes with 今 or さっき, not with something long ago.'
+    formation:
+      - form: V (dictionary form) + ところ
+        note: About to.
+      - form: V (ている) + ところ
+        note: In the middle of.
+      - form: V (た-form) + ところ
+        note: Just done.
+    examples:
+      - japanese: 今から出かけるところです。
+        reading: いまからでかけるところです。
+        romaji: ima kara dekakeru tokoro desu.
+        english: I'm just about to go out.
+      - japanese: 今、晩ご飯を作っているところです。
+        reading: いま、ばんごはんをつくっているところです。
+        romaji: ima, bangohan o tsukutte iru tokoro desu.
+        english: I'm in the middle of making dinner.
+      - japanese: 今、駅に着いたところです。
+        reading: いま、えきについたところです。
+        romaji: ima, eki ni tsuita tokoro desu.
+        english: I've just got to the station.
+    mistake:
+      wrong: 去年日本に来たところです。
+      problem: たところ is for the moment just after an action, and last year is not that. For something that feels recent from the speaker's point of view, use たばかり.
+      right: 去年日本に来たばかりです。
+    distinguish_from:
+      - id: OJG-0091
+        note: たばかり says something happened recently, as the speaker feels it, and can reach back months. たところ is the moment right after.
+      - id: OJG-0335
+        note: Noun + 中 says "in the middle of" with a noun (食事中). ているところ says it with a verb.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -3266,9 +3302,46 @@ entries:
       - source_id: hanabira
         ref: ～ところ
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0337
     pattern: ～ていく／～てくる
+    title: Going and coming, in space and in time
+    meaning: "V-ていく／V-てくる: do V and go / come; also change moving on from now (ていく) or up to now (てくる)."
+    when: "Use them first for movement: 傘を持っていく, \"take an umbrella (with you)\"; パンを買ってくる, \"go and buy bread (and come back)\". Then for change over time: これからもっと寒くなっていく, \"it will keep getting colder\"; 日本語がわかってきた, \"I've begun to understand Japanese\". てくる also marks something starting to come towards you: 雨が降ってきた, \"it's started to rain\"."
+    why: 'いく and くる are "go" and "come", pointing away from the speaker and towards the speaker. After the て-form, they add that direction to the action. In space, 持っていく is "hold it and go (away)" and 持ってくる is "hold it and come (here)". The same picture works for time, with "now" as where the speaker stands: ていく is change going forward from now, and てくる is change that has come up to now, or is just beginning to show. As helpers, いく and くる are usually written in kana.'
+    formation:
+      - form: V (て-form) + いく
+        note: "Polite: ていきます. Casual: てく (持ってく)."
+      - form: V (て-form) + くる
+        note: "Polite: てきます."
+    examples:
+      - japanese: 雨が降りそうだから、傘を持っていきます。
+        reading: あめがふりそうだから、かさをもっていきます。
+        romaji: ame ga furisō da kara, kasa o motte ikimasu.
+        english: It looks like rain, so I'll take an umbrella.
+      - japanese: ちょっとパンを買ってきます。
+        reading: ちょっとパンをかってきます。
+        romaji: chotto pan o katte kimasu.
+        english: I'll just pop out and buy some bread.
+        note: Go, do V, and come back.
+      - japanese: だんだん日本語がわかってきました。
+        reading: だんだんにほんごがわかってきました。
+        romaji: dandan nihongo ga wakatte kimashita.
+        english: I've gradually started to understand Japanese.
+      - japanese: これからもっと寒くなっていくでしょう。
+        reading: これからもっとさむくなっていくでしょう。
+        romaji: kore kara motto samuku natte iku deshō.
+        english: It will probably keep getting colder from now on.
+    mistake:
+      wrong: 学校にお弁当を持ってきます。
+      problem: Said at home in the morning. The lunch is going away from where the speaker is, so it is ていく. てくる would mean bringing it here.
+      right: 学校にお弁当を持っていきます。
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -3282,9 +3355,44 @@ entries:
       - source_id: hanabira
         ref: ～ていく／～てくる
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0338
     pattern: ～ことがある
+    title: Sometimes; there are times when
+    meaning: "V (dictionary or ない-form) + ことがある: \"sometimes V\", \"there are times when (I don't) V\"."
+    when: "Use it for something that happens now and then, not regularly: 忙しいときは、朝ご飯を食べないことがあります, \"when I'm busy, I sometimes skip breakfast\"; この電車はときどき遅れることがあります. Do not confuse it with たことがある, which is about experience."
+    why: こと turns the verb into a noun, "the case of V-ing", and がある says such cases exist. With a non-past verb, "there are occasions when V" means "sometimes". With a past verb, たことがある, the thing that exists is a past event, so it means "have done it before". The verb form decides the meaning. It often comes with ときどき or たまに.
+    formation:
+      - form: V (dictionary form) + ことがある
+        note: 遅れることがある. Polite ことがあります.
+      - form: V (ない-form) + ことがある
+        note: 食べないことがある, "sometimes I don't eat".
+    examples:
+      - japanese: 忙しいときは、朝ご飯を食べないことがあります。
+        reading: いそがしいときは、あさごはんをたべないことがあります。
+        romaji: isogashii toki wa, asagohan o tabenai koto ga arimasu.
+        english: When I'm busy, I sometimes skip breakfast.
+      - japanese: この電車は、ときどき遅れることがあります。
+        reading: このでんしゃは、ときどきおくれることがあります。
+        romaji: kono densha wa, tokidoki okureru koto ga arimasu.
+        english: This train is sometimes late.
+      - japanese: 週末は、友だちと料理をすることがあります。
+        reading: しゅうまつは、ともだちとりょうりをすることがあります。
+        romaji: shūmatsu wa, tomodachi to ryōri o suru koto ga arimasu.
+        english: At weekends I sometimes cook with friends.
+    mistake:
+      wrong: 富士山に登ることがあります。
+      problem: Meant as "I have climbed Mount Fuji". The dictionary form gives "sometimes"; for experience, the verb must be past.
+      right: 富士山に登ったことがあります。
+    distinguish_from:
+      - id: OJG-0031
+        note: たことがある, with a past verb, is experience ("have done it"). ことがある with a non-past verb is "sometimes".
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -3298,9 +3406,48 @@ entries:
       - source_id: hanabira
         ref: ～ことがある
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0339
     pattern: ～ようと思う
+    title: I'm thinking of doing…
+    meaning: "Volitional + と思う: \"I'm thinking of V-ing\", \"I intend to V\"; an intention the speaker has formed."
+    when: "Use it to tell someone what you intend to do: 夏休みに国へ帰ろうと思います, \"I'm thinking of going home for the summer holidays\". と思っている suggests an intention you have held for some time: 来年、日本語の試験を受けようと思っています."
+    why: "The volitional form (帰ろう) is the speaker's will, \"I'll go home\", and と思う frames it as a thought: \"I think, 'I'll go home'\". So it reports an intention instead of declaring a decision on the spot, which sounds gentler than a bare statement. と思っている stretches the thought over time, as an intention that has been held for a while, and can also report someone else's intention: 兄は車を買おうと思っています."
+    formation:
+      - form: V (volitional) + と思う
+        note: 帰ろうと思う, 受けようと思う, しようと思う.
+      - form: V (volitional) + と思っている
+        note: An intention held for some time, or someone else's.
+    examples:
+      - japanese: 夏休みに国へ帰ろうと思います。
+        reading: なつやすみにくにへかえろうとおもいます。
+        romaji: natsuyasumi ni kuni e kaerō to omoimasu.
+        english: I'm thinking of going back to my country for the summer holidays.
+      - japanese: 来年、日本語の試験を受けようと思っています。
+        reading: らいねん、にほんごのしけんをうけようとおもっています。
+        romaji: rainen, nihongo no shiken o ukeyō to omotte imasu.
+        english: I'm planning to take a Japanese exam next year.
+      - japanese: 今晩は早く寝ようと思います。
+        reading: こんばんははやくねようとおもいます。
+        romaji: konban wa hayaku neyō to omoimasu.
+        english: I think I'll go to bed early tonight.
+    mistake:
+      wrong: 夏休みに国へ帰ると思います。
+      problem: Meant as an intention. The dictionary form + と思う is a prediction, "I think I'll (probably) go home". For your own intention, use the volitional form.
+      right: 夏休みに国へ帰ろうと思います。
+    distinguish_from:
+      - id: OJG-0053
+        note: The volitional form on its own declares a decision or invites. With と思う it reports an intention.
+      - id: OJG-0027
+        note: つもり is a firm plan. ようと思う is an intention you are thinking about, often less settled.
+      - id: OJG-0331
+        note: と思う after an ordinary plain form gives an opinion or prediction, not an intention.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -3311,9 +3458,44 @@ entries:
       - source_id: hanabira
         ref: ～ようと思う
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0340
     pattern: ～ように言う
+    title: Tell someone to do something (reported)
+    meaning: 'V (dictionary or ない-form) + ように言う: "tell (someone) to V / not to V"; reports an instruction or request.'
+    when: 'Use it to report what someone told someone to do: 先生は学生に、宿題を出すように言いました, "the teacher told the students to hand in their homework". With a negative verb: "not to". Other verbs of passing on work the same way: ように頼む, "ask to"; ように伝える, "pass on (the message) to".'
+    why: 'ように is "so that, in such a way that": the verb before it is the aim. ように言う is "say, so that someone will V", the content of an instruction reported in plain form instead of quoted. It passes the instruction on without its exact words or politeness: 出してください becomes 出すように. The person told is marked with に. To quote the exact words, use 「…てください」と言いました.'
+    formation:
+      - form: (person に) V (dictionary form) + ように言う
+        note: 出すように言った. Also ように頼む, ように伝える.
+      - form: (person に) V (ない-form) + ように言う
+        note: '飲まないように言った. Passive, "was told to": ように言われた.'
+    examples:
+      - japanese: 先生は学生に、宿題を出すように言いました。
+        reading: せんせいはがくせいに、しゅくだいをだすようにいいました。
+        romaji: sensei wa gakusei ni, shukudai o dasu yō ni iimashita.
+        english: The teacher told the students to hand in their homework.
+      - japanese: 医者にお酒を飲まないように言われました。
+        reading: いしゃにおさけをのまないようにいわれました。
+        romaji: isha ni osake o nomanai yō ni iwaremashita.
+        english: The doctor told me not to drink alcohol.
+      - japanese: 田中さんに、あとで電話するように伝えてください。
+        reading: たなかさんに、あとででんわするようにつたえてください。
+        romaji: tanaka-san ni, ato de denwa suru yō ni tsutaete kudasai.
+        english: Please tell Tanaka-san to call later.
+    mistake:
+      wrong: 先生は私に、宿題を出してくださいように言いました。
+      problem: ように takes the plain form of the verb. The instruction is reported, not quoted, so てください drops out.
+      right: 先生は私に、宿題を出すように言いました。
+    distinguish_from:
+      - id: OJG-0088
+        note: のように compares or points to a manner (魚のように). ように言う reports an instruction.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -3324,9 +3506,42 @@ entries:
       - source_id: hanabira
         ref: ～ように言う
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0341
     pattern: ～出す
+    title: Suddenly start to
+    meaning: 'V (ます-stem) + 出す: "start to V", usually suddenly or unexpectedly; in some compounds, literally "out".'
+    when: 'Use it for an action or event that starts suddenly or without warning: 急に雨が降り出しました, "it suddenly started to rain"; 赤ちゃんが泣き出しました, "the baby burst into tears". In some compound verbs 出す keeps its meaning "out": 取り出す, "take out"; 思い出す, "recall".'
+    why: "出す means \"put out, let out\". Joined to a ます-stem, it presents the action as breaking out into the open, which is why starts made with 出す often feel sudden or beyond anyone's control: 泣き出す, 笑い出す, 降り出す. It is not the verb for a planned start, such as starting a study plan; that is 始める. The compound is a godan verb (降り出す, 降り出した)."
+    formation:
+      - form: V (ます-stem) + 出す
+        note: 降り出す, 泣き出す, 走り出す, 笑い出す.
+    examples:
+      - japanese: 急に雨が降り出しました。
+        reading: きゅうにあめがふりだしました。
+        romaji: kyū ni ame ga furidashimashita.
+        english: It suddenly started to rain.
+      - japanese: 赤ちゃんが泣き出しました。
+        reading: あかちゃんがなきだしました。
+        romaji: akachan ga nakidashimashita.
+        english: The baby burst into tears.
+      - japanese: 犬は私を見ると、走り出しました。
+        reading: いぬはわたしをみると、はしりだしました。
+        romaji: inu wa watashi o miru to, hashiridashimashita.
+        english: When the dog saw me, it started running.
+    mistake:
+      wrong: 来月から日本語を勉強し出します。
+      problem: This is a planned start. 出す suits starts that break out suddenly; for a planned one, use 始める.
+      right: 来月から日本語を勉強し始めます。
+    distinguish_from:
+      - id: OJG-0138
+        note: 始める is a neutral "begin", including planned starts. 出す is a sudden or unexpected start.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -3337,9 +3552,44 @@ entries:
       - source_id: hanabira
         ref: ～出す
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0342
     pattern: ～終わる
+    title: Finish doing
+    meaning: 'V (ます-stem) + 終わる: "finish V-ing"; the action is carried through to its end.'
+    when: "Use it to say an action has been completed: やっと本を読み終わりました, \"I've finally finished reading the book\"; 食べ終わったら、お皿を洗ってください. It fits actions with a natural end: reading a book, eating a meal, writing a report."
+    why: '終わる means "come to an end". Joined to a ます-stem, it says the action reached its end: 読み終わる is "read to the end". Because there has to be an end to reach, it goes with actions that have one (a book, a meal, a letter), and not with open-ended ones such as 待つ. The object of the first verb keeps を: 本を読み終わる. In writing, 終える is also used (読み終える).'
+    formation:
+      - form: V (ます-stem) + 終わる
+        note: 読み終わる, 食べ終わる, 書き終わる. Written style also 終える.
+    examples:
+      - japanese: やっと本を読み終わりました。
+        reading: やっとほんをよみおわりました。
+        romaji: yatto hon o yomiowarimashita.
+        english: I've finally finished reading the book.
+      - japanese: 食べ終わったら、お皿を洗ってください。
+        reading: たべおわったら、おさらをあらってください。
+        romaji: tabeowattara, osara o aratte kudasai.
+        english: When you've finished eating, please wash the plates.
+      - japanese: レポートはもう書き終わりましたか。
+        reading: レポートはもうかきおわりましたか。
+        romaji: repōto wa mō kakiowarimashita ka.
+        english: Have you finished writing the report yet?
+    mistake:
+      wrong: 本を読むのが終わりました。
+      problem: Understandable but clumsy. Japanese joins 終わる to the ます-stem to make one verb.
+      right: 本を読み終わりました。
+    distinguish_from:
+      - id: OJG-0343
+        note: 続ける says the action keeps going. 終わる says it reached its end.
+      - id: OJG-0069
+        note: てしまう can also mean "finish completely", but often adds regret. 終わる simply reports the end.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -3350,9 +3600,46 @@ entries:
       - source_id: hanabira
         ref: ～終わる
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0343
     pattern: ～続ける
+    title: Keep on doing
+    meaning: 'V (ます-stem) + 続ける: "keep V-ing", "continue to V"; the action goes on without stopping.'
+    when: 'Use it for an action that goes on, often longer than expected or in spite of something: 三時間歩き続けました, "I kept walking for three hours". For things that happen by themselves, such as rain, 続く is also used: 雨が降り続いています.'
+    why: '続ける is "continue (something)". Joined to a ます-stem, it says the action keeps going. It is an ichidan verb (続けます, 続けて). Because it is about going on, it fits actions that can last or repeat (歩く, 待つ, 話す), not one-moment ones such as 着く. With natural events, where nobody is doing the continuing, the intransitive 続く is common: 降り続く. For a する-verb, the stem is し: 勉強し続ける.'
+    formation:
+      - form: V (ます-stem) + 続ける
+        note: 歩き続ける, 待ち続ける, 話し続ける, 勉強し続ける.
+      - form: V (ます-stem) + 続く
+        note: For natural events such as rain (降り続く).
+    examples:
+      - japanese: 駅から三時間歩き続けました。
+        reading: えきからさんじかんあるきつづけました。
+        romaji: eki kara sanjikan arukitsuzukemashita.
+        english: I kept walking for three hours from the station.
+      - japanese: 彼は一時間話し続けました。
+        reading: かれはいちじかんはなしつづけました。
+        romaji: kare wa ichijikan hanashitsuzukemashita.
+        english: He kept talking for an hour.
+      - japanese: 雨が一週間降り続いています。
+        reading: あめがいっしゅうかんふりつづいています。
+        romaji: ame ga isshūkan furitsuzuite imasu.
+        english: It has been raining non-stop for a week.
+    mistake:
+      wrong: 毎日日本語を勉強続けています。
+      problem: 続ける joins the ます-stem, and for a する-verb that is し.
+      right: 毎日日本語を勉強し続けています。
+    distinguish_from:
+      - id: OJG-0342
+        note: 終わる says the action reached its end. 続ける says it keeps going.
+      - id: OJG-0018
+        note: ている says an action is under way. 続ける stresses that it goes on and on.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -3363,9 +3650,44 @@ entries:
       - source_id: hanabira
         ref: ～続ける
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0344
     pattern: ～方
+    title: How to do, the way of doing
+    meaning: 'V (ます-stem) + 方 (かた): "the way of V-ing", "how to V"; makes a noun.'
+    when: 'Use it to talk about how something is done: この漢字の読み方, "how to read this kanji"; この機械の使い方を教えてください, "please show me how to use this machine". Common ones are 作り方, "recipe, how to make"; 行き方, "how to get there"; and 書き方.'
+    why: "方, read かた, means \"way, manner\". Joined to a ます-stem, it makes a noun: 読み方 is \"way of reading\". Because the result is a noun, the verb's を-object cannot stay with を; it joins the noun with の instead: 漢字を読む → 漢字の読み方. Other particles are kept and take の: 駅までの行き方. For a する-verb, し + 方 is 仕方 (しかた): 勉強の仕方. The same kanji read ほう is a different word, \"side, direction\", as in ほうがいい."
+    formation:
+      - form: V (ます-stem) + 方
+        note: The を-object becomes Noun + の. Other particles add の (までの, への).
+      - form: Noun + の + 仕方
+        note: "For する-verbs: 勉強の仕方."
+    examples:
+      - japanese: この漢字の読み方を教えてください。
+        reading: このかんじのよみかたをおしえてください。
+        romaji: kono kanji no yomikata o oshiete kudasai.
+        english: Please tell me how to read this kanji.
+      - japanese: 駅までの行き方がわかりません。
+        reading: えきまでのいきかたがわかりません。
+        romaji: eki made no ikikata ga wakarimasen.
+        english: I don't know how to get to the station.
+      - japanese: 母にカレーの作り方を習いました。
+        reading: ははにカレーのつくりかたをならいました。
+        romaji: haha ni karē no tsukurikata o naraimashita.
+        english: I learned how to make curry from my mother.
+    mistake:
+      wrong: この機械を使い方を教えてください。
+      problem: 使い方 is a noun, so the verb's object joins it with の. The を belongs to 教えて.
+      right: この機械の使い方を教えてください。
+    distinguish_from:
+      - id: OJG-0035
+        note: 方 read ほう, as in ほうがいい, is a different word ("side, direction"). 方 read かた after a ます-stem is "way of doing".
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -3376,9 +3698,50 @@ entries:
       - source_id: hanabira
         ref: ～方
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0345
     pattern: ～かな／～かしら
+    title: I wonder…
+    meaning: 'Plain form + かな／かしら: "I wonder (if)…"; the speaker wonders aloud or to themselves. Casual.'
+    when: "Use it when you wonder about something, half to yourself: 明日は晴れるかな, \"I wonder if it'll be sunny tomorrow\". It invites a response without asking directly. かな is used by everyone; かしら is traditionally women's speech and now sounds refined or a little old-fashioned. With a negative, it turns into a wish: バス、早く来ないかな, \"I wish the bus would hurry up\"."
+    why: "か marks a question, and な (or しら) turns it inwards: instead of asking the listener, the speaker asks themselves. That is why it is softer than a question and fits talking to yourself. It is plain and casual, so in polite speech people use でしょうか, or wrap it: …かなと思います. A noun or な-adjective goes straight before it, without だ: 本当かな."
+    formation:
+      - form: Verb / い-adjective (plain form) + かな／かしら
+        note: 晴れるかな, 開いているかな, おいしいかな.
+      - form: Noun / な-adjective + かな／かしら
+        note: "No だ: 本当かな, 誰かしら."
+      - form: V (ない-form) + かな
+        note: A wish that something would happen (早く来ないかな).
+    examples:
+      - japanese: 明日は晴れるかな。
+        reading: あしたははれるかな。
+        romaji: ashita wa hareru ka na.
+        english: I wonder if it'll be sunny tomorrow.
+      - japanese: この店、まだ開いているかな。
+        reading: このみせ、まだあいているかな。
+        romaji: kono mise, mada aite iru ka na.
+        english: I wonder if this shop is still open.
+      - japanese: バス、早く来ないかな。
+        reading: バス、はやくこないかな。
+        romaji: basu, hayaku konai ka na.
+        english: I wish the bus would hurry up and come.
+      - japanese: あの人、誰かしら。
+        reading: あのひと、だれかしら。
+        romaji: ano hito, dare kashira.
+        english: I wonder who that is.
+    mistake:
+      wrong: お客様、こちらでよろしいかな。
+      problem: かな is casual, for talking to yourself or to friends. To a customer, ask politely with でしょうか.
+      right: お客様、こちらでよろしいでしょうか。
+    distinguish_from:
+      - id: OJG-0038
+        note: でしょう guesses and でしょうか asks politely. かな wonders, casually and half to yourself.
+    register:
+      - casual
+      - spoken
     levels:
       commonly: N4
       listed:
@@ -3392,9 +3755,43 @@ entries:
       - source_id: hanabira
         ref: ～かな／～かしら
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0346
     pattern: ～させてください
+    title: Please let me…
+    meaning: 'Causative て-form + ください: "please let me V"; asks permission to do something yourself, often as a polite offer.'
+    when: 'Use it to ask to be allowed to do something: 少し考えさせてください, "please let me think about it for a while"; 今日は私に払わせてください, "please let me pay today". It is also a polite way to say what you would like to do: 明日は休ませてください. More polite: させていただけませんか.'
+    why: 'The causative (させる) is "make or let someone do", and てください asks the listener to do something. So させてください is "please let (me) do V": the listener is asked to be the one who allows, and the speaker is the one who acts. The speaker is usually left out, or marked with に (私に払わせてください). Because it asks permission, it sounds modest even when you are offering to do something for the listener. Casual: させて.'
+    formation:
+      - form: V (causative て-form) + ください
+        note: 考えさせてください, 払わせてください, 休ませてください; する → させてください.
+    examples:
+      - japanese: 少し考えさせてください。
+        reading: すこしかんがえさせてください。
+        romaji: sukoshi kangaesasete kudasai.
+        english: Please let me think about it for a while.
+      - japanese: 今日は私に払わせてください。
+        reading: きょうはわたしにはらわせてください。
+        romaji: kyō wa watashi ni harawasete kudasai.
+        english: Please let me pay today.
+      - japanese: 明日は休ませてください。
+        reading: あしたはやすませてください。
+        romaji: ashita wa yasumasete kudasai.
+        english: Please let me take tomorrow off.
+    mistake:
+      wrong: 今日は私に払ってください。
+      problem: Meant as "let me pay". てください asks the listener to do the paying, so this says "please pay me". To ask to be allowed to pay yourself, use the causative.
+      right: 今日は私に払わせてください。
+    distinguish_from:
+      - id: OJG-0062
+        note: させる is the causative in general. させてください uses it to ask permission for yourself.
+      - id: OJG-0015
+        note: てもいいですか asks whether something is allowed. させてください asks the listener to let you, and so leans more towards a request.
+    register:
+      - polite
     levels:
       commonly: N4
       listed:
@@ -3405,9 +3802,41 @@ entries:
       - source_id: hanabira
         ref: ～させてください
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0347
     pattern: ～ずつ
+    title: Each, at a time
+    meaning: 'Quantity + ずつ: "X each", "X at a time"; the same amount for each person, or in each step.'
+    when: 'Use it after a number or amount to say it is shared out equally or repeated in equal steps: 子どもたちにりんごを二つずつあげました, "I gave the children two apples each"; 毎日少しずつ, "a little at a time every day"; 一人ずつ入ってください, "please come in one at a time".'
+    why: 'ずつ follows a quantity and repeats it across units: for each person, each day, each turn, the same amount. That is why it follows numbers and words of amount (少し, 一つ, 一人, 半分), not ordinary nouns. 少しずつ, "little by little", is its most common use. Like other quantities, the phrase sits near the verb without a particle.'
+    formation:
+      - form: Number + counter + ずつ
+        note: 二つずつ, 一人ずつ, 一冊ずつ.
+      - form: Word of amount + ずつ
+        note: 少しずつ, 半分ずつ.
+    examples:
+      - japanese: 子どもたちにりんごを二つずつあげました。
+        reading: こどもたちにりんごをふたつずつあげました。
+        romaji: kodomotachi ni ringo o futatsu zutsu agemashita.
+        english: I gave the children two apples each.
+      - japanese: 毎日少しずつ漢字を覚えています。
+        reading: まいにちすこしずつかんじをおぼえています。
+        romaji: mainichi sukoshi zutsu kanji o oboete imasu.
+        english: I'm learning kanji a little at a time every day.
+      - japanese: 一人ずつ部屋に入ってください。
+        reading: ひとりずつへやにはいってください。
+        romaji: hitori zutsu heya ni haitte kudasai.
+        english: Please come into the room one at a time.
+    mistake:
+      wrong: 学生ずつ本を一冊もらいました。
+      problem: ずつ follows the quantity that is repeated, not the people it is shared among.
+      right: 学生は本を一冊ずつもらいました。
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -3418,9 +3847,50 @@ entries:
       - source_id: hanabira
         ref: ～ずつ
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0348
     pattern: ～たらいい／～ばいい
+    title: What should I do? You just need to…
+    meaning: 'V-たらいい／V-ばいい: asks for advice (どうしたらいいですか, "what should I do?") or gives it ("you just need to V").'
+    when: 'Use it with a question word to ask for advice: 駅までどうやって行ったらいいですか, "how should I get to the station?"; 何を持っていけばいいですか. As an answer, it gives advice, often "all you need to do is": このボタンを押せばいいです. It can also express a hope: 晴れたらいいですね.'
+    why: 'The conditional (たら or ば) sets up "if you do V", and いい judges it: "if you do V, it will be good". So どうしたらいい asks "if I do what, will it be good?", the natural way to ask for advice in Japanese. As an answer it says V is enough for a good result, so it often means "you only have to". たら and ば are largely interchangeable here; たらいい is a little more conversational. With the past, ばよかった, the same shape becomes regret.'
+    formation:
+      - form: V (た-form) + らいい
+        note: 行ったらいい, したらいい. Polite いいですか／いいです.
+      - form: V (ば-form) + いい
+        note: 行けばいい, すればいい.
+      - form: Question word … たら／ばいいですか
+        note: どうしたらいいですか, 何を持っていけばいいですか.
+    examples:
+      - japanese: 駅までどうやって行ったらいいですか。
+        reading: えきまでどうやっていったらいいですか。
+        romaji: eki made dō yatte ittara ii desu ka.
+        english: How should I get to the station?
+      - japanese: 「何を持っていけばいいですか。」「飲み物だけ持ってくればいいですよ。」
+        reading: 「なにをもっていけばいいですか。」「のみものだけもってくればいいですよ。」
+        romaji: '"nani o motte ikeba ii desu ka." "nomimono dake motte kureba ii desu yo."'
+        english: '"What should I bring?" "You only need to bring something to drink."'
+      - japanese: わからないときは、先生に聞けばいいです。
+        reading: わからないときは、せんせいにきけばいいです。
+        romaji: wakaranai toki wa, sensei ni kikeba ii desu.
+        english: When you don't understand, just ask the teacher.
+    mistake:
+      wrong: 駅まで、どうやって行ってもいいですか。
+      problem: Meant as "how should I get to the station?". てもいいですか asks for permission. To ask how you should do something, use たらいい or ばいい.
+      right: 駅まで、どうやって行ったらいいですか。
+    distinguish_from:
+      - id: OJG-0072
+        note: ばよかった looks back with regret. ばいい gives advice about what to do.
+      - id: OJG-0049
+        note: たらどうですか offers a suggestion to the listener. たらいい is mostly used to ask for advice, or to say what is enough.
+      - id: OJG-0059
+        note: といい is mainly a hope. たらいい and ばいい are mainly advice, though たらいい can also hope.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -3434,9 +3904,54 @@ entries:
       - source_id: hanabira
         ref: ～たらいい／～ばいい
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: といいですか (何を持っていくといいですか) is also used to ask for advice; the entry leaves it out. Is that right for N4?
   - id: OJG-0349
     pattern: ～ようだ
+    title: It seems, it appears (judging from evidence)
+    meaning: 'Plain form + ようだ／ようです: "it seems that…", "it looks as if…"; a conclusion drawn from evidence.'
+    when: "Use it when you conclude something from what you have seen, heard or noticed: 電気が消えています。誰もいないようです, \"the lights are off; it seems nobody's there\". It is a little more formal than みたい, and common in careful speech and writing."
+    why: 'よう means "appearance, likeness". ようだ says "it has the look of…": the speaker has some evidence and draws a conclusion, without stating it as certain. So it is less sure than はず, which reasons from known facts to what must be, and unlike stem + そう it is not limited to how something looks. It joins like a noun: の after a noun (休みのようだ), な after a な-adjective (静かなようだ), and plain forms after verbs and い-adjectives.'
+    formation:
+      - form: Verb / い-adjective (plain form) + ようだ
+        note: いないようだ, 降ったようだ, 忙しいようだ.
+      - form: な-adjective + な + ようだ; Noun + の + ようだ
+        note: 静かなようだ, 休みのようだ. Polite ようです.
+    examples:
+      - japanese: 電気が消えています。誰もいないようです。
+        reading: でんきがきえています。だれもいないようです。
+        romaji: denki ga kiete imasu. dare mo inai yō desu.
+        english: The lights are off. It seems nobody's there.
+      - japanese: 道がぬれています。夜の間に雨が降ったようです。
+        reading: みちがぬれています。よるのあいだにあめがふったようです。
+        romaji: michi ga nurete imasu. yoru no aida ni ame ga futta yō desu.
+        english: The road is wet. It seems it rained during the night.
+      - japanese: 田中さんは今日は忙しいようです。
+        reading: たなかさんはきょうはいそがしいようです。
+        romaji: tanaka-san wa kyō wa isogashii yō desu.
+        english: Tanaka-san seems to be busy today.
+      - japanese: この店は、日曜日は休みのようです。
+        reading: このみせは、にちようびはやすみのようです。
+        romaji: kono mise wa, nichiyōbi wa yasumi no yō desu.
+        english: It looks like this shop is closed on Sundays.
+    mistake:
+      wrong: あの人は学生ようです。
+      problem: After a noun, よう needs の.
+      right: あの人は学生のようです。
+    distinguish_from:
+      - id: OJG-0068
+        note: みたい means the same, is more conversational, and joins nouns and な-adjectives directly (学生みたい).
+      - id: OJG-0061
+        note: そう after a stem is an impression from appearance, before you know. ようだ is a conclusion from evidence of any kind.
+      - id: OJG-0075
+        note: はず reasons from known facts to what should be so. ようだ concludes from what you observe, less firmly.
+    register:
+      - plain
+      - polite
+      - written
     levels:
       commonly: N4
       listed:
@@ -3447,4 +3962,7 @@ entries:
       - source_id: hanabira
         ref: ～ようだ
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
