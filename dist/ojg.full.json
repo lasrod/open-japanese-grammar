@@ -13373,7 +13373,7 @@
         }
       ],
       "review": {
-        "status": "draft",
+        "status": "ai-reviewed",
         "drafted_by": {
           "provider": "anthropic",
           "model": "claude-opus-5-5"
@@ -13399,6 +13399,16 @@
             "verdict": "disagree",
             "content_sha256": "03330561c67f8b394af814e421c94b0b1eeb834ca54534c32ce9ff13465b501e",
             "note": "The formation specifies only dictionary-form verbs, but the explanation also describes nominalizing a past fact: 田中さんが結婚したことを聞きました. Replace the first formation with “V (plain form) + こと” and its note with “Use the dictionary form for an activity: 読むこと, 泳ぐこと. Past and negative forms are also possible: 結婚したこと, 行かないこと. The verb keeps its own object: 本を読むこと.” Revise the meaning line to “V (plain form) + こと: nominalizes an action or fact. With the dictionary form, often ‘doing V’: 趣味は写真を撮ることです.”"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-27",
+            "verdict": "agree",
+            "content_sha256": "9cc02ccc680f3c906783f2a0729776f806a305acb55ec12c4022c20cf0eb7cdb",
+            "note": "The explanation, formation, examples, readings, romaji, and contrasts are accurate for the uses described."
           }
         ]
       }
@@ -13596,7 +13606,7 @@
         }
       ],
       "review": {
-        "status": "draft",
+        "status": "ai-reviewed",
         "drafted_by": {
           "provider": "anthropic",
           "model": "claude-opus-5-5"
@@ -13622,6 +13632,16 @@
             "verdict": "disagree",
             "content_sha256": "d750fdfd5d6ec7154f6a206cb16357ccd2111fe72d83602448c76560f9a40988",
             "note": "The formation treats nouns as freely interchangeable with な-adjectives, but あまり requires a predicate that supports an amount or degree interpretation. Replace the third formation with 'あまり + な-adjective + ではない／じゃない'. If retaining nouns, add: 'Also possible with noun predicates that allow a degree interpretation, such as あまり好みじゃない (not really to my taste); this is not a general pattern for all nouns.'"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-27",
+            "verdict": "agree",
+            "content_sha256": "2fbca77dbccef7d9a47a1c00d172aeb97a923babe358ba81754c80396220152b",
+            "note": "The negative pattern and its contrast with affirmative あまり(に) are explained accurately. The examples and correction are sound."
           }
         ]
       }
@@ -13696,7 +13716,7 @@
         }
       ],
       "review": {
-        "status": "draft",
+        "status": "ai-reviewed",
         "drafted_by": {
           "provider": "anthropic",
           "model": "claude-opus-5-5"
@@ -13722,6 +13742,16 @@
             "verdict": "disagree",
             "content_sha256": "62520ef831e6388ff5aa06fe8fdfcd9c59f80ab92983d6044a78cf04737908a6",
             "note": "The statement that affirmative ぜんぜん 'is not used in formal writing' is too absolute. Affirmative 全然 occurs in writing, particularly with expressions of difference such as 全然異なる. Replace the final sentence of why with: 'ぜんぜん also occurs with affirmative expressions. Conversational uses such as ぜんぜん大丈夫です (totally fine), often answering a worry, are common even in polite conversation but are generally avoided in formal prose. Affirmative expressions of complete difference, such as 全然異なる, also occur in writing.'"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-27",
+            "verdict": "agree",
+            "content_sha256": "9e65e0eef5f6bcc65b96803eb3d78c26a0fadce5e2cc0235d0d364a314219f15",
+            "note": "The explanation correctly distinguishes the complete negative from context-dependent affirmative uses. The examples, readings, romaji, and correction are accurate."
           }
         ]
       }
@@ -14489,7 +14519,7 @@
       "title": "Receiving: getting something from someone",
       "meaning": "AはBに／からNをもらう: A receives N from B. The receiver is the subject, and the event is told from their side.",
       "when": "Use it to tell a gift from the receiver's point of view: 私は友だちに本をもらいました; 母から手紙をもらいました. The receiver can be you, someone close to you, or someone else. When the gift comes to you, the same event can also be told with くれる.",
-      "why": "もらう makes the receiver the subject, so the sentence is about the person who got something. The giver is marked with に or から. から marks the source explicitly, and is generally the safest choice when the giver is a group such as a school or a company: 学校から手紙をもらいました. に is also possible when the group is treated as the one giving. The same event can be told two ways: 友だちが本をくれました, from the giver's side toward me, and 私は友だちに本をもらいました, from mine. When the speaker is the one giving, あげる is the usual way to tell it; that is a matter of viewpoint, not a strict ban, and 私から何をもらいたいですか is natural. For receiving from someone above you, the humble verb is いただく (N4).",
+      "why": "もらう makes the receiver the subject, so the sentence is about the person who got something. The giver is marked with に or から. から marks the source explicitly, and is generally the safest choice when the giver is a group such as a school or a company: 学校から手紙をもらいました. に is also possible when the group is treated as the one giving. The same event can be told with different subjects: 友だちが本をくれました makes the giver the subject and presents the gift as coming toward me; 私は友だちに本をもらいました makes me, the receiver, the subject. When the speaker is the one giving, あげる is the usual way to tell it; that is a matter of viewpoint, not a strict ban, and 私から何をもらいたいですか is natural. For receiving from someone above you, the humble verb is いただく (N4).",
       "formation": [
         {
           "form": "Receiver は Giver に Thing を もらう",
@@ -14528,11 +14558,11 @@
       "distinguish_from": [
         {
           "id": "OJG-0323",
-          "note": "くれる tells the same event from the giver's side: 友だちが本をくれました."
+          "note": "くれる makes the giver the subject and describes giving toward the speaker or someone the speaker identifies with: 友だちが本をくれました."
         },
         {
           "id": "OJG-0322",
-          "note": "あげる is giving away from the speaker's side."
+          "note": "あげる makes the giver the subject and normally describes giving to someone other than the speaker; it can also describe giving between third parties."
         },
         {
           "id": "OJG-0057",
@@ -14575,7 +14605,7 @@
           "provider": "anthropic",
           "model": "claude-opus-5-5"
         },
-        "note": "Question: is the rule that から is used when the giver is a group (school, company) stated accurately? Revised after the first and second gpt-6-astra reviews to meet their objections; the text as it stands has not been reviewed again, because this batch stopped at two review rounds.",
+        "note": "Question: is the rule that から is used when the giver is a group (school, company) stated accurately? Revised after the first and second gpt-6-astra reviews to meet their objections; the text as it stands has not been reviewed again, because this batch stopped at two review rounds. Revised again after the third gpt-6-astra review (subject vs viewpoint with くれる); this text has not been reviewed.",
         "reviews": [
           {
             "by": "gpt-6-astra",
@@ -14596,6 +14626,16 @@
             "verdict": "disagree",
             "content_sha256": "8dc77b319d4139f46e3df3e2cc9c70579ef35b8931ce67c78eaa5c13ee8fb6af",
             "note": "The requirement to use から rather than に for a school, company, or other group is overstated. Institutions can be construed as givers and take に, as in 会社にお金をもらった. Replace the relevant explanation with: 'The giver is marked with に or から. から explicitly marks the source and is generally the safest choice with an institution such as a school or company: 学校から手紙をもらいました. に is also possible when the institution is treated as the giving party.' Revise the second formation note to: 'から explicitly marks the source and is generally preferred with institutional sources, though に is also possible.'"
+          },
+          {
+            "by": "gpt-6-astra",
+            "kind": "ai",
+            "provider": "openai",
+            "model": "gpt-6-astra",
+            "date": "2026-09-27",
+            "verdict": "disagree",
+            "content_sha256": "f722c270abff3c239eaf5a666c6a81759f7ae1455cbb1427f39070fec0128426",
+            "note": "The explanation and くれる contrast conflate grammatical subject with viewpoint: くれる makes the giver the subject but presents the giving as directed toward the speaker or someone the speaker identifies with, not from the giver's viewpoint. Replace the relevant sentence in 'why' with: 'The same event can be told with different subjects: 友だちが本をくれました makes the giver the subject and presents the gift as coming toward me; 私は友だちに本をもらいました makes me, the receiver, the subject.' Replace the くれる note with: 'くれる makes the giver the subject and describes giving toward the speaker or someone the speaker identifies with: 友だちが本をくれました.' The あげる note is also too restrictive: あげる can describe giving between third parties. Replace it with: 'あげる makes the giver the subject and normally describes giving to someone other than the speaker; it can also describe giving between third parties.'"
           }
         ]
       }
