@@ -1393,7 +1393,7 @@ entries:
     pattern: ～なさい
     title: Do it! (a firm instruction from above)
     meaning: "V (ます-stem) + なさい: a firm but not rough instruction, used by parents, teachers and in test questions."
-    when: "Use it when someone with authority tells someone else to do something: a parent to a child (早く寝なさい), a teacher to pupils, and in written instructions on tests and exercises (正しいものを選びなさい). Adults normally avoid it with adult equals and superiors, where it sounds commanding; between adults it is heard only in a deliberately scolding, encouraging or joking tone."
+    when: "Use it when someone with authority tells someone else to do something: a parent to a child (早く寝なさい), a teacher to pupils, and in written instructions on tests and exercises (正しいものを選びなさい). Adults normally avoid it as an ordinary request to equals or superiors, because it sounds commanding or patronising. It can be used in authoritative instructions to adult subordinates or students, and between equals in deliberately scolding, encouraging or joking speech."
     why: なさい comes from なさる, the honorific verb for "do", so it sounds gentler than the plain command form (寝ろ, 食べろ). It is still a command, and using it puts the speaker in the position of someone entitled to give orders, which is why it belongs to parents, teachers and written instructions. Like ます, it joins to the ます-stem. It has no negative form; to tell someone not to do something, other forms are used (～てはいけません, ～ないで).
     formation:
       - form: V (ます-stem) + なさい
@@ -1806,7 +1806,7 @@ entries:
     title: Doing something completely, or regrettably
     meaning: "V-てしまう: V is done completely, or happened with regret, by accident or unexpectedly. Casual: ちゃう／じゃう."
     when: "Use it for two things: to say an action is finished completely (宿題を全部やってしまった, \"I've finished all my homework\"), and, very often, to show that something happened that you regret, or that happened without your meaning it to (傘を忘れてしまいました, \"I (unfortunately) left my umbrella behind\"). In speech, てしまう becomes ちゃう and でしまう becomes じゃう: 食べちゃった, 飲んじゃった."
-    why: "しまう means \"put away, close up\". After the て-form it marks an action as completed, and often adds the speaker's reaction to it: regret, or a sense that it happened without meaning to or unexpectedly. 忘れてしまった says you forgot, and wish you hadn't. Context decides which reading you get: a chore finished, or a mistake made. It adds the speaker's view of the event; without it, 傘を忘れました states the bare fact."
+    why: "しまう means \"put away, close up\". After the て-form it marks an action as completed, and often adds the speaker's reaction to it: regret, or a sense that it happened without meaning to or unexpectedly. 忘れてしまった often conveys regret about forgetting, but depending on the context it can instead stress that the forgetting was complete or unintended. Context decides which reading you get: a chore finished, or a mistake made. It adds the speaker's view of the event; without it, 傘を忘れました states the bare fact."
     formation:
       - form: V (て-form) + しまう
         note: "Polite: てしまいます, てしまいました."
@@ -2277,7 +2277,7 @@ entries:
         english: Today I walked to the station instead of taking the bus.
     mistake:
       wrong: 朝ご飯を食べらないで家を出ました。
-      problem: 食べる is an ichidan verb, so its ない-form is 食べない; ないで is added to that.
+      problem: 食べる is an ichidan verb, so its ない-form is 食べない. Add で to that to make 食べないで.
       right: 朝ご飯を食べないで家を出ました。
     distinguish_from:
       - id: OJG-0020
@@ -2712,7 +2712,7 @@ entries:
     title: While (something happens during a period)
     meaning: 'V-ている間に, N の間に: "while…", "during…"; something happens within that period.'
     when: 'Use it when one event happens at some point during a period marked by another action or state: 母が寝ている間に、部屋を掃除しました, "while my mother was asleep, I cleaned the room". With a noun: 夏休みの間に. The two parts can have different subjects. Without に, 間 means "the whole time": 待っている間、ずっと本を読んでいました.'
-    why: 間 (あいだ) is "the space between", here a stretch of time. With に, it presents an event, a change or a completed action as happening within that stretch, the same に as in 三時に. Without に, the stretch itself is the time over which something goes on or repeats, often "the whole time", with the ている form or ずっと. The period is a state, so a verb before 間 is usually in the ている form, or a verb of state such as いる.
+    why: 間 (あいだ) is "the space between", here a stretch of time. With に, it presents an event, a change or a completed action as happening within that stretch, the same に as in 三時に. Without に, 間 presents the period over which an activity or repeated events take place; it often suggests they go on throughout the period, though not necessarily without a break. The period is a state, so a verb before 間 is usually in the ている form, or a verb of state such as いる.
     formation:
       - form: V (ている) + 間に
         note: Something happens within the period.
@@ -2738,7 +2738,7 @@ entries:
         note: No に, because the reading lasted through the whole wait.
     mistake:
       wrong: 電車を待っている間に、ずっと本を読んでいました。
-      problem: ずっと says the reading went on throughout the wait, which is 間 without に. 間に presents something as happening within the period, not as lasting through it.
+      problem: To stress that the reading went on throughout the whole wait, 間 without に is the clearer, more usual choice. 間に frames the reading as happening within that period; it is not strictly incompatible with ずっと.
       right: 電車を待っている間、ずっと本を読んでいました。
     distinguish_from:
       - id: OJG-0071
@@ -4458,7 +4458,7 @@ entries:
     pattern: ～出す
     title: Suddenly start to
     meaning: 'V (ます-stem) + 出す: "start to V", usually suddenly or unexpectedly; in some compounds, literally "out".'
-    when: 'Use it for an action or event that starts suddenly or without warning: 急に雨が降り出しました, "it suddenly started to rain"; 赤ちゃんが泣き出しました, "the baby burst into tears". In some compound verbs 出す keeps its meaning "out": 取り出す, "take out"; 思い出す, "recall".'
+    when: 'Use it for an action or event that starts suddenly or without warning: 急に雨が降り出しました, "it suddenly started to rain"; 赤ちゃんが泣き出しました, "the baby burst into tears". Other established compounds with 出す have meanings besides "start": 取り出す means "take out", with literal outward movement; 思い出す means "recall", figuratively bringing something back to mind. Learn these one by one.'
     why: '出す means "put out, let out". Joined to a ます-stem, it highlights the start of an action, often suggesting that it broke out suddenly: 泣き出す, 笑い出す, 降り出す. 始める is a neutral "begin", and is generally the better choice for simply announcing a planned start. The compound is a godan verb (降り出す, 降り出した).'
     formation:
       - form: V (ます-stem) + 出す
@@ -4613,7 +4613,7 @@ entries:
       - id: OJG-0342
         note: 終わる says the action reached its end. 続ける says it keeps going.
       - id: OJG-0018
-        note: ている says an action is under way. 続ける stresses that it goes on and on.
+        note: In its progressive use, ている presents an action as under way; 続ける stresses that it goes on over time. ている also has other uses, such as states after a change and habits.
     register:
       - plain
       - polite
