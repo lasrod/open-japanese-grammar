@@ -1909,6 +1909,37 @@ entries:
         model: claude-opus-5-5
   - id: OJG-0079
     pattern: ～やすい
+    title: Easy to do
+    meaning: 'V (ます-stem) + やすい: "easy to V"; with things that just happen, "tends to V".'
+    when: 'Use it for something that is easy to do because of what it is like: このペンは書きやすい, "this pen is easy to write with"; 先生の説明はわかりやすい. With verbs for things that happen by themselves, it means "tends to, is prone to": 冬は風邪をひきやすい, このコップは割れやすい.'
+    why: "やすい means \"easy\". Joined to a verb's ます-stem, it makes a new い-adjective: 読みやすい, \"easy-to-read\", which conjugates like any い-adjective (読みやすかった, 読みやすくない, 読みやすい本). The subject is usually the thing the action is done to or with, not the person doing it: この本は読みやすい. When the verb is something that happens by itself (割れる, 忘れる), \"easy to happen\" means \"tends to happen\". This やすい is not 安い, \"cheap\", which only sounds the same."
+    formation:
+      - form: V (ます-stem) + やすい
+        note: 書く → 書きやすい, 食べる → 食べやすい, わかる → わかりやすい. Conjugates as an い-adjective.
+    examples:
+      - japanese: この靴は軽くて歩きやすいです。
+        reading: このくつはかるくてあるきやすいです。
+        romaji: kono kutsu wa karukute arukiyasui desu.
+        english: These shoes are light and easy to walk in.
+      - japanese: 先生の説明はわかりやすいです。
+        reading: せんせいのせつめいはわかりやすいです。
+        romaji: sensei no setsumei wa wakariyasui desu.
+        english: The teacher's explanations are easy to understand.
+      - japanese: 冬は風邪をひきやすいです。
+        reading: ふゆはかぜをひきやすいです。
+        romaji: fuyu wa kaze o hikiyasui desu.
+        english: It's easy to catch a cold in winter.
+        note: A thing that happens to you, so "tends to" rather than "easy to do".
+    mistake:
+      wrong: この本は読むやすいです。
+      problem: やすい joins the ます-stem (読み), not the dictionary form.
+      right: この本は読みやすいです。
+    distinguish_from:
+      - id: OJG-0080
+        note: にくい is the opposite, "hard to V", and is formed the same way.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -1920,9 +1951,42 @@ entries:
       - source_id: tanos
         ref: 523
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0080
     pattern: ～にくい
+    title: Hard to do
+    meaning: "V (ます-stem) + にくい: \"hard to V\"; with things that happen, \"doesn't easily V\"."
+    when: "Use it for something that is hard to do because of what it is like: この肉は硬くて食べにくい, \"this meat is tough and hard to eat\"; 字が小さくて読みにくい. With verbs for things that happen, it means \"doesn't easily happen\", which can be a good thing: 割れにくいコップ, \"a glass that doesn't break easily\"."
+    why: 'にくい means "hard to". Like やすい, it joins the ます-stem and makes an い-adjective: 読みにくい, 読みにくかった, 読みにくい字. It describes a thing by how hard it makes an action, so the subject is usually the thing, not the person. For a task that is simply difficult, such as a hard question, use 難しい instead: この問題は難しい.'
+    formation:
+      - form: V (ます-stem) + にくい
+        note: 読む → 読みにくい, 食べる → 食べにくい, 割れる → 割れにくい. Conjugates as an い-adjective.
+    examples:
+      - japanese: この肉は硬くて、食べにくいです。
+        reading: このにくはかたくて、たべにくいです。
+        romaji: kono niku wa katakute, tabenikui desu.
+        english: This meat is tough and hard to eat.
+      - japanese: 字が小さくて読みにくいです。
+        reading: じがちいさくてよみにくいです。
+        romaji: ji ga chiisakute yominikui desu.
+        english: The writing is small and hard to read.
+      - japanese: このコップは割れにくいです。
+        reading: このコップはわれにくいです。
+        romaji: kono koppu wa warenikui desu.
+        english: This glass doesn't break easily.
+    mistake:
+      wrong: この道は歩くにくいです。
+      problem: にくい joins the ます-stem (歩き), not the dictionary form.
+      right: この道は歩きにくいです。
+    distinguish_from:
+      - id: OJG-0079
+        note: やすい is the opposite, "easy to V", and is formed the same way.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -1934,9 +1998,52 @@ entries:
       - source_id: tanos
         ref: 524
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0081
     pattern: ～られる
+    title: Having something done to you (the passive)
+    meaning: "Passive V-られる／V-れる: the subject is the one the action happens to; the doer, if named, takes に."
+    when: 'Use it to tell an event from the side of the one it happened to: 弟は先生にほめられました, "my brother was praised by the teacher". It is also used when the doer is unknown or unimportant, as in news and descriptions (このお寺は八百年前に建てられました), and for being troubled by something: 雨に降られました, "I got caught in the rain".'
+    why: "The passive moves the one affected into the subject and the doer to に: 先生が弟をほめた becomes 弟は先生にほめられた. Japanese likes to keep the story on the speaker's side, so when something happens to you, the passive lets you stay the subject: 私は友だちに笑われた. Because the one affected is the subject, even an intransitive event can be passive when it troubles someone (雨に降られた). When something is done to a part of you or to your belongings, the person is the subject and the part keeps を: 足を踏まれた."
+    formation:
+      - form: Godan verb (ない-stem) + れる
+        note: 書く → 書かれる, 読む → 読まれる, 言う → 言われる, 踏む → 踏まれる.
+      - form: Ichidan verb (stem) + られる
+        note: 食べる → 食べられる, ほめる → ほめられる. This looks the same as the potential form; context tells them apart.
+      - form: する → される; 来る → 来られる (こられる)
+        note: The passive is itself an ichidan verb (ほめられます, ほめられた).
+    examples:
+      - japanese: 弟は先生にほめられました。
+        reading: おとうとはせんせいにほめられました。
+        romaji: otōto wa sensei ni homeraremashita.
+        english: My little brother was praised by the teacher.
+      - japanese: 電車の中で足を踏まれました。
+        reading: でんしゃのなかであしをふまれました。
+        romaji: densha no naka de ashi o fumaremashita.
+        english: Someone stepped on my foot on the train.
+      - japanese: このお寺は八百年前に建てられました。
+        reading: このおてらははっぴゃくねんまえにたてられました。
+        romaji: kono otera wa happyakunen mae ni tateraremashita.
+        english: This temple was built 800 years ago.
+      - japanese: 帰り道で雨に降られました。
+        reading: かえりみちであめにふられました。
+        romaji: kaerimichi de ame ni furaremashita.
+        english: I got caught in the rain on the way home.
+        note: An intransitive verb in the passive, because the rain troubled the speaker.
+    mistake:
+      wrong: 私の足は電車の中で踏まれました。
+      problem: When something is done to a part of you, Japanese makes the person the subject and keeps the part as the object with を.
+      right: 私は電車の中で足を踏まれました。
+    distinguish_from:
+      - id: OJG-0089
+        note: させられる is the passive of the causative, "be made to do". られる on its own is "have something done to you".
+    register:
+      - plain
+      - polite
+      - written
     levels:
       commonly: N4
       listed:
@@ -1948,7 +2055,11 @@ entries:
       - source_id: tanos
         ref: 525
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: Tanos 525 lists only ～られる; this entry reads it as the passive. The potential form (食べられる, "can eat") shares the ichidan shape but has no entry of its own at N4. Should it get one?
   - id: OJG-0082
     pattern: ～てある
     title: Something has been done on purpose, and the result remains
@@ -2011,6 +2122,41 @@ entries:
           note: The entry accurately distinguishes the result-state and preparation uses of ～てある. The formations, examples, readings, translations, mistake correction, and comparison with ～ている are correct, and N4 is plausible.
   - id: OJG-0083
     pattern: ～ているあいだに,～
+    title: While (something happens during a period)
+    meaning: 'V-ている間に, N の間に: "while…", "during…"; something happens at some point within that period.'
+    when: 'Use it when one event happens at some point during a period marked by another action or state: 母が寝ている間に、部屋を掃除しました, "while my mother was asleep, I cleaned the room". With a noun: 夏休みの間に. The two parts can have different subjects. Without に, 間 means "the whole time": 待っている間、ずっと本を読んでいました.'
+    why: 間 (あいだ) is "the space between", here a stretch of time. With に, it marks a point inside that stretch where something happens, the same に as in 三時に. Without に, the stretch itself is the time, so the main part describes something that lasts all the way through it, usually in the ている form or with ずっと. The period is a state, so a verb before 間 is usually in the ている form, or a verb of state such as いる.
+    formation:
+      - form: V (ている) + 間に
+        note: Something happens at some point within the period.
+      - form: Noun + の + 間に
+        note: 夏休みの間に, 留守の間に.
+      - form: V (ている) / Noun + の + 間
+        note: Without に, for something that lasts through the whole period.
+    examples:
+      - japanese: 母が寝ている間に、部屋を掃除しました。
+        reading: はははねているあいだに、へやをそうじしました。
+        romaji: haha ga nete iru aida ni, heya o sōji shimashita.
+        english: While my mother was asleep, I cleaned the room.
+      - japanese: 夏休みの間に、運転免許を取りたいです。
+        reading: なつやすみのあいだに、うんてんめんきょをとりたいです。
+        romaji: natsuyasumi no aida ni, unten menkyo o toritai desu.
+        english: I want to get my driving licence during the summer holidays.
+      - japanese: 電車を待っている間、ずっと本を読んでいました。
+        reading: でんしゃをまっているあいだ、ずっとほんをよんでいました。
+        romaji: densha o matte iru aida, zutto hon o yonde imashita.
+        english: The whole time I was waiting for the train, I was reading.
+        note: No に, because the reading lasted through the whole wait.
+    mistake:
+      wrong: 電車を待っている間に、ずっと本を読んでいました。
+      problem: ずっと says the reading lasted the whole time, which needs 間 without に. 間に is for something that happens at one point inside the period.
+      right: 電車を待っている間、ずっと本を読んでいました。
+    distinguish_from:
+      - id: OJG-0071
+        note: ながら is one person doing two things at once. 間 and 間に mark a period, and the two parts can have different subjects.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -2022,9 +2168,50 @@ entries:
       - source_id: tanos
         ref: 527
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0084
     pattern: ～く/ ～にする
+    title: Making something (a certain way)
+    meaning: "い-adj (く) or な-adj / noun (に) + する: make something that way; someone deliberately causes the change."
+    when: 'Use it when someone changes something on purpose: 部屋をきれいにする, "tidy the room"; 音を小さくする, "turn the sound down"; 髪を短くする. It is common in requests: 静かにしてください, "please be quiet".'
+    why: 'く and に are the forms adjectives take to describe how. する is "do, make". So 小さくする is "make (it) so that it is small". It is the transitive partner of くなる／になる: なる says a change happens (音が小さくなる), する says someone makes it happen (音を小さくする). That is why the thing changed takes を, and why requests to change something use する.'
+    formation:
+      - form: Noun を + い-adjective (drop い) + く + する
+        note: 小さくする, 短くする, 安くする; いい → よくする.
+      - form: Noun を + な-adjective / noun + に + する
+        note: きれいにする, 静かにする, 半分にする.
+    examples:
+      - japanese: テレビの音を小さくしてください。
+        reading: テレビのおとをちいさくしてください。
+        romaji: terebi no oto o chiisaku shite kudasai.
+        english: Please turn the TV down.
+      - japanese: 週末に部屋をきれいにしました。
+        reading: しゅうまつにへやをきれいにしました。
+        romaji: shūmatsu ni heya o kirei ni shimashita.
+        english: I tidied my room at the weekend.
+      - japanese: 髪を短くしました。
+        reading: かみをみじかくしました。
+        romaji: kami o mijikaku shimashita.
+        english: I got my hair cut short.
+      - japanese: 図書館では静かにしてください。
+        reading: としょかんではしずかにしてください。
+        romaji: toshokan de wa shizuka ni shite kudasai.
+        english: Please be quiet in the library.
+    mistake:
+      wrong: 部屋がきれいにしました。
+      problem: する says someone makes the change, so the thing changed is the object and takes を. が goes with なる (部屋がきれいになりました).
+      right: 部屋をきれいにしました。
+    distinguish_from:
+      - id: OJG-0028
+        note: くなる／になる says a change happens by itself (が). くする／にする says someone causes it (を).
+      - id: OJG-0310
+        note: Noun + にする on its own is "decide on, choose" (コーヒーにします). Here にする after an adjective means "make it so".
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -2036,7 +2223,10 @@ entries:
       - source_id: tanos
         ref: 528
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0085
     pattern: ～のようてほしい
     levels:
@@ -2053,6 +2243,41 @@ entries:
       status: stub
   - id: OJG-0086
     pattern: のに
+    title: Even though (and that's not how it should be)
+    meaning: 'Plain form + のに: "even though A, B"; B goes against what A led you to expect, often with surprise or frustration.'
+    when: 'Use it when a result goes against what the first fact would lead you to expect, and you feel something about it: disappointment, surprise, complaint. 一生懸命勉強したのに、試験に落ちました, "even though I studied hard, I failed the exam". Both parts are real facts. Left at the end of a sentence, it sighs: もっと早く言えばよかったのに, "you should have told me sooner".'
+    why: "の turns A into a fact, and に sets it against B: \"given the fact A, still B\". Because A is a fact, のに is not used for \"even if\" about something that may happen; that is ても. Because the speaker is reacting to a result, B is not a request, an invitation or the speaker's own plan. A noun or な-adjective takes な before のに (日曜日なのに, 静かなのに), as with other の-patterns."
+    formation:
+      - form: Verb / い-adjective (plain form) + のに
+        note: 勉強したのに, 来ないのに, 安いのに.
+      - form: Noun / な-adjective + な + のに
+        note: 日曜日なのに, 静かなのに.
+    examples:
+      - japanese: 一生懸命勉強したのに、試験に落ちました。
+        reading: いっしょうけんめいべんきょうしたのに、しけんにおちました。
+        romaji: isshōkenmei benkyō shita noni, shiken ni ochimashita.
+        english: Even though I studied hard, I failed the exam.
+      - japanese: 日曜日なのに、会社に行かなければなりません。
+        reading: にちようびなのに、かいしゃにいかなければなりません。
+        romaji: nichiyōbi na noni, kaisha ni ikanakereba narimasen.
+        english: Even though it's Sunday, I have to go to work.
+      - japanese: 約束したのに、彼は来ませんでした。
+        reading: やくそくしたのに、かれはきませんでした。
+        romaji: yakusoku shita noni, kare wa kimasen deshita.
+        english: He promised, and yet he didn't come.
+    mistake:
+      wrong: 明日雨が降るのに、サッカーをします。
+      problem: Meant as "even if it rains tomorrow". のに is for facts that already hold; for "even if" about what may happen, use ても.
+      right: 明日雨が降っても、サッカーをします。
+    distinguish_from:
+      - id: OJG-0065
+        note: ても covers "even if" for things that may happen, and is neutral. のに is for facts, and carries the speaker's reaction.
+      - id: OJG-0290
+        note: が and けど simply join two contrasting facts. のに adds that the result is unexpected or unwelcome.
+    register:
+      - plain
+      - polite
+      - spoken
     levels:
       commonly: N4
       listed:
@@ -2064,9 +2289,48 @@ entries:
       - source_id: tanos
         ref: 530
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: Covers the "even though" のに only. The purpose のに (この箱は本を入れるのに使います, "used for holding books") is a different point and is not written here.
   - id: OJG-0087
     pattern: ～のような
+    title: Like, such as (before a noun)
+    meaning: 'N のような + noun: "a (noun) like N"; compares, or gives N as an example of the kind meant.'
+    when: 'Use it before a noun to compare (夢のような一日, "a day like a dream") or to give an example of the kind of thing you mean (ラーメンのような温かい物, "something warm, like ramen"). In conversation, みたいな is common: 東京みたいな町.'
+    why: "よう means \"manner, likeness\". The noun joins it with の, and ような then joins the next noun with な, the way a な-adjective does. So N のような X is \"an X of N's kind\". Whether that compares X to N or offers N as an example comes from the context. The form before a verb or adjective is ように (OJG-0088): the choice depends on what comes next."
+    formation:
+      - form: Noun + の + ような + noun
+        note: 夢のような一日, 父のような人.
+      - form: Verb (plain form) + ような + noun
+        note: 夢を見ているような気持ち, "a feeling as if I were dreaming".
+    examples:
+      - japanese: 父のような優しい人になりたいです。
+        reading: ちちのようなやさしいひとになりたいです。
+        romaji: chichi no yō na yasashii hito ni naritai desu.
+        english: I want to become a kind person like my father.
+      - japanese: ラーメンのような温かい物が食べたいです。
+        reading: ラーメンのようなあたたかいものがたべたいです。
+        romaji: rāmen no yō na atatakai mono ga tabetai desu.
+        english: I want to eat something warm, like ramen.
+      - japanese: 夢のような一日でした。
+        reading: ゆめのようないちにちでした。
+        romaji: yume no yō na ichinichi deshita.
+        english: It was a day like a dream.
+    mistake:
+      wrong: 父ような人になりたいです。
+      problem: After a noun, よう needs の.
+      right: 父のような人になりたいです。
+    distinguish_from:
+      - id: OJG-0088
+        note: ように goes before a verb or adjective (魚のように泳ぐ). ような goes before a noun.
+      - id: OJG-0068
+        note: みたいな is the conversational equivalent and joins the noun directly, without の.
+    register:
+      - plain
+      - polite
+      - written
     levels:
       commonly: N4
       listed:
@@ -2078,9 +2342,47 @@ entries:
       - source_id: tanos
         ref: 531
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0088
     pattern: ～のように
+    title: Like, as (before a verb or adjective)
+    meaning: 'N のように + verb or adjective: "like N", "as N does"; also "as" in 次のように, 言ったように.'
+    when: 'Use it to say how something is done or how something is, by comparison: 魚のように泳ぐ, "swim like a fish"; 春のように暖かい, "as warm as spring". It also means "as" when pointing to something shown or said: 次のように書いてください, "write it as follows"; 前にも言ったように, "as I said before".'
+    why: 'のように is the adverb form of のような. Like a な-adjective (静かな部屋, 静かに話す), it takes な before a noun and に before a verb or adjective. So choose by what comes next. With a verb before it (言ったように), it points to the way something was said or shown: "in the way that…".'
+    formation:
+      - form: Noun + の + ように + verb or adjective
+        note: "魚のように泳ぐ, 春のように暖かい. Conversation: みたいに."
+      - form: Verb (plain form) + ように
+        note: 言ったように, 次に書いてあるように.
+    examples:
+      - japanese: マリアさんは日本人のように日本語を話します。
+        reading: マリアさんはにほんじんのようににほんごをはなします。
+        romaji: maria-san wa nihonjin no yō ni nihongo o hanashimasu.
+        english: Maria speaks Japanese like a native speaker.
+      - japanese: 今日は春のように暖かいです。
+        reading: きょうははるのようにあたたかいです。
+        romaji: kyō wa haru no yō ni atatakai desu.
+        english: Today is as warm as spring.
+      - japanese: 次のように書いてください。
+        reading: つぎのようにかいてください。
+        romaji: tsugi no yō ni kaite kudasai.
+        english: Please write it as follows.
+    mistake:
+      wrong: 魚のような泳ぎます。
+      problem: Before a verb, the adverb form ように is needed. ような goes only before a noun.
+      right: 魚のように泳ぎます。
+    distinguish_from:
+      - id: OJG-0087
+        note: ような goes before a noun. ように goes before a verb or adjective.
+      - id: OJG-0340
+        note: The ように of ように言う follows a verb and reports an instruction. This ように compares or points to a manner.
+    register:
+      - plain
+      - polite
+      - written
     levels:
       commonly: N4
       listed:
@@ -2092,9 +2394,47 @@ entries:
       - source_id: tanos
         ref: 532
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0089
     pattern: ～させられる
+    title: Being made to do something (the causative passive)
+    meaning: 'Causative passive V-させられる: "be made to V", usually against your will; the one made to act is the subject.'
+    when: 'Use it to say, from your own side, that someone made you do something you did not want to do: 子どものころ、母に野菜を食べさせられました, "as a child, my mother made me eat vegetables". The one who made you is marked with に. Being kept waiting is a common case: 一時間も待たされました.'
+    why: It stacks two changes. The causative (食べさせる) adds someone who makes another act. The passive (られる) then turns the one who acted into the subject, and moves the causer to に. So the sentence is about the person who had to act, and like other passives it usually carries a sense of being put upon. Godan verbs have a shorter spoken form, される for せられる (飲まされる, 待たされる), except those ending in す (話させられる).
+    formation:
+      - form: Ichidan verb (stem) + させられる
+        note: 食べる → 食べさせられる.
+      - form: Godan verb (ない-stem) + せられる, or される
+        note: 飲む → 飲ませられる／飲まされる, 待つ → 待たされる. Verbs in す take only させられる (話させられる).
+      - form: する → させられる; 来る → 来させられる (こさせられる)
+    examples:
+      - japanese: 子どものころ、母に野菜を食べさせられました。
+        reading: こどものころ、ははにやさいをたべさせられました。
+        romaji: kodomo no koro, haha ni yasai o tabesaseraremashita.
+        english: When I was a child, my mother made me eat vegetables.
+      - japanese: 駅で一時間も待たされました。
+        reading: えきでいちじかんもまたされました。
+        romaji: eki de ichijikan mo matasaremashita.
+        english: I was kept waiting at the station for a whole hour.
+      - japanese: 先輩にお酒をたくさん飲まされました。
+        reading: せんぱいにおさけをたくさんのまされました。
+        romaji: senpai ni osake o takusan nomasaremashita.
+        english: My senior made me drink a lot.
+    mistake:
+      wrong: 母は私に野菜を食べさせられました。
+      problem: The roles are reversed. In the causative passive, the one who was made to act is the subject, and the one who made them takes に.
+      right: 私は母に野菜を食べさせられました。
+    distinguish_from:
+      - id: OJG-0062
+        note: させる tells it from the causer's side (母が私に食べさせた). させられる tells it from the side of the one made to act.
+      - id: OJG-0081
+        note: られる is "have something done to you". させられる is "be made to do something yourself".
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -2106,9 +2446,46 @@ entries:
       - source_id: tanos
         ref: 533
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0090
     pattern: ～ことにする
+    title: Deciding to do something
+    meaning: "V (plain) + ことにする: \"decide to V\", by one's own choice; ことにしている: \"make a point of V-ing\"."
+    when: "Use it to say you, or someone, decided on an action: 来年、日本に留学することにしました, \"I've decided to study in Japan next year\". With a negative verb, decide not to: 甘い物を食べないことにした. ことにしている describes a personal rule you keep: 毎朝走ることにしています."
+    why: こと turns the verb into a noun, "doing V", and にする is "settle on", the same にする as in コーヒーにします, "I'll have coffee". So ことにする is "settle on doing V". It is a decision made by the person, in contrast to ことになる, where the matter is decided by others or by circumstances. The past, ことにした, is the usual way to announce a decision just made, and ことにしている says the decision is still being kept.
+    formation:
+      - form: V (dictionary form or ない-form) + ことにする
+        note: 留学することにした, 食べないことにした.
+      - form: V + ことにしている
+        note: A rule or habit you have set yourself.
+    examples:
+      - japanese: 来年、日本に留学することにしました。
+        reading: らいねん、にほんにりゅうがくすることにしました。
+        romaji: rainen, nihon ni ryūgaku suru koto ni shimashita.
+        english: I've decided to study abroad in Japan next year.
+      - japanese: 今日から甘い物を食べないことにします。
+        reading: きょうからあまいものをたべないことにします。
+        romaji: kyō kara amai mono o tabenai koto ni shimasu.
+        english: From today, I'm not going to eat sweets.
+      - japanese: 毎朝三十分走ることにしています。
+        reading: まいあささんじゅっぷんはしることにしています。
+        romaji: maiasa sanjuppun hashiru koto ni shite imasu.
+        english: I make a point of running for thirty minutes every morning.
+    mistake:
+      wrong: 父の仕事で、来年アメリカに引っ越すことにしました。
+      problem: The move is decided by the father's job, not by the speaker. For something decided by others or by circumstances, use ことになる.
+      right: 父の仕事で、来年アメリカに引っ越すことになりました。
+    distinguish_from:
+      - id: OJG-0093
+        note: ことになる is decided by others or by circumstances. ことにする is your own decision.
+      - id: OJG-0027
+        note: つもり is an intention you hold. ことにした announces the moment of deciding.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -2120,9 +2497,42 @@ entries:
       - source_id: tanos
         ref: 534
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0295
     pattern: それで
+    title: And so, that's why
+    meaning: "それで: \"and so\", \"that's why\"; starts a sentence that gives the result of what was just said. Also \"and then?\"."
+    when: 'Use it at the start of a sentence to give what followed from the previous one: 昨日は熱がありました。それで、学校を休みました, "I had a fever yesterday. So I stayed home from school". In conversation, それで？ asks the other person to go on: "and then?".'
+    why: 'それ points back at the previous sentence, and で presents it as the cause: "with that, …". So the second sentence is what came about because of the first. Because it reports a result, it is used for things that happened or hold, and not to lead into your own request, suggestion or order; だから is used for those.'
+    formation:
+      - form: Sentence A。それで、sentence B。
+    examples:
+      - japanese: 昨日は熱がありました。それで、学校を休みました。
+        reading: きのうはねつがありました。それで、がっこうをやすみました。
+        romaji: kinō wa netsu ga arimashita. sorede, gakkō o yasumimashita.
+        english: I had a fever yesterday. So I stayed home from school.
+      - japanese: 電車が遅れました。それで、会議に間に合いませんでした。
+        reading: でんしゃがおくれました。それで、かいぎにまにあいませんでした。
+        romaji: densha ga okuremashita. sorede, kaigi ni maniaimasen deshita.
+        english: The train was late. That's why I didn't make it to the meeting.
+      - japanese: 「駅で田中さんに会ったんです。」「それで？」
+        reading: 「えきでたなかさんにあったんです。」「それで？」
+        romaji: '"eki de tanaka-san ni atta n desu." "sorede?"'
+        english: '"I ran into Tanaka-san at the station." "And then?"'
+    mistake:
+      wrong: 明日はテストがあります。それで、今日は早く寝てください。
+      problem: それで introduces a result that came about. It does not lead into a request; use だから.
+      right: 明日はテストがあります。だから、今日は早く寝てください。
+    distinguish_from:
+      - id: OJG-0294
+        note: だから can lead into anything, including requests and opinions. それで reports a result.
+    register:
+      - plain
+      - polite
+      - spoken
     levels:
       commonly: N4
       listed:
@@ -2133,9 +2543,44 @@ entries:
       - source_id: hanabira
         ref: それで
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0296
     pattern: それに／そのうえ
+    title: Besides, what's more
+    meaning: 'それに／そのうえ: "besides", "on top of that"; adds another point of the same kind to what was just said.'
+    when: 'Use it at the start of a sentence to add a further point pushing in the same direction: この店は安いです。それに、料理もおいしいです. それに is common in conversation; そのうえ is a little more formal and suggests "and even more than that". Both often add one more reason.'
+    why: 'それ points back at what was said, and に adds to it: "to that, (add) this". そのうえ is literally "on top of that". Both pile points up, so the added point goes the same way as the first: good on good, or bad on bad. To add a point that goes against the first, use でも or しかし.'
+    formation:
+      - form: Sentence A。それに、sentence B。
+      - form: Sentence A。そのうえ、sentence B。
+    examples:
+      - japanese: この店は安いです。それに、料理もおいしいです。
+        reading: このみせはやすいです。それに、りょうりもおいしいです。
+        romaji: kono mise wa yasui desu. soreni, ryōri mo oishii desu.
+        english: This restaurant is cheap. Besides, the food is good too.
+      - japanese: 今日は雨です。それに、とても寒いです。
+        reading: きょうはあめです。それに、とてもさむいです。
+        romaji: kyō wa ame desu. soreni, totemo samui desu.
+        english: It's raining today. And on top of that, it's very cold.
+      - japanese: 道に迷いました。そのうえ、スマホの電池も切れてしまいました。
+        reading: みちにまよいました。そのうえ、スマホのでんちもきれてしまいました。
+        romaji: michi ni mayoimashita. sono ue, sumaho no denchi mo kirete shimaimashita.
+        english: I got lost. On top of that, my phone battery ran out.
+    mistake:
+      wrong: このアパートは駅から近いです。それに、家賃が高いです。
+      problem: それに adds a point of the same kind, but "close to the station" is good and "the rent is high" is bad. For a point that goes against the first, use でも.
+      right: このアパートは駅から近いです。でも、家賃が高いです。
+    distinguish_from:
+      - id: OJG-0293
+        note: そして and それから add the next thing, or what happened next, with no weighing. それに piles up another point for the same conclusion.
+      - id: OJG-0041
+        note: し piles up points inside one sentence. それに starts a new sentence to add one.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -2149,7 +2594,10 @@ entries:
       - source_id: hanabira
         ref: それに／そのうえ
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0299
     pattern: AはBほど～ない
     levels:
