@@ -3248,15 +3248,15 @@ entries:
     pattern: が
     title: Marking the subject, and what is new
     meaning: が marks the subject of a verb or adjective, often picking it out as the new or the answering information.
-    when: "Use が on who or what does something or is in some state, when that noun is part of what is new: 雨が降っています, \"It's raining\". A question word asking who or what takes が, and so does the answer: だれが来ましたか, 田中さんが来ました. が also marks what is liked, understood or can be done: 犬が好きです, 日本語がわかります."
-    why: "A sentence can report an event as a whole, with nothing set up first as the topic, and then its subject simply takes が: 雨が降っています tells you what is happening. Because が keeps the noun inside what is being said, rather than setting it apart first as は does, it is the particle for the new or answering piece. That is why a question word asking who or what did something takes が, and the answer does too. Inside a clause that describes a noun, the subject normally takes が, not は: 母が作ったケーキ. Some words describe a feeling or an ability toward something rather than an action done to it: 好き, 嫌い, 上手, わかる, できる. They take no を; the thing liked, understood or done well is marked with が."
+    when: "Use が on who or what does something or is in some state, when that noun is part of what is new: 雨が降っています, \"It's raining\". A question word asking for the subject takes が, and so does the answer: だれが来ましたか, 田中さんが来ました. が also marks what is liked, understood or can be done: 犬が好きです, 日本語がわかります."
+    why: "A sentence can report an event as a whole, with nothing set up first as the topic, and then its subject simply takes が: 雨が降っています tells you what is happening. Because が does not set the noun apart first as は does, it is the particle that can pick out the new or answering piece; in other sentences it simply marks the subject. That is why a question word asking for the subject, who or what did something, takes が, and the answer does too. Inside a clause that describes a noun, the subject normally takes が, not は: 母が作ったケーキ. Some words describe a feeling or an ability toward something rather than an action done to it: 好き, 嫌い, 上手, わかる, できる. With these, the thing liked, understood or done well is normally marked with が. Learn 日本語がわかります as the standard pattern; を does occur with わかる in some constructions, but not in this plain beginner sentence."
     formation:
       - form: Noun + が + verb / adjective
-        note: The subject, when it is part of the new information or the focus.
+        note: The subject; often the new or answering information.
       - form: Question word + が …
         note: "だれが, 何が, どれが: the unknown takes が, and so does the answer."
       - form: Noun + が + 好き / 嫌い / 上手 / 下手 / わかる / できる
-        note: The thing liked, understood or done well takes が, not を.
+        note: The thing liked, understood or done well normally takes が.
     examples:
       - japanese: 雨が降っています。
         reading: あめがふっています。
@@ -3277,11 +3277,11 @@ entries:
         note: Inside the clause that describes ケーキ, the subject takes が.
     mistake:
       wrong: 私は日本語をわかります。
-      problem: わかる is not an action done to something; it says something is clear to you. What is understood is marked with が.
+      problem: わかる is not an action done to something; it says something is clear to you. In a plain sentence like this, what is understood is marked with が, and を sounds nonstandard.
       right: 私は日本語がわかります。
     distinguish_from:
       - id: OJG-0008
-        note: は sets up the topic and the rest comments on it; が marks the subject and keeps it in the focus. 田中さんが来ました answers who came; 田中さんは来ました says of Mr Tanaka that he came, often in contrast with others.
+        note: は sets up the topic and the rest comments on it; が marks the subject, and can pick it out as the answering information. 田中さんが来ました answers who came; 田中さんは来ました says of Mr Tanaka that he came, often in contrast with others.
       - id: OJG-0298
         note: "Both can appear in one sentence: 田中さんは背が高いです. は names what the sentence is about; が marks what 高い is said of."
       - id: OJG-0290
@@ -3299,24 +3299,40 @@ entries:
       - source_id: hanabira
         ref: が
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: "が is a large subject; the entry keeps to new information, question words, noun-modifying clauses and the が of liking and understanding. Questions: is 母が作ったケーキ too advanced as an N5 example? Is 日本語をわかります a fair mistake to call wrong (it is heard in speech), or should the problem say it is nonstandard rather than wrong?"
+      note: "が is a large subject; the entry keeps to new information, question words, noun-modifying clauses and the が of liking and understanding. Questions: is 母が作ったケーキ too advanced as an N5 example? Is 日本語をわかります a fair mistake to call wrong (it is heard in speech), or should the problem say it is nonstandard rather than wrong? Revised after the first gpt-6-astra review to meet its objection (see reviews)."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: ea4d45478c65c857a08b5f946687aa8cb997b923a191febace071893262c6d68
+          note: "The claims that these predicates 'take no を' and that が necessarily keeps its noun in the focus are too absolute. Contemporary Japanese permits を with わかる in some constructions, especially 気持ちをわかってほしい. Replace the predicate explanation and formation note with: 'These predicates normally mark the thing liked, understood, or done well with が. Learn 日本語がわかります as the standard beginner pattern; を also occurs with わかる in some constructions.' Diagnose the mistake as nonstandard for the neutral beginner sentence, not as universally impossible. Replace 'が marks the subject and keeps it in the focus' with 'が marks the subject; depending on context, it can identify the answering information or simply mark the subject without making it the focus.' Also change 'A question word asking who or what takes が' to 'A question word asking for the subject takes が'; object questions can instead use を."
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: ca36625813341186a5c09e538f144229a0d82448fb71f87b5295a83606a2cce9
   - id: OJG-0289
     pattern: N1のN2
     title: "Linking two nouns: of, 's, and more"
     meaning: "N1のN2: an N2 that N1 describes: whose it is, where it is from, what it is about. N2 is the main noun."
-    when: "Use it to join two nouns so the first tells you more about the second: 私の本 (my book), 日本の車 (a car from Japan), 日本語の先生 (a Japanese teacher, one who teaches Japanese), 机の上 (the top of the desk). When the second noun is clear, it can be left out: この本は私のです."
-    why: "の makes the noun before it describe the noun after it, in the same order as English \"Tanaka's book\", but for many more relations than owning: where something is from, what it is about, what it is made of, where it is. の itself does not say which relation is meant; the two nouns do. 田中さんの車 is the car he owns, 日本の車 a car from Japan, 紙の箱 a box made of paper. The last noun is always the main one, the thing the phrase refers to: 私の友だちの車 is a car. Position words such as 上, 下, 中 and 前 are nouns in Japanese, so they join with の too: 机の上, 駅の前. When the second noun is clear from context, の can stand for it: 私のです, \"it's mine\"."
+    when: "Use it to join two nouns so the first tells you more about the second: 私の本 (my book), 日本の車 (a car from Japan), 日本語の先生 (a Japanese teacher, one who teaches Japanese), 机の上 (the top of the desk). N1の can also stand for a whole noun phrase when the thing meant is clear, especially for whose it is: この本は私のです."
+    why: "の makes the noun before it describe the noun after it, in the same order as English \"Tanaka's book\", but for many more relations than owning: where something is from, what it is about, what it is made of, where it is. の itself does not say which relation is meant; the two nouns do. 田中さんの車 is the car he owns, 日本の車 a car from Japan, 紙の箱 a box made of paper. The last noun is always the main one, the thing the phrase refers to: 私の友だちの車 is a car. Position words such as 上, 下, 中 and 前 are nouns in Japanese, so they join with の too: 机の上, 駅の前. When the thing meant is clear from context, N1の can often stand for the whole phrase, especially for possession: 私のです, \"it's mine\". This does not work for every noun: a position word such as 前 stays, as in 駅の前で."
     formation:
       - form: N1 + の + N2
         note: N1 describes N2; the phrase refers to N2.
       - form: N1 + の + N2 + の + N3
         note: "Several can be chained; the last noun is the main one: 私の友だちの車."
-      - form: N1 + の (N2 left out)
-        note: "Only when N2 is clear: これは私のです."
+      - form: N1 + の (standing for the whole phrase)
+        note: "Often for possession, when the thing is clear: これは私のです. Not for position words: 駅の前で stays."
       - form: Noun + の + position word
         note: "上, 下, 中, 前, 後ろ, 横: 机の上に, 駅の前で."
     examples:
@@ -3360,16 +3376,32 @@ entries:
       - source_id: hanabira
         ref: N1のN2
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: 'Questions: is 紙の箱 natural as an example of material? Is the gloss of 日本語の先生 as "a teacher of Japanese" safe, or should the entry mention that it could also be read as a teacher who is Japanese in some contexts (日本人の先生 would be the usual way to say that)?'
+      note: 'Questions: is 紙の箱 natural as an example of material? Is the gloss of 日本語の先生 as "a teacher of Japanese" safe, or should the entry mention that it could also be read as a teacher who is Japanese in some contexts (日本人の先生 would be the usual way to say that)? Revised after the first gpt-6-astra review to meet its objection (see reviews).'
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 8e25967bb382f2a351134264b62babf607706d7bf14c8f63f7e2d79bcdc88a44
+          note: "The omission rule is too broad: being clear from context is not sufficient for every N2 to be omitted. In particular, position nouns do not freely disappear: 駅の前で会いましょう cannot become 駅ので会いましょう with the same meaning. Replace the omission statements and formation note with: 'When a recoverable noun refers to a thing, N1の can often stand for the whole noun phrase, especially for possession: この本は私のです. This substitution is not available for every noun or relation; retain position nouns in expressions such as 駅の前で.'"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: a13477853f3037b6d593f051af1c26a7f9b4ef1562e21e044ab0c5f67933cbfe
   - id: OJG-0290
     pattern: ～が、～／～けど、～
     title: Joining two clauses with "but"
     meaning: "Clause が、clause / clause けど、clause: A, but B. Also a soft lead-in before a question, request or invitation."
-    when: "Use it to set two facts against each other in one sentence: このかばんは高いですが、とても便利です. It also opens with background, with little or no contrast, before what you really want to say: 来週パーティーをしますが、来ませんか. が is neutral and common in polite speech and writing; けど is conversational; けれど and けれども are a little more formal than けど. Ending a sentence with が or けど leaves the rest unsaid, which softens it."
+    when: "Use it to set two facts against each other in one sentence: このかばんは高いですが、とても便利です. It also opens with background, with little or no contrast, before what you really want to say: 来週パーティーをしますが、来ませんか. が is neutral and common in polite speech and writing; けど is conversational; けれど and けれども are a little more formal than けど. Ending a sentence with が or けど leaves the rest unsaid; it often softens a request or a reservation, and with some intonations it can sound like a complaint."
     why: "が and けど join the first clause to the second and signal that the second may go against what the first suggests. The main point comes last, so in 高いですが、便利です the speaker's weight is on 便利: it is expensive, yet worth it. Because the connector only links and leaves room, Japanese also uses it just to set the scene before a question, request or invitation; the first clause gives the background, the second is the point. The clause before が or けど keeps its own ending. In polite speech, both halves are usually polite (高いですが); in casual speech, plain forms go before けど (高いけど). After a noun or な-adjective, だ or です is needed, as it would be at the end of a sentence: 学生だけど, 静かですが. This が follows a whole clause, which is how it differs from the が that marks a subject after a noun."
     formation:
       - form: Clause + が、clause
@@ -3401,7 +3433,7 @@ entries:
       right: 私は学生だけど、毎日働いている。
     distinguish_from:
       - id: OJG-0291
-        note: "でも, しかし and けれども start a new sentence: 高いです。でも、便利です. が and けど join the two halves inside one sentence."
+        note: "でも and しかし start a new sentence: 高いです。でも、便利です. けれども can start a new sentence or join clauses like けど. This entry is the clause-joining が and けど."
       - id: OJG-0288
         note: "The subject が follows a noun: 雨が降っています. This が follows a whole clause."
     register:
@@ -3427,17 +3459,33 @@ entries:
       - source_id: hanabira
         ref: ～が、～／～けど、～
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: 'Questions: is けれど / けれども fairly described as "a little more formal than けど"? Is the sentence-final softening use (…んですけど) within N5, or should it be left to a later point?'
+      note: 'Questions: is けれど / けれども fairly described as "a little more formal than けど"? Is the sentence-final softening use (…んですけど) within N5, or should it be left to a later point? Revised after the first gpt-6-astra review to meet its objection (see reviews).'
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 880b0d6e2ad9a1e30d2a73346faff35aad21cd71dd466382833fd369c657ea10
+          note: "The distinction from OJG-0291 misleadingly assigns けれども to sentence-initial use, although it also joins clauses, as this entry itself acknowledges. Replace that note with: 'でも and しかし introduce a new sentence. けれども can either introduce a new sentence or join clauses, like けど. Here we explain clause-joining が and けど.' Also qualify the sentence-final claim: write 'Ending with が or けど leaves a continuation implicit and often softens a request or reservation; depending on context and intonation, it can also express an objection or complaint.'"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: fe55d9e9e107752f25feb54fca696c8b16951aed9d2451130ade182be9ddac9b
   - id: OJG-0291
     pattern: でも／しかし／けれども
     title: '"But" at the start of a sentence'
     meaning: "A。でも、B。: A. But B. でも is everyday speech, しかし formal or written, けれども in between."
     when: "Use one of these to begin a sentence that goes against the one before: 昨日は雨でした。でも、楽しかったです. でも is the usual word in conversation. しかし sounds formal and is common in writing, speeches and the news. けれども, and the shorter けれど, is a little more formal than でも. In a conversation でも also starts a reply that raises an objection: 「あした、テニスをしましょう。」「でも、あしたは雨ですよ。」"
-    why: 'Each of these words carries the "but" on its own, so it can stand at the head of a new sentence and point back to the last one. Splitting the contrast into two sentences lets the first finish on its own and gives the turn more weight than joining the halves with が or けど. The choice of word sets the tone: でも is soft and spoken; しかし is firm and belongs to writing and formal talk, so it sounds stiff in a chat with friends. These words begin a sentence; they do not attach to the end of a clause the way が and けど do, so 高いでもおいしい is not Japanese. The でも here is a separate word; でも after a question word (何でも) is a different use.'
+    why: 'Each of these words carries the "but" on its own, so it can stand at the head of a new sentence and point back to the last one. Splitting the contrast into two sentences lets the first finish on its own and gives the turn more weight than joining the halves with が or けど. The choice of word sets the tone: でも is soft and spoken; しかし is firm and belongs to writing and formal talk, so it sounds stiff in a chat with friends. In the use described here, these words begin a new sentence. でも and しかし cannot hang on the end of a clause, so 高いでもおいしい is not Japanese. けれども and けれど can also join clauses (高いけれども、おいしい), like けど. The でも here is a separate word; でも after a question word (何でも) is a different use.'
     formation:
       - form: Sentence。でも、sentence。
         note: Everyday speech and informal writing.
@@ -3460,11 +3508,11 @@ entries:
         english: "\"Let's play tennis tomorrow.\" \"But it's going to rain tomorrow.\""
     mistake:
       wrong: このかばんは高いでもいいです。
-      problem: でも begins a new sentence; it cannot hang on the end of a clause like English "but". Either split the sentence, or join the halves with けど or が.
+      problem: でも cannot hang on the end of a clause like English "but". Either split the sentence and start the second with でも, or join the halves with けど or が.
       right: このかばんは高いです。でも、いいです。
     distinguish_from:
       - id: OJG-0290
-        note: が and けど join two clauses inside one sentence; these words open the second sentence.
+        note: が and けど join clauses. Sentence-initial でも, しかし and けれども open a contrasting statement; けれども also has a clause-joining use.
       - id: OJG-0320
         note: 'でも after a question word means "any": 何でも, いつでも. That is a different use.'
     register:
@@ -3488,11 +3536,27 @@ entries:
       - source_id: hanabira
         ref: でも／しかし／けれども
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: "Questions: is けれども at the start of a sentence common enough to present at N5 alongside でも and しかし? Is the right version of the mistake (…高いです。でも、いいです。) natural, or would a native prefer 高いけど、いいです?"
+      note: "Questions: is けれども at the start of a sentence common enough to present at N5 alongside でも and しかし? Is the right version of the mistake (…高いです。でも、いいです。) natural, or would a native prefer 高いけど、いいです? Revised after the first gpt-6-astra review to meet its objection (see reviews)."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 7bfb57d9b8189e52b4b1cb2a38780e83b089e6f462fef9e9f34dd3473934a16d
+          note: "The statement that these words do not attach to a clause is false for けれども and けれど: 高いけれども、おいしい is correct. Replace it with: 'In the use explained here, these expressions introduce a new sentence. でも and しかし cannot be attached directly to 高い as clause-ending connectors; けれども and けれど can also join clauses, like けど.' Replace the distinction from OJG-0290 with: 'が and けど join clauses. Sentence-initial でも, しかし, and けれども introduce a contrasting statement; けれども also has a clause-joining use.'"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: 0d4eb126e239ca3fd21fd2f3983d1f02ceb210fd295cd051ac27798f751bd359
   - id: OJG-0292
     pattern: では／じゃ／それでは
     title: '"Well then": moving on from what was just said'
@@ -3551,17 +3615,25 @@ entries:
       - source_id: hanabira
         ref: では／じゃ／それでは
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
       note: "Questions: is \"では is じゃ's full form, and それでは is roughly 'that being so'\" a fair explanation without going into the copula で + は? Romaji: the sentence-initial conjunction is written dewa (one word); is that the right call, or should it be de wa like the copula? Is 先生、では、失礼します natural as the polite leave-taking?"
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: 352d02e8586f64cb94487e9717110c1b38324f99c98b33e5fad98481f837e76b
   - id: OJG-0293
     pattern: そして／それから
     title: '"And", "and then" at the start of a sentence'
     meaning: 'そして: and, adding the next point or event. それから: and then, after that; also "and also" when adding to a list.'
     when: "Use そして to add another point or the next event: この部屋は広いです。そして、明るいです. Use それから for what happens next in time: 朝ご飯を食べました。それから、学校に行きました. それから also adds one more item, as when ordering: コーヒーを一つください。それから、ケーキも一つ."
-    why: 'それから is それ, "that", with から, "from": from that point on, which is why it orders events in time. そして simply carries on from the last sentence and adds to it, so it fits both a further fact and a next event. Both stand at the start of a sentence, or after a comma inside one, and link whole statements; they do not join two nouns the way と does. Inside one sentence, a string of actions is usually joined with the て-form instead (起きて、食べて、出かけます); そして and それから are clearer when each step is its own sentence.'
+    why: 'それから is それ, "that", with から, "from": from that point on, which is why it orders events in time. そして simply carries on from the last sentence and adds to it, so it fits both a further fact and a next event. Both usually link statements, most often at the start of a new sentence. After a pause they can also add one more item to a list of nouns (コーヒー、それからケーキ), but for a simple list of nouns と is the ordinary word: 犬と猫. Inside one sentence, a string of actions is usually joined with the て-form instead (起きて、食べて、出かけます); そして and それから are clearer when each step is its own sentence.'
     formation:
       - form: Sentence。そして、sentence。
         note: Adds a further point or the next event.
@@ -3582,15 +3654,15 @@ entries:
         english: One coffee, please. And one cake as well.
     mistake:
       wrong: 私は犬そして猫が好きです。
-      problem: In everyday Japanese two nouns are joined with と. そして links statements, and putting it between two bare nouns sounds like translated English.
+      problem: For a simple list of two nouns, と is the ordinary connector. そして usually links statements; between two bare nouns with no pause it sounds like translated English.
       right: 私は犬と猫が好きです。
     distinguish_from:
       - id: OJG-0011
-        note: "と joins nouns: 犬と猫. そして and それから link statements."
+        note: "と is the ordinary way to list nouns: 犬と猫. そして and それから usually link statements."
       - id: OJG-0040
-        note: '～てから says "after" inside one sentence: 食べてから行きました. それから does it across two.'
+        note: "～てから joins two predicates inside one sentence: 食べてから行きました. それから is a separate connector, usually starting the next sentence."
       - id: OJG-0312
-        note: The て-form joins steps inside one sentence; そして and それから begin the next sentence.
+        note: The て-form joins predicates inside one sentence; そして and それから are separate connectors, usually starting a new sentence but also possible after a pause within one.
     register:
       - plain
       - polite
@@ -3609,11 +3681,27 @@ entries:
       - source_id: hanabira
         ref: そして／それから
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: "Question: そして can join nouns in formal writing (AそしてB); is the mistake's problem worded carefully enough (\"sounds like translated English\" in everyday Japanese)?"
+      note: "Question: そして can join nouns in formal writing (AそしてB); is the mistake's problem worded carefully enough (\"sounds like translated English\" in everyday Japanese)? Revised after the first gpt-6-astra review to meet its objection (see reviews)."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 1481b5ddf2917cd5bcd7d320cacb668f74ddb57b4e345aee5b2311e989117ef0
+          note: "The categorical claim that そして and それから cannot link nouns is false. Both can introduce another item in a noun list, for example 犬、そして猫 or コーヒー、それからケーキ. Replace the relevant explanation, mistake diagnosis, and distinction from と with: 'と is the ordinary connector for a simple noun list: 犬と猫. そして and それから usually connect statements, but can also introduce another noun-list item after a pause. 私は犬と猫が好きです is the neutral way to express the intended sentence.' The other distinction notes also overstate the sentence boundary. Write: 'The て-form and ～てから connect predicates within a sentence; そして and それから are independent connectors, often starting a new sentence but also possible after a pause within one.'"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: f79ced6747052f7569369157a207e73314912a6721660ca553c9ad915297e360
   - id: OJG-0294
     pattern: だから
     title: "\"So\", \"that's why\", at the start of a sentence"
@@ -3662,25 +3750,33 @@ entries:
       - source_id: hanabira
         ref: だから
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
       note: "Questions: romaji for sentence-initial ですから is written desu kara here; is that preferable to desukara? Is the note that だから can sound insistent in replies accurate and useful at N5?"
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: fe372b1814898fed18aad3e41eb57ad0ae9897561dd7a5c3dfa65be90e3a80a1
   - id: OJG-0297
     pattern: AとBとどちらが～
     title: Asking which of two
     meaning: "AとBとどちらがXですか: which is more X, A or B? どっち is the casual form. The answer usually uses のほうが."
     when: "Use it to ask someone to choose between two: 電車とバスとどちらが速いですか. The answer normally picks one with のほうが: 電車のほうが速いです. Among friends, どっち replaces どちら. The second と is often left out: 電車とバスどちらが速いですか."
-    why: 'どちら asks "which way, which side", so it is the question word for a choice between two; for three or more, どれ or の中で何が…いちばん is used. The two options are listed with と, and the choice is the unknown, so どちら takes が, as a question word asking who or what does. The answer picks one side with のほうが, since ほう also means "side". As in any comparison, the adjective does not change form: 速い means "faster" here because of the question.'
+    why: 'どちら asks "which way, which side", so it is the usual question word when two alternatives are set against each other. どれ picks one from a set, especially of three or more, and の中で何が…いちばん compares a larger group. The two options are listed with と, and the choice is the unknown, so どちら takes が, as a question word asking who or what does. The answer picks one side with のほうが, since ほう also means "side". As in any comparison, the adjective does not change form: 速い means "faster" here because of the question.'
     formation:
-      - form: A と B と どちらが + adjective / verb + ですか
-        note: Polite.
-      - form: A と B と どっちが + adjective / verb
+      - form: A と B と どちらが + adjective + ですか / verb (ます-form) + か
+        note: "Polite: どちらが速いですか, どちらがよく売れますか."
+      - form: A と B と どっちが + adjective / verb (plain)
         note: "Casual: 夏と冬とどっちが好き？"
       - form: A と B どちらが …
         note: The second と is often dropped.
-      - form: "Answer: A のほうが + adjective"
+      - form: "Answer: A のほうが + adjective or verb predicate"
         note: "When both are equal: どちらも好きです."
     examples:
       - japanese: 「電車とバスとどちらが速いですか。」「電車のほうが速いです。」
@@ -3697,7 +3793,7 @@ entries:
         english: Which would you like, tea or coffee?
     mistake:
       wrong: 電車とバスとどれが速いですか。
-      problem: どれ asks "which one" among three or more. For a choice between two, use どちら, or どっち in casual speech.
+      problem: When two alternatives are named and compared, どちら (or どっち in casual speech) is the natural word. どれ usually picks one from a larger set.
       right: 電車とバスとどちらが速いですか。
     distinguish_from:
       - id: OJG-0025
@@ -3721,17 +3817,33 @@ entries:
       - source_id: hanabira
         ref: AとBとどちらが～
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: "Question: is どれ between two options really an error, or just less usual? The mistake currently says to use どちら."
+      note: "Question: is どれ between two options really an error, or just less usual? The mistake currently says to use どちら. Revised after the first gpt-6-astra review to meet its objection (see reviews)."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 3f6ca1edbf557e14d0cceea07325a8c1c3b47133bbda50c40a8f78e34d3920f2
+          note: "The polite formation incorrectly allows a verb directly before ですか. Replace it with: 'AとBとどちらが + い-adjective / な-adjective stem + ですか; or AとBとどちらが + verb in ～ますか, e.g. どちらが長持ちしますか.' Allow a verb predicate in the answer formation as well: 'Aのほうが + adjective or verb predicate.' The strict two-versus-three rule also needs qualification: どれ is not grammatically restricted to three or more options. Replace the explanation and mistake diagnosis with: 'どちら／どっち is the usual choice when explicitly contrasting two alternatives. どれ commonly selects one from a set, especially three or more. In this two-option comparison, 電車とバスとどちらが速いですか is the natural model to learn.'"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: 1af859e93d7ce1f2b42d9d8887f892d7eb10476cf6055dedb75d9bdb1b505023
   - id: OJG-0298
     pattern: AはBが～
     title: '"As for A, B is ...": a topic and a subject together'
     meaning: "AはBがX: about A, B is X. は sets the topic; が marks what X is said of. Used for features, likes, skills and feelings."
     when: "Use it to describe someone or something by one of its features: この部屋は窓が大きいです (This room has big windows; literally, as for this room, the windows are big). The same shape says what someone likes, is good at or understands (妹は歌が上手です), and how a part of the body feels: 私は頭が痛いです."
-    why: 'は and が do different jobs, so one sentence can have both. は names what the whole sentence is about. が marks the subject of the adjective or verb at the end. In この部屋は窓が大きいです, what is big is the windows, while the sentence as a whole is about the room. English usually folds the two layers into one ("the room has big windows", "my sister sings well"), which is why learners reach for の instead: 私の頭が痛いです. Japanese prefers to make the person the topic and the part or thing the subject. With 好き, 上手, わかる and similar words, the thing liked or understood takes が and the person takes は: 私は犬が好きです.'
+    why: 'は and が do different jobs, so one sentence can have both. は names what the whole sentence is about. が marks the subject of the adjective or verb at the end. In この部屋は窓が大きいです, what is big is the windows, while the sentence as a whole is about the room. English usually folds the two layers into one ("the room has big windows", "my sister sings well"). For a plain report of how your body feels, Japanese commonly makes the person the topic and the body part the subject, and often leaves the person out: 頭が痛いです. (私の頭が痛いです is also possible, when you need to say whose head it is.) With 好き, 上手, わかる and similar words, the thing liked or understood takes が and the person takes は: 私は犬が好きです.'
     formation:
       - form: A は B が + adjective
         note: "A feature of A: この部屋は窓が大きい."
@@ -3752,8 +3864,8 @@ entries:
         english: I have a headache.
         note: "In conversation 私は is usually left out: 頭が痛いです."
     mistake:
-      wrong: 私の頭が痛いです。
-      problem: Grammatical, but not how Japanese talks about how your own body feels. The person is the topic and the body part the subject.
+      wrong: 私は頭を痛いです。
+      problem: 痛い is an adjective describing the part that hurts, so that part is its subject and takes が, not を.
       right: 私は頭が痛いです。
     distinguish_from:
       - id: OJG-0008
@@ -3773,17 +3885,33 @@ entries:
       - source_id: hanabira
         ref: AはBが～
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: "Questions: is 私の頭が痛いです fairly called unnatural (rather than wrong)? Would a native prefer the right version without 私は, and if so, should the mistake's right version be 頭が痛いです?"
+      note: "Questions: is 私の頭が痛いです fairly called unnatural (rather than wrong)? Would a native prefer the right version without 私は, and if so, should the mistake's right version be 頭が痛いです? Revised after the first gpt-6-astra review to meet its objection (see reviews)."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: bba1044238b79d584c2a0540f21c577a321e6e262f67b3e504212a6493376e71
+          note: "私の頭が痛いです is grammatical and can naturally describe the speaker's own bodily sensation; it is not categorically excluded in favor of 私は頭が痛いです. Replace the relevant reasoning with: 'For a neutral report of a bodily sensation, Japanese commonly uses the person as the topic and the body part with が, often omitting the person when understood. 私の頭が痛いです is also possible when explicitly identifying whose head hurts.' Replace the mistake with wrong: 私は頭を痛いです; problem: '痛い describes the painful body part, which takes が here, not を'; right: 私は頭が痛いです."
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: 57ed681d9cfe3d0767df80181e1ab11d922b9646b01e5d80f05dfa47c192c902
   - id: OJG-0300
     pattern: ～く／～に + verb
     title: Using an adjective to say how something is done
     meaning: "い-adjective く / な-adjective に + verb: do something in that way. 早く起きる, きれいに書く."
     when: "Use it to say how an action is done: 早く起きます (get up early), 名前をきれいに書いてください (please write your name neatly), 静かに話しましょう (let's talk quietly)."
-    why: 'An adjective in its basic form describes a noun (早い電車, 静かな部屋) or ends a sentence. To describe a verb it needs its adverb form, made by changing the ending: い becomes く, and a な-adjective takes に instead of な. The adjective then goes before the verb. The same forms appear before なる, "become", because that is a verb too: 大きくなる. いい is the one irregular い-adjective: its adverb form is よく, from the older form よい, and よく also means "often". Watch for な-adjectives that happen to end in い, such as きれい and 有名: they take に, so きれいに.'
+    why: 'An adjective in its basic form describes a noun (早い電車, 静かな部屋) or ends a sentence. To describe a verb it needs its adverb form, made by changing the ending: い becomes く, and a な-adjective takes に instead of な. The adjective then goes before the verb. The same forms appear before なる, "become", because that is a verb too: 大きくなる. いい is the one irregular い-adjective: its adverb form is よく, from the older form よい, and よく also means "often". Watch for な-adjectives that happen to end in い, such as きれい and 嫌い: they take に, so きれいに.'
     formation:
       - form: い-adjective (drop い) + く + verb
         note: 早い → 早く起きる. いい → よく.
@@ -3805,7 +3933,7 @@ entries:
       - japanese: 昨日はよく寝ました。
         reading: きのうはよくねました。
         romaji: kinō wa yoku nemashita.
-        english: I slept well last night.
+        english: I slept well yesterday.
         note: よく is the adverb form of いい.
     mistake:
       wrong: 名前をきれく書いてください。
@@ -3832,17 +3960,33 @@ entries:
       - source_id: hanabira
         ref: ～く／～に + verb
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: 'Question: 昨日はよく寝ました is glossed "last night"; is that the natural reading, or should the English be "I slept well yesterday"?'
+      note: 'Question: 昨日はよく寝ました is glossed "last night"; is that the natural reading, or should the English be "I slept well yesterday"? Revised after the first gpt-6-astra review to meet its objection (see reviews).'
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: d88bc2dbb41a351f009bbb8c6e12731654ec9aea439b3558ea5597237eec57c7
+          note: "有名（ゆうめい）does not end in い in the relevant sense: its final い is part of めい, not an apparent adjective ending. Replace 'such as きれい and 有名' with 'such as きれい and 嫌い'. Also, 昨日はよく寝ました says 'I slept well yesterday,' not specifically 'last night'. Use that translation, or change the Japanese to 昨夜はよく寝ました, the reading to ゆうべはよくねました。, and the romaji to yūbe wa yoku nemashita."
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: 0bbf59cd57602f2ddd7d7f5a2d1450e2067e78529789d22430204edb26720648
   - id: OJG-0301
     pattern: ～くないです
     title: Saying an い-adjective is not so, politely
     meaning: "い-adjective, drop い, + くないです or くありません: is not X. いい becomes よくないです."
     when: "Use it to say something is not cold, not expensive, not interesting: 今日は寒くないです. くありません means the same and sounds a little more formal; くないです is common in everyday polite speech. Past: くなかったです, くありませんでした."
-    why: "An い-adjective behaves like a verb: it carries its own tense and its own negative, and in plain speech it ends a sentence with nothing after it (高い, 高くない). です after an い-adjective only adds politeness; it is not a verb to be made negative. So the negative is built on the adjective itself, 高い → 高くない, and です is added on top: 高くないです. That is why 高いじゃないです is wrong: じゃない is the negative of だ, used after nouns and な-adjectives. くありません is the same く form with ありません, the polite negative of ある. The only irregular one is いい, whose forms are built on よい: よくないです. な-adjectives that end in い, like きれい and 嫌い, are not い-adjectives: きれいじゃないです."
+    why: "An い-adjective behaves like a verb: it carries its own tense and its own negative, and in plain speech it ends a sentence with nothing after it (高い, 高くない). です after an い-adjective only adds politeness; it is not a verb to be made negative. So the negative is built on the adjective itself, 高い → 高くない, and です is added on top: 高くないです. So the ordinary negative is 高くないです. じゃない is the negative of だ, used after nouns and な-adjectives; 高いじゃないです does not give the plain \"is not expensive\", and with some intonations is heard instead as confirmation or surprise (\"it's expensive, isn't it!\"). くありません is the same く form with ありません, the polite negative of ある. The only irregular one is いい, whose forms are built on よい: よくないです. な-adjectives that end in い, like きれい and 嫌い, are not い-adjectives: きれいじゃないです."
     formation:
       - form: い-adjective (drop い) + くないです
         note: "高い → 高くないです. Plain: 高くない."
@@ -3867,11 +4011,11 @@ entries:
         english: Yesterday's film wasn't good.
     mistake:
       wrong: この本はおもしろいじゃないです。
-      problem: おもしろい is an い-adjective, so it makes its own negative. じゃないです belongs to nouns and な-adjectives.
+      problem: "Intended as \"This book isn't interesting\". おもしろい is an い-adjective, so it makes its own negative: おもしろくない. おもしろいじゃないです does not give that ordinary negative meaning."
       right: この本はおもしろくないです。
     distinguish_from:
       - id: OJG-0001
-        note: "Nouns and な-adjectives make the negative through です: 学生じゃありません, 静かじゃないです. い-adjectives change their own ending."
+        note: "Nouns and な-adjectives use the negative of the copula: ではない or じゃない, made polite as じゃありません or じゃないです (学生じゃありません, 静かじゃないです). い-adjectives change their own ending."
       - id: OJG-0315
         note: "あまり + くない softens it: not very."
     register:
@@ -3887,11 +4031,27 @@ entries:
       - source_id: hanabira
         ref: ～くないです
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: "Questions: is くないです vs くありません described fairly (the entry says くありません is a little more formal)? Romaji joins the adjective and ない (samukunai), following ikitakunai desu elsewhere in the file."
+      note: "Questions: is くないです vs くありません described fairly (the entry says くありません is a little more formal)? Romaji joins the adjective and ない (samukunai), following ikitakunai desu elsewhere in the file. Revised after the first gpt-6-astra review to meet its objection (see reviews)."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 29fdedd47eb890642abdac01dc7beaa4fd0be6eb820e6e9c539f81b7ee97193f
+          note: "高いじゃないです and おもしろいじゃないです are not inherently ungrammatical: with suitable context and intonation, they can express confirmation or an exclamation, such as 'It's expensive, isn't it!' Replace the categorical rejection in why with: '高いじゃないです does not express the ordinary negative “is not expensive”; it can instead express confirmation or surprise. For the ordinary negative, use 高くないです.' In the mistake, specify that the intended meaning is 'This book isn't interesting' and explain that おもしろいじゃないです does not give that ordinary negative meaning. Also replace 'Nouns and な-adjectives make the negative through です' with 'Nouns and な-adjectives use negative copular forms such as ではない／じゃない, made polite as ではありません／じゃありません or ではないです／じゃないです.'"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: d35ed12d8f951b17a4af35db3117b963039940300935738d8e07b0c0b2c64a21
   - id: OJG-0302
     pattern: ～くて／～で
     title: "Joining adjectives: ... and ..."
@@ -3950,11 +4110,19 @@ entries:
       - source_id: hanabira
         ref: ～くて／～で
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
       note: 'Question: is "two qualities joined this way usually point the same way" stated carefully enough? 安くておいしい is typical; mixed pairs sound odd, but not always wrong.'
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: f10e7978b5b64d382c2f3c2e6b45f2868c7565d238d087e3bb2186208311d99a
   - id: OJG-0303
     pattern: NかN
     title: A or B
@@ -4003,17 +4171,25 @@ entries:
       - source_id: hanabira
         ref: NかN
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
       note: 'Question: is AかBか (with the second か) described correctly as stressing the choice? Is the mistake a real learner error (と for "or")?'
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: 92fc56474e919fb955174b94fcdf585bb32af6698680bcce1939b40f1219eb7d
   - id: OJG-0304
     pattern: ～ができる／～ことができる
     title: Saying someone can do something
     meaning: "Nができる / V (dictionary form) + ことができる: can do, is able to. What can be done takes が."
     when: "Use Nができる with a skill, sport or language: 日本語ができます, テニスができます. Use ～ことができる with a verb to say someone can do an action: 漢字を読むことができます. It also says something is possible or allowed somewhere: この部屋でご飯を食べることができます."
-    why: 'できる means "can be done, is possible". Like わかる and 好き, it describes a state, not an action done to an object, so what can be done is marked with が, not を. A noun for an activity can take が directly: テニスができる. A verb cannot stand before が, so it is first turned into a noun with こと, "the act of": 読むこと. Then ができる follows. The verb keeps its own object with を inside that phrase: 漢字を読むことができます. Japanese also has a shorter potential form of the verb (読める), which is very common in speech and usually taught at N4; ことができる sounds more formal, and it is built the same way for every verb.'
+    why: 'できる means "can be done, is possible". In this ability pattern, できる takes the skill or activity with が: テニスができる. Learn this as the particle pattern of できる, as with わかる and 好き; it is not a rule for every word that describes a state. A verb cannot directly take this が, which marks a noun, so it is first turned into a noun with こと, "the act of": 読むこと. Then ができる follows. The verb keeps its own object with を inside that phrase: 漢字を読むことができます. Japanese also has a shorter potential form of the verb (読める), which is very common in speech and usually taught at N4; ことができる sounds more formal, and it is built the same way for every verb.'
     formation:
       - form: Noun + が + できる
         note: 日本語ができます. For skills, sports, languages.
@@ -4036,7 +4212,7 @@ entries:
         english: You can eat in this room.
     mistake:
       wrong: 私は泳ぐができます。
-      problem: A verb cannot come directly before が. Turn it into a noun with こと first.
+      problem: In this pattern, what can be done must be a noun before が. A verb cannot take that が directly; turn it into a noun with こと first.
       right: 私は泳ぐことができます。
     distinguish_from:
       - id: OJG-0313
@@ -4065,17 +4241,33 @@ entries:
       - source_id: hanabira
         ref: ～ができる／～ことができる
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: 'Question: 兄は中国語ができます is glossed "can speak Chinese"; できる with a language covers more than speaking. Is that gloss acceptable?'
+      note: 'Question: 兄は中国語ができます is glossed "can speak Chinese"; できる with a language covers more than speaking. Is that gloss acceptable? Revised after the first gpt-6-astra review to meet its objection (see reviews).'
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: b44c40e0c7c064ff076bc60e4aead0c4b28a2fa989b4d1e43a7f4e40aa954f06
+          note: "The reasoning incorrectly makes stativity the reason for choosing が rather than を. Stative predicates do not universally take が; for example, 知っている takes an object with を. Replace that explanation with: 'In this ability construction, できる takes the activity or skill with が: テニスができる. Learn this as the particle pattern of できる, rather than as a rule for all predicates describing states.' Also qualify 'A verb cannot stand before が' in both why and the mistake: 'A verb cannot directly take the noun-marking が in this construction; nominalize it with こと first.' Verbs can directly precede the conjunction が, as in 泳ぐが、速くはない."
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: cf2ba136d63403aff9ca8b7239d21a8330bbbe9663f36a757e0675b3562dbe5e
   - id: OJG-0305
     pattern: ～から～まで／～まで
     title: From ... to ..., until ...
-    meaning: "AからBまで: from A to B, in time or place. まで alone: until, as far as. The action runs across the whole span."
+    meaning: "AからBまで: from A to B, in time or place. まで alone: until, as far as. まで marks an end point or limit."
     when: "Use it for the start and end of a span of time or a distance: 銀行は九時から三時までです; 家から駅まで歩きます. まで can be used on its own: 駅まで歩きます (walk as far as the station), 夜十一時まで勉強しました (studied until eleven at night)."
-    why: "から marks the starting point and まで the end point; together they frame everything in between. The verb describes what goes on across that whole span, so まで fits actions that continue up to the end point: 三時まで待つ, 三時まで寝る. For a deadline, a point by which something happens once, Japanese uses までに instead (N4): 三時までに来てください. Either half can be left out when it is clear."
+    why: "から marks the starting point and まで the end point; together they frame everything in between. With a time, まで usually means something goes on, or keeps happening, up to that time: 三時まで待つ, 三時まで寝る. With a place, it marks how far something goes: 駅まで歩く. For a deadline, the time by which something must happen or be done, Japanese uses までに instead (N4): 三時までに来てください. Either half can be left out when it is clear."
     formation:
       - form: A から B まで
         note: Time or place.
@@ -4098,11 +4290,11 @@ entries:
         english: Yesterday I studied until eleven at night.
     mistake:
       wrong: あしたの十時まで宿題を出してください。
-      problem: まで says an action goes on until that time. Handing in homework happens once, by a deadline, which takes までに.
+      problem: For a deadline to hand in the homework, use までに. まで would suggest the handing in goes on, or keeps happening, up to ten o'clock.
       right: あしたの十時までに宿題を出してください。
     distinguish_from:
       - id: OJG-0306
-        note: "までに marks a deadline: something happens once, at some point before then."
+        note: "までに marks a deadline: an event happens, or a task is done, no later than that time."
       - id: OJG-0017
         note: から after a clause gives a reason; after a noun it means "from", as here.
     register:
@@ -4121,11 +4313,27 @@ entries:
       - source_id: hanabira
         ref: ～から～まで／～まで
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: "Question: is the までに contrast (N4) appropriate to include in an N5 entry? It is the most common mistake with まで."
+      note: "Question: is the までに contrast (N4) appropriate to include in an N5 entry? It is the most common mistake with まで. Revised after the first gpt-6-astra review to meet its objection (see reviews)."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: eb4dd0b1e2985e1713b5d4fc5e83ad22c75de4ca8ad5e9572284cb4d72992d72
+          note: "The claim that the action always runs across the whole span is too broad, especially for spatial endpoints: 東京まで荷物を送る does not mean the sending action continues throughout the journey. Replace the meaning's final sentence and the corresponding reasoning with: 'から marks a starting point and まで an endpoint or limit. With a time endpoint, まで commonly indicates continuation or repetition up to that time; with a place, it marks how far something goes.' Also, までに does not require something to happen exactly once. Replace the deadline explanation with: 'までに marks a deadline by which an event must occur or a task must be completed.' In the mistake, write: 'For the intended submission deadline, use までに; まで instead suggests continuation or repetition up to that time.' Replace the OJG-0306 note with: 'までに marks a deadline: an event occurs or a task is completed no later than that time.'"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: 292b8dc9e4097dcf24f078a8980cb64f36913e6e4ed2a588decdc83cd70215f2
   - id: OJG-0307
     pattern: 数量 + くらい／ぐらい
     title: About, roughly (with amounts)
@@ -4173,11 +4381,19 @@ entries:
       - source_id: hanabira
         ref: 数量 + くらい／ぐらい
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
       note: 'Questions: 二十分 is read にじゅっぷん here; にじっぷん is also standard. Is either preferable for learners? Is the remark that くらい after a clock time is "heard in everyday speech" accurate, or is it fully standard?'
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: af906636fccb5df422ba260389d05fbb1b7bcbe8a848b657e3ae8c8a269381dc
   - id: OJG-0308
     pattern: 時間 + ごろ
     title: Around (a point in time)
@@ -4222,17 +4438,25 @@ entries:
       - source_id: hanabira
         ref: 時間 + ごろ
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
       note: "Question: is ごろ vs ごろに described accurately as both used? The mistake overlaps with OJG-0307's (both are the point-versus-length confusion); is there a better, distinct mistake for ごろ?"
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: cc49e1d0c3bccbb7034c81e5d842c7c080e6ab560d391740f5ac1f536fbe3f9a
   - id: OJG-0309
     pattern: ～だけ
     title: Only, just
-    meaning: "N + だけ: only N, just N, nothing more. だけ follows the thing it limits, and the verb stays positive."
+    meaning: "N + だけ: only N, just N, nothing more. だけ follows the thing it limits."
     when: "Use it to limit something to what is named: 朝はコーヒーだけ飲みました (I only had coffee this morning), りんごを一つだけください (just one apple, please). It also follows a verb: 見ているだけです, \"I'm just looking\", in a shop."
-    why: 'だけ marks a limit: this much and no further. It goes right after the word it limits, so moving it changes what is limited: 私だけ行きます is "only I go". が and を after だけ are often left out, though they can stay (コーヒーだけ飲みました, コーヒーだけを飲みました); other particles stay, and usually come before だけ: 田中さんにだけ話しました. だけ says what there is, with a positive verb. The pattern しか～ない (N4) says the same through what is missing, with a negative verb, and often suggests "not enough". Mixing the two, だけ with a negative verb, changes the meaning.'
+    why: "だけ marks a limit: this much and no further. It goes right after the word it limits, so moving it changes what is limited: 私だけ行きます is \"only I go\". が and を after だけ are often left out, though they can stay (コーヒーだけ飲みました, コーヒーだけを飲みました); other particles stay, and usually come before だけ: 田中さんにだけ話しました. だけ restricts whatever it follows and can go with a positive or a negative verb, but the meaning differs: コーヒーだけ飲みました is \"I drank only coffee\"; コーヒーだけ飲みませんでした is \"coffee was the one thing I didn't drink\". The pattern しか～ない (N4) says \"only\" through what is missing, with a negative verb, and often suggests \"not enough\"."
     formation:
       - form: Noun (+ particle) + だけ
         note: 水だけ, 田中さんにだけ.
@@ -4255,7 +4479,7 @@ entries:
         english: "\"Welcome!\" \"I'm just looking.\""
     mistake:
       wrong: 朝はコーヒーだけ飲みませんでした。
-      problem: Intended as "I only had coffee". だけ goes with a positive verb; with a negative one this says coffee was the one thing I didn't drink. For "nothing but" with a negative, Japanese uses しか (N4).
+      problem: Intended as "I only had coffee". That meaning needs 飲みました. With 飲みませんでした, this normally means coffee was the one thing I didn't drink. For "nothing but" with a negative verb, Japanese uses しか (N4).
       right: 朝はコーヒーだけ飲みました。
     distinguish_from:
       - id: OJG-0051
@@ -4273,17 +4497,33 @@ entries:
       - source_id: hanabira
         ref: ～だけ
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: 'Question: 朝は is glossed "this morning"; is that the natural reading with a past verb, or should it be "in the morning"?'
+      note: 'Question: 朝は is glossed "this morning"; is that the natural reading with a past verb, or should it be "in the morning"? Revised after the first gpt-6-astra review to meet its objection (see reviews).'
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: a0a70e08bac4b7dbd6786c589dd614d6740dbea4e97e4035dc3bb03ef28e7174
+          note: だけ does not require a positive verb. It can restrict the object of a negative predicate, as in 肉だけ食べません ('Meat is the only thing I don't eat'). In the meaning, replace 'the verb stays positive' with 'Use an affirmative predicate to say that only the named thing was done or chosen.' In why, replace 'だけ says what there is, with a positive verb' with 'だけ restricts the expression it follows and can occur with affirmative or negative predicates.' In the mistake explanation, replace 'だけ goes with a positive verb' with 'The intended meaning requires 飲みました here. With 飲みませんでした, this normally means that coffee was the one thing I did not drink.' Keep the corrected example.
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: 0277fb2606e512069fbc7f74d78aaca2dba27289291632274ee3251b47915fc4
   - id: OJG-0310
     pattern: Nにする
     title: "Choosing: I'll have ..., let's go with ..."
     meaning: "Nにする／Nにします: decide on N, choose N. Common when ordering and making plans: コーヒーにします."
     when: "Use it when you choose among options: in a café, 私はコーヒーにします (I'll have coffee); making plans, パーティーは土曜日にしましょう. 何にしますか asks \"what will you have?\" or \"what will you choose?\". The past, にしました, reports a choice already made."
-    why: 'に marks where something ends up, and する here means "make". So Nにする is "make it N": of the possible choices, the outcome is N. That is why it is the natural phrase for ordering and deciding, where ください is only a request for something. Compare Nになる, "become N": with なる, things turn out that way by themselves; with にする, someone decides.'
+    why: 'に marks where something ends up, and する here means "make". So Nにする is "make it N": of the possible choices, the outcome is N. That is why it is the natural phrase for ordering and deciding, where ください is only a request for something. Compare Nになる, "become N": になる presents the result without itself saying who chose it; にする presents someone as choosing it.'
     formation:
       - form: Noun + に + する／します
         note: Choosing or deciding.
@@ -4310,7 +4550,7 @@ entries:
       right: 私はコーヒーにします。
     distinguish_from:
       - id: OJG-0028
-        note: 'になる is "become": things turn out so. にする is "make it": someone chooses.'
+        note: になる presents a result, without saying who chose it. にする presents someone as choosing it.
       - id: OJG-0090
         note: "ことにする is the same idea with a verb: decide to do something."
     register:
@@ -4329,11 +4569,27 @@ entries:
       - source_id: hanabira
         ref: Nにする
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: "Question: is 何にしますか safely read なに here (なんにしますか is also heard)?"
+      note: "Question: is 何にしますか safely read なに here (なんにしますか is also heard)? Revised after the first gpt-6-astra review to meet its objection (see reviews)."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: ce024c38afdd9b2c9a7607c8ff00a62fc4b994c2ee637d33d1b166a953c62574
+          note: "になる does not imply that a result occurs by itself: it can describe the outcome of deliberate choices, as in 話し合って、会議は土曜日になりました. Replace 'with なる, things turn out that way by themselves; with にする, someone decides' with 'になる presents a resulting state or arrangement without itself expressing who chose or caused it; にする presents someone as choosing or bringing about that result.'"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: 64d08527753841e771546bf492a8210115a63728a8deb0d7f81a5b1b8d1c1189
   - id: OJG-0311
     pattern: ～あとで
     title: After ...
@@ -4385,20 +4641,28 @@ entries:
       - source_id: hanabira
         ref: ～あとで
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
       note: "Questions: is the あとで / てから contrast stated fairly? Is the remark that あと without で is also common accurate (e.g. 食べたあと、散歩します)?"
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: bc1bc854dd75c1154070156411c321c3c186f427565c9d7992d6bf4cf9c15553
   - id: OJG-0312
     pattern: ～て、～
     title: Joining actions with the て-form
     meaning: 'V-て, …: joins a verb to what follows: "and", "and then", how something is done, or why.'
     when: 'Use the て-form to join several actions into one sentence in the order they happen: 朝起きて、顔を洗って、朝ご飯を食べます. It also says how something is done (歩いて学校に行きます, "walk to school"), and loosely why: 風邪をひいて、学校を休みました.'
-    why: 'The て-form is the connecting form of a verb: it says "and" and leaves the sentence open. It carries no tense or politeness of its own, so the last verb decides them for the whole sentence: 起きて、食べました is all in the past. The clauses come in the order of the events, which is why て naturally reads "and then". When the first action is the way the second is done, it reads "by, on": 歩いて行く, バスに乗って行く. When the first is something that happened to the subject, it often reads as the cause: 風邪をひいて休みました. How the て-form is made depends on the verb group.'
+    why: 'The て-form is the connecting form of a verb: it says "and" and leaves the sentence open. It has no tense or politeness marking of its own; the last verb supplies those for the sentence, and context and time words say when each action happens: 起きて、食べました is read as all in the past. In a sequence, the clauses normally follow the order of events, which is why て naturally reads "and then". When the first action is the way the second is done, it reads "by, on": 歩いて行く, バスに乗って行く. When the first is something that happened to the subject, it often reads as the cause: 風邪をひいて休みました. How the て-form is made depends on the verb group.'
     formation:
       - form: V1 (て-form)、V2
-        note: Actions in the order they happen; the last verb carries the tense.
+        note: For a sequence, the actions normally come in the order they happen; the last verb carries the sentence's tense.
       - form: V1 (て-form) + verb of movement
         note: "How you go: 歩いて行く, バスに乗って来る."
       - form: "Group 2 (る-verbs): drop る, add て"
@@ -4421,7 +4685,7 @@ entries:
         english: Yesterday I had a cold and stayed home from school.
     mistake:
       wrong: 昨日は友だちに会いました、映画を見ました。
-      problem: Two finished sentences cannot be joined with only a comma. Put the first verb in the て-form, and let the last one carry the tense.
+      problem: For a smooth sequence of actions in one sentence, put the first verb in the て-form and let the last one carry the tense. Or write two sentences, with a full stop between them.
       right: 昨日は友だちに会って、映画を見ました。
     distinguish_from:
       - id: OJG-0040
@@ -4443,20 +4707,36 @@ entries:
       - source_id: hanabira
         ref: ～て、～
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: "Question: the cause reading (風邪をひいて休みました) is presented as loose; is that fair?"
+      note: "Question: the cause reading (風邪をひいて休みました) is presented as loose; is that fair? Revised after the first gpt-6-astra review to meet its objection (see reviews)."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: f133f1a724bedf08e27a66a7da659c6675034dc5a8910bdebbcfd28a96926cd5
+          note: Two explanations are too absolute. First, the final predicate supplies the sentence's tense and politeness marking, but does not force every preceding event into the same time frame; for example, 昨日東京に着いて、明日大阪に行きます. Replace the relevant explanation with 'The て-form has no independent tense or politeness marking. The final predicate provides these markings, while context and time expressions establish when each action happens. In a sequence of actions, clauses normally follow event order; manner and cause uses need not describe separate successive actions.' Change the formation note to 'For a sequence, actions are normally listed in event order; the last verb carries the sentence-final tense marking.' Second, Japanese does not have an absolute prohibition on joining finite clauses with a comma. Replace the mistake diagnosis with 'For a smooth sequence of actions in one sentence, use the て-form for the first action. Alternatively, write two sentences with a full stop between them.' Present the original as less suitable for this exercise, not categorically ungrammatical.
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: 46c99fba9b0dd9f6511cdd480d52f3c80da6450f1081e16c2737df068e590630
   - id: OJG-0313
     pattern: ～こと
     title: Turning a verb into a noun with こと
-    meaning: 'V (dictionary form) + こと: "doing V", as a noun. 趣味は写真を撮ることです.'
+    meaning: 'V (plain form) + こと: an action or a fact, as a noun. With the dictionary form, often "doing V": 趣味は写真を撮ることです.'
     when: "Use it when an action has to fill a noun's place: 私の趣味は写真を撮ることです (My hobby is taking photos); 毎日日本語を話すことは大切です. It is also the piece used in ことができる (can do)."
-    why: 'A verb cannot take が, を or は, or stand before です as the thing something is, because those places belong to nouns. こと is a noun meaning "matter, thing" in the abstract, and a verb phrase in front of it describes it, the way a clause describes any noun. So the whole phrase becomes a noun: 写真を撮ること, "the matter of taking photos". The verb keeps its own particles inside the phrase. こと suits naming an action as an idea: a hobby, a rule, a skill. Often の can replace it (読むのが好き, 読むことが好き), but not always: after は…です saying what something is, use こと (趣味は読むことです); with verbs of seeing and hearing, use の.'
+    why: 'To use a verb phrase as the subject, object or topic in sentences like these, it has to be turned into a noun first; a plain verb also cannot stand before です when saying what something is (趣味は…です). こと is a noun meaning "matter, thing" in the abstract, and a verb phrase in front of it describes it, the way a clause describes any noun. So the whole phrase becomes a noun: 写真を撮ること, "the matter of taking photos". The verb keeps its own particles inside the phrase. こと suits naming an action as an idea: a hobby, a rule, a skill. Often の can replace it (読むのが好き, 読むことが好き), but not always: after は…です saying what something is, use こと (趣味は読むことです); for seeing or hearing an event as it happens, use の. こと can go with 聞く when you hear a fact: 田中さんが結婚したことを聞きました.'
     formation:
-      - form: V (dictionary form) + こと
-        note: "読むこと, 泳ぐこと. The verb keeps its own object: 本を読むこと."
+      - form: V (plain form) + こと
+        note: "The dictionary form for an activity: 読むこと, 泳ぐこと. Past and negative forms also occur: 結婚したこと, 行かないこと. The verb keeps its own object: 本を読むこと."
       - form: … は V + ことです
         note: "Saying what something is: 趣味は…ことです."
       - form: V + ことができる
@@ -4500,7 +4780,24 @@ entries:
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: "Question: is the こと / の division (こと before です in definitions, の with seeing and hearing) stated as a tendency where it should be, and not overstated?"
+      note: "Question: is the こと / の division (こと before です in definitions, の with seeing and hearing) stated as a tendency where it should be, and not overstated? Revised after the first and second gpt-6-astra reviews to meet their objections; the text as it stands has not been reviewed again, because this batch stopped at two review rounds."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 024e5728f663eebc1e37fb1bffe840d631cb3fd74414bc4ba8566807d87fdec3
+          note: The particle restriction and the perception-verb restriction are stated too broadly. Replace 'A verb cannot take が, を or は ... because those places belong to nouns' with 'To use a verb phrase as a noun-like subject, object, or topic in these constructions, nominalize it. A plain verb also cannot directly precede です in a definition such as 趣味は…です.' This avoids ruling out other uses of particles after verbs. Replace 'with verbs of seeing and hearing, use の' with 'For directly seeing or hearing an event happening, use の; こと can occur when hearing or learning a fact, as in 彼が結婚したことを聞きました.'
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 03330561c67f8b394af814e421c94b0b1eeb834ca54534c32ce9ff13465b501e
+          note: "The formation specifies only dictionary-form verbs, but the explanation also describes nominalizing a past fact: 田中さんが結婚したことを聞きました. Replace the first formation with “V (plain form) + こと” and its note with “Use the dictionary form for an activity: 読むこと, 泳ぐこと. Past and negative forms are also possible: 結婚したこと, 行かないこと. The verb keeps its own object: 本を読むこと.” Revise the meaning line to “V (plain form) + こと: nominalizes an action or fact. With the dictionary form, often ‘doing V’: 趣味は写真を撮ることです.”"
   - id: OJG-0314
     pattern: ～の
     title: Turning a verb into a noun with の
@@ -4527,7 +4824,7 @@ entries:
         english: I saw the children playing in the park.
     mistake:
       wrong: 走るは楽しいです。
-      problem: は needs a noun before it, and 走る is a verb. Add の to make it one.
+      problem: "Here the action of running is the topic, so the verb phrase has to become a noun before は. Add の: 走るのは楽しいです."
       right: 走るのは楽しいです。
     distinguish_from:
       - id: OJG-0313
@@ -4551,24 +4848,40 @@ entries:
       - source_id: hanabira
         ref: ～の
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: 'Question: 宿題を持ってくるのを忘れました uses ～てくる as a single verb "bring"; is that fine at N5?'
+      note: 'Question: 宿題を持ってくるのを忘れました uses ～てくる as a single verb "bring"; is that fine at N5? Revised after the first gpt-6-astra review to meet its objection (see reviews).'
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 13a376cc54cb6107063f980993bc80c1b6c1c1c8247a5a7f7f6fa61a872297b6
+          note: "The mistake diagnosis 'は needs a noun before it' is an overgeneralization: は can also follow other particles and verbal forms, as in 読んではいけません. Replace it with 'Here, the action of running is the topic, so the verb phrase must be nominalized before は. Add の: 走るのは楽しいです.' The wrong and corrected examples themselves are appropriate."
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: 8c2628420270aed49549cb44676c0d640ea40e334426add844b1b84c53716e04
   - id: OJG-0315
     pattern: あまり～ない
     title: Not very, not much
     meaning: "あまり + negative: not very, not much, not often. あまり高くない, あまり食べません."
     when: "Use it to soften a negative: この店はあまり高くないです (not very expensive); 私は肉をあまり食べません (I don't eat much meat). It is gentler than a flat negative, and is often a polite way of saying no."
-    why: 'With a negative, あまり says the amount or degree does not reach far: "not to any great extent". So it needs a negative ending later in the sentence; with a positive ending it does not mean "very". Because it avoids a flat no, Japanese speakers use it where English might just say no: 「辛いものは好きですか。」「あまり好きじゃないです。」 あんまり is a common spoken form.'
+    why: 'With a negative, あまり says the amount or degree does not reach far: "not to any great extent". For this meaning, "not very, not much, not often", あまり is paired with a negative ending later in the sentence. With a positive ending it never means a neutral "very"; あまり(に) with a positive belongs to a different use, "too, excessively". Because it avoids a flat no, Japanese speakers use it where English might just say no: 「辛いものは好きですか。」「あまり好きじゃないです。」 あんまり is a common spoken form.'
     formation:
       - form: あまり + verb (negative)
         note: あまり食べません.
       - form: あまり + い-adjective (くない)
         note: あまり高くないです.
-      - form: あまり + な-adjective / noun + じゃない
-        note: あまり好きじゃないです.
+      - form: あまり + な-adjective + じゃない／ではない
+        note: 'あまり好きじゃないです. Not with just any noun: the word has to allow "how much".'
     examples:
       - japanese: この店はあまり高くないです。
         reading: このみせはあまりたかくないです。
@@ -4584,7 +4897,7 @@ entries:
         english: '"Do you like spicy food?" "Not really."'
     mistake:
       wrong: この映画はあまりおもしろいです。
-      problem: Intended as "very interesting". あまり needs a negative after it; for "very", use とても.
+      problem: Intended as "very interesting". For a neutral "very", use とても. あまり with a negative means "not very" (あまりおもしろくないです); あまり(に) with a positive is a different use, "too".
       right: この映画はとてもおもしろいです。
     distinguish_from:
       - id: OJG-0316
@@ -4612,13 +4925,30 @@ entries:
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: 'Question: あまり(に) with a positive ("too, so much") is left out as beyond N5; is that the right call?'
+      note: 'Question: あまり(に) with a positive ("too, so much") is left out as beyond N5; is that the right call? Revised after the first and second gpt-6-astra reviews to meet their objections; the text as it stands has not been reviewed again, because this batch stopped at two review rounds.'
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 12af574daaa6149f3e3fd59cc80b0a54a650d5e90f864e70524ecc4b49175afb
+          note: The statements that あまり 'needs a negative ending' need to be explicitly limited to the meaning taught here. Affirmative あまり／あまりに is possible with an excessive-degree meaning, as in あまりに高いです. In why, write 'For the meaning “not very/much/often,” あまり is paired with a negative predicate. Affirmative あまり（に） can instead mean “excessively” or “too,” rather than neutral “very.”' In the mistake explanation, write 'For neutral “very interesting,” use とてもおもしろいです. あまりおもしろくないです means “not very interesting”; affirmative あまり（に） belongs to a different, excessive-degree use.'
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: d750fdfd5d6ec7154f6a206cb16357ccd2111fe72d83602448c76560f9a40988
+          note: "The formation treats nouns as freely interchangeable with な-adjectives, but あまり requires a predicate that supports an amount or degree interpretation. Replace the third formation with 'あまり + な-adjective + ではない／じゃない'. If retaining nouns, add: 'Also possible with noun predicates that allow a degree interpretation, such as あまり好みじゃない (not really to my taste); this is not a general pattern for all nouns.'"
   - id: OJG-0316
     pattern: ぜんぜん～ない
     title: Not at all
     meaning: "ぜんぜん + negative: not at all, not in the least. ぜんぜんわかりません."
     when: "Use it for a complete negative: この問題はぜんぜんわかりません (I don't understand this problem at all); 私はお酒をぜんぜん飲みません. It is the strong end of a scale that あまり～ない sits lower on."
-    why: 'ぜんぜん (全然) means "wholly". With a negative, it says the negative holds completely: not even a little. あまり～ない is "not much"; ぜんぜん～ない is "not at all". Treat it as needing a negative, which is the safe rule. In casual speech ぜんぜん is also used with some positive words, especially ぜんぜん大丈夫 ("totally fine") in reply to a worry; this is common, but it sounds informal, so keep it out of polite speech.'
+    why: 'ぜんぜん (全然) means "wholly". With a negative, it says the negative holds completely: not even a little. あまり～ない is "not much"; ぜんぜん～ない is "not at all". For this "not at all" pattern, use a negative ending. ぜんぜん is also used with some positive words, especially ぜんぜん大丈夫です ("totally fine") in reply to a worry; this is common in conversation, polite conversation included, but is generally avoided in formal prose. Positive expressions of complete difference, such as 全然違う, also occur in writing.'
     formation:
       - form: ぜんぜん + verb (negative)
         note: ぜんぜんわかりません.
@@ -4639,7 +4969,7 @@ entries:
         english: It's not cold at all today.
     mistake:
       wrong: この本はぜんぜんおもしろいです。
-      problem: Intended as "really interesting". In standard use ぜんぜん goes with a negative, "not at all". For "really, very", use とても.
+      problem: Intended as "really interesting". ぜんぜん is not a general word for "very"; its positive uses depend on context, usually answering a worry or an expectation. For a neutral "really, very", use とても.
       right: この本はとてもおもしろいです。
     distinguish_from:
       - id: OJG-0315
@@ -4662,7 +4992,24 @@ entries:
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: "Question: is the caveat about positive ぜんぜん (ぜんぜん大丈夫) scoped correctly: common in casual speech, avoided in polite speech?"
+      note: "Question: is the caveat about positive ぜんぜん (ぜんぜん大丈夫) scoped correctly: common in casual speech, avoided in polite speech? Revised after the first and second gpt-6-astra reviews to meet their objections; the text as it stands has not been reviewed again, because this batch stopped at two review rounds."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: faf558fc53cba0e90656bbb87019151f65272dc45d948b3ea80257635ae3c528
+          note: "The instruction to keep affirmative ぜんぜん out of polite speech is too strong: 全然大丈夫です is common in polite conversation. Replace the last two sentences of why with: 'For this “not at all” pattern, use a negative predicate. Affirmative uses such as 全然大丈夫です (“totally fine”) are also common, including in polite conversation, though they are generally conversational rather than formal.' In the mistake diagnosis, replace 'In standard use ぜんぜん goes with a negative' with 'ぜんぜん is not a general substitute for とても; affirmative uses depend on context, often contradicting an expectation or concern.' The proposed correction with とても is appropriate for the intended neutral meaning."
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 62520ef831e6388ff5aa06fe8fdfcd9c59f80ab92983d6044a78cf04737908a6
+          note: "The statement that affirmative ぜんぜん 'is not used in formal writing' is too absolute. Affirmative 全然 occurs in writing, particularly with expressions of difference such as 全然異なる. Replace the final sentence of why with: 'ぜんぜん also occurs with affirmative expressions. Conversational uses such as ぜんぜん大丈夫です (totally fine), often answering a worry, are common even in polite conversation but are generally avoided in formal prose. Affirmative expressions of complete difference, such as 全然異なる, also occur in writing.'"
   - id: OJG-0318
     pattern: ～はどうですか／～はいかがですか
     title: How about ...? How is ...?
@@ -4719,17 +5066,25 @@ entries:
       - source_id: hanabira
         ref: ～はどうですか／～はいかがですか
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
       note: 'Question: is 日本の生活は何ですか a real learner error (from "what is life in Japan like?")?'
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: ac9464a30a21a4e466d062eff672c243ca9a5f91bcc5496d490d308f158a7904
   - id: OJG-0319
     pattern: 疑問詞 + か
     title: Someone, something, somewhere, sometime
     meaning: "Question word + か: some ... . 何か (something), だれか (someone), どこか (somewhere), いつか (sometime)."
     when: "Use it when you mean one that is not named: 何か飲みませんか (Would you like something to drink?), だれか来ましたよ (Someone's here), いつか日本に住みたいです (Someday I'd like to live in Japan). In a question, 何か and だれか cover \"anything\" and \"anyone\" too: 何か質問はありますか."
-    why: "か marks something as open, not settled, as it does at the end of a question. On a question word it keeps the word's open slot but stops the question: 何 asks \"what?\", 何か says \"some thing, I'm not saying which\". が and を after these words are usually left out: 何か食べましたか. Other particles are kept, after か: どこかへ行きましたか, だれかと話しました. These words are for positive statements and questions. For \"nothing\" and \"nobody\" in a negative statement, Japanese uses the question word with も instead: 何も食べません."
+    why: "か marks something as open, not settled, as it does at the end of a question. On a question word it keeps the word's open slot but stops the question: 何 asks \"what?\", 何か says \"some thing, I'm not saying which\". が and を after these words are usually left out: 何か食べましたか. Other particles are kept, after か: どこかへ行きましたか, だれかと話しました. These words mean an unnamed person, thing, place or time, and can appear in positive and negative sentences and in questions: 何か足りません, \"something is missing\". They do not themselves mean \"nothing\" or \"nobody\"; for those, Japanese uses the question word with も and a negative: 何も食べません."
     formation:
       - form: 何か / だれか / どこか / いつか
         note: Something, someone, somewhere, sometime. 何か is read なにか.
@@ -4787,22 +5142,38 @@ entries:
       - source_id: hanabira
         ref: 疑問詞 + か
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: "Questions: romaji keeps か as a separate particle (nani ka, dare ka, doko ka, itsu ka), following nani mo elsewhere in the file; itsuka \"someday\" is often written as one word. Which is preferred? Is 何か食べたくないです fairly called wrong for \"I don't want anything\"?"
+      note: "Questions: romaji keeps か as a separate particle (nani ka, dare ka, doko ka, itsu ka), following nani mo elsewhere in the file; itsuka \"someday\" is often written as one word. Which is preferred? Is 何か食べたくないです fairly called wrong for \"I don't want anything\"? Revised after the first gpt-6-astra review to meet its objection (see reviews)."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 606575dd71a88fc0534865bbedaeb7b540969fe3574800255a04e1caacfa9ce9
+          note: "“These words are for positive statements and questions” incorrectly excludes negative statements such as 何か足りません (“Something is missing”). Replace it with: 'These words express an unspecified person, thing, place, or time and can occur in affirmative or negative sentences and in questions. They do not themselves mean “nothing” or “nobody”; for those meanings, use the question word with も and a negative predicate.'"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: fa0f540ed62af3cb0d97d4dff06fa6c5d2a7ff45a064b385047aafccfbea3c57
   - id: OJG-0320
     pattern: 疑問詞 + でも
     title: Any ..., whatever, whenever
     meaning: "Question word + でも: any at all, no matter which. 何でも (anything), いつでも (any time), だれでも (anyone)."
-    when: "Use it to say the choice does not matter because every option is fine: 私は何でも食べます (I'll eat anything); いつでも電話してください; 「どれがいいですか。」「どれでもいいです。」 It goes with a positive statement."
-    why: 'でも here means "even": 何でも is "even what(ever)". If the statement holds even for the least likely choice, it holds for every choice, which gives "any, no matter which". That leaves the choice to the listener: どれでもいいです, "any one is fine". が and を are dropped: 何でも食べます. For "none" with a negative, the question word takes も instead: 何も食べません; 何でも食べません does not mean "I eat nothing".'
+    when: "Use it to say the choice does not matter because every option is fine: 私は何でも食べます (I'll eat anything); いつでも電話してください; 「どれがいいですか。」「どれでもいいです。」 The basic use is with a positive statement."
+    why: 'でも here means "even": 何でも is "even what(ever)". If the statement holds even for the least likely choice, it holds for every choice, which gives "any, no matter which". That leaves the choice to the listener: どれでもいいです, "any one is fine". が and を are dropped: 何でも食べます. These words can appear with a negative too, but they never mean "none": 何でも食べません does not mean "I eat nothing". For that, the question word takes も: 何も食べません.'
     formation:
       - form: 何でも / だれでも / いつでも / どこでも / どれでも
         note: Anything, anyone, any time, anywhere, any one of several. 何でも is read なんでも.
-      - form: Question word + でも + positive verb, or + いい
-        note: 何でも食べます, どれでもいいです.
+      - form: Question word + でも + predicate
+        note: "With a positive predicate, any choice at all: 何でも食べます, どれでもいいです."
     examples:
       - japanese: 私は何でも食べます。
         reading: わたしはなんでもたべます。
@@ -4822,7 +5193,7 @@ entries:
         english: Anyone can make this dish.
     mistake:
       wrong: 私は何でも食べません。
-      problem: Intended as "I don't eat anything". でも on a question word goes with a positive statement. For "nothing", use 何も with the negative.
+      problem: Intended as "I don't eat anything". 何でも食べません does not mean "I eat nothing". For that meaning, use 何も with the negative.
       right: 私は何も食べません。
     distinguish_from:
       - id: OJG-0319
@@ -4856,17 +5227,33 @@ entries:
       - source_id: hanabira
         ref: 疑問詞 + でも
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: "Questions: romaji writes nan demo, itsu demo, dore demo, dare demo with でも separate, following nani mo in this file; nandemo / itsudemo as one word is also common. Which is preferred? Is 何でも食べません ever acceptable (e.g. contrastive \"I don't eat just anything\"), which would weaken the mistake?"
+      note: "Questions: romaji writes nan demo, itsu demo, dore demo, dare demo with でも separate, following nani mo in this file; nandemo / itsudemo as one word is also common. Which is preferred? Is 何でも食べません ever acceptable (e.g. contrastive \"I don't eat just anything\"), which would weaken the mistake? Revised after the first gpt-6-astra review to meet its objection (see reviews)."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 8bc35af3ae91d5b5420df1451574899b7cebfc77f31e1512e79440f080f52c41
+          note: "The repeated restriction to positive statements is overstated. These expressions can occur with negation, for example いつでも暇というわけではありません (“I'm not always free”). Replace 'It goes with a positive statement' with 'The basic examples here use affirmative predicates. These expressions can also occur with negation, but do not thereby mean “none”.' Replace the second formation with 'Question word + でも + predicate' and explain that affirmative examples express unrestricted choice. In the mistake diagnosis, replace the positive-only rule with: '何でも食べません does not express “I eat nothing”; use 何も食べません for that meaning.'"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: 0b9ad225366ca77e411790d1c3b75e55fa3bbeca1f26ca321bef8d62632506cc
   - id: OJG-0321
     pattern: 疑問詞 + も + negative
     title: Nobody, nothing, nowhere
     meaning: "Question word + も + negative: no one, nothing, nowhere. だれもいません, 何も食べません, どこにも行きません."
     when: "Use it for a complete no: 教室にはだれもいません (There's no one in the classroom); 冷蔵庫に何もありません; 日曜日はどこにも行きませんでした. The verb or adjective at the end must be negative."
-    why: 'も means "also, even". On a question word it covers every possible answer, and with a negative it says the negative is true of each one: not this person, not that one, nobody. That is why the verb must be negative. が and を are dropped (だれもいません, 何も食べません), but other particles are kept, before も: どこにも, どこへも, だれにも, だれとも. With a positive verb, だれも and 何も do not give "everyone" and "everything" in the way learners expect; for "everyone", use みんな.'
+    why: 'も means "also, even". On a question word it covers every possible answer, and with a negative it says the negative is true of each one: not this person, not that one, nobody. That is why the verb must be negative. が and を are dropped (だれもいません, 何も食べません), but other particles are kept, before も: どこにも, どこへも, だれにも, だれとも. For the "nobody, nothing" meaning taught here, the ending must be negative. だれも also has positive uses meaning "everyone", usually as だれもが, but that is a later point; みんな is the simple way to say "everyone".'
     formation:
       - form: だれも + negative
         note: Nobody.
@@ -4890,14 +5277,14 @@ entries:
         romaji: nichiyōbi wa doko ni mo ikimasen deshita.
         english: I didn't go anywhere on Sunday.
     mistake:
-      wrong: パーティーにだれも来ました。
-      problem: Intended as "everyone came". In this pattern だれも goes with a negative and means "nobody". For "everyone", use みんな.
-      right: パーティーにみんな来ました。
+      wrong: 教室にはだれもいます。
+      problem: Intended as "There's no one in the classroom". The "nobody" meaning needs a negative ending.
+      right: 教室にはだれもいません。
     distinguish_from:
       - id: OJG-0319
         note: 'Question word + か is "some": 何か, だれか.'
       - id: OJG-0320
-        note: 'Question word + でも is "any", with a positive verb: 何でも食べます.'
+        note: 'Question word + でも is "any", usually with a positive predicate: 何でも食べます.'
       - id: OJG-0002
         note: The same も, "also, even", here on a question word.
     register:
@@ -4940,20 +5327,36 @@ entries:
       - source_id: hanabira
         ref: 疑問詞 + も + negative
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: 'Question: だれもが and どれも can mean "everyone" and "all of them" with a positive verb (だれもが知っている, どれもおいしい). The entry says だれも and 何も do not give "everyone" and "everything" "in the way learners expect"; is that careful enough?'
+      note: 'Question: だれもが and どれも can mean "everyone" and "all of them" with a positive verb (だれもが知っている, どれもおいしい). The entry says だれも and 何も do not give "everyone" and "everything" "in the way learners expect"; is that careful enough? Revised after the first gpt-6-astra review to meet its objection (see reviews).'
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 2c4ca53cd5a83ca51398b95951f5b01aeb823027121dbc06d759fe3eb697236e
+          note: "The explanation dismisses affirmative だれも too broadly. It can mean “everyone”, especially in forms such as だれもが and だれもみんな. Replace the final sentence of why with: 'For the “nobody/nothing” meaning taught here, use a negative predicate. だれも also has affirmative “everyone” uses, often as だれもが or だれもみんな; みんな is a straightforward way to say “everyone”.' To avoid treating affirmative だれも as categorically wrong, replace the mistake with wrong: '教室にはだれもいます。', problem: 'Intended as “There is nobody in the classroom”. The “nobody” meaning requires a negative predicate.', right: '教室にはだれもいません。' In the OJG-0320 distinction, replace 'with a positive verb' with 'typically illustrated with an affirmative predicate; it is not restricted to affirmative sentences'."
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: 980317658707ad0cf4e38c985b8af1790ffcc335a3499eff537b6654d1b495eb
   - id: OJG-0322
     pattern: あげる
     title: Giving (to someone else)
-    meaning: "AはBにNをあげる: A gives N to B. Used when the thing moves away from the speaker's side, never toward it."
-    when: "Use it when you, or someone else, give something to another person: 私は友だちにプレゼントをあげました; 田中さんは山田さんに花をあげました. It is not used when the receiver is you or someone on your side, such as your family; for that, use くれる."
-    why: "Japanese chooses its verb of giving by the direction the thing moves, seen from the speaker. あげる is for giving that moves outward: from the speaker's side to someone else, or between two other people. Giving that comes inward, to the speaker's side, takes くれる. So 友だちが私に本をあげました is wrong: the book is coming to me. The receiver is marked with に and the thing with を. Toward someone above you, such as a teacher, あげる can sound like doing them a favour; the respectful verb is さしあげる (N4). For animals and plants, あげる is widely used (犬に水をあげる), and やる is also heard."
+    meaning: "AはBにNをあげる: A gives N to B. Used for giving by the speaker, or between others; not for giving to the speaker."
+    when: "Use it when you, or someone else, give something to another person: 私は友だちにプレゼントをあげました; 田中さんは山田さんに花をあげました. It is not used when the receiver is you; for that, use くれる. You can use it for your own gift to your family: 私は妹に本をあげました."
+    why: "Japanese chooses its verb of giving by the direction the thing moves, seen from the speaker. あげる is for giving by the speaker to someone else, or between other people when the gift is not seen as coming toward the speaker. Giving to the speaker takes くれる, and so, normally, does giving to someone close to the speaker when the speaker sides with that person (友だちが妹にお菓子をくれました). So 友だちが私に本をあげました is wrong: the book is coming to me. The receiver is marked with に and the thing with を. Toward someone above you, such as a teacher, あげる can sound like doing them a favour; the respectful verb is さしあげる (N4). For animals and plants, あげる is widely used (犬に水をあげる), and やる is also heard."
     formation:
       - form: Giver は Receiver に Thing を あげる
-        note: "Polite: あげます. The receiver is not the speaker or the speaker's side."
+        note: "Polite: あげます. The receiver is not the speaker; it can be the speaker's family, when the speaker is the giver."
     examples:
       - japanese: 私は友だちに誕生日のプレゼントをあげました。
         reading: わたしはともだちにたんじょうびのプレゼントをあげました。
@@ -4969,11 +5372,11 @@ entries:
         english: I give the dog water every morning.
     mistake:
       wrong: 友だちが私にチョコレートをあげました。
-      problem: The chocolate comes toward the speaker, so the verb is くれる. あげる only moves away from the speaker's side.
+      problem: The chocolate comes to the speaker, so the verb is くれる. あげる is not used for giving to the speaker.
       right: 友だちが私にチョコレートをくれました。
     distinguish_from:
       - id: OJG-0323
-        note: "くれる is giving that comes toward the speaker's side: 友だちが本をくれました."
+        note: "くれる is giving that comes to the speaker, or to someone the speaker sides with: 友だちが本をくれました."
       - id: OJG-0324
         note: "もらう tells the event from the receiver's side: 山田さんは田中さんに花をもらいました."
       - id: OJG-0055
@@ -4994,11 +5397,27 @@ entries:
       - source_id: hanabira
         ref: あげる
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: "Question: is the remark that あげる to someone above you can sound like doing them a favour accurate and N5-appropriate?"
+      note: "Question: is the remark that あげる to someone above you can sound like doing them a favour accurate and N5-appropriate? Revised after the first gpt-6-astra review to meet its objection (see reviews)."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 8b5aaf8d762b62adc79f4431660ffc94af7b698594a766ffe376c27059afb20a
+          note: "The absolute exclusion of recipients on the speaker's side is incorrect. 私は妹に本をあげました is natural, and family membership alone does not require くれる. Replace the meaning and directional explanation with: 'あげる describes giving by the speaker to someone else, or giving between other people without presenting it as coming toward the speaker's viewpoint. For giving to the speaker, normally use くれる. For giving to someone close to the speaker, くれる is used when the speaker adopts that recipient's viewpoint; あげる can also be possible.' Replace the formation note with: 'Polite: あげます. In ordinary speaker-centered narration, the recipient is not the speaker; the recipient may be a family member.' In the mistake diagnosis, replace 'あげる only moves away from the speaker’s side' with 'あげる is not normally used for giving to the speaker in this sentence'."
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: 3d7b3edabc228b697e632df3d12f0f6bd06a6379ef51eb3fe20f62bbf7297b64
   - id: OJG-0323
     pattern: くれる
     title: Someone gives (to me or my side)
@@ -5048,22 +5467,30 @@ entries:
       - source_id: hanabira
         ref: くれる
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
       note: "Question: is \"the speaker's side\" explained well enough for N5 without going into in-group and out-group in detail?"
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: d954b03c815913e952ffa97b2d144e9497f6c9e53493626cb1a3b19b22de9192
   - id: OJG-0324
     pattern: もらう
     title: "Receiving: getting something from someone"
-    meaning: "AはBに／からNをもらう: A receives N from B. The receiver is the subject, usually the speaker or their side."
-    when: "Use it to say you, or someone on your side, received something: 私は友だちに本をもらいました; 母から手紙をもらいました. It tells the same event as くれる, but from the receiver's side."
-    why: "もらう makes the receiver the subject, so the sentence is about the person who got something. The giver is marked with に or から. から stresses where it came from, and is the one to use when the giver is not a person but a group, such as a school or a company: 学校から手紙をもらいました. The same event can be told two ways: 友だちが本をくれました, from the giver's side toward me, and 私は友だちに本をもらいました, from mine. The receiver is usually the speaker or someone on the speaker's side; もらう is not used with the speaker as the giver, which is what あげる is for. For receiving from someone above you, the humble verb is いただく (N4)."
+    meaning: "AはBに／からNをもらう: A receives N from B. The receiver is the subject, and the event is told from their side."
+    when: "Use it to tell a gift from the receiver's point of view: 私は友だちに本をもらいました; 母から手紙をもらいました. The receiver can be you, someone close to you, or someone else. When the gift comes to you, the same event can also be told with くれる."
+    why: "もらう makes the receiver the subject, so the sentence is about the person who got something. The giver is marked with に or から. から marks the source explicitly, and is generally the safest choice when the giver is a group such as a school or a company: 学校から手紙をもらいました. に is also possible when the group is treated as the one giving. The same event can be told two ways: 友だちが本をくれました, from the giver's side toward me, and 私は友だちに本をもらいました, from mine. When the speaker is the one giving, あげる is the usual way to tell it; that is a matter of viewpoint, not a strict ban, and 私から何をもらいたいですか is natural. For receiving from someone above you, the humble verb is いただく (N4)."
     formation:
       - form: Receiver は Giver に Thing を もらう
         note: "Polite: もらいます."
       - form: Receiver は Giver から Thing を もらう
-        note: から stresses the source, and is used when the giver is a school, a company or another group.
+        note: から marks the source explicitly, and is generally preferred with a school, a company or another group, though に is also possible.
     examples:
       - japanese: 私は友だちに本をもらいました。
         reading: わたしはともだちにほんをもらいました。
@@ -5111,7 +5538,24 @@ entries:
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
-      note: "Question: is the rule that から is used when the giver is a group (school, company) stated accurately?"
+      note: "Question: is the rule that から is used when the giver is a group (school, company) stated accurately? Revised after the first and second gpt-6-astra reviews to meet their objections; the text as it stands has not been reviewed again, because this batch stopped at two review rounds."
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 61402d4d1bb60763b2311970f785a604e9750ff29226889288e42f736f2a5e5e
+          note: "“もらう is not used with the speaker as the giver” is too absolute. For example, 私から何をもらいたいですか (“What would you like to get from me?”) is natural. Replace that claim with: 'In ordinary narration about a gift the speaker gives, あげる is generally preferred. This is a viewpoint preference, not an absolute ban on mentioning the speaker as the source with もらう.' Also clarify the scope in when: 'Use もらう to present receiving from the recipient's viewpoint. The recipient may be the speaker, someone close to the speaker, or a third party. When the gift comes to the speaker or someone whose viewpoint the speaker adopts, the same event can also be described with くれる.'"
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: disagree
+          content_sha256: 8dc77b319d4139f46e3df3e2cc9c70579ef35b8931ce67c78eaa5c13ee8fb6af
+          note: "The requirement to use から rather than に for a school, company, or other group is overstated. Institutions can be construed as givers and take に, as in 会社にお金をもらった. Replace the relevant explanation with: 'The giver is marked with に or から. から explicitly marks the source and is generally the safest choice with an institution such as a school or company: 学校から手紙をもらいました. に is also possible when the institution is treated as the giving party.' Revise the second formation note to: 'から explicitly marks the source and is generally preferred with institutional sources, though に is also possible.'"
   - id: OJG-0330
     pattern: ～とき
     title: "When ...: the time something happens"
@@ -5172,11 +5616,20 @@ entries:
       - source_id: hanabira
         ref: ～とき
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
       note: "Questions: is the tense point (行くとき vs 行ったとき) appropriate at N5, or better left to N4? Is the 行くとき reading (bought before the trip, or on the way) stated correctly?"
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: 7fe3ecd847366672b2111eeb6b6df3d3826fa2a7ee27f2b55892b70f90c4099b
+          note: The explanation, formation, examples, readings, romaji, and correction are accurate for the uses described. The level and comparison notes are appropriate.
   - id: OJG-0333
     pattern: なんと言いますか
     title: Asking what something is called, or how to say it
@@ -5228,8 +5681,17 @@ entries:
       - source_id: hanabira
         ref: なんと言いますか
     review:
-      status: draft
+      status: ai-reviewed
       drafted_by:
         provider: anthropic
         model: claude-opus-5-5
       note: "Questions: これは日本語で何ですか is also natural for asking a word; should the entry say so? Is なんて言う the right casual form to name?"
+      reviews:
+        - by: gpt-6-astra
+          kind: ai
+          provider: openai
+          model: gpt-6-astra
+          date: 2026-09-27
+          verdict: agree
+          content_sha256: dee10a2ef25b7af8beabe5c10240881fdaefdbc9c19812275d01a27b3bb1eaba
+          note: The explanation and quotation-particle correction are accurate. The examples are natural, with matching readings, romaji, and translations; the level and comparison notes are appropriate.
