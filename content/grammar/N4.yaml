@@ -2600,6 +2600,36 @@ entries:
         model: claude-opus-5-5
   - id: OJG-0299
     pattern: AはBほど～ない
+    title: A is not as … as B
+    meaning: 'A は B ほど + negative: "A is not as (adjective) as B"; B sets a level that A does not reach.'
+    when: "Use it to compare by saying one thing falls short of another: 今年の夏は去年ほど暑くない, \"this summer isn't as hot as last year's\". It is a natural way to say something is less so, and it sounds gentler than a direct comparison with より."
+    why: "ほど means \"extent, degree\". B ほど is \"to B's degree\", and the negative says A does not reach it. So the end of the sentence must be negative; A は B ほど暑い is not a comparison. The sentence also takes for granted that B has the quality to a clear degree: 去年ほど暑くない implies last year was hot."
+    formation:
+      - form: A は B ほど + negative
+        note: い-adjective 暑くない; な-adjective にぎやかではない／じゃない; verb 読まない. Polite くないです／くありません, ではありません, ません.
+    examples:
+      - japanese: 今年の夏は去年ほど暑くないです。
+        reading: ことしのなつはきょねんほどあつくないです。
+        romaji: kotoshi no natsu wa kyonen hodo atsuku nai desu.
+        english: This summer isn't as hot as last year's.
+      - japanese: 私の町は東京ほどにぎやかではありません。
+        reading: わたしのまちはとうきょうほどにぎやかではありません。
+        romaji: watashi no machi wa tōkyō hodo nigiyaka de wa arimasen.
+        english: My town isn't as lively as Tokyo.
+      - japanese: 弟は私ほど本を読みません。
+        reading: おとうとはわたしほどほんをよみません。
+        romaji: otōto wa watashi hodo hon o yomimasen.
+        english: My little brother doesn't read as much as I do.
+    mistake:
+      wrong: 東京は大阪ほど大きいです。
+      problem: ほど in a comparison needs a negative. To say A is bigger than B, use より.
+      right: 東京は大阪より大きいです。
+    distinguish_from:
+      - id: OJG-0025
+        note: より and のほうが say which one has more of the quality. ほど～ない says one falls short of the other.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -2613,9 +2643,44 @@ entries:
       - source_id: hanabira
         ref: AはBほど～ない
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0306
     pattern: ～までに
+    title: By (a deadline)
+    meaning: 'Time + までに: "by (then)", "before (then)"; a one-time action happens at some point before the deadline.'
+    when: "Use it for a deadline: 金曜日までにレポートを出してください, \"please hand in the report by Friday\". The action is done once, at any point up to that time. It can also follow a verb: 暗くなるまでに帰ります, \"I'll be home before it gets dark\"."
+    why: まで is "until" and marks the end of a stretch of time; に marks a point where something happens. Together they say "at some point within the stretch up to X". That is why までに goes with one-time actions (出す, 帰る, 着く, 終わる). まで without に says an action lasts all the way to X (五時まで働く), so its verb is one that goes on.
+    formation:
+      - form: Noun (time) + までに
+        note: 金曜日までに, 三時までに.
+      - form: V (dictionary form) + までに
+        note: 暗くなるまでに, 母が帰るまでに.
+    examples:
+      - japanese: 金曜日までにレポートを出してください。
+        reading: きんようびまでにレポートをだしてください。
+        romaji: kin'yōbi made ni repōto o dashite kudasai.
+        english: Please hand in the report by Friday.
+      - japanese: 暗くなるまでに帰ります。
+        reading: くらくなるまでにかえります。
+        romaji: kuraku naru made ni kaerimasu.
+        english: I'll be home before it gets dark.
+      - japanese: 三時までに駅に来てください。
+        reading: さんじまでにえきにきてください。
+        romaji: sanji made ni eki ni kite kudasai.
+        english: Please come to the station by three.
+    mistake:
+      wrong: 五時までに働きます。
+      problem: 働く goes on over time, and the speaker means it lasts until five. That is まで. までに is for a one-time action done before a deadline.
+      right: 五時まで働きます。
+    distinguish_from:
+      - id: OJG-0305
+        note: まで marks how long something goes on ("until"). までに marks a deadline for a one-time action ("by").
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -2626,9 +2691,43 @@ entries:
       - source_id: hanabira
         ref: ～までに
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0317
     pattern: そんなに～ない
+    title: Not that (much), not so
+    meaning: 'そんなに + negative: "not that (adjective)", "not so much"; tones down a degree the listener might expect.'
+    when: "Use it to say something is less than might be thought: この料理はそんなに辛くないですよ, \"this dish isn't that spicy\". It is common in modest or reassuring answers: 「日本語が上手ですね。」「いいえ、そんなに上手じゃないです。」. Without a negative, そんなに means \"that much\", usually with surprise: そんなに食べたの？"
+    why: 'そんな points at something near the listener or already mentioned: "that kind, to that degree". So そんなに～ない says "not to the degree you have in mind", measured against what the listener said or might expect. That is why it sits naturally in answers and reassurances. あまり～ない is a general "not very"; そんなに ties the degree to what was said or expected.'
+    formation:
+      - form: そんなに + negative
+        note: い-adjective 辛くない; な-adjective 上手じゃない; verb 食べない.
+    examples:
+      - japanese: この料理はそんなに辛くないですよ。
+        reading: このりょうりはそんなにからくないですよ。
+        romaji: kono ryōri wa sonna ni karaku nai desu yo.
+        english: This dish isn't that spicy.
+      - japanese: 「日本語が上手ですね。」「いいえ、そんなに上手じゃないです。」
+        reading: 「にほんごがじょうずですね。」「いいえ、そんなにじょうずじゃないです。」
+        romaji: '"nihongo ga jōzu desu ne." "iie, sonna ni jōzu ja nai desu."'
+        english: "\"Your Japanese is good.\" \"No, it's not that good.\""
+      - japanese: 駅はここからそんなに遠くないです。
+        reading: えきはここからそんなにとおくないです。
+        romaji: eki wa koko kara sonna ni tōku nai desu.
+        english: The station isn't that far from here.
+    mistake:
+      wrong: この本はそんなにおもしろいです。
+      problem: Meant as "this book is so interesting". そんなに measures against the listener's idea and, in a statement, mostly goes with a negative. For "very", use とても.
+      right: この本はとてもおもしろいです。
+    distinguish_from:
+      - id: OJG-0315
+        note: あまり～ない is a general "not very". そんなに～ない is "not as much as you think", tied to what was said or expected.
+    register:
+      - plain
+      - polite
+      - spoken
     levels:
       commonly: N4
       listed:
@@ -2639,9 +2738,51 @@ entries:
       - source_id: hanabira
         ref: そんなに～ない
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0325
     pattern: さしあげる／いただく／くださる
+    title: Giving and receiving with respect
+    meaning: "さしあげる (give, humble), いただく (receive, humble), くださる (give me, honorific): あげる, もらう, くれる towards superiors."
+    when: 'Use them in place of あげる, もらう and くれる when the other person is someone you show respect to, such as a teacher, a customer or someone older: 先生に辞書をいただきました, "I received a dictionary from my teacher"; 社長がお土産をくださいました, "the company president gave me a souvenir".'
+    why: "Each keeps the direction of its plain verb and adds respect. さしあげる and いただく are humble: they lower your own side, whether you are the giver or the receiver. くださる is honorific: it raises the superior who gives to you. So your own action takes the humble verb, and the superior's action takes the honorific one. くださる has an irregular ます-form, くださいます. いただく is also the humble verb for eating and drinking, as in いただきます."
+    formation:
+      - form: さしあげる
+        note: Humble あげる. You or your side give to a superior.
+      - form: いただく
+        note: Humble もらう. You receive from a superior, marked with に or から.
+      - form: くださる
+        note: "Honorific くれる. A superior gives to you. Polite: くださいます, くださいました."
+    examples:
+      - japanese: 先生に辞書をいただきました。
+        reading: せんせいにじしょをいただきました。
+        romaji: sensei ni jisho o itadakimashita.
+        english: I received a dictionary from my teacher.
+      - japanese: 社長がお土産をくださいました。
+        reading: しゃちょうがおみやげをくださいました。
+        romaji: shachō ga omiyage o kudasaimashita.
+        english: The company president gave me a souvenir.
+      - japanese: 先生の誕生日に花をさしあげました。
+        reading: せんせいのたんじょうびにはなをさしあげました。
+        romaji: sensei no tanjōbi ni hana o sashiagemashita.
+        english: I gave my teacher flowers for their birthday.
+    mistake:
+      wrong: 先生が本をいただきました。
+      problem: Meant as "the teacher gave me a book". いただく is humble and describes your own receiving, so the teacher cannot be its subject. For the teacher's giving, use くださる.
+      right: 先生が本をくださいました。
+    distinguish_from:
+      - id: OJG-0322
+        note: あげる is the plain verb; さしあげる is its humble form for giving to a superior.
+      - id: OJG-0323
+        note: くれる is the plain verb; くださる is its honorific form for a superior giving to you.
+      - id: OJG-0324
+        note: もらう is the plain verb; いただく is its humble form for receiving from a superior.
+    register:
+      - polite
+      - humble
+      - honorific
     levels:
       commonly: N4
       listed:
@@ -2658,9 +2799,53 @@ entries:
       - source_id: hanabira
         ref: さしあげる／いただく／くださる
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: Handing a gift directly with さしあげます can sound as if the favour is being pointed out; the entry does not go into this. Is that worth a line?
   - id: OJG-0326
     pattern: ～てさしあげる／～ていただく／～てくださる
+    title: Doing favours with respect
+    meaning: "V-てさしあげる, V-ていただく, V-てくださる: てあげる, てもらう, てくれる when a superior gives or receives the favour."
+    when: "Use ていただく and てくださる when someone above you does something for you: 先生に作文を直していただきました and 先生が作文を直してくださいました both mean the teacher corrected your essay, the first told from your side, the second from the teacher's. てさしあげる is for doing a favour for a superior, and is used with care."
+    why: These are the respectful favour verbs, with the same directions as the plain ones. ていただく, the humble もらう, keeps you as the subject and marks the superior with に. てくださる, the honorific くれる, makes the superior the subject. ていただく is very common in polite speech, because it lets you acknowledge a kindness while humbly staying the subject. てさしあげる still announces that you did someone a favour, so to that person's face it can sound presumptuous, and speakers often choose another humble expression instead.
+    formation:
+      - form: V (て-form) + いただく
+        note: The superior is marked with に. Polite いただきます.
+      - form: V (て-form) + くださる
+        note: The superior is the subject. Polite くださいます.
+      - form: V (て-form) + さしあげる
+        note: You do something for a superior. Used with care.
+    examples:
+      - japanese: 先生に作文を直していただきました。
+        reading: せんせいにさくぶんをなおしていただきました。
+        romaji: sensei ni sakubun o naoshite itadakimashita.
+        english: My teacher kindly corrected my essay.
+      - japanese: 部長が駅まで送ってくださいました。
+        reading: ぶちょうがえきまでおくってくださいました。
+        romaji: buchō ga eki made okutte kudasaimashita.
+        english: My manager kindly took me to the station.
+      - japanese: お客様に道を教えてさしあげました。
+        reading: おきゃくさまにみちをおしえてさしあげました。
+        romaji: okyakusama ni michi o oshiete sashiagemashita.
+        english: I showed the customer the way.
+        note: Reported to someone else. Said to the customer, it would sound as if the speaker were pointing out the favour.
+    mistake:
+      wrong: 私は先生に作文を直してくださいました。
+      problem: てくださる makes the superior the subject. With 私は as subject and the teacher marked with に, the verb must be ていただく.
+      right: 私は先生に作文を直していただきました。
+    distinguish_from:
+      - id: OJG-0055
+        note: てあげる is the plain form of giving a favour; てさしあげる is its humble form.
+      - id: OJG-0056
+        note: てくれる is the plain form; てくださる is its honorific form.
+      - id: OJG-0057
+        note: てもらう is the plain form; ていただく is its humble form.
+    register:
+      - polite
+      - humble
+      - honorific
     levels:
       commonly: N4
       listed:
@@ -2677,9 +2862,48 @@ entries:
       - source_id: hanabira
         ref: ～てさしあげる／～ていただく／～てくださる
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: Is the example with てさしあげる, reported to a third person, natural enough to keep, or better replaced?
   - id: OJG-0327
     pattern: ～てくれませんか／～てもらえませんか／～てくださいませんか
+    title: Would you…? Could you…? (polite requests)
+    meaning: "V-てくれませんか, V-てもらえませんか, V-てくださいませんか: polite requests, softer than てください."
+    when: 'Use them to ask someone to do something politely: ちょっと手伝ってくれませんか, "could you give me a hand?". てくれませんか suits people you are on polite but familiar terms with; てもらえませんか is a little more modest; てくださいませんか is more polite, for superiors and strangers. The most polite everyday form is ていただけませんか (OJG-0058). Casual: てくれない？, てもらえない？'
+    why: てください is polite, but it is still an instruction. These forms turn it into a negative question, which leaves the listener room to say no and so sounds softer. With くれる and くださる you ask "won't you give me V-ing?", with the listener as the one acting. もらえる is the potential form of もらう, so てもらえませんか asks "can't I receive V-ing?", from your own side. Asking about your receiving is less direct than asking the listener to act, which is why it feels more modest.
+    formation:
+      - form: V (て-form) + くれませんか
+      - form: V (て-form) + もらえませんか
+        note: The potential form もらえる, "can receive".
+      - form: V (て-form) + くださいませんか
+        note: てくれますか, てもらえますか and てくださいますか also occur and are a little more direct.
+    examples:
+      - japanese: ちょっと手伝ってくれませんか。
+        reading: ちょっとてつだってくれませんか。
+        romaji: chotto tetsudatte kuremasen ka.
+        english: Could you give me a hand?
+      - japanese: 写真を撮ってもらえませんか。
+        reading: しゃしんをとってもらえませんか。
+        romaji: shashin o totte moraemasen ka.
+        english: Could you take a picture for me?
+      - japanese: もう一度説明してくださいませんか。
+        reading: もういちどせつめいしてくださいませんか。
+        romaji: mō ichido setsumei shite kudasaimasen ka.
+        english: Would you please explain it once more?
+    mistake:
+      wrong: 写真を撮ってもらいませんか。
+      problem: The request needs the potential form もらえる, "can I receive". もらいませんか means "won't we receive?", which is not a request to the listener.
+      right: 写真を撮ってもらえませんか。
+    distinguish_from:
+      - id: OJG-0014
+        note: てください is a polite instruction. These negative questions ask, and leave room to refuse.
+      - id: OJG-0058
+        note: ていただけませんか is the most polite member of the same family.
+    register:
+      - polite
+      - casual
     levels:
       commonly: N4
       listed:
@@ -2696,9 +2920,49 @@ entries:
       - source_id: hanabira
         ref: ～てくれませんか／～てもらえませんか／～てくださいませんか
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: The relative politeness of てくれませんか, てもらえませんか and てくださいませんか is given as a rough order; speakers and textbooks differ on it. Please check.
   - id: OJG-0328
     pattern: ～てほしい
+    title: Wanting someone to do something
+    meaning: "V-てほしい: \"I want (someone) to V\"; a wish about another person's action. Negative: ないでほしい."
+    when: "Use it to say what you want someone else to do: 母に早く元気になってほしい, \"I want my mother to get well soon\". The person is marked with に. Negative: 行かないでほしい, \"I don't want you to go\". Said to someone, it works as an indirect request; towards a superior, ていただきたい is used instead."
+    why: "ほしい is \"want (a thing)\". After a て-form, the thing wanted is another person's action. Because ほしい is your own feeling, the one who wants is the speaker, or the listener in a question, and the one who should act is someone else, marked with に as the person you want it from. たい cannot do this job: it is only for your own actions."
+    formation:
+      - form: (person に) V (て-form) + ほしい
+        note: "Polite: ほしいです; softened: ほしいんですが."
+      - form: (person に) V (ない-form) + でほしい
+        note: 吸わないでほしい, 行かないでほしい.
+    examples:
+      - japanese: 母に早く元気になってほしいです。
+        reading: ははにはやくげんきになってほしいです。
+        romaji: haha ni hayaku genki ni natte hoshii desu.
+        english: I want my mother to get well soon.
+      - japanese: 大事な話なので、よく聞いてほしいです。
+        reading: だいじなはなしなので、よくきいてほしいです。
+        romaji: daiji na hanashi na node, yoku kiite hoshii desu.
+        english: This is important, so I want you to listen carefully.
+      - japanese: 部屋でたばこを吸わないでほしい。
+        reading: へやでたばこをすわないでほしい。
+        romaji: heya de tabako o suwanaide hoshii.
+        english: I don't want you to smoke in the room.
+    mistake:
+      wrong: 私は友だちが来たいです。
+      problem: たい is only for your own actions. To want someone else to act, use てほしい and mark the person with に.
+      right: 私は友だちに来てほしいです。
+    distinguish_from:
+      - id: OJG-0046
+        note: がほしい wants a thing. てほしい wants someone to do something.
+      - id: OJG-0029
+        note: たい wants to do something yourself. てほしい wants someone else to do it.
+      - id: OJG-0329
+        note: てもらいたい means much the same, and has a humble form, ていただきたい, for superiors.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -2709,9 +2973,45 @@ entries:
       - source_id: hanabira
         ref: ～てほしい
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0329
     pattern: ～てもらいたい／～ていただきたい
+    title: I'd like (someone) to do…
+    meaning: "V-てもらいたい, V-ていただきたい (humble): \"I'd like (someone) to V\"; a wish, or a firm request, about someone's action."
+    when: "Use it to say you want someone to do something for you, often as a polite but firm request: この書類を明日までに出していただきたいんですが. ていただきたい is the humble form, for superiors and customers; てもらいたい is for equals and people below you. Adding んですが or けど softens it."
+    why: 'たい added to もらう, "receive", gives "want to receive". So てもらいたい is "want to receive V-ing from someone": the wish is about your own receiving, which is why たい can be used even though someone else acts. The one who acts is marked with に, as with てもらう. It means about the same as てほしい, but because it is built on a receiving verb, it has a humble form, ていただきたい, for polite situations. It still states your wish directly, so it can sound demanding without a softener.'
+    formation:
+      - form: (person に) V (て-form) + もらいたい
+      - form: (person に) V (て-form) + いただきたい
+        note: Humble. Often ていただきたいんですが.
+    examples:
+      - japanese: この書類を明日までに出していただきたいんですが。
+        reading: このしょるいをあしたまでにだしていただきたいんですが。
+        romaji: kono shorui o ashita made ni dashite itadakitai n desu ga.
+        english: I'd like you to hand in this document by tomorrow, if you could.
+      - japanese: 子どもにはもっと本を読んでもらいたいです。
+        reading: こどもにはもっとほんをよんでもらいたいです。
+        romaji: kodomo ni wa motto hon o yonde moraitai desu.
+        english: I'd like my children to read more books.
+      - japanese: 先生に私の作文を見ていただきたいです。
+        reading: せんせいにわたしのさくぶんをみていただきたいです。
+        romaji: sensei ni watashi no sakubun o mite itadakitai desu.
+        english: I'd like my teacher to look at my essay.
+    mistake:
+      wrong: 先生が作文を見ていただきたいです。
+      problem: ていただきたい is about your receiving, so the superior who acts is marked with に, not が.
+      right: 先生に作文を見ていただきたいです。
+    distinguish_from:
+      - id: OJG-0328
+        note: てほしい means much the same but has no humble form. てもらいたい／ていただきたい is built on a receiving verb.
+      - id: OJG-0057
+        note: てもらう reports a favour received. てもらいたい wants one.
+    register:
+      - polite
+      - humble
     levels:
       commonly: N4
       listed:
@@ -2725,9 +3025,52 @@ entries:
       - source_id: hanabira
         ref: ～てもらいたい／～ていただきたい
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0331
     pattern: ～と思う
+    title: I think (that)…
+    meaning: "Plain form + と思う: \"I think (that)…\"; presents a statement as the speaker's opinion or guess."
+    when: 'Use it to give your opinion or a guess: 明日は雨が降ると思います, "I think it will rain tomorrow"; この映画はおもしろいと思います. For what someone else thinks, use と思っている: 兄は日本語は難しいと思っています. Japanese speakers also use it to soften statements.'
+    why: "と marks what is thought, like quotation marks, and 思う is \"think\". So the part before と is a complete statement in plain form, with its own tense and negation, and a noun or な-adjective needs だ to make it complete (先生だと思う). 思う reports an inner process, so a plain と思う is the speaker's own thought (or the listener's, in a question); another person's opinion is reported with と思っている. For a negative opinion, Japanese usually makes the content negative: 来ないと思う, \"I don't think he'll come\"."
+    formation:
+      - form: Verb / い-adjective (plain form) + と思う
+        note: 降ると思う, 降らないと思う, おもしろいと思う.
+      - form: Noun / な-adjective + だ + と思う
+        note: 先生だと思う, 静かだと思う.
+      - form: … と思っている
+        note: An opinion someone holds, often someone else's.
+    examples:
+      - japanese: 明日は雨が降ると思います。
+        reading: あしたはあめがふるとおもいます。
+        romaji: ashita wa ame ga furu to omoimasu.
+        english: I think it'll rain tomorrow.
+      - japanese: この映画はとてもおもしろいと思います。
+        reading: このえいがはとてもおもしろいとおもいます。
+        romaji: kono eiga wa totemo omoshiroi to omoimasu.
+        english: I think this film is really good.
+      - japanese: 田中さんは今日来ないと思います。
+        reading: たなかさんはきょうこないとおもいます。
+        romaji: tanaka-san wa kyō konai to omoimasu.
+        english: I don't think Tanaka-san is coming today.
+      - japanese: 兄は、日本語は難しいと思っています。
+        reading: あには、にほんごはむずかしいとおもっています。
+        romaji: ani wa, nihongo wa muzukashii to omotte imasu.
+        english: My older brother thinks Japanese is difficult.
+    mistake:
+      wrong: あの人は先生と思います。
+      problem: A noun before と思う needs だ, because what is thought has to be a complete statement.
+      right: あの人は先生だと思います。
+    distinguish_from:
+      - id: OJG-0339
+        note: ようと思う, with the volitional form, is "I'm thinking of doing". と思う after an ordinary plain form gives an opinion or guess.
+      - id: OJG-0038
+        note: でしょう is a guess stated by itself. と思う frames it explicitly as your own thought.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -2738,9 +3081,52 @@ entries:
       - source_id: hanabira
         ref: ～と思う
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0332
     pattern: ～なければならない／～なくてはいけない／～ないといけない
+    title: Must, have to
+    meaning: 'V-なければならない／V-なくてはいけない／V-ないといけない: "must V", "have to V".'
+    when: 'Use these to say something is necessary: 明日は六時に起きなければなりません, "I have to get up at six tomorrow". なければならない is the most formal and the usual choice in writing; ないといけない and なくてはいけない are common in speech. In casual speech they shrink to なきゃ and なくちゃ (OJG-0037).'
+    why: "All three say \"if you don't V, it won't do\". The first half (なければ, なくては, ないと) sets up \"not doing V\", and ならない or いけない says that is not acceptable. Two negatives make \"must\". ならない tends to sound like a general or objective necessity, and いけない more like a personal or situational one, but in everyday speech they overlap a great deal. All are built on the ない-form: 行かない → 行かなければ, 行かなくては, 行かないと."
+    formation:
+      - form: V (ない-form, drop い) + ければならない
+        note: 起きなければならない. Polite なりません.
+      - form: V (ない-form, drop い) + くてはいけない
+        note: 返さなくてはいけない. Polite いけません.
+      - form: V (ない-form) + といけない
+        note: しないといけない. Polite いけません.
+    examples:
+      - japanese: 明日は六時に起きなければなりません。
+        reading: あしたはろくじにおきなければなりません。
+        romaji: ashita wa rokuji ni okinakereba narimasen.
+        english: Tomorrow I have to get up at six.
+      - japanese: 今日は宿題をしないといけません。
+        reading: きょうはしゅくだいをしないといけません。
+        romaji: kyō wa shukudai o shinai to ikemasen.
+        english: I have to do my homework today.
+      - japanese: 図書館の本を返さなくてはいけません。
+        reading: としょかんのほんをかえさなくてはいけません。
+        romaji: toshokan no hon o kaesanakute wa ikemasen.
+        english: I have to return the library books.
+    mistake:
+      wrong: 毎日この薬を飲んではいけません。
+      problem: Meant as "you must take this medicine every day". てはいけない means "must not". "Must" is the double negative.
+      right: 毎日この薬を飲まなければなりません。
+    distinguish_from:
+      - id: OJG-0037
+        note: なくちゃいけない and なきゃ are the casual spoken contractions of the same point.
+      - id: OJG-0067
+        note: なくてもいい says you don't have to.
+      - id: OJG-0016
+        note: てはいけない says you must not.
+    register:
+      - plain
+      - polite
+      - written
+      - spoken
     levels:
       commonly: N4
       listed:
@@ -2757,9 +3143,45 @@ entries:
       - source_id: hanabira
         ref: ～なければならない／～なくてはいけない／～ないといけない
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: Overlaps OJG-0037 (N5, the casual contractions of the same obligation). A candidate to merge, or to keep as the formal and casual halves.
   - id: OJG-0334
     pattern: ～とか～とか
+    title: Things like A and B (examples, in conversation)
+    meaning: 'A とか B (とか): "things like A and B", "A, B and so on"; gives examples from a larger set. Conversational.'
+    when: 'Use it in conversation to give a few examples: 休みの日は、映画とか買い物とかに行きます, "on days off I go to films, go shopping and so on". Unlike や, it can join verbs and whole clauses: 掃除するとか、洗濯するとか. A single とか makes a suggestion vague and gentle: お茶とか飲みませんか, "how about some tea or something?".'
+    why: 'とか is built from と, which quotes, and か, which marks uncertainty: "things such as…, or something". So it names examples without claiming the list is complete, like や, but more loosely: it can follow nouns, verbs and clauses, and a single とか leaves the suggestion open. Because it is loose and conversational, や (with など) is the usual choice for listing nouns in writing and formal speech.'
+    formation:
+      - form: Noun とか noun (とか)
+        note: The second とか is often kept before a particle (映画とか買い物とかに), and may be dropped.
+      - form: Verb (plain form) とか verb とか
+        note: 掃除するとか、洗濯するとか.
+    examples:
+      - japanese: 休みの日は、映画とか買い物とかに行きます。
+        reading: やすみのひは、えいがとかかいものとかにいきます。
+        romaji: yasumi no hi wa, eiga toka kaimono toka ni ikimasu.
+        english: On my days off I go to films, go shopping and so on.
+      - japanese: 週末は、掃除するとか、洗濯するとか、家のことをします。
+        reading: しゅうまつは、そうじするとか、せんたくするとか、いえのことをします。
+        romaji: shūmatsu wa, sōji suru toka, sentaku suru toka, ie no koto o shimasu.
+        english: At weekends I do things around the house, like cleaning and laundry.
+      - japanese: 疲れたら、お茶とか飲みませんか。
+        reading: つかれたら、おちゃとかのみませんか。
+        romaji: tsukaretara, ocha toka nomimasen ka.
+        english: If you get tired, how about some tea or something?
+    mistake:
+      wrong: 日本には東京とか大阪とかの大きい町があります。
+      problem: Written in a formal report. とか is conversational; in writing and formal speech, noun examples are listed with や and など.
+      right: 日本には東京や大阪などの大きい町があります。
+    distinguish_from:
+      - id: OJG-0032
+        note: や lists nouns only and suits writing. とか also joins verbs and clauses, and is conversational.
+    register:
+      - casual
+      - spoken
     levels:
       commonly: N4
       listed:
@@ -2770,9 +3192,48 @@ entries:
       - source_id: hanabira
         ref: ～とか～とか
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0335
     pattern: N + 中
+    title: In the middle of (an activity)
+    meaning: 'Noun + 中 (ちゅう): "in the middle of N", "now doing N", as in 会議中, "in a meeting", or 工事中, "under construction".'
+    when: 'Use it after a noun that names an activity to say it is going on now: 会議中, "in a meeting"; 電話中, "on the phone"; 授業中, "during class"; 工事中, "under construction". It is very common on signs and in short statements: 田中は今、会議中です.'
+    why: 中 means "middle, inside". After a noun of activity, read ちゅう, it says someone or something is inside that activity, partway through it. It works with nouns, most often Sino-Japanese nouns for activities (会議, 食事, 勉強, 工事), and the result is itself a noun, used with です or with の before another noun (授業中の教室). It is not added to verbs; for "in the middle of doing" with a verb, use ているところ. The same kanji read じゅう after a period or a place means "throughout" (一日中, "all day"; 世界中, "all over the world"), which is a different use.
+    formation:
+      - form: Noun (activity) + 中 (ちゅう)
+        note: 会議中, 電話中, 食事中, 工事中, 営業中. Used with です, or with の before a noun.
+    examples:
+      - japanese: 田中は今、会議中です。
+        reading: たなかはいま、かいぎちゅうです。
+        romaji: tanaka wa ima, kaigichū desu.
+        english: Tanaka is in a meeting right now.
+        note: Said of a colleague to someone outside the company, so without さん.
+      - japanese: 父は電話中なので、少し待ってください。
+        reading: ちちはでんわちゅうなので、すこしまってください。
+        romaji: chichi wa denwachū na node, sukoshi matte kudasai.
+        english: My father is on the phone, so please wait a moment.
+      - japanese: 授業中は、スマホを使わないでください。
+        reading: じゅぎょうちゅうは、スマホをつかわないでください。
+        romaji: jugyōchū wa, sumaho o tsukawanaide kudasai.
+        english: Please don't use your phone during class.
+      - japanese: この道は工事中です。
+        reading: このみちはこうじちゅうです。
+        romaji: kono michi wa kōjichū desu.
+        english: This road is under construction.
+    mistake:
+      wrong: 今、食べる中です。
+      problem: 中 follows a noun of activity, not a verb. Use the noun 食事, or a verb with ているところ.
+      right: 今、食事中です。
+    distinguish_from:
+      - id: OJG-0336
+        note: ているところ says the same with a verb (食べているところ). 中 needs a noun (食事中).
+    register:
+      - plain
+      - polite
+      - written
     levels:
       commonly: N4
       listed:
@@ -2783,7 +3244,10 @@ entries:
       - source_id: hanabira
         ref: N + 中
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0336
     pattern: ～ところ
     levels:
