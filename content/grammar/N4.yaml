@@ -1236,6 +1236,49 @@ entries:
         model: claude-opus-5-5
   - id: OJG-0066
     pattern: ～たら
+    title: If, when (once A has happened)
+    meaning: 'た-form + ら: "if A" or "when A (has happened)"; B follows once A is realised.'
+    when: "Use it for a condition (もし雨が降ったら, \"if it rains\") and for \"when, once\" about something sure to happen (駅に着いたら電話します, \"I'll call when I get to the station\"). It is the most widely usable conditional in speech and works before requests, invitations and intentions. With a past-tense B, it tells what you found when you did A: 窓を開けたら、雪が降っていました."
+    why: 'たら is built on the past form: A is pictured as already done, and B is what happens from that point on. That is why it covers both "if", when A may not happen, and "when", when A surely will, and why B follows A in time. It is also why a request or an intention fits after it: B is meant to come once A is done. With a past-tense B, it describes a discovery, something you found or that happened once A was done.'
+    formation:
+      - form: V (た-form) + ら
+        note: 行ったら, 食べたら, したら, 来たら; negative 行かなかったら.
+      - form: い-adjective (た-form) + ら
+        note: 高かったら; いい → よかったら.
+      - form: Noun / な-adjective + だったら
+        note: 雨だったら, ひまだったら.
+    examples:
+      - japanese: 駅に着いたら、電話してください。
+        reading: えきについたら、でんわしてください。
+        romaji: eki ni tsuitara, denwa shite kudasai.
+        english: When you get to the station, please call me.
+      - japanese: もし雨が降ったら、試合は中止です。
+        reading: もしあめがふったら、しあいはちゅうしです。
+        romaji: moshi ame ga futtara, shiai wa chūshi desu.
+        english: If it rains, the match will be cancelled.
+      - japanese: 窓を開けたら、雪が降っていました。
+        reading: まどをあけたら、ゆきがふっていました。
+        romaji: mado o aketara, yuki ga futte imashita.
+        english: When I opened the window, it was snowing.
+      - japanese: よかったら、いっしょに食べませんか。
+        reading: よかったら、いっしょにたべませんか。
+        romaji: yokattara, issho ni tabemasen ka.
+        english: If you'd like, shall we eat together?
+    mistake:
+      wrong: 旅行に行ったら、ガイドブックを買います。
+      problem: Meant as "I'll buy a guidebook before the trip". たら puts B after A, so this says you will buy it once you are on the trip. For something done beforehand, use なら.
+      right: 旅行に行くなら、ガイドブックを買います。
+    distinguish_from:
+      - id: OJG-0064
+        note: ば focuses on A as the condition and avoids requests after an action. たら puts B after A and takes requests and intentions freely.
+      - id: OJG-0070
+        note: と is for results that follow automatically, and B cannot be a request or wish. たら has no such limit.
+      - id: OJG-0044
+        note: なら takes A as given and says what applies, whatever the order in time. たら needs A to happen first.
+    register:
+      - plain
+      - polite
+      - spoken
     levels:
       commonly: N4
       listed:
@@ -1247,9 +1290,44 @@ entries:
       - source_id: tanos
         ref: 510
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0067
     pattern: ～なくてもいい
+    title: Don't have to, needn't
+    meaning: "V-なくてもいい: \"you don't have to V\"; it is fine not to do V."
+    when: "Use it to say something is not necessary, or to ask whether you can skip it: 明日は来なくてもいいです, \"you don't have to come tomorrow\"; 靴を脱がなくてもいいですか, \"do I need to take my shoes off?\". It is the \"no\" answer to a question with なければなりませんか. Politer: なくても大丈夫です, なくてもかまいません."
+    why: "It is ても, \"even if\", plus いい, \"fine\": \"even if you don't V, it's fine\". So it gives permission not to act, the negative partner of てもいい. It does not forbid anything: 来なくてもいい still allows you to come. For \"must not\", use てはいけない."
+    formation:
+      - form: V (ない-form, drop い) + くてもいい
+        note: "行かなくてもいい, 食べなくてもいい, しなくてもいい, 来なくてもいい. Polite: いいです."
+    examples:
+      - japanese: 明日は来なくてもいいですよ。
+        reading: あしたはこなくてもいいですよ。
+        romaji: ashita wa konakute mo ii desu yo.
+        english: You don't have to come tomorrow.
+      - japanese: ここでは靴を脱がなくてもいいです。
+        reading: ここではくつをぬがなくてもいいです。
+        romaji: koko de wa kutsu o nuganakute mo ii desu.
+        english: You don't need to take your shoes off here.
+      - japanese: 「全部食べなければいけませんか。」「いいえ、全部食べなくてもいいですよ。」
+        reading: 「ぜんぶたべなければいけませんか。」「いいえ、ぜんぶたべなくてもいいですよ。」
+        romaji: '"zenbu tabenakereba ikemasen ka." "iie, zenbu tabenakute mo ii desu yo."'
+        english: "\"Do I have to eat all of it?\" \"No, you don't have to eat it all.\""
+    mistake:
+      wrong: ここで写真を撮らなくてもいいです。
+      problem: Meant as "you mustn't take photos here". なくてもいい only says it is not necessary. A prohibition is てはいけません.
+      right: ここで写真を撮ってはいけません。
+    distinguish_from:
+      - id: OJG-0015
+        note: てもいい permits doing something. なくてもいい permits not doing it.
+      - id: OJG-0332
+        note: なければならない says you must. なくてもいい says you don't have to.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -1261,9 +1339,52 @@ entries:
       - source_id: tanos
         ref: 511
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0068
     pattern: ～みたい
+    title: Seems like, looks like; like (a comparison)
+    meaning: '～みたいだ: "it seems / looks like…", judged from evidence; after a noun, also "like N". Conversational.'
+    when: 'Use it in conversation for a guess based on what you have seen or heard: 田中さんは風邪をひいたみたいです, "it seems Tanaka-san has caught a cold". After a noun, it also compares (ぬいぐるみみたいにかわいい, "cute as a stuffed toy") and gives an example (東京みたいな大きい町, "a big city like Tokyo"). It is the conversational counterpart of ようだ.'
+    why: 'みたい grew out of 見たよう, "as if seen": the speaker reads the situation from evidence instead of stating it as fact. So it follows complete statements in plain form, and it is softer than a flat statement. Unlike ようだ, it joins nouns and な-adjectives directly, with no の, な or だ: 雨みたい, 元気みたい. It behaves like a な-adjective itself: みたいな before a noun, みたいに before a verb or adjective, みたいだ／みたいです at the end.'
+    formation:
+      - form: Verb / い-adjective (plain form) + みたい
+        note: 降るみたい, 降ったみたい, 高いみたい.
+      - form: Noun / な-adjective + みたい
+        note: "No だ: 雨みたい, 静かみたい."
+      - form: みたいな + noun; みたいに + verb or adjective
+    examples:
+      - japanese: 田中さんは風邪をひいたみたいです。
+        reading: たなかさんはかぜをひいたみたいです。
+        romaji: tanaka-san wa kaze o hiita mitai desu.
+        english: It seems Tanaka-san has caught a cold.
+      - japanese: 外は雨みたいですね。
+        reading: そとはあめみたいですね。
+        romaji: soto wa ame mitai desu ne.
+        english: It looks like it's raining outside.
+      - japanese: この犬は、ぬいぐるみみたいにかわいい。
+        reading: このいぬは、ぬいぐるみみたいにかわいい。
+        romaji: kono inu wa, nuigurumi mitai ni kawaii.
+        english: This dog is as cute as a stuffed toy.
+      - japanese: 東京みたいな大きい町に住みたいです。
+        reading: とうきょうみたいなおおきいまちにすみたいです。
+        romaji: tōkyō mitai na ōkii machi ni sumitai desu.
+        english: I want to live in a big city like Tokyo.
+    mistake:
+      wrong: あの人は学生だみたいです。
+      problem: After a noun or な-adjective, みたい follows directly, without だ.
+      right: あの人は学生みたいです。
+    distinguish_from:
+      - id: OJG-0349
+        note: ようだ means the same but is more formal and needs の after a noun and な after a な-adjective (学生のようだ, 静かなようだ). みたい joins them directly.
+      - id: OJG-0061
+        note: そう after a stem gives an impression from appearance before you know (おいしそう). みたい draws a conclusion from evidence (おいしいみたい, "it seems to be good", perhaps from what others say).
+    register:
+      - plain
+      - polite
+      - spoken
     levels:
       commonly: N4
       listed:
@@ -1275,9 +1396,42 @@ entries:
       - source_id: tanos
         ref: 512
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0069
     pattern: ～てしまう
+    title: Doing something completely, or regrettably
+    meaning: "V-てしまう: V is done completely, or happened with regret or by accident. Casual: ちゃう／じゃう."
+    when: "Use it for two things: to say an action is finished completely (宿題を全部やってしまった, \"I've finished all my homework\"), and, very often, to show that something happened that you regret or did not mean to happen (傘を忘れてしまいました, \"I (unfortunately) left my umbrella behind\"). In speech, てしまう becomes ちゃう and でしまう becomes じゃう: 食べちゃった, 飲んじゃった."
+    why: "しまう means \"put away, close up\". After the て-form it says the action is closed up, done for good. When the result is something you would rather not have, \"done, and it can't be undone\" turns into regret: 忘れてしまった says you forgot, and it is too late. Context decides which reading you get: a chore finished, or a mistake made. It only adds the speaker's view of the event; without it, 傘を忘れました states the bare fact."
+    formation:
+      - form: V (て-form) + しまう
+        note: "Polite: てしまいます, てしまいました."
+      - form: V (て-form) → ちゃう／じゃう
+        note: "Casual: 食べちゃう, 忘れちゃった; 飲んじゃう, 読んじゃった."
+    examples:
+      - japanese: 電車に傘を忘れてしまいました。
+        reading: でんしゃにかさをわすれてしまいました。
+        romaji: densha ni kasa o wasurete shimaimashita.
+        english: I left my umbrella on the train.
+      - japanese: 宿題はもう全部やってしまいました。
+        reading: しゅくだいはもうぜんぶやってしまいました。
+        romaji: shukudai wa mō zenbu yatte shimaimashita.
+        english: I've already finished all my homework.
+      - japanese: ケーキを全部食べちゃった。
+        reading: ケーキをぜんぶたべちゃった。
+        romaji: kēki o zenbu tabechatta.
+        english: I ate the whole cake. (Oops.)
+    mistake:
+      wrong: 試験に合格してしまいました。
+      problem: Meant as good news. てしまう colours an event as regrettable or unintended, so this sounds as if passing were a misfortune. Say it plainly.
+      right: 試験に合格しました。
+    register:
+      - plain
+      - polite
+      - casual
     levels:
       commonly: N4
       listed:
@@ -1289,9 +1443,51 @@ entries:
       - source_id: tanos
         ref: 513
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0070
     pattern: Dictionary form+と
+    title: When A, B follows (as a matter of course)
+    meaning: 'Plain non-past + と: "when/whenever A, B"; B follows naturally or automatically from A.'
+    when: 'Use it when B always or automatically follows A: 春になると、桜が咲きます, "when spring comes, the cherry blossoms bloom"; このボタンを押すと、お湯が出ます. It also gives directions (まっすぐ行くと、右に郵便局があります) and, with a past-tense B, tells what you found when you did A (家に帰ると、姉が来ていました).'
+    why: "と links A and B as a fixed sequence: whenever A happens, B comes with it. Because B follows by itself, it cannot be something the speaker wants, asks for or intends: a request, invitation, ましょう or たい after と sounds wrong. A stays in the non-past plain form even in a story about the past, because the tense is carried by B: 家に帰ると、…いました."
+    formation:
+      - form: Verb / い-adjective (plain non-past) + と
+        note: 押すと, 押さないと; 寒いと.
+      - form: Noun / な-adjective + だ + と
+        note: 雨だと, 静かだと.
+    examples:
+      - japanese: 春になると、桜が咲きます。
+        reading: はるになると、さくらがさきます。
+        romaji: haru ni naru to, sakura ga sakimasu.
+        english: When spring comes, the cherry blossoms bloom.
+      - japanese: このボタンを押すと、お湯が出ます。
+        reading: このボタンをおすと、おゆがでます。
+        romaji: kono botan o osu to, oyu ga demasu.
+        english: When you press this button, hot water comes out.
+      - japanese: まっすぐ行くと、右に郵便局があります。
+        reading: まっすぐいくと、みぎにゆうびんきょくがあります。
+        romaji: massugu iku to, migi ni yūbinkyoku ga arimasu.
+        english: If you go straight on, there's a post office on the right.
+      - japanese: 家に帰ると、姉が来ていました。
+        reading: いえにかえると、あねがきていました。
+        romaji: ie ni kaeru to, ane ga kite imashita.
+        english: When I got home, my older sister was there.
+        note: A past B tells what the speaker found. A stays non-past.
+    mistake:
+      wrong: 駅に着くと、電話してください。
+      problem: With と, B follows A by itself, so B cannot be a request. Use たら.
+      right: 駅に着いたら、電話してください。
+    distinguish_from:
+      - id: OJG-0066
+        note: たら allows requests, wishes and intentions after it. と does not.
+      - id: OJG-0064
+        note: ば focuses on A as a condition to be met. と presents B as what naturally comes with A.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -1303,9 +1499,42 @@ entries:
       - source_id: tanos
         ref: 514
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0071
     pattern: ～ながら
+    title: While doing (two actions at once)
+    meaning: 'V (ます-stem) + ながら: "while V-ing"; one person does two actions at once, the main one coming last.'
+    when: 'Use it when the same person does two things at the same time: 音楽を聞きながら勉強します, "I study while listening to music". The action before ながら is in the background; the one after it is the main action.'
+    why: "ながら turns the first verb into a background activity that runs alongside the main one. The tense and politeness of the whole sentence come from the last verb, so the verb before ながら is always the ます-stem, whatever the tense: 聞きながら勉強しました. Because the two actions belong to one person, ながら cannot join two people's actions; for \"while she cooked, I…\", use 間 (あいだ). The order matters: the main action goes last, so 勉強しながら音楽を聞く makes the music the point."
+    formation:
+      - form: V (ます-stem) + ながら
+        note: 聞く → 聞きながら, 食べる → 食べながら, 歩く → 歩きながら.
+    examples:
+      - japanese: 音楽を聞きながら勉強します。
+        reading: おんがくをききながらべんきょうします。
+        romaji: ongaku o kikinagara benkyō shimasu.
+        english: I study while listening to music.
+      - japanese: 歩きながらスマホを見ないでください。
+        reading: あるきながらスマホをみないでください。
+        romaji: arukinagara sumaho o minaide kudasai.
+        english: Please don't look at your phone while walking.
+      - japanese: 父はテレビを見ながらご飯を食べます。
+        reading: ちちはテレビをみながらごはんをたべます。
+        romaji: chichi wa terebi o minagara gohan o tabemasu.
+        english: My father eats while watching TV.
+    mistake:
+      wrong: 母が料理を作りながら、私はテレビを見ていました。
+      problem: ながら joins two actions of the same person. For two people doing things at the same time, use 間.
+      right: 母が料理を作っている間、私はテレビを見ていました。
+    distinguish_from:
+      - id: OJG-0083
+        note: 間 and 間に can join the actions of two different people, and 間に sets a point within the period. ながら is one person doing two things at once.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -1317,9 +1546,47 @@ entries:
       - source_id: tanos
         ref: 515
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0072
     pattern: ～ばよかった
+    title: I should have… (regret)
+    meaning: 'V-ばよかった: "I should have V-ed", "if only I had V-ed"; regret about something that did not happen.'
+    when: "Use it to regret something you did not do: 傘を持ってくればよかった, \"I should have brought an umbrella\". With the negative, it regrets something you did: 食べなければよかった, \"I shouldn't have eaten it\". It often ends in なあ, as a sigh. たらよかった is used the same way."
+    why: 'ば sets a condition and よかった says "it would have been good": "if I had done V, it would have been good". That implies you did not do it, so the sentence is regret. よかった is past because the chance has already gone. Said about someone else, it becomes criticism: もっと早く言えばよかったのに, "you should have said so sooner".'
+    formation:
+      - form: V (ば-form) + よかった
+        note: "持ってくればよかった, 行けばよかった. Polite: よかったです."
+      - form: V (negative ば-form, なければ) + よかった
+        note: 食べなければよかった, "I shouldn't have eaten it".
+    examples:
+      - japanese: 傘を持ってくればよかった。
+        reading: かさをもってくればよかった。
+        romaji: kasa o motte kureba yokatta.
+        english: I should have brought an umbrella.
+      - japanese: もっと早く家を出ればよかったです。
+        reading: もっとはやくいえをでればよかったです。
+        romaji: motto hayaku ie o dereba yokatta desu.
+        english: I should have left home earlier.
+      - japanese: あんなに食べなければよかった。
+        reading: あんなにたべなければよかった。
+        romaji: anna ni tabenakereba yokatta.
+        english: I shouldn't have eaten so much.
+    mistake:
+      wrong: もっと勉強すればいいでした。
+      problem: The past of いい is よかった. いいでした is not a form.
+      right: もっと勉強すればよかったです。
+    distinguish_from:
+      - id: OJG-0348
+        note: ばいい is advice about what to do now or next (どうすればいいですか). ばよかった looks back at a chance that has gone.
+      - id: OJG-0074
+        note: てよかった is glad about what did happen. ばよかった regrets what did not.
+    register:
+      - plain
+      - polite
+      - spoken
     levels:
       commonly: N4
       listed:
@@ -1331,9 +1598,45 @@ entries:
       - source_id: tanos
         ref: 516
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0073
     pattern: ～てくれてありがとう
+    title: Thank you for doing…
+    meaning: 'V-てくれてありがとう: "thank you for V-ing (for me)"; thanks someone for a specific kindness.'
+    when: 'Use it to thank someone for something they did for you: 手伝ってくれてありがとう, "thanks for helping me". Politely: てくれてありがとうございます, or ございました when it is over. To a superior, use くださって: 教えてくださってありがとうございました.'
+    why: 'てくれる marks the action as a favour done for you, and its て-form gives the reason for the thanks: "you did V for me, and so, thank you". What you are thanking for is the favour, so くれて is needed; 手伝ってありがとう leaves it out and sounds wrong. For someone above you, the honorific くださって takes the place of くれて.'
+    formation:
+      - form: V (て-form) + くれて + ありがとう
+        note: "Polite: ありがとうございます／ございました."
+      - form: V (て-form) + くださって + ありがとうございます
+        note: To a superior.
+    examples:
+      - japanese: 手伝ってくれてありがとう。
+        reading: てつだってくれてありがとう。
+        romaji: tetsudatte kurete arigatō.
+        english: Thanks for helping me.
+      - japanese: 来てくれて、本当にありがとう。
+        reading: きてくれて、ほんとうにありがとう。
+        romaji: kite kurete, hontō ni arigatō.
+        english: Thank you so much for coming.
+      - japanese: 先生、いろいろ教えてくださってありがとうございました。
+        reading: せんせい、いろいろおしえてくださってありがとうございました。
+        romaji: sensei, iroiro oshiete kudasatte arigatō gozaimashita.
+        english: Thank you for teaching me so much, sensei.
+    mistake:
+      wrong: 手伝ってありがとう。
+      problem: The thanks is for a favour, so the action needs くれて, which marks it as done for you.
+      right: 手伝ってくれてありがとう。
+    distinguish_from:
+      - id: OJG-0056
+        note: てくれる is the favour itself. てくれてありがとう thanks the person for it.
+    register:
+      - plain
+      - polite
+      - honorific
     levels:
       commonly: N4
       listed:
@@ -1345,9 +1648,45 @@ entries:
       - source_id: tanos
         ref: 517
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
+      note: A set use of てくれる (OJG-0056); kept as its own entry because both source lists have it.
   - id: OJG-0074
     pattern: ～てよかった
+    title: I'm glad that…
+    meaning: "V-てよかった: \"I'm glad (that) V\", \"it's good that V\"; relief or pleasure at how something turned out."
+    when: "Use it for something that happened and turned out well: 日本に来てよかったです, \"I'm glad I came to Japan\"; 間に合ってよかった, \"thank goodness we made it\". For something that did not happen, use なくて: 雨が降らなくてよかった."
+    why: 'The て-form gives the cause and よかった gives the verdict: "V happened, and so it was good". よかった is past because it judges something that has already come about. The negative takes なくて, the negative て-form that gives a reason. Compare ばよかった, which is about what did not happen (regret); てよかった is about what did (relief).'
+    formation:
+      - form: V (て-form) + よかった
+        note: 来てよかった, 間に合ってよかった; negative 降らなくてよかった.
+      - form: い-adjective (くて) / noun or な-adjective (で) + よかった
+        note: 安くてよかった, 元気でよかった.
+    examples:
+      - japanese: 日本に来てよかったです。
+        reading: にほんにきてよかったです。
+        romaji: nihon ni kite yokatta desu.
+        english: I'm glad I came to Japan.
+      - japanese: 雨が降らなくてよかったですね。
+        reading: あめがふらなくてよかったですね。
+        romaji: ame ga furanakute yokatta desu ne.
+        english: It's good it didn't rain, isn't it.
+      - japanese: みんな元気でよかった。
+        reading: みんなげんきでよかった。
+        romaji: minna genki de yokatta.
+        english: I'm glad everyone is well.
+    mistake:
+      wrong: 試験に合格すればよかったです。
+      problem: Meant as "I'm glad I passed". ばよかった means "I should have passed", regret about something that did not happen. For relief about what did happen, use てよかった.
+      right: 試験に合格してよかったです。
+    distinguish_from:
+      - id: OJG-0072
+        note: ばよかった regrets what did not happen. てよかった is glad about what did.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -1359,9 +1698,48 @@ entries:
       - source_id: tanos
         ref: 518
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0075
     pattern: ～はずです
+    title: Should be, is supposed to (a confident inference)
+    meaning: 'Plain form + はずです: "should", "is supposed to"; a confident expectation drawn from what the speaker knows.'
+    when: "Use it when you have grounds to expect something: 田中さんは三時に来るはずです, \"Tanaka-san should be coming at three\" (he said so). With a past form, for something that should already be the case: もう着いたはずです. はずがない means \"there's no way that…\"."
+    why: 'はず is a noun meaning "what is to be expected". The sentence says the thing follows from facts the speaker knows: a timetable, a promise, a rule, simple logic. So it is more confident than でしょう or かもしれない, but it is still an inference, and if it turns out wrong, the speaker is surprised (はずなのに). As a noun, はず is joined like one: の after a noun (休みのはず), な after a な-adjective (静かなはず), and plain forms after verbs and い-adjectives. It is not for your own intentions; for plans, use つもり.'
+    formation:
+      - form: Verb / い-adjective (plain form) + はず
+        note: 来るはず, 来たはず, 来ないはず; 高いはず.
+      - form: な-adjective + な + はず; Noun + の + はず
+        note: 静かなはず, 休みのはず.
+      - form: … はずがない
+        note: "\"There's no way\": 田中さんが知っているはずがない."
+    examples:
+      - japanese: 田中さんは三時に来るはずです。
+        reading: たなかさんはさんじにくるはずです。
+        romaji: tanaka-san wa sanji ni kuru hazu desu.
+        english: Tanaka-san should be coming at three.
+      - japanese: 荷物は昨日送ったので、もう着いたはずです。
+        reading: にもつはきのうおくったので、もうついたはずです。
+        romaji: nimotsu wa kinō okutta node, mō tsuita hazu desu.
+        english: I sent the parcel yesterday, so it should have arrived by now.
+      - japanese: 今日は日曜日だから、銀行は休みのはずです。
+        reading: きょうはにちようびだから、ぎんこうはやすみのはずです。
+        romaji: kyō wa nichiyōbi da kara, ginkō wa yasumi no hazu desu.
+        english: It's Sunday, so the bank should be closed.
+    mistake:
+      wrong: 私は来年日本に行くはずです。
+      problem: Meant as "I intend to go". はず is an inference from facts, not an intention. For your own plan, use つもり.
+      right: 私は来年日本に行くつもりです。
+    distinguish_from:
+      - id: OJG-0027
+        note: つもり is your own intention. はず is what you expect, reasoning from facts.
+      - id: OJG-0038
+        note: でしょう is a guess. はず is a confident expectation with grounds behind it.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -1373,9 +1751,42 @@ entries:
       - source_id: tanos
         ref: 519
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0076
     pattern: ～ないで
+    title: Without doing, instead of doing
+    meaning: 'V-ないで: "without V-ing", or "instead of V-ing"; says how the next action is done.'
+    when: 'Use it to say an action is done without another one: 朝ご飯を食べないで家を出ました, "I left home without eating breakfast". It can also mean "instead of": バスに乗らないで歩きました, "I walked instead of taking the bus".'
+    why: "ないで is the negative partner of the て-form that describes the manner of the next action: 傘を持って出かける, \"go out taking an umbrella\", and 傘を持たないで出かける, \"go out without an umbrella\". It says how the main action is done, so both parts belong to the same person. A negative reason (\"because it didn't…\") is made with なくて instead: 雨が降らなくて困っています."
+    formation:
+      - form: V (ない-form) + で
+        note: 食べないで, 行かないで, しないで, 来ないで.
+    examples:
+      - japanese: 今朝は朝ご飯を食べないで家を出ました。
+        reading: けさはあさごはんをたべないでいえをでました。
+        romaji: kesa wa asagohan o tabenaide ie o demashita.
+        english: This morning I left home without eating breakfast.
+      - japanese: 辞書を使わないで読んでみてください。
+        reading: じしょをつかわないでよんでみてください。
+        romaji: jisho o tsukawanaide yonde mite kudasai.
+        english: Try reading it without using a dictionary.
+      - japanese: 今日はバスに乗らないで、駅まで歩きました。
+        reading: きょうはバスにのらないで、えきまであるきました。
+        romaji: kyō wa basu ni noranaide, eki made arukimashita.
+        english: Today I walked to the station instead of taking the bus.
+    mistake:
+      wrong: 雨が降らないで、困っています。
+      problem: The first part is the reason for the trouble, and a negative reason takes なくて. ないで says how an action is done, "without", which does not fit here.
+      right: 雨が降らなくて、困っています。
+    distinguish_from:
+      - id: OJG-0020
+        note: ないでください asks someone not to do something. ないで on its own joins "without doing A" to the next action.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -1387,9 +1798,44 @@ entries:
       - source_id: tanos
         ref: 520
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0077
     pattern: ～かどうか
+    title: Whether or not
+    meaning: 'Plain form + かどうか: "whether (or not)"; puts a yes-no question inside a larger sentence.'
+    when: "Use it when a yes-no question becomes part of a bigger sentence: 明日行けるかどうか、わかりません, \"I don't know whether I can go tomorrow\". It is common with わかる, 知る, 聞く, 調べる and 考える. A question with a question word takes only か: 何時に始まるか知っていますか."
+    why: か marks a question, and どうか is "or how (not)". So かどうか says "whether it is so or not", and turns a yes-no question into a chunk that the main verb can take like a noun. As a question tucked inside a sentence, it uses plain forms, and a noun or な-adjective drops だ (本当かどうか), as it does in a plain question. With a question word there is no yes-or-no choice to make, so only か is used.
+    formation:
+      - form: Verb / い-adjective (plain form) + かどうか
+        note: 行けるかどうか, 来たかどうか; 新しいかどうか.
+      - form: Noun / な-adjective + かどうか
+        note: "No だ: 本当かどうか, 大丈夫かどうか."
+    examples:
+      - japanese: 明日のパーティーに行けるかどうか、まだわかりません。
+        reading: あしたのパーティーにいけるかどうか、まだわかりません。
+        romaji: ashita no pātī ni ikeru ka dō ka, mada wakarimasen.
+        english: I don't know yet whether I can go to tomorrow's party.
+      - japanese: この魚が新しいかどうか、店の人に聞きました。
+        reading: このさかながあたらしいかどうか、みせのひとにききました。
+        romaji: kono sakana ga atarashii ka dō ka, mise no hito ni kikimashita.
+        english: I asked the shop staff whether this fish was fresh.
+      - japanese: その話が本当かどうか、調べてみます。
+        reading: そのはなしがほんとうかどうか、しらべてみます。
+        romaji: sono hanashi ga hontō ka dō ka, shirabete mimasu.
+        english: I'll check whether that story is true.
+    mistake:
+      wrong: 会議が何時に始まるかどうか知っていますか。
+      problem: With a question word (何時), the question is not yes-or-no, so only か is used.
+      right: 会議が何時に始まるか知っていますか。
+    distinguish_from:
+      - id: OJG-0319
+        note: A question word + か embeds an open question (何時に始まるか). かどうか embeds a yes-no question.
+    register:
+      - plain
+      - polite
     levels:
       commonly: N4
       listed:
@@ -1401,9 +1847,51 @@ entries:
       - source_id: tanos
         ref: 521
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0078
     pattern: ～という～
+    title: Called, named; the (news) that…
+    meaning: 'X という N: "an N called X"; also joins content to nouns like 話 or ニュース, "the news that…". Casual: っていう.'
+    when: "Use it to name or introduce something the listener may not know: 「さくら」という店, \"a shop called Sakura\"; 山田という人, \"someone named Yamada\". Ask a name with 何という: これは何という花ですか. It also joins what something says to a noun of information: 来週テストがあるという話, \"talk that there's a test next week\". Casual speech uses っていう or って."
+    why: 'と marks a quotation and いう is "say", so X という N is "an N one calls X". That is why it introduces unfamiliar names: you give the label the thing goes by, and it would sound odd for something everyone already knows. The same logic lets a whole sentence be the content of a noun like 話, ニュース or うわさ, the thing that says it. In these uses いう is usually written in kana.'
+    formation:
+      - form: Noun + という + noun
+        note: "「さくら」という店, 山田という人. Question: 何という + noun."
+      - form: Sentence (plain form) + という + noun
+        note: With nouns of information such as 話, ニュース, うわさ, 手紙.
+      - form: … っていう + noun
+        note: Casual.
+    examples:
+      - japanese: 「さくら」という店を知っていますか。
+        reading: 「さくら」というみせをしっていますか。
+        romaji: '"sakura" to iu mise o shitte imasu ka.'
+        english: Do you know a shop called Sakura?
+      - japanese: これは何という花ですか。
+        reading: これはなんというはなですか。
+        romaji: kore wa nan to iu hana desu ka.
+        english: What is this flower called?
+      - japanese: 来週テストがあるという話を聞きました。
+        reading: らいしゅうテストがあるというはなしをききました。
+        romaji: raishū tesuto ga aru to iu hanashi o kikimashita.
+        english: I heard that there's a test next week.
+      - japanese: 山田っていう人から電話があったよ。
+        reading: やまだっていうひとからでんわがあったよ。
+        romaji: yamada tte iu hito kara denwa ga atta yo.
+        english: Someone called Yamada phoned you.
+    mistake:
+      wrong: 私は東京という町に住んでいます。
+      problem: Said to a Japanese listener. という introduces a name the listener may not know, so using it for Tokyo sounds as if they had never heard of it. Name a well-known place directly.
+      right: 私は東京に住んでいます。
+    distinguish_from:
+      - id: OJG-0333
+        note: なんと言いますか asks what something is called in a language. 何という + noun asks the name of a particular thing.
+    register:
+      - plain
+      - polite
+      - casual
     levels:
       commonly: N4
       listed:
@@ -1415,7 +1903,10 @@ entries:
       - source_id: tanos
         ref: 522
     review:
-      status: stub
+      status: draft
+      drafted_by:
+        provider: anthropic
+        model: claude-opus-5-5
   - id: OJG-0079
     pattern: ～やすい
     levels:
